@@ -1,3 +1,9 @@
+import floralHeroArt from './assets/floraguard-hero.svg'
+import floralStressArt from './assets/floral-stress.svg'
+import floralLabArt from './assets/floral-lab.svg'
+import smartVaseArt from './assets/floral-smart-vase.svg'
+import floralNotesArt from './assets/floral-notes.svg'
+
 const paragraph = (text) => ({ type: 'paragraph', text })
 const list = (items, style = 'unordered') => ({ type: 'list', items, style })
 const table = (columns, rows) => ({ type: 'table', columns, rows })
@@ -13,6 +19,11 @@ const siteMeta = {
 
 const homePage = {
   eyebrow: 'Synthetic biology for post-harvest resilience',
+  heroImage: floralHeroArt,
+  heroAlt:
+    'Stylized bouquet in a vase with petals, stems, and monitoring traces representing FloraGuard.',
+  heroCaption:
+    'A floral systems view: sensing, biological response, and smart monitoring around a cut-flower vase.',
   lead: [
     'Cut flowers are among the most traded horticultural commodities worldwide. Yet once detached from the plant, flowers rapidly lose vitality due to dehydration, oxidative stress, microbial blockage, and hormonal imbalance. This leads to substantial waste across the floral supply chain.',
     'Current preservation strategies mainly rely on passive treatments such as sugar solutions, chemical preservatives, and refrigeration. While these approaches can partially delay senescence, they cannot dynamically respond to the physiological status of the flower.',
@@ -85,6 +96,22 @@ const homePage = {
       title: 'Monitoring and modeling',
       detail:
         'Combine sensors, image-based status tracking, and predictive modeling to recommend timely intervention.',
+    },
+  ],
+  showcaseCards: [
+    {
+      image: floralStressArt,
+      alt: 'Fresh and stressed flowers connected by a flow arrow.',
+      title: 'Stress travels with the flower',
+      detail:
+        'The problem is not confined to the vase. Transport, storage, dehydration, and microbial blockage shape senescence long before a consumer sees the bouquet.',
+    },
+    {
+      image: smartVaseArt,
+      alt: 'Illustrated smart vase with sensors and a monitoring dashboard.',
+      title: 'Hardware makes the biology actionable',
+      detail:
+        'A smart vase or florist-facing monitoring system gives FloraGuard a path from lab logic to a real preservation interface.',
     },
   ],
   nextAdd: [
@@ -823,9 +850,78 @@ const wikiGroups = [
   },
 ]
 
+const pageMedia = {
+  'project-description': {
+    image: floralHeroArt,
+    imageAlt: 'Illustrated bouquet and vase representing the FloraGuard platform.',
+    imageCaption: 'Project framing around a programmable preservation platform.',
+  },
+  'problem-inspiration': {
+    image: floralStressArt,
+    imageAlt: 'Illustration contrasting fresh and stressed flowers.',
+    imageCaption: 'Post-harvest stress accumulates across the floral supply chain.',
+  },
+  design: {
+    image: floralHeroArt,
+    imageAlt: 'Floral system illustration with sensing and vase motifs.',
+    imageCaption: 'Design brings sensing, response, and monitoring into one closed loop.',
+  },
+  engineering: {
+    image: floralLabArt,
+    imageAlt: 'Flower and lab illustration with experimental motifs.',
+    imageCaption: 'The DBTL cycle connects construct logic to visible flower outcomes.',
+  },
+  'wet-lab': {
+    image: floralLabArt,
+    imageAlt: 'Flower, petri dish, and lab instrumentation illustration.',
+    imageCaption: 'Wet lab work links senescence markers to treatment performance.',
+  },
+  'dry-lab': {
+    image: smartVaseArt,
+    imageAlt: 'Monitoring interface and smart vase illustration.',
+    imageCaption: 'Dry lab modeling helps predict intervention timing and dose.',
+  },
+  hardware: {
+    image: smartVaseArt,
+    imageAlt: 'Smart vase with sensors and dashboard illustration.',
+    imageCaption: 'Hardware turns the preservation concept into a usable monitoring device.',
+  },
+  'integrated-human-practices': {
+    image: floralStressArt,
+    imageAlt: 'Flowers and system flow illustration representing supply-chain context.',
+    imageCaption: 'Stakeholder needs shape how FloraGuard should be used outside the lab.',
+  },
+  safety: {
+    image: floralLabArt,
+    imageAlt: 'Lab-and-flower illustration suggesting controlled biosafety practice.',
+    imageCaption: 'Safety is grounded in confinement, controlled use, and responsible translation.',
+  },
+  implementation: {
+    image: smartVaseArt,
+    imageAlt: 'Illustrated smart vase and monitoring interface.',
+    imageCaption: 'Implementation asks what FloraGuard looks like in real workflows.',
+  },
+  contribution: {
+    image: floralHeroArt,
+    imageAlt: 'Bouquet and system illustration representing a synthetic biology platform.',
+    imageCaption: 'FloraGuard contributes a preservation framework, not just a single intervention.',
+  },
+  team: {
+    image: floralNotesArt,
+    imageAlt: 'Notebook and flower illustration representing team planning and authorship.',
+    imageCaption: 'A multidisciplinary team is needed to connect biology, hardware, and modeling.',
+  },
+  references: {
+    image: floralNotesArt,
+    imageAlt: 'Notebook with flower motifs and literature lines.',
+    imageCaption: 'Core literature anchors FloraGuard in plant stress biology and senescence control.',
+  },
+}
+
 const allPages = wikiGroups.flatMap((group) =>
   group.pages.map((page) => ({
     ...page,
+    ...pageMedia[page.slug],
     groupSlug: group.slug,
     groupTitle: group.title,
   })),
@@ -914,25 +1010,26 @@ function initDropdownNav() {
       if (desktopMedia.matches) {
         event.preventDefault()
         const shouldOpen = !dropdown.open
-        closeAll()
+        closeAll(dropdown)
         dropdown.open = shouldOpen
       }
     })
 
-    dropdown.addEventListener('mouseenter', () => {
-      if (!desktopMedia.matches) return
-      closeAll(dropdown)
-      dropdown.open = true
-    })
-
-    dropdown.addEventListener('mouseleave', () => {
-      if (!desktopMedia.matches) return
-      dropdown.open = false
+    dropdown.querySelectorAll('.nav-link').forEach((link) => {
+      link.addEventListener('click', () => {
+        closeAll()
+      })
     })
   })
 
   document.addEventListener('click', (event) => {
     if (!event.target.closest('.dropdown-nav')) {
+      closeAll()
+    }
+  })
+
+  document.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape') {
       closeAll()
     }
   })

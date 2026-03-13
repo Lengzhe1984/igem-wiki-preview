@@ -161,6 +161,10 @@ document.querySelector('#app').innerHTML = `
         </div>
 
         <aside class="hero-side">
+          <figure class="media-frame">
+            <img class="hero-art" src="${page.image}" alt="${escapeHtml(page.imageAlt)}" />
+            <figcaption class="visual-caption">${escapeHtml(page.imageCaption)}</figcaption>
+          </figure>
           <p class="panel-kicker">At a glance</p>
           <ul class="mini-list">
             ${highlightMarkup}

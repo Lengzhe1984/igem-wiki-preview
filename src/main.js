@@ -54,6 +54,21 @@ const moduleMarkup = homePage.platformCards
   )
   .join('')
 
+const showcaseMarkup = homePage.showcaseCards
+  .map(
+    (item, index) => `
+      <article class="media-card fade-card" style="--delay:${index * 70}ms">
+        <img class="media-art" src="${item.image}" alt="${escapeHtml(item.alt)}" />
+        <div class="media-copy">
+          <p class="card-kicker">Visual anchor</p>
+          <h3>${escapeHtml(item.title)}</h3>
+          <p>${escapeHtml(item.detail)}</p>
+        </div>
+      </article>
+    `,
+  )
+  .join('')
+
 const groupCards = wikiGroups
   .map(
     (group, index) => `
@@ -130,6 +145,10 @@ document.querySelector('#app').innerHTML = `
         </div>
 
         <aside class="hero-side">
+          <figure class="media-frame">
+            <img class="hero-art" src="${homePage.heroImage}" alt="${escapeHtml(homePage.heroAlt)}" />
+            <figcaption class="visual-caption">${escapeHtml(homePage.heroCaption)}</figcaption>
+          </figure>
           <p class="panel-kicker">Current build</p>
           <div class="stat-grid">
             ${metricMarkup}
@@ -152,6 +171,16 @@ document.querySelector('#app').innerHTML = `
         </div>
         <div class="focus-grid">
           ${challengeMarkup}
+        </div>
+      </section>
+
+      <section class="section-block">
+        <div class="section-heading">
+          <p class="eyebrow">Visual direction</p>
+          <h2>Flowers, stress, and smart care should all be visible in the interface</h2>
+        </div>
+        <div class="showcase-grid">
+          ${showcaseMarkup}
         </div>
       </section>
 
