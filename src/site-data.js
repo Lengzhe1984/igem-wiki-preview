@@ -554,17 +554,28 @@ function getPageBySlug(slug) {
   return allPages.find((page) => page.slug === slug)
 }
 
+function getGroupForPageSlug(slug) {
+  return wikiGroups.find((group) => group.pages.some((page) => page.slug === slug))
+}
+
 function flattenPages() {
   return allPages
 }
 
-function groupedNavigationMarkup(activeSlug = '') {
+function dropdownNavigationMarkup(activeSlug = '') {
+  const activeGroup = getGroupForPageSlug(activeSlug)
+
   return wikiGroups
     .map(
       (group) => `
-        <section class="nav-group">
-          <p class="nav-group-title">${group.title}</p>
-          <div class="nav-group-links">
+        <details class="nav-dropdown ${activeGroup?.slug === group.slug ? 'is-active' : ''}">
+          <summary class="nav-trigger">
+            <span>${group.title}</span>
+            <span class="nav-caret" aria-hidden="true"></span>
+          </summary>
+          <div class="dropdown-menu">
+            <p class="dropdown-kicker">${group.summary}</p>
+            <div class="dropdown-links">
             ${group.pages
               .map(
                 (page) => `
@@ -575,16 +586,64 @@ function groupedNavigationMarkup(activeSlug = '') {
               )
               .join('')}
           </div>
-        </section>
+          </div>
+        </details>
       `,
     )
     .join('')
 }
 
+function initDropdownNav() {
+  const dropdowns = Array.from(document.querySelectorAll('.nav-dropdown'))
+  if (!dropdowns.length) return
+
+  const desktopMedia = window.matchMedia('(min-width: 961px)')
+
+  const closeAll = (except = null) => {
+    dropdowns.forEach((dropdown) => {
+      if (dropdown !== except) {
+        dropdown.open = false
+      }
+    })
+  }
+
+  dropdowns.forEach((dropdown) => {
+    const summary = dropdown.querySelector('summary')
+
+    summary?.addEventListener('click', (event) => {
+      if (desktopMedia.matches) {
+        event.preventDefault()
+        const shouldOpen = !dropdown.open
+        closeAll()
+        dropdown.open = shouldOpen
+      }
+    })
+
+    dropdown.addEventListener('mouseenter', () => {
+      if (!desktopMedia.matches) return
+      closeAll(dropdown)
+      dropdown.open = true
+    })
+
+    dropdown.addEventListener('mouseleave', () => {
+      if (!desktopMedia.matches) return
+      dropdown.open = false
+    })
+  })
+
+  document.addEventListener('click', (event) => {
+    if (!event.target.closest('.dropdown-nav')) {
+      closeAll()
+    }
+  })
+}
+
 export {
+  dropdownNavigationMarkup,
   flattenPages,
   getPageBySlug,
-  groupedNavigationMarkup,
+  getGroupForPageSlug,
+  initDropdownNav,
   pageHref,
   wikiGroups,
 }

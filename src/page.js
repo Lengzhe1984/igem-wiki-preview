@@ -1,8 +1,9 @@
 import './style.css'
 import {
+  dropdownNavigationMarkup,
   flattenPages,
   getPageBySlug,
-  groupedNavigationMarkup,
+  initDropdownNav,
   pageHref,
   wikiGroups,
 } from './site-data.js'
@@ -25,8 +26,8 @@ document.title = `${page.title} | Project Wiki Preview`
 const sectionMarkup = page.sections
   .map(
     ({ title, guidance }, index) => `
-      <article class="content-card fade-card" style="--delay:${index * 65}ms">
-        <p class="card-index">${String(index + 1).padStart(2, '0')}</p>
+      <article class="content-card fade-card" style="--delay:${index * 55}ms">
+        <p class="card-kicker">Block ${String(index + 1).padStart(2, '0')}</p>
         <h3>${title}</h3>
         <p>${guidance}</p>
       </article>
@@ -37,7 +38,7 @@ const sectionMarkup = page.sections
 const checklistMarkup = page.checklist
   .map(
     (item, index) => `
-      <li class="check-item fade-card" style="--delay:${index * 60}ms">
+      <li class="check-item fade-card" style="--delay:${index * 55}ms">
         <span class="check-mark" aria-hidden="true"></span>
         <span>${item}</span>
       </li>
@@ -48,7 +49,7 @@ const checklistMarkup = page.checklist
 const siblingMarkup = siblings
   .map(
     (entry) => `
-      <a class="sibling-link ${entry.slug === page.slug ? 'active' : ''}" href="${pageHref(entry.slug)}">
+      <a class="page-pill ${entry.slug === page.slug ? 'active' : ''}" href="${pageHref(entry.slug)}">
         ${entry.navTitle ?? entry.title}
       </a>
     `,
@@ -60,16 +61,20 @@ document.querySelector('#app').innerHTML = `
     <header class="site-header">
       <div class="brand-block">
         <a class="brand-mark" href="${pageHref()}">Wiki Preview Lab</a>
-        <p class="brand-note">Multi-page preview built around a best-wiki-style information structure.</p>
+        <p class="brand-note">Multi-page structure preview for a future iGEM wiki.</p>
       </div>
-      <a class="header-chip" href="${pageHref()}">Back to home map</a>
+
+      <nav class="dropdown-nav" aria-label="Primary">
+        <a class="nav-home" href="${pageHref()}">Home</a>
+        ${dropdownNavigationMarkup(page.slug)}
+      </nav>
+
+      <a class="reference-link" href="https://2025.igem.wiki/munich/" target="_blank" rel="noreferrer">
+        Munich 2025
+      </a>
     </header>
 
-    <section class="mega-nav">
-      ${groupedNavigationMarkup(page.slug)}
-    </section>
-
-    <main>
+    <main class="page-main">
       <nav class="breadcrumbs" aria-label="Breadcrumb">
         <a href="${pageHref()}">Home</a>
         <span>/</span>
@@ -78,43 +83,44 @@ document.querySelector('#app').innerHTML = `
         <span>${page.navTitle ?? page.title}</span>
       </nav>
 
-      <section class="hero-panel page-hero">
+      <section class="hero-shell page-shell">
         <div class="hero-copy">
           <p class="eyebrow">${page.groupTitle}</p>
           <h1>${page.title}</h1>
           <p class="lede">${page.summary}</p>
-          <div class="meta-strip">
+          <div class="meta-line">
             <span>${String(currentIndex + 1).padStart(2, '0')} / ${String(allPages.length).padStart(2, '0')}</span>
             <span>${page.slug}</span>
           </div>
         </div>
-        <aside class="hero-aside fade-card" style="--delay:120ms">
+
+        <aside class="hero-side fade-card" style="--delay:120ms">
           <p class="panel-kicker">Same-section pages</p>
-          <div class="sibling-grid">
+          <div class="pill-list compact">
             ${siblingMarkup}
           </div>
         </aside>
       </section>
 
-      <section class="content-grid-two">
-        <section class="panel">
+      <section class="split-block page-block">
+        <section class="section-block">
           <div class="section-heading">
-            <p class="eyebrow">Suggested page blocks</p>
-            <h2>Draft this page in a judged-wiki rhythm</h2>
+            <p class="eyebrow">Drafting blocks</p>
+            <h2>Fill this page in a judged-wiki rhythm</h2>
             <p class="section-copy">
-              These placeholders are not official rule text. They are drafting prompts so you
-              can start building evidence, media, and story flow in the right shape.
+              These are not official rule labels. They are structured prompts to help you
+              draft a strong page while the official template is not yet available.
             </p>
           </div>
-          <div class="card-grid">
+          <div class="content-card-grid">
             ${sectionMarkup}
           </div>
         </section>
 
-        <section class="panel panel-accent">
+        <section class="section-block panel-accent">
           <div class="section-heading">
-            <p class="eyebrow">What to prepare</p>
-            <h2>Checklist for this page</h2>
+            <p class="eyebrow">Checklist</p>
+            <h2>What to make sure this page includes</h2>
           </div>
           <ul class="check-grid">
             ${checklistMarkup}
@@ -127,24 +133,26 @@ document.querySelector('#app').innerHTML = `
           previousPage
             ? `<a class="pager-link" href="${pageHref(previousPage.slug)}">
                 <span class="pager-label">Previous</span>
-                <span>${previousPage.navTitle ?? previousPage.title}</span>
+                <strong>${previousPage.navTitle ?? previousPage.title}</strong>
               </a>`
-            : '<span class="pager-link pager-link-empty"></span>'
+            : '<span class="pager-link pager-empty"></span>'
         }
         ${
           nextPage
             ? `<a class="pager-link" href="${pageHref(nextPage.slug)}">
                 <span class="pager-label">Next</span>
-                <span>${nextPage.navTitle ?? nextPage.title}</span>
+                <strong>${nextPage.navTitle ?? nextPage.title}</strong>
               </a>`
-            : '<span class="pager-link pager-link-empty"></span>'
+            : '<span class="pager-link pager-empty"></span>'
         }
       </section>
     </main>
 
     <footer class="site-footer">
-      <p>Reference structure inspired by Munich 2025 while waiting for the next official template.</p>
-      <p>Use this page as a content scaffold, not as the final official judging environment.</p>
+      <p>Reference structure inspired by Munich 2025, not claimed as an official new-season template.</p>
+      <p>Use this page for structure review, then migrate the approved content into the final official host.</p>
     </footer>
   </div>
 `
+
+initDropdownNav()
