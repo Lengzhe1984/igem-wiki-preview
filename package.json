@@ -1,0 +1,16 @@
+{
+  "name": "igem-wiki-preview",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "dev:host": "vite --host",
+    "build": "vite build",
+    "preview": "vite preview",
+    "preview:host": "vite preview --host"
+  },
+  "devDependencies": {
+    "vite": "^8.0.0"
+  }
+}
