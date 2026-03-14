@@ -1011,7 +1011,7 @@ h3 {
 
 .page-layout {
   display: grid;
-  grid-template-columns: minmax(0, 1.16fr) minmax(300px, 0.84fr);
+  grid-template-columns: minmax(0, 1fr) minmax(280px, 320px);
   gap: 22px;
   margin-top: 22px;
   align-items: start;
@@ -1024,6 +1024,8 @@ h3 {
 }
 
 .page-sidebar {
+  width: min(100%, 320px);
+  justify-self: end;
   position: sticky;
   top: 108px;
 }
