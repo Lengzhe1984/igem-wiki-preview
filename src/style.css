@@ -993,12 +993,20 @@ h3 {
 }
 
 .content-card {
+  display: grid;
+  align-content: start;
+  gap: 12px;
   background:
     linear-gradient(180deg, rgba(255, 255, 255, 0.68) 0%, rgba(248, 243, 235, 0.94) 100%);
 }
 
 .content-card p {
   margin: 12px 0 0;
+}
+
+.content-card .page-pill {
+  width: fit-content;
+  margin-top: 6px;
 }
 
 .page-layout {

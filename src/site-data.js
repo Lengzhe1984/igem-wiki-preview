@@ -185,6 +185,58 @@ const homePage = {
         'A deployable-feeling page combines device form, captured signals, and user-facing recommendations in one narrative.',
     },
   ],
+  readerRoutes: [
+    {
+      eyebrow: 'Project logic',
+      title: 'Start with why senescence should be treated as a systems problem',
+      detail:
+        'Project Description and Problem & Inspiration explain why ROS, ethylene, water imbalance, and post-harvest variability need to be understood together.',
+      slug: 'project-description',
+      cta: 'Read the project frame',
+    },
+    {
+      eyebrow: 'Closed loop',
+      title: 'Follow the platform from signal detection to intervention timing',
+      detail:
+        'Design, Engineering, Wet Lab, and Dry Lab together show how FloraGuard becomes a programmable preservation workflow instead of a static additive.',
+      slug: 'design',
+      cta: 'Trace the system architecture',
+    },
+    {
+      eyebrow: 'Translation',
+      title: 'Jump ahead to real use, user context, and deployment boundaries',
+      detail:
+        'Human Practices, Safety, and Implementation clarify how the same logic changes when the user is a florist, a researcher, or a household consumer.',
+      slug: 'integrated-human-practices',
+      cta: 'See the translation path',
+    },
+  ],
+  deploymentRhythm: [
+    {
+      step: 'A',
+      title: 'Bench proof first',
+      detail:
+        'Validate senescence sensing, treatment response, and the timing window where intervention still changes visible flower quality.',
+    },
+    {
+      step: 'B',
+      title: 'Professional pilot next',
+      detail:
+        'Translate the platform into florist-facing monitoring and preservation workflows where operational decisions happen quickly.',
+    },
+    {
+      step: 'C',
+      title: 'Consumer care later',
+      detail:
+        'Reduce complexity into trustworthy recommendations that help households care for flowers without expert knowledge.',
+    },
+    {
+      step: 'D',
+      title: 'Scale with evidence',
+      detail:
+        'Use each stage to refine a stronger cross-species preservation logic rather than treating every bouquet as an isolated case.',
+    },
+  ],
   nextAdd: [
     'Experimental figures for ROS, ACC, ethylene, and vase life comparisons across treatments',
     'Smart vase photos, schematics, and a hardware workflow diagram',
@@ -1388,6 +1440,28 @@ const wikiGroups = [
             ],
           },
           {
+            type: 'metric-cards',
+            eyebrow: 'Interview coverage',
+            title: 'Three recurring patterns kept surfacing across stakeholder conversations',
+            items: [
+              {
+                label: 'Stakeholder groups',
+                value: '4',
+                detail: 'Growers, distributors, florists, and consumers all encounter flower loss from a different operational position.',
+              },
+              {
+                label: 'Recurring pain points',
+                value: '3',
+                detail: 'Hidden transport stress, uncertain care decisions, and weak consumer guidance repeatedly appeared in interviews.',
+              },
+              {
+                label: 'Design consequences',
+                value: '2',
+                detail: 'The project needed both better monitoring and simpler recommendation output, not biology alone.',
+              },
+            ],
+          },
+          {
             type: 'journey-strip',
             eyebrow: 'Feedback loop',
             title: 'Human practices reshaped the project in a concrete direction',
@@ -1442,6 +1516,41 @@ const wikiGroups = [
               ]),
               paragraph(
                 'These interviews reinforced that floral waste is not caused by one actor making one mistake. Instead, losses accumulate when every stage in the chain has incomplete information about flower condition.',
+              ),
+            ],
+          },
+          {
+            eyebrow: 'Decision map',
+            title: 'How stakeholder feedback translated into design choices',
+            blocks: [
+              table(
+                ['Observed need', 'Why it mattered', 'Project response'],
+                [
+                  ['Stress is often invisible during transport', 'quality may decline before visual damage becomes obvious', 'strengthened the case for monitoring hardware and prediction'],
+                  ['Florists need practical, fast decisions', 'retail handling leaves little room for complex interpretation', 'pushed the project toward clear intervention recommendations'],
+                  ['Consumers lack confidence in flower care', 'good preservation logic fails if end users do not trust it', 'reinforced the need for a simple smart-care interface'],
+                ],
+              ),
+              paragraph(
+                'This mapping keeps human practices from becoming a list of interviews. Instead, each conversation justifies a design decision that later appears in hardware, implementation, or communication.',
+              ),
+            ],
+          },
+          {
+            eyebrow: 'Stakeholder tension',
+            title: 'Where user priorities diverge across the floral chain',
+            blocks: [
+              table(
+                ['Stakeholder', 'Primary concern', 'Design implication'],
+                [
+                  ['Growers', 'maintain value after harvest without adding unrealistic process burden', 'preservation logic must remain operationally plausible'],
+                  ['Distributors', 'reduce loss during handling and variable cold-chain conditions', 'monitoring must capture cumulative stress rather than one static snapshot'],
+                  ['Florists', 'extend display quality with minimal extra work', 'recommendations must be fast, legible, and easy to act on'],
+                  ['Consumers', 'want flowers to last longer without learning specialist care', 'the final interface should favor simple prompts over raw biological data'],
+                ],
+              ),
+              callout(
+                'A strong final HP page can later add one representative pull quote under each row to show how those tensions appeared in real conversations.',
               ),
             ],
           },
@@ -1515,6 +1624,25 @@ const wikiGroups = [
               },
             ],
           },
+          {
+            type: 'journey-strip',
+            eyebrow: 'Staged translation',
+            title: 'Safety questions change as FloraGuard moves closer to real users',
+            items: [
+              {
+                title: 'Research scope',
+                detail: 'Inside the lab, the central question is whether engineered biological logic can be tested safely under confinement.',
+              },
+              {
+                title: 'Pilot translation',
+                detail: 'Once the project is framed as a florist or monitoring tool, product form and user handling become as important as biological mechanism.',
+              },
+              {
+                title: 'Future deployment',
+                detail: 'A user-facing version should rely on tightly bounded, non-release formats rather than simply extending live engineered systems into the field.',
+              },
+            ],
+          },
         ],
         sections: [
           {
@@ -1547,6 +1675,40 @@ const wikiGroups = [
               ),
               callout(
                 'For FloraGuard, the safest translation path is staged: validate in the lab first, then redesign for tightly controlled non-release applications.',
+              ),
+            ],
+          },
+          {
+            eyebrow: 'Use-context matrix',
+            title: 'Different use contexts create different safety questions',
+            blocks: [
+              table(
+                ['Context', 'Likely biological form', 'Main user contact', 'Primary control question'],
+                [
+                  ['Laboratory research', 'engineered cells or test systems', 'trained researchers', 'are containment and biosafety practices sufficient for mechanism testing?'],
+                  ['Florist-facing pilot', 'purified compounds, bounded kits, or controlled support tools', 'professional operators', 'can preservation benefits be delivered without open-ended biological exposure?'],
+                  ['Consumer-facing future device', 'non-release outputs plus recommendation software', 'general users', 'is the experience safe, understandable, and low-risk without specialist oversight?'],
+                ],
+              ),
+              paragraph(
+                'This matrix matters because the right safety answer depends on context. A lab construct, a professional tool, and a consumer product cannot be judged by the same deployment assumptions.',
+              ),
+            ],
+          },
+          {
+            eyebrow: 'Decision support',
+            title: 'Recommendation systems also need safety boundaries',
+            blocks: [
+              paragraph(
+                'FloraGuard is not only about biological safety. If the platform eventually produces care recommendations, those recommendations also need to be interpretable and bounded. Users should understand what is being suggested, why it is being suggested, and where uncertainty remains.',
+              ),
+              list(
+                [
+                  'keep user-facing prompts simple enough to avoid unsafe improvisation',
+                  'show that recommendations are based on observed condition rather than hidden black-box authority',
+                  'preserve a manual decision path so the system supports human judgment instead of replacing it',
+                ],
+                'ordered',
               ),
             ],
           },
@@ -1616,6 +1778,25 @@ const wikiGroups = [
               {
                 title: 'Consumer-facing format',
                 detail: 'A simpler smart-vase or care-assistant version should prioritize clarity, trust, and low-friction recommendations at home.',
+              },
+            ],
+          },
+          {
+            type: 'journey-strip',
+            eyebrow: 'Rollout cadence',
+            title: 'Implementation is strongest when each stage narrows the distance between data and action',
+            items: [
+              {
+                title: 'Validate',
+                detail: 'Show that condition signals, treatment logic, and intervention timing together improve vase-life outcome under controlled conditions.',
+              },
+              {
+                title: 'Pilot',
+                detail: 'Adapt the workflow for florists, where operational decisions must be practical, fast, and visibly useful.',
+              },
+              {
+                title: 'Simplify',
+                detail: 'Translate expert workflows into a consumer experience with low-friction prompts, understandable states, and trust signals.',
               },
             ],
           },
@@ -1705,6 +1886,23 @@ const wikiGroups = [
             ],
           },
           {
+            eyebrow: 'Pilot pathway',
+            title: 'What a realistic early deployment path could look like',
+            blocks: [
+              paragraph(
+                'A strong implementation page should show not just eventual applications, but the order in which those applications become plausible. For FloraGuard, florist-facing use is a more realistic intermediate step than going straight from bench work to a household product.',
+              ),
+              list(
+                [
+                  'start with controlled validation where treatment timing and readouts are measurable',
+                  'move to florist-oriented monitoring where workflow simplicity matters',
+                  'only then simplify the platform further for consumer-facing use',
+                ],
+                'ordered',
+              ),
+            ],
+          },
+          {
             eyebrow: 'Consumer use',
             title: 'Consumer smart vase',
             blocks: [
@@ -1732,6 +1930,23 @@ const wikiGroups = [
                   ['Florist kit', 'professionals', 'better operational preservation decisions'],
                   ['Consumer smart vase', 'households', 'simple guidance and improved flower care'],
                 ],
+              ),
+            ],
+          },
+          {
+            eyebrow: 'Interface logic',
+            title: 'What different users should actually see',
+            blocks: [
+              table(
+                ['User', 'Signals in the background', 'What they see', 'Desired decision'],
+                [
+                  ['Researcher', 'full treatment, timing, and measurement detail', 'raw data plus experimental comparison', 'interpret mechanism and optimize assays'],
+                  ['Florist', 'sensor trends, elapsed time, and quality state', 'clear care priority or intervention prompt', 'decide which bouquets need attention first'],
+                  ['Consumer', 'simplified condition estimate and recommendation timing', 'easy-to-follow care guidance', 'change water, adjust placement, or intervene at the right time'],
+                ],
+              ),
+              callout(
+                'Implementation becomes much more believable once every user context is linked to the exact decision the interface is supposed to improve.',
               ),
             ],
           },

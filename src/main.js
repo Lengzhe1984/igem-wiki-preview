@@ -107,6 +107,31 @@ const evidencePreviewMarkup = homePage.evidencePreview
   )
   .join('')
 
+const readerRouteMarkup = homePage.readerRoutes
+  .map(
+    (item, index) => `
+      <article class="content-card fade-card" style="--delay:${index * 65}ms">
+        <p class="card-kicker">${escapeHtml(item.eyebrow)}</p>
+        <h3>${escapeHtml(item.title)}</h3>
+        <p>${escapeHtml(item.detail)}</p>
+        <a class="page-pill" href="${pageHref(item.slug)}">${escapeHtml(item.cta)}</a>
+      </article>
+    `,
+  )
+  .join('')
+
+const deploymentRhythmMarkup = homePage.deploymentRhythm
+  .map(
+    (item, index) => `
+      <article class="flow-card fade-card" style="--delay:${index * 55}ms">
+        <span class="flow-step">${escapeHtml(item.step)}</span>
+        <h3>${escapeHtml(item.title)}</h3>
+        <p>${escapeHtml(item.detail)}</p>
+      </article>
+    `,
+  )
+  .join('')
+
 const editorialChipMarkup = homePage.editorialFeature.chips
   .map((chip) => `<span class="editorial-chip">${escapeHtml(chip)}</span>`)
   .join('')
@@ -289,6 +314,21 @@ document.querySelector('#app').innerHTML = `
 
       <section class="section-block">
         <div class="section-heading">
+          <p class="eyebrow">Reader routes</p>
+          <h2>Different readers should be able to enter the FloraGuard story from different angles</h2>
+          <p class="section-copy">
+            Many strong team wikis are easy to browse because they quietly offer more than one reading path.
+            FloraGuard now starts to do that too: one route for project logic, one for the closed-loop system,
+            and one for translation into real users and deployment boundaries.
+          </p>
+        </div>
+        <div class="content-card-grid">
+          ${readerRouteMarkup}
+        </div>
+      </section>
+
+      <section class="section-block">
+        <div class="section-heading">
           <p class="eyebrow">Visual direction</p>
           <h2>Flowers, stress, and smart care should all be visible in the interface</h2>
         </div>
@@ -304,6 +344,20 @@ document.querySelector('#app').innerHTML = `
         </div>
         <div class="module-grid">
           ${moduleMarkup}
+        </div>
+      </section>
+
+      <section class="section-block">
+        <div class="section-heading">
+          <p class="eyebrow">Deployment rhythm</p>
+          <h2>The homepage should already show how FloraGuard grows from bench proof into real care</h2>
+          <p class="section-copy">
+            This keeps Implementation, Safety, and Human Practices connected to the front page instead of
+            feeling like late-stage appendices. The rollout logic becomes part of the project identity.
+          </p>
+        </div>
+        <div class="flow-grid">
+          ${deploymentRhythmMarkup}
         </div>
       </section>
 
