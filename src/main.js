@@ -14,16 +14,30 @@ document.title = `${siteMeta.projectName} | iGEM Wiki Draft`
 
 const totalPages = flattenPages().length
 
-const metricMarkup = [
+const metricItems = [
   ...homePage.metrics,
   {
     value: String(totalPages),
     label: 'core wiki pages arranged into a reviewable FloraGuard narrative',
   },
 ]
+
+const metricMarkup = metricItems
   .map(
     (item, index) => `
       <div class="stat-card fade-card" style="--delay:${index * 55}ms">
+        <strong>${escapeHtml(item.value)}</strong>
+        <span>${escapeHtml(item.label)}</span>
+      </div>
+    `,
+  )
+  .join('')
+
+const floatingMetricMarkup = metricItems
+  .slice(0, 2)
+  .map(
+    (item, index) => `
+      <div class="floating-stat floating-stat-${index + 1} fade-card" style="--delay:${index * 95}ms">
         <strong>${escapeHtml(item.value)}</strong>
         <span>${escapeHtml(item.label)}</span>
       </div>
@@ -113,6 +127,10 @@ const statusMarkup = homePage.status
   .map((text) => `<li>${escapeHtml(text)}</li>`)
   .join('')
 
+const systemPillMarkup = homePage.platformCards
+  .map((item) => `<span class="system-pill">${escapeHtml(item.title)}</span>`)
+  .join('')
+
 document.querySelector('#app').innerHTML = `
   <div class="wiki-shell">
     <header class="site-header">
@@ -130,11 +148,12 @@ document.querySelector('#app').innerHTML = `
     </header>
 
     <main class="home-main">
-      <section class="hero-shell">
-        <div class="hero-copy">
+      <section class="hero-banner">
+        <div class="hero-banner-copy">
           <p class="eyebrow">${escapeHtml(homePage.eyebrow)}</p>
           <h1>${escapeHtml(siteMeta.projectName)}</h1>
           <p class="project-subtitle">${escapeHtml(siteMeta.subtitle)}</p>
+          <p class="hero-deck">${escapeHtml(siteMeta.deck)}</p>
           <div class="intro-stack">
             ${leadMarkup}
           </div>
@@ -142,21 +161,41 @@ document.querySelector('#app').innerHTML = `
             <a class="button button-primary" href="${pageHref('project-description')}">Open Project Description</a>
             <a class="button button-secondary" href="${pageHref('design')}">Open Design</a>
           </div>
+          <div class="hero-system-pills">
+            ${systemPillMarkup}
+          </div>
         </div>
 
-        <aside class="hero-side">
-          <figure class="media-frame">
-            <img class="hero-art" src="${homePage.heroImage}" alt="${escapeHtml(homePage.heroAlt)}" />
-            <figcaption class="visual-caption">${escapeHtml(homePage.heroCaption)}</figcaption>
-          </figure>
-          <p class="panel-kicker">Current build</p>
+        <div class="hero-stage">
+          <div class="hero-stage-frame">
+            <img class="hero-stage-art" src="${homePage.heroImage}" alt="${escapeHtml(homePage.heroAlt)}" />
+            ${floatingMetricMarkup}
+          </div>
+          <p class="visual-caption">${escapeHtml(homePage.heroCaption)}</p>
+        </div>
+      </section>
+
+      <section class="section-block split-block">
+        <div>
+          <div class="section-heading">
+            <p class="eyebrow">Current build</p>
+            <h2>What the best-performing winner wikis do well, this version now starts to emulate</h2>
+          </div>
+          <p class="section-copy">
+            The strongest 2025 wikis consistently use a bold project-specific visual language,
+            grouped navigation, large above-the-fold imagery, and long-form sections that stay
+            readable because the page keeps orienting you. FloraGuard is now being pushed in that
+            direction rather than staying a neutral template.
+          </p>
+          <ul class="mini-list mini-list-spacious">
+            ${statusMarkup}
+          </ul>
+        </div>
+        <div class="panel-stack">
           <div class="stat-grid">
             ${metricMarkup}
           </div>
-          <ul class="mini-list">
-            ${statusMarkup}
-          </ul>
-        </aside>
+        </div>
       </section>
 
       <section class="section-block">

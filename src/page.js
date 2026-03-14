@@ -25,6 +25,13 @@ const siblings = wikiGroups.find((group) => group.slug === page.groupSlug)?.page
 
 document.title = `${page.title} | ${siteMeta.projectName}`
 
+function sectionId(title) {
+  return title
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/^-+|-+$/g, '')
+}
+
 function renderList(items, style = 'unordered') {
   const tag = style === 'ordered' ? 'ol' : 'ul'
   const className = style === 'ordered' ? 'rich-list rich-list-ordered' : 'rich-list'
@@ -88,7 +95,7 @@ function renderBlock(block) {
 const sectionMarkup = page.sections
   .map(
     (section, index) => `
-      <section class="story-section fade-card" style="--delay:${index * 55}ms">
+      <section id="${sectionId(section.title)}" class="story-section fade-card" style="--delay:${index * 55}ms">
         ${section.eyebrow ? `<p class="story-section-label">${escapeHtml(section.eyebrow)}</p>` : ''}
         <h2>${escapeHtml(section.title)}</h2>
         <div class="story-stack">
@@ -124,6 +131,14 @@ const nextAddMarkup = page.nextAdd
   )
   .join('')
 
+const tocMarkup = page.sections
+  .map(
+    (section) => `
+      <a class="toc-link" href="#${sectionId(section.title)}">${escapeHtml(section.title)}</a>
+    `,
+  )
+  .join('')
+
 document.querySelector('#app').innerHTML = `
   <div class="wiki-shell">
     <header class="site-header">
@@ -149,8 +164,11 @@ document.querySelector('#app').innerHTML = `
         <span>${escapeHtml(page.navTitle ?? page.title)}</span>
       </nav>
 
-      <section class="hero-shell page-shell">
-        <div class="hero-copy">
+      <section class="page-banner">
+        <div class="page-banner-art-wrap">
+          <img class="page-banner-art" src="${page.image}" alt="${escapeHtml(page.imageAlt)}" />
+        </div>
+        <div class="page-banner-overlay">
           <p class="eyebrow">${escapeHtml(page.groupTitle)}</p>
           <h1>${escapeHtml(page.title)}</h1>
           <p class="lede">${escapeHtml(page.summary)}</p>
@@ -158,26 +176,31 @@ document.querySelector('#app').innerHTML = `
             <span>${String(currentIndex + 1).padStart(2, '0')} / ${String(allPages.length).padStart(2, '0')}</span>
             <span>FloraGuard wiki draft</span>
           </div>
+          <p class="visual-caption">${escapeHtml(page.imageCaption)}</p>
         </div>
-
-        <aside class="hero-side">
-          <figure class="media-frame">
-            <img class="hero-art" src="${page.image}" alt="${escapeHtml(page.imageAlt)}" />
-            <figcaption class="visual-caption">${escapeHtml(page.imageCaption)}</figcaption>
-          </figure>
-          <p class="panel-kicker">At a glance</p>
-          <ul class="mini-list">
-            ${highlightMarkup}
-          </ul>
-        </aside>
       </section>
 
       <section class="page-layout">
         <article class="article-stack">
+          <section class="story-section story-summary fade-card">
+            <p class="story-section-label">At a glance</p>
+            <h2>Why this page matters in the FloraGuard story</h2>
+            <ul class="mini-list mini-list-spacious">
+              ${highlightMarkup}
+            </ul>
+          </section>
+
           ${sectionMarkup}
         </article>
 
         <aside class="page-sidebar">
+          <section class="side-panel">
+            <p class="panel-kicker">On this page</p>
+            <nav class="toc-list" aria-label="On this page">
+              ${tocMarkup}
+            </nav>
+          </section>
+
           <section class="side-panel">
             <p class="panel-kicker">Same-section pages</p>
             <div class="pill-list compact">
