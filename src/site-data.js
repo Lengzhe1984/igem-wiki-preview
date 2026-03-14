@@ -935,6 +935,17 @@ const wikiGroups = [
             title: 'Characterize senescence progression in selected cut flowers',
             blocks: [
               paragraph('We selected representative flower species and monitored the baseline progression of decline.'),
+              paragraph(
+                'Species were chosen to span different expected vase-life ranges and senescence behaviors, allowing FloraGuard to be framed against realistic variation rather than one idealized flower type.',
+              ),
+              table(
+                ['Flower type', 'Why include it', 'Main readout emphasis'],
+                [
+                  ['Rose', 'Commercially common and quality-sensitive', 'wilting and visible ornamental decline'],
+                  ['Tulip', 'Short vase life and rapid shape change', 'timing sensitivity and dehydration response'],
+                  ['Carnation or similar long-life flower', 'Provides a slower senescence comparison', 'extended decline curve and treatment durability'],
+                ],
+              ),
               paragraph('Measured observations include:'),
               list(['ROS accumulation', 'petal wilting', 'vase life duration']),
             ],
@@ -952,12 +963,23 @@ const wikiGroups = [
                 ],
                 'ordered',
               ),
+              table(
+                ['Group', 'Purpose'],
+                [
+                  ['Control (water)', 'Define untreated senescence baseline'],
+                  ['Melatonin treatment', 'Test whether antioxidant-centered buffering delays decline'],
+                  ['Melatonin + secondary module', 'Explore whether multi-module intervention outperforms a single treatment logic'],
+                ],
+              ),
               paragraph('Measured parameters include:'),
               list([
                 'vase life',
                 'antioxidant enzyme activity',
                 'visual senescence scoring',
               ]),
+              paragraph(
+                'By recording both biochemical and visible outputs over time, this aim is designed to show not only whether melatonin helps, but when its effect becomes most meaningful during the senescence trajectory.',
+              ),
             ],
           },
           {
@@ -969,6 +991,26 @@ const wikiGroups = [
               ),
               paragraph('Measurements include:'),
               list(['ACC concentration', 'ethylene production', 'vase life extension']),
+              callout(
+                'This aim matters because it tests whether FloraGuard can act on hormone-linked decline directly rather than only buffering downstream stress damage.',
+              ),
+            ],
+          },
+          {
+            eyebrow: 'Readout strategy',
+            title: 'How wet lab measurements connect mechanism to outcome',
+            blocks: [
+              table(
+                ['Readout', 'Why it matters', 'What it should explain'],
+                [
+                  ['ROS and oxidative markers', 'Track stress burden in petals', 'whether treatment reduces biochemical damage'],
+                  ['Visual senescence score', 'Captures ornamental quality loss', 'whether users would actually perceive improvement'],
+                  ['Vase life', 'Most intuitive outcome metric', 'whether FloraGuard changes usable post-harvest duration'],
+                ],
+              ),
+              paragraph(
+                'Together, these readouts keep the wet lab page grounded in both mechanism and practical relevance, which is usually what makes strong iGEM experiment pages feel convincing.',
+              ),
             ],
           },
         ],
@@ -1079,6 +1121,14 @@ const wikiGroups = [
               ),
               paragraph('Model inputs include:'),
               list(['temperature', 'humidity', 'harvest stage', 'treatment conditions']),
+              table(
+                ['Input class', 'Example variable', 'Why it matters'],
+                [
+                  ['Environment', 'temperature or humidity', 'strongly affects dehydration and metabolic stress'],
+                  ['Harvest context', 'developmental stage at cutting', 'changes baseline vase-life potential'],
+                  ['Intervention', 'treatment identity or dose', 'determines whether the decline curve can shift'],
+                ],
+              ),
               callout('Model output: predicted vase life and intervention timing.'),
             ],
           },
@@ -1088,6 +1138,29 @@ const wikiGroups = [
             blocks: [
               paragraph(
                 'We simulated melatonin concentration-response relationships to determine optimal treatment strategies and identify useful operating ranges for preservation.',
+              ),
+              paragraph(
+                'The goal is not to pick one arbitrary concentration, but to understand where treatment becomes effective, where gains plateau, and where intervention could become impractical or wasteful.',
+              ),
+            ],
+          },
+          {
+            eyebrow: 'Validation',
+            title: 'How the dry lab should be validated against experiments',
+            blocks: [
+              paragraph(
+                'A useful model must be judged against experimental outcomes rather than only internal consistency. For FloraGuard, that means comparing predicted decline timing and predicted treatment benefit against measured vase-life and senescence observations.',
+              ),
+              list(
+                [
+                  'compare predicted vase life with observed vase life across conditions',
+                  'test whether model sensitivity matches biological intuition',
+                  'check whether recommendations improve over static treatment timing',
+                ],
+                'ordered',
+              ),
+              callout(
+                'The most important validation question is not “is the model mathematically elegant?” but “does it lead to better preservation decisions?”',
               ),
             ],
           },
@@ -1207,6 +1280,14 @@ const wikiGroups = [
                 'camera-based flower status tracking',
                 'data logging',
               ]),
+              table(
+                ['Signal', 'Why capture it', 'How it informs care'],
+                [
+                  ['Temperature', 'Strongly shapes senescence rate', 'helps estimate remaining vase life'],
+                  ['Elapsed time after harvest', 'Tracks cumulative stress exposure', 'provides context for intervention urgency'],
+                  ['Visual flower condition', 'Captures visible quality decline', 'supports user-facing scoring and recommendation'],
+                ],
+              ),
             ],
           },
           {
@@ -1215,6 +1296,26 @@ const wikiGroups = [
             blocks: [
               paragraph(
                 'This device supports senescence prediction and preservation recommendations, creating a path from experimental understanding toward florist and consumer-facing tools.',
+              ),
+              list(
+                [
+                  'observe condition continuously instead of relying on occasional manual inspection',
+                  'translate model output into readable preservation prompts',
+                  'compare different storage or handling conditions over time',
+                ],
+                'ordered',
+              ),
+            ],
+          },
+          {
+            eyebrow: 'Workflow',
+            title: 'From measurement to recommendation',
+            blocks: [
+              paragraph(
+                'The hardware concept matters because it turns FloraGuard from a scientific idea into a usable workflow. A florist or consumer does not need raw sensor traces; they need a simple answer about whether the flower is stable, declining, or in need of intervention.',
+              ),
+              callout(
+                'A future hardware figure should make the interface legible enough that a reader can immediately understand how the recommendation is produced.',
               ),
             ],
           },
@@ -1318,6 +1419,15 @@ const wikiGroups = [
                 'florists',
                 'consumers',
               ]),
+              table(
+                ['Stakeholder', 'What we asked about'],
+                [
+                  ['Growers', 'post-harvest handling, loss points, and treatment practicality'],
+                  ['Distributors', 'transport conditions, storage windows, and quality variability'],
+                  ['Florists', 'display life, uncertainty in care decisions, and customer expectations'],
+                  ['Consumers', 'flower-care habits, confusion points, and desired guidance'],
+                ],
+              ),
             ],
           },
           {
@@ -1330,6 +1440,9 @@ const wikiGroups = [
                 'limited knowledge of flower care among consumers',
                 'strong interest in technologies that extend vase life',
               ]),
+              paragraph(
+                'These interviews reinforced that floral waste is not caused by one actor making one mistake. Instead, losses accumulate when every stage in the chain has incomplete information about flower condition.',
+              ),
             ],
           },
           {
@@ -1338,6 +1451,14 @@ const wikiGroups = [
             blocks: [
               paragraph(
                 'These insights guided the design of FloraGuard as a practical preservation system rather than a single laboratory intervention. They reinforced the need for monitoring, prediction, and formats that could work for both professionals and consumers.',
+              ),
+              list(
+                [
+                  'stakeholder concern about hidden transport stress strengthened the case for monitoring hardware',
+                  'consumer uncertainty strengthened the case for simple recommendation outputs',
+                  'professional demand for practical value strengthened the focus on deployable preservation formats',
+                ],
+                'ordered',
               ),
             ],
           },
@@ -1407,6 +1528,14 @@ const wikiGroups = [
                 'no environmental release is intended',
                 'downstream applications may use cell-free systems or purified compounds',
               ]),
+              table(
+                ['Risk area', 'Current boundary', 'Mitigation logic'],
+                [
+                  ['Engineered biological components', 'lab use only', 'containment and institutional biosafety practice'],
+                  ['Future preservation product', 'not directly released as engineered cells', 'favor purified or cell-free formats'],
+                  ['User interpretation', 'recommendation systems must remain transparent', 'separate decision support from uncontrolled autonomous action'],
+                ],
+              ),
             ],
           },
           {
@@ -1415,6 +1544,26 @@ const wikiGroups = [
             blocks: [
               paragraph(
                 'All laboratory work follows institutional biosafety guidelines. As the project moves toward application thinking, we treat deployable formats separately from laboratory engineering so that future translation remains responsible and controlled.',
+              ),
+              callout(
+                'For FloraGuard, the safest translation path is staged: validate in the lab first, then redesign for tightly controlled non-release applications.',
+              ),
+            ],
+          },
+          {
+            eyebrow: 'Preferred pathway',
+            title: 'Why staged translation matters',
+            blocks: [
+              paragraph(
+                'A staged pathway avoids collapsing research logic and product logic into one step. Laboratory engineering answers whether FloraGuard can work; implementation design answers how a future version could be used safely.',
+              ),
+              list(
+                [
+                  'validate biological logic under controlled conditions',
+                  'define which outputs or compounds could be separated from living systems',
+                  'only then consider user-facing preservation formats',
+                ],
+                'ordered',
               ),
             ],
           },
@@ -1536,6 +1685,9 @@ const wikiGroups = [
             title: 'Laboratory system',
             blocks: [
               paragraph('This format is used for studying flower senescence biology and testing preservation logic under controlled conditions.'),
+              paragraph(
+                'The laboratory version is where FloraGuard can be measured most rigorously, because treatment, timing, and environmental variables can be compared under structured experimental conditions.',
+              ),
             ],
           },
           {
@@ -1545,6 +1697,11 @@ const wikiGroups = [
               paragraph(
                 'A florist-oriented version would pair preservation solutions with monitoring tools to improve storage, transport, and display decisions.',
               ),
+              list([
+                'helps prioritize intervention for bouquets at highest risk',
+                'supports more consistent display quality during retail handling',
+                'creates a professional-facing use case before home deployment',
+              ]),
             ],
           },
           {
@@ -1554,6 +1711,11 @@ const wikiGroups = [
               paragraph(
                 'A household device could provide flower care recommendations, bringing predictive preservation into the home and improving consumer experience.',
               ),
+              list([
+                'translate complex biology into simple flower-care prompts',
+                'reduce guesswork about when to change water or intervene',
+                'make post-purchase flower care feel more trustworthy and useful',
+              ]),
             ],
           },
           {
@@ -1562,6 +1724,14 @@ const wikiGroups = [
             blocks: [
               paragraph(
                 'Together, these implementations aim to reduce floral waste while showing that synthetic biology can support practical post-harvest management rather than remain locked inside the lab.',
+              ),
+              table(
+                ['Format', 'Main user', 'Primary value'],
+                [
+                  ['Laboratory system', 'researchers', 'evidence generation and mechanism testing'],
+                  ['Florist kit', 'professionals', 'better operational preservation decisions'],
+                  ['Consumer smart vase', 'households', 'simple guidance and improved flower care'],
+                ],
               ),
             ],
           },
