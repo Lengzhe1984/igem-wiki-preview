@@ -194,6 +194,41 @@ const wikiGroups = [
           'Comparative baseline imagery of untreated versus treated flowers',
           'Additional citations for species-specific senescence behavior',
         ],
+        modules: [
+          {
+            type: 'visual-panel',
+            tone: 'project',
+            eyebrow: 'Project frame',
+            title: 'This page should explain why cut flower aging is controllable instead of inevitable',
+            image: floralSupplyChainArt,
+            alt:
+              'Illustrated floral supply chain showing how stress accumulates and where FloraGuard can intervene.',
+            caption:
+              'A system-level framing figure for the Project Description page.',
+            lede:
+              'Strong project-description pages quickly move from background facts to a clear systems hypothesis. Here, that hypothesis is that senescence can be detected, influenced, and timed rather than merely endured.',
+            points: [
+              'Show that senescence is multi-factorial, not a single-cause problem.',
+              'Connect melatonin and ACC regulation as complementary levers rather than separate ideas.',
+              'Frame FloraGuard as a controllable intervention system from the beginning.',
+            ],
+          },
+          {
+            type: 'comparison-grid',
+            eyebrow: 'Concept shift',
+            title: 'FloraGuard changes the project from treatment-first thinking to systems-first thinking',
+            items: [
+              {
+                title: 'Conventional preservation',
+                detail: 'Apply sugar, antimicrobials, or cold storage and hope the flower responds well enough under variable conditions.',
+              },
+              {
+                title: 'Programmable preservation',
+                detail: 'Sense condition, buffer oxidative stress, modulate ethylene-linked decline, and adapt timing based on what the flower is actually experiencing.',
+              },
+            ],
+          },
+        ],
         sections: [
           {
             eyebrow: 'Background',
@@ -269,6 +304,45 @@ const wikiGroups = [
           'Images showing progressive senescence across representative species',
           'Quantitative waste or loss estimates from stakeholder interviews or literature',
         ],
+        modules: [
+          {
+            type: 'visual-panel',
+            tone: 'problem',
+            eyebrow: 'Problem picture',
+            title: 'The problem page should make floral waste feel visible before the reader reaches the science',
+            image: floralSupplyChainArt,
+            alt:
+              'Illustrated supply chain view of cut flowers moving from harvest through transport to smart care.',
+            caption:
+              'A visual summary of where value is lost across the floral chain.',
+            lede:
+              'Many strong iGEM pages use one simple image to make the problem legible. For FloraGuard, that means showing how transport stress, dehydration, and retail handling all compress vase life before the bouquet reaches home.',
+            points: [
+              'Anchor the reader in the full journey from cutting to consumer use.',
+              'Use species examples to make loss feel concrete rather than abstract.',
+              'Set up why static preservation strategies break under variable real-world conditions.',
+            ],
+          },
+          {
+            type: 'step-cards',
+            eyebrow: 'Pain points',
+            title: 'Three things make current floral care feel structurally fragile',
+            items: [
+              {
+                title: 'Timing is opaque',
+                detail: 'People usually do not know when stress accumulation has crossed the point where intervention still helps.',
+              },
+              {
+                title: 'Responses vary by species',
+                detail: 'A treatment that helps one flower type may underperform or over-correct in another context.',
+              },
+              {
+                title: 'Retail and home care disconnect',
+                detail: 'By the time the bouquet reaches the user, hidden transport and storage damage may already dominate the outcome.',
+              },
+            ],
+          },
+        ],
         sections: [
           {
             eyebrow: 'Problem framing',
@@ -331,6 +405,49 @@ const wikiGroups = [
           'A full system diagram linking each module and its inputs or outputs',
           'Promoter or response logic details for the sensing module',
           'A combined workflow figure connecting biology, hardware, and prediction',
+        ],
+        modules: [
+          {
+            type: 'visual-panel',
+            tone: 'design',
+            eyebrow: 'System architecture',
+            title: 'Design pages work best when they show how each module hands off to the next',
+            image: floralHeroArt,
+            alt:
+              'Illustrated FloraGuard platform showing vase, floral modules, and monitoring traces.',
+            caption:
+              'A closed-loop architecture placeholder for the Design page.',
+            lede:
+              'The goal of this page is not only to list modules, but to show how sensing, biological response, and monitoring become one coherent platform.',
+            points: [
+              'Start with the system overview before zooming into individual modules.',
+              'Keep the handoff between sensing, response, and prediction visible.',
+              'Use one architecture graphic to stop the design from feeling fragmented.',
+            ],
+          },
+          {
+            type: 'journey-strip',
+            eyebrow: 'Closed loop',
+            title: 'Design is easiest to grasp when the platform reads as one loop',
+            items: [
+              {
+                title: 'Sense',
+                detail: 'Monitor ROS, ethylene-linked decline, and dehydration-associated stress cues.',
+              },
+              {
+                title: 'Respond',
+                detail: 'Trigger melatonin-centered buffering and ACC-linked ethylene control.',
+              },
+              {
+                title: 'Observe',
+                detail: 'Use hardware and image-informed monitoring to track how condition changes over time.',
+              },
+              {
+                title: 'Predict',
+                detail: 'Feed those observations back into intervention timing and deployment strategy.',
+              },
+            ],
+          },
         ],
         sections: [
           {
@@ -418,6 +535,49 @@ const wikiGroups = [
           'A DBTL diagram or timeline showing iteration points',
           'Specific constructs, strains, or treatment variants used in each cycle',
           'Result snapshots that show what changed after each learning stage',
+        ],
+        modules: [
+          {
+            type: 'visual-panel',
+            tone: 'wet',
+            eyebrow: 'Engineering logic',
+            title: 'A DBTL page should show iteration, not just four headings in sequence',
+            image: floralLabArt,
+            alt:
+              'Illustrated floral lab scene showing experiment loops and measurement motifs.',
+            caption:
+              'A placeholder for a future DBTL cycle diagram or iteration storyboard.',
+            lede:
+              'Good engineering pages make the learning loop tangible. The reader should understand what was designed, what was tested, and what changed after the test.',
+            points: [
+              'Use a loop or timeline, not isolated headings alone.',
+              'Tie each phase to a specific experimental or design decision.',
+              'Show what was learned, not only what was done.',
+            ],
+          },
+          {
+            type: 'journey-strip',
+            eyebrow: 'DBTL cycle',
+            title: 'Engineering becomes legible when each stage answers a different question',
+            items: [
+              {
+                title: 'Design',
+                detail: 'What signals and responses should the FloraGuard system include?',
+              },
+              {
+                title: 'Build',
+                detail: 'How do those ideas become constructs, treatments, and prototype parts?',
+              },
+              {
+                title: 'Test',
+                detail: 'Which outputs show that flower quality actually changes?',
+              },
+              {
+                title: 'Learn',
+                detail: 'How do the results reshape thresholds, doses, and deployment logic?',
+              },
+            ],
+          },
         ],
         sections: [
           {
@@ -932,6 +1092,42 @@ const wikiGroups = [
           'Risk assessment for any engineered microbes or treatment components',
           'A future-use decision tree distinguishing lab-only versus deployable formats',
         ],
+        modules: [
+          {
+            type: 'comparison-grid',
+            eyebrow: 'Boundary setting',
+            title: 'Safety pages become clearer when they separate present lab practice from future deployment thinking',
+            items: [
+              {
+                title: 'Current project boundary',
+                detail: 'Engineered systems remain confined to laboratory use, with no environmental release intended in the present project scope.',
+              },
+              {
+                title: 'Future translation boundary',
+                detail: 'Any real-world preservation product should move toward cell-free, purified, or otherwise tightly controlled formats before practical deployment.',
+              },
+            ],
+          },
+          {
+            type: 'step-cards',
+            eyebrow: 'Safety principles',
+            title: 'Three ideas should stay visible throughout the whole project narrative',
+            items: [
+              {
+                title: 'Confinement',
+                detail: 'Keep engineered biological components inside approved laboratory settings.',
+              },
+              {
+                title: 'Control',
+                detail: 'Treat future translation formats as a separate design problem, not an automatic extension of lab work.',
+              },
+              {
+                title: 'Responsibility',
+                detail: 'Make risk assessment and user context part of implementation thinking from the start.',
+              },
+            ],
+          },
+        ],
         sections: [
           {
             eyebrow: 'Principles',
@@ -972,6 +1168,41 @@ const wikiGroups = [
           'User journey diagrams for florist and consumer scenarios',
           'A deployment comparison table covering cost, complexity, and biosafety',
           'Photos or mockups for kit packaging and smart vase use',
+        ],
+        modules: [
+          {
+            type: 'visual-panel',
+            tone: 'hardware',
+            eyebrow: 'Deployment picture',
+            title: 'Implementation pages should show what FloraGuard becomes outside the lab',
+            image: smartVaseArt,
+            alt:
+              'Illustrated smart vase and interface showing a possible deployment direction for FloraGuard.',
+            caption:
+              'A visual transition from research platform to product-facing preservation formats.',
+            lede:
+              'This page is where the project starts to feel real: what does FloraGuard look like in a florist workflow, and what changes when the user is a consumer instead of a researcher?',
+            points: [
+              'Translate the platform into concrete use formats.',
+              'Keep biosafety and practicality in the same conversation.',
+              'Show how monitoring changes recommendations for different users.',
+            ],
+          },
+          {
+            type: 'comparison-grid',
+            eyebrow: 'Deployment formats',
+            title: 'Different users need different versions of the same platform logic',
+            items: [
+              {
+                title: 'Florist-facing format',
+                detail: 'Higher-touch monitoring and recommendation tools can help manage transport, storage, and display quality at professional scale.',
+              },
+              {
+                title: 'Consumer-facing format',
+                detail: 'A simpler smart-vase or care-assistant version should prioritize clarity, trust, and low-friction recommendations at home.',
+              },
+            ],
+          },
         ],
         sections: [
           {
@@ -1026,6 +1257,42 @@ const wikiGroups = [
           'Reusable protocols, code, or hardware documentation for other teams',
           'A clear statement of what parts of the framework are novel or transferable',
         ],
+        modules: [
+          {
+            type: 'comparison-grid',
+            eyebrow: 'Contribution lens',
+            title: 'The contribution is stronger when it is framed against what floral preservation usually looks like',
+            items: [
+              {
+                title: 'Typical preservation framing',
+                detail: 'Focuses on a single additive, treatment, or storage condition without integrating timing, sensing, and downstream usability.',
+              },
+              {
+                title: 'FloraGuard framing',
+                detail: 'Treats post-harvest quality as a programmable systems problem where biology, hardware, and prediction support each other.',
+              },
+            ],
+          },
+          {
+            type: 'step-cards',
+            eyebrow: 'Reusable outputs',
+            title: 'What other teams or users could borrow from FloraGuard',
+            items: [
+              {
+                title: 'Framework',
+                detail: 'A general way to think about preservation as closed-loop management rather than static treatment.',
+              },
+              {
+                title: 'Integration pattern',
+                detail: 'A project structure that combines wet lab, dry lab, hardware, and implementation in one logic chain.',
+              },
+              {
+                title: 'Transferable methods',
+                detail: 'Protocols, monitoring ideas, and modeling logic that could extend to other horticultural preservation problems.',
+              },
+            ],
+          },
+        ],
         sections: [
           {
             eyebrow: 'Contribution',
@@ -1074,6 +1341,49 @@ const wikiGroups = [
           'Role matrix across wet lab, dry lab, hardware, and wiki work',
           'Advisor, instructor, and institutional support acknowledgements',
         ],
+        modules: [
+          {
+            type: 'visual-panel',
+            tone: 'team',
+            eyebrow: 'Team picture',
+            title: 'Great team pages connect people to work packages, not just names to faces',
+            image: floralNotesArt,
+            alt:
+              'Illustrated planning board and floral notebook representing multidisciplinary teamwork.',
+            caption:
+              'A placeholder for future team photos, role diagrams, and collaboration snapshots.',
+            lede:
+              'This page should eventually show who built what, how the team coordinated across disciplines, and what kind of expertise made FloraGuard possible.',
+            points: [
+              'Map people to wet lab, dry lab, hardware, HP, and wiki work.',
+              'Use photos and role groupings to make the team memorable.',
+              'Show collaboration flow, not just membership.',
+            ],
+          },
+          {
+            type: 'step-cards',
+            eyebrow: 'Role clusters',
+            title: 'The team works because different expertise areas support different parts of the story',
+            items: [
+              {
+                title: 'Biology and plant science',
+                detail: 'Define senescence mechanisms, treatment strategy, and experimental readouts.',
+              },
+              {
+                title: 'Engineering and hardware',
+                detail: 'Translate the project into a monitorable and eventually deployable device concept.',
+              },
+              {
+                title: 'Modeling and data',
+                detail: 'Turn observations into prediction, intervention timing, and decision support.',
+              },
+              {
+                title: 'Narrative and human practices',
+                detail: 'Connect the science to stakeholder needs, implementation, and clear public communication.',
+              },
+            ],
+          },
+        ],
         sections: [
           {
             eyebrow: 'Composition',
@@ -1114,6 +1424,45 @@ const wikiGroups = [
           'More cut flower senescence and post-harvest physiology papers',
           'Method references for ROS, ACC, and vase life measurements',
           'Hardware and modeling references once those sections are finalized',
+        ],
+        modules: [
+          {
+            type: 'visual-panel',
+            tone: 'references',
+            eyebrow: 'Literature map',
+            title: 'Reference pages work better when the reader can see what each paper supports',
+            image: floralNotesArt,
+            alt:
+              'Illustrated literature notes and floral research motifs representing the project bibliography.',
+            caption:
+              'A placeholder for future citation clusters or an annotated bibliography overview.',
+            lede:
+              'Instead of feeling like a dump of citations, this page should explain which papers justify the senescence model, the treatment logic, and the future deployment path.',
+            points: [
+              'Group literature by what part of FloraGuard it supports.',
+              'Grow from core citations into a full methods and modeling bibliography.',
+              'Keep references tied to the project logic, not detached from it.',
+            ],
+          },
+          {
+            type: 'step-cards',
+            eyebrow: 'Literature pillars',
+            title: 'The current bibliography already supports three core pillars of the project',
+            items: [
+              {
+                title: 'Melatonin biology',
+                detail: 'Supports antioxidant buffering, stress tolerance, and the choice of a senescence-delaying regulator.',
+              },
+              {
+                title: 'ACC deaminase and ethylene',
+                detail: 'Supports the idea that manipulating the ethylene precursor pathway can delay floral aging.',
+              },
+              {
+                title: 'Post-harvest physiology',
+                detail: 'Supports the broader framing that cut flower decline is a systems problem involving water balance, microbes, and stress signaling.',
+              },
+            ],
+          },
         ],
         sections: [
           {

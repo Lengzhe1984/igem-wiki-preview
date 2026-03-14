@@ -1098,6 +1098,36 @@ h3 {
     linear-gradient(180deg, rgba(255, 255, 255, 0.82) 0%, rgba(250, 238, 242, 0.98) 100%);
 }
 
+.feature-visual-project {
+  background:
+    radial-gradient(circle at top right, rgba(109, 140, 87, 0.12), transparent 24%),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.82) 0%, rgba(248, 241, 234, 0.98) 100%);
+}
+
+.feature-visual-problem {
+  background:
+    radial-gradient(circle at top right, rgba(191, 84, 125, 0.14), transparent 24%),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.82) 0%, rgba(250, 236, 242, 0.98) 100%);
+}
+
+.feature-visual-design {
+  background:
+    radial-gradient(circle at top right, rgba(109, 140, 87, 0.16), transparent 24%),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.82) 0%, rgba(242, 248, 239, 0.98) 100%);
+}
+
+.feature-visual-team {
+  background:
+    radial-gradient(circle at top right, rgba(230, 167, 103, 0.16), transparent 24%),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.82) 0%, rgba(249, 242, 235, 0.98) 100%);
+}
+
+.feature-visual-references {
+  background:
+    radial-gradient(circle at top right, rgba(145, 132, 179, 0.16), transparent 24%),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.82) 0%, rgba(243, 240, 249, 0.98) 100%);
+}
+
 .feature-card-grid,
 .metric-card-grid,
 .comparison-grid {
@@ -1443,6 +1473,26 @@ body[data-page="integrated-human-practices"] .side-panel,
 body[data-page="integrated-human-practices"] .story-summary {
   background:
     linear-gradient(180deg, rgba(255, 255, 255, 0.76) 0%, rgba(250, 238, 242, 0.98) 100%);
+}
+
+body[data-page="project-description"] .side-panel,
+body[data-page="project-description"] .story-summary,
+body[data-page="design"] .side-panel,
+body[data-page="design"] .story-summary {
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.76) 0%, rgba(246, 241, 234, 0.98) 100%);
+}
+
+body[data-page="team"] .side-panel,
+body[data-page="team"] .story-summary {
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.76) 0%, rgba(249, 242, 235, 0.98) 100%);
+}
+
+body[data-page="references"] .side-panel,
+body[data-page="references"] .story-summary {
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.76) 0%, rgba(243, 240, 249, 0.98) 100%);
 }
 
 .fade-card {
