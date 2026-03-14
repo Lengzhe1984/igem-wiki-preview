@@ -1800,6 +1800,9 @@ const wikiGroups = [
                 'integrating biological and hardware systems',
                 'proposing a new preservation strategy for horticultural products',
               ]),
+              paragraph(
+                'Taken together, these contributions mean that FloraGuard is not only a treatment concept. It is a proposal for how synthetic biology can reason about post-harvest quality as a controllable systems problem.',
+              ),
             ],
           },
           {
@@ -1808,6 +1811,40 @@ const wikiGroups = [
             blocks: [
               paragraph(
                 'The broader contribution of FloraGuard is conceptual as well as technical. It reframes preservation as an active systems problem, opening a new direction for synthetic biology in post-harvest applications.',
+              ),
+            ],
+          },
+          {
+            eyebrow: 'Comparison',
+            title: 'How FloraGuard differs from typical flower-preservation thinking',
+            blocks: [
+              table(
+                ['Question', 'Typical approach', 'FloraGuard approach'],
+                [
+                  ['What is adjusted?', 'one additive or storage condition', 'a connected system of sensing, response, and monitoring'],
+                  ['When does intervention happen?', 'mostly fixed timing', 'timing informed by condition and prediction'],
+                  ['What counts as success?', 'delay visible wilting', 'improve quality, timing, and future decision support together'],
+                ],
+              ),
+              paragraph(
+                'This comparison matters because the novelty of FloraGuard is not just in any single module. It lies in how the modules work together as one preservation logic.',
+              ),
+            ],
+          },
+          {
+            eyebrow: 'Reusability',
+            title: 'What parts of the project could be reused by others',
+            blocks: [
+              list(
+                [
+                  'the preservation-as-feedback-loop framework',
+                  'the pattern of combining wet lab, dry lab, hardware, and implementation in one story',
+                  'the idea of translating biological condition into recommendation logic',
+                ],
+                'ordered',
+              ),
+              callout(
+                'Even before all experiments are complete, FloraGuard already contributes a transferable project architecture that other teams could adapt to different post-harvest or plant-care problems.',
               ),
             ],
           },
@@ -1919,6 +1956,9 @@ const wikiGroups = [
                 'engineers',
                 'data scientists',
               ]),
+              paragraph(
+                'That mix matters because no single discipline can carry the whole project alone: FloraGuard depends on biological mechanism, quantitative reasoning, device thinking, and clear public explanation at the same time.',
+              ),
             ],
           },
           {
@@ -1927,6 +1967,42 @@ const wikiGroups = [
             blocks: [
               paragraph(
                 'Together we aim to build sustainable solutions for the floral industry by combining biological insight with practical monitoring and deployment thinking.',
+              ),
+            ],
+          },
+          {
+            eyebrow: 'Organization',
+            title: 'How the team can be organized across work packages',
+            blocks: [
+              table(
+                ['Work package', 'Main responsibilities', 'What it contributes to the wiki'],
+                [
+                  ['Wet Lab', 'treatment design, assays, senescence measurements', 'evidence for mechanism and outcome'],
+                  ['Dry Lab', 'prediction logic, dose analysis, validation strategy', 'evidence for decision support'],
+                  ['Hardware', 'device concept, sensing, interface thinking', 'evidence for deployment and usability'],
+                  ['HP + Wiki', 'stakeholder integration, public narrative, page structure', 'evidence for implementation and social relevance'],
+                ],
+              ),
+              paragraph(
+                'This kind of work-package framing will make it easier later to plug in real member names, photos, and biographies without needing to redesign the page structure.',
+              ),
+            ],
+          },
+          {
+            eyebrow: 'Collaboration',
+            title: 'Why coordination matters as much as specialization',
+            blocks: [
+              paragraph(
+                'The project only works when each work package informs the others. Wet lab results should influence the model; hardware needs to know which signals matter; human practices should reshape implementation; and the wiki must make all of those feedback loops legible.',
+              ),
+              list(
+                [
+                  'biology defines what should be measured',
+                  'modeling defines how those measurements become decisions',
+                  'hardware defines how the decisions become usable',
+                  'human practices define whether the use case is actually meaningful',
+                ],
+                'ordered',
               ),
             ],
           },
@@ -2034,6 +2110,40 @@ const wikiGroups = [
             blocks: [
               paragraph(
                 'As wet lab, dry lab, and hardware sections become more detailed, this page should grow into a structured bibliography covering post-harvest physiology, modeling, instrumentation, and synthetic biology methods.',
+              ),
+            ],
+          },
+          {
+            eyebrow: 'Reference map',
+            title: 'How the current literature maps onto the FloraGuard story',
+            blocks: [
+              table(
+                ['Literature pillar', 'Supports pages', 'Main idea supported'],
+                [
+                  ['Melatonin biology', 'Project Description, Design, Wet Lab', 'oxidative-stress buffering and senescence delay'],
+                  ['ACC deaminase / ethylene control', 'Project Description, Design, Wet Lab', 'ethylene-pathway intervention as a preservation lever'],
+                  ['Post-harvest physiology', 'Problem, Human Practices, Implementation', 'cut flower decline as a systems-level commercial problem'],
+                ],
+              ),
+              paragraph(
+                'Organizing references this way makes the bibliography more helpful for readers, because it shows why each citation exists inside the FloraGuard argument rather than leaving references detached from the pages they justify.',
+              ),
+            ],
+          },
+          {
+            eyebrow: 'Expansion plan',
+            title: 'What the bibliography should include next',
+            blocks: [
+              list(
+                [
+                  'cut flower post-harvest physiology and vase-life studies',
+                  'methods for ROS, ACC, and visual senescence scoring',
+                  'modeling and sensor references for hardware-enabled prediction',
+                ],
+                'ordered',
+              ),
+              callout(
+                'A strong final reference page will not just be longer. It will be more clearly grouped by what part of the project each paper supports.',
               ),
             ],
           },
