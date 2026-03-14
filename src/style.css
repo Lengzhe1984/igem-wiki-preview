@@ -109,7 +109,7 @@ select {
   top: 14px;
   z-index: 30;
   display: grid;
-  grid-template-columns: minmax(240px, 1.1fr) minmax(0, 1.6fr) auto;
+  grid-template-columns: minmax(240px, 1.05fr) minmax(0, 1.95fr);
   gap: 16px 18px;
   align-items: center;
   border-radius: 28px;

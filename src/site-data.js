@@ -1996,6 +1996,7 @@ function dropdownNavigationMarkup(activeSlug = '') {
             <p class="dropdown-kicker">${escapeHtml(group.summary)}</p>
             <div class="dropdown-links">
             ${group.pages
+              .filter((page) => page.slug !== 'references')
               .map(
                 (page) => `
                   <a class="nav-link ${page.slug === activeSlug ? 'active' : ''}" href="${pageHref(page.slug)}">

@@ -362,8 +362,6 @@ document.querySelector('#app').innerHTML = `
         <a class="nav-home" href="${pageHref()}">Home</a>
         ${dropdownNavigationMarkup(page.slug)}
       </nav>
-
-      <a class="reference-link" href="${pageHref('references')}">References</a>
     </header>
 
     <main class="page-main page-main-${page.slug}">
