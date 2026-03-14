@@ -95,6 +95,18 @@ const storyFlowMarkup = homePage.storyFlow
   )
   .join('')
 
+const evidencePreviewMarkup = homePage.evidencePreview
+  .map(
+    (item, index) => `
+      <article class="evidence-card fade-card" style="--delay:${index * 60}ms">
+        <span class="evidence-label">${escapeHtml(item.label)}</span>
+        <h3>${escapeHtml(item.title)}</h3>
+        <p>${escapeHtml(item.detail)}</p>
+      </article>
+    `,
+  )
+  .join('')
+
 const editorialChipMarkup = homePage.editorialFeature.chips
   .map((chip) => `<span class="editorial-chip">${escapeHtml(chip)}</span>`)
   .join('')
@@ -261,6 +273,19 @@ document.querySelector('#app').innerHTML = `
           <ul class="mini-list mini-list-spacious">
             ${editorialPointMarkup}
           </ul>
+        </div>
+      </section>
+
+      <section class="section-block">
+        <div class="section-heading">
+          <p class="eyebrow">Evidence rhythm</p>
+          <h2>The strongest science pages usually show where proof will land before every figure is final</h2>
+          <p class="section-copy">
+            FloraGuard can already reserve the right kinds of result panels now, so later we swap in real plots, photos, and prototype screenshots instead of redesigning the whole page.
+          </p>
+        </div>
+        <div class="evidence-grid">
+          ${evidencePreviewMarkup}
         </div>
       </section>
 

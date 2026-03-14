@@ -165,6 +165,26 @@ const homePage = {
       'Programmable care only makes sense when the site shows how sensing, intervention, and recommendation connect across that journey.',
     ],
   },
+  evidencePreview: [
+    {
+      label: 'Biology evidence',
+      title: 'Wet lab should culminate in side-by-side treatment proof',
+      detail:
+        'Readers need to see phenotype, stress markers, and vase-life outcome in one coordinated evidence board.',
+    },
+    {
+      label: 'Prediction evidence',
+      title: 'Dry lab should prove that timing and dose become more actionable',
+      detail:
+        'The best computational pages show not only a model, but why the model changes real intervention decisions.',
+    },
+    {
+      label: 'Prototype evidence',
+      title: 'Hardware should show the object, interface, and care workflow together',
+      detail:
+        'A deployable-feeling page combines device form, captured signals, and user-facing recommendations in one narrative.',
+    },
+  ],
   nextAdd: [
     'Experimental figures for ROS, ACC, ethylene, and vase life comparisons across treatments',
     'Smart vase photos, schematics, and a hardware workflow diagram',
@@ -707,6 +727,28 @@ const wikiGroups = [
               },
             ],
           },
+          {
+            type: 'evidence-strip',
+            eyebrow: 'Result board',
+            title: 'Three result panels will eventually make the wet lab page feel complete',
+            items: [
+              {
+                label: 'Panel 01',
+                title: 'Treatment phenotype board',
+                detail: 'Side-by-side flower images should show control versus treatment progression across the same timeline.',
+              },
+              {
+                label: 'Panel 02',
+                title: 'Stress and pathway readouts',
+                detail: 'ROS, ACC, ethylene, or antioxidant measurements should connect molecular change to the visible phenotype.',
+              },
+              {
+                label: 'Panel 03',
+                title: 'Vase-life outcome summary',
+                detail: 'A compact result view should show whether FloraGuard meaningfully extends useful display life.',
+              },
+            ],
+          },
         ],
         sections: [
           {
@@ -825,6 +867,28 @@ const wikiGroups = [
               },
             ],
           },
+          {
+            type: 'evidence-strip',
+            eyebrow: 'Validation board',
+            title: 'A strong dry lab page usually proves three things at once',
+            items: [
+              {
+                label: 'Panel 01',
+                title: 'Input sensitivity',
+                detail: 'Show which environmental or harvest variables most strongly shift predicted senescence timing.',
+              },
+              {
+                label: 'Panel 02',
+                title: 'Model fit and validation',
+                detail: 'Use prediction-versus-observation snapshots so readers can judge whether the model is trustworthy.',
+              },
+              {
+                label: 'Panel 03',
+                title: 'Decision gain',
+                detail: 'Demonstrate how the model changes dose or intervention timing compared with static treatment rules.',
+              },
+            ],
+          },
         ],
         sections: [
           {
@@ -924,6 +988,28 @@ const wikiGroups = [
               {
                 title: 'Act',
                 detail: 'Recommend when treatment, replacement, or handling changes should happen.',
+              },
+            ],
+          },
+          {
+            type: 'evidence-strip',
+            eyebrow: 'Prototype board',
+            title: 'Hardware pages become convincing when they show the product from three angles',
+            items: [
+              {
+                label: 'Panel 01',
+                title: 'Object and enclosure',
+                detail: 'Show what the smart vase or prototype physically looks like in use, not only as a component list.',
+              },
+              {
+                label: 'Panel 02',
+                title: 'Dashboard and signals',
+                detail: 'Show the captured data or UI so the recommendation logic is visible to the reader.',
+              },
+              {
+                label: 'Panel 03',
+                title: 'User workflow',
+                detail: 'Show how a florist or consumer would move from observation to action using the device.',
               },
             ],
           },

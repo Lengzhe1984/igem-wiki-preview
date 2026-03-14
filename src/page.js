@@ -187,6 +187,28 @@ function renderModule(module, index) {
           </div>
         </section>
       `
+    case 'evidence-strip':
+      return `
+        <section class="feature-module feature-module-wide fade-card" style="--delay:${index * 55}ms">
+          <div class="section-heading">
+            <p class="eyebrow">${escapeHtml(module.eyebrow)}</p>
+            <h2>${escapeHtml(module.title)}</h2>
+          </div>
+          <div class="evidence-grid">
+            ${module.items
+              .map(
+                (item) => `
+                  <article class="evidence-card">
+                    <span class="evidence-label">${escapeHtml(item.label)}</span>
+                    <h3>${escapeHtml(item.title)}</h3>
+                    <p>${escapeHtml(item.detail)}</p>
+                  </article>
+                `,
+              )
+              .join('')}
+          </div>
+        </section>
+      `
     case 'pipeline':
     case 'journey-strip':
       return `

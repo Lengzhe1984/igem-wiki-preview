@@ -715,6 +715,7 @@ h3 {
 
 .focus-grid,
 .flow-grid,
+.evidence-grid,
 .module-grid,
 .principle-grid,
 .structure-grid,
@@ -729,6 +730,10 @@ h3 {
 
 .flow-grid {
   grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.evidence-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
 .module-grid {
@@ -749,6 +754,7 @@ h3 {
 
 .focus-card,
 .flow-card,
+.evidence-card,
 .module-card,
 .principle-card,
 .structure-card,
@@ -771,6 +777,15 @@ h3 {
     linear-gradient(180deg, rgba(255, 255, 255, 0.78) 0%, rgba(243, 248, 239, 0.96) 100%);
 }
 
+.evidence-card {
+  display: grid;
+  align-content: start;
+  gap: 12px;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.8) 0%, rgba(247, 240, 248, 0.98) 100%);
+  border: 1px solid rgba(145, 132, 179, 0.12);
+}
+
 .flow-step {
   display: inline-flex;
   width: fit-content;
@@ -784,6 +799,20 @@ h3 {
   color: var(--accent);
   font-family: var(--mono-font);
   font-size: 0.84rem;
+}
+
+.evidence-label {
+  display: inline-flex;
+  width: fit-content;
+  min-height: 34px;
+  align-items: center;
+  justify-content: center;
+  padding: 0.35rem 0.7rem;
+  border-radius: 999px;
+  background: rgba(145, 132, 179, 0.14);
+  color: #675b8f;
+  font-family: var(--mono-font);
+  font-size: 0.8rem;
 }
 
 .principle-card {
@@ -1611,6 +1640,7 @@ body[data-page="references"] .story-summary {
 
   .focus-grid,
   .flow-grid,
+  .evidence-grid,
   .module-grid,
   .principle-grid,
   .content-card-grid,
