@@ -1,0 +1,49 @@
+<svg width="960" height="720" viewBox="0 0 960 720" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="88" y1="42" x2="846" y2="658" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFF9FB"/>
+      <stop offset="1" stop-color="#F0E9F0"/>
+    </linearGradient>
+    <linearGradient id="rose" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#F5B1C7"/>
+      <stop offset="1" stop-color="#C45C82"/>
+    </linearGradient>
+    <linearGradient id="leaf" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#98B46C"/>
+      <stop offset="1" stop-color="#5F7F4A"/>
+    </linearGradient>
+  </defs>
+  <rect width="960" height="720" rx="38" fill="url(#bg)"/>
+  <circle cx="162" cy="566" r="122" fill="#F8E7EE"/>
+  <circle cx="760" cy="132" r="96" fill="#F6DDE7"/>
+  <rect x="72" y="92" width="816" height="536" rx="34" fill="white" fill-opacity="0.82" stroke="#E4C4D1" stroke-width="4"/>
+  <rect x="122" y="136" width="444" height="246" rx="28" fill="#FFF9FB" stroke="#DFC3CF" stroke-width="4"/>
+  <path d="M166 326L230 284L298 302L366 232L438 252L520 190" stroke="#C55B81" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="166" cy="326" r="8" fill="#688855"/>
+  <circle cx="230" cy="284" r="8" fill="#688855"/>
+  <circle cx="298" cy="302" r="8" fill="#688855"/>
+  <circle cx="366" cy="232" r="8" fill="#688855"/>
+  <circle cx="438" cy="252" r="8" fill="#688855"/>
+  <circle cx="520" cy="190" r="8" fill="#688855"/>
+  <path d="M162 174H520" stroke="#E7D3DB" stroke-width="4" stroke-linecap="round"/>
+  <path d="M162 214H520" stroke="#E7D3DB" stroke-width="4" stroke-linecap="round"/>
+  <path d="M162 254H520" stroke="#E7D3DB" stroke-width="4" stroke-linecap="round"/>
+  <text x="138" y="404" fill="#6E5C69" font-family="Avenir Next, sans-serif" font-size="22">Prediction turns observation into timing.</text>
+  <rect x="612" y="136" width="224" height="220" rx="28" fill="#FFF9FB" stroke="#DFC3CF" stroke-width="4"/>
+  <text x="644" y="184" fill="#8D4A64" font-family="JetBrains Mono, monospace" font-size="22">dose</text>
+  <rect x="644" y="212" width="160" height="24" rx="12" fill="#F2E0E8"/>
+  <rect x="644" y="212" width="84" height="24" rx="12" fill="#688855"/>
+  <text x="644" y="276" fill="#8D4A64" font-family="JetBrains Mono, monospace" font-size="22">timing</text>
+  <rect x="644" y="304" width="160" height="24" rx="12" fill="#F2E0E8"/>
+  <rect x="644" y="304" width="118" height="24" rx="12" fill="#C55B81"/>
+  <rect x="122" y="448" width="340" height="116" rx="28" fill="#FFF9FB" stroke="#DFC3CF" stroke-width="4"/>
+  <text x="156" y="498" fill="#688855" font-family="JetBrains Mono, monospace" font-size="24">input</text>
+  <text x="250" y="498" fill="#6E5C69" font-family="Avenir Next, sans-serif" font-size="22">environment + harvest + treatment</text>
+  <rect x="498" y="448" width="340" height="116" rx="28" fill="#FFF9FB" stroke="#DFC3CF" stroke-width="4"/>
+  <text x="532" y="498" fill="#C55B81" font-family="JetBrains Mono, monospace" font-size="24">output</text>
+  <text x="634" y="498" fill="#6E5C69" font-family="Avenir Next, sans-serif" font-size="22">vase life + intervention window</text>
+  <path d="M462 506H498" stroke="#C55B81" stroke-width="6" stroke-linecap="round"/>
+  <path d="M478 490L498 506L478 522" stroke="#C55B81" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="124" y="622" fill="#6E5C69" font-family="Avenir Next, sans-serif" font-size="22">Strong dry lab pages explain how prediction changes decisions,</text>
+  <text x="124" y="650" fill="#6E5C69" font-family="Avenir Next, sans-serif" font-size="22">not just how a model was built.</text>
+</svg>

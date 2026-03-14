@@ -77,6 +77,25 @@ function renderReferences(items) {
 
 function renderModule(module, index) {
   switch (module.type) {
+    case 'visual-panel':
+      return `
+        <section class="feature-module feature-visual feature-visual-${escapeHtml(module.tone ?? 'default')} fade-card" style="--delay:${index * 55}ms">
+          <div class="feature-visual-media">
+            <img class="feature-visual-image" src="${module.image}" alt="${escapeHtml(module.alt)}" />
+            <p class="visual-caption">${escapeHtml(module.caption)}</p>
+          </div>
+          <div class="feature-visual-copy">
+            <div class="section-heading">
+              <p class="eyebrow">${escapeHtml(module.eyebrow)}</p>
+              <h2>${escapeHtml(module.title)}</h2>
+            </div>
+            <p class="section-copy">${escapeHtml(module.lede)}</p>
+            <ul class="mini-list mini-list-spacious">
+              ${module.points.map((item) => `<li>${escapeHtml(item)}</li>`).join('')}
+            </ul>
+          </div>
+        </section>
+      `
     case 'metric-cards':
       return `
         <section class="feature-module feature-module-wide fade-card" style="--delay:${index * 55}ms">
@@ -239,7 +258,7 @@ const moduleMarkup = (page.modules ?? [])
   .join('')
 
 document.querySelector('#app').innerHTML = `
-  <div class="wiki-shell">
+  <div class="wiki-shell page-shell page-shell-${page.slug}">
     <header class="site-header">
       <div class="brand-block">
         <a class="brand-mark" href="${pageHref()}">${escapeHtml(siteMeta.projectName)}</a>
@@ -254,7 +273,7 @@ document.querySelector('#app').innerHTML = `
       <a class="reference-link" href="${pageHref('references')}">References</a>
     </header>
 
-    <main class="page-main">
+    <main class="page-main page-main-${page.slug}">
       <nav class="breadcrumbs" aria-label="Breadcrumb">
         <a href="${pageHref()}">Home</a>
         <span>/</span>

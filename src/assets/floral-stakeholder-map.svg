@@ -1,0 +1,47 @@
+<svg width="960" height="720" viewBox="0 0 960 720" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="96" y1="56" x2="846" y2="656" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFF9FB"/>
+      <stop offset="1" stop-color="#F6E8EE"/>
+    </linearGradient>
+    <linearGradient id="rose" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#F6B6CB"/>
+      <stop offset="1" stop-color="#C35A81"/>
+    </linearGradient>
+    <linearGradient id="leaf" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#98B56B"/>
+      <stop offset="1" stop-color="#5F7F49"/>
+    </linearGradient>
+  </defs>
+  <rect width="960" height="720" rx="38" fill="url(#bg)"/>
+  <circle cx="182" cy="148" r="94" fill="#F8DDE8"/>
+  <circle cx="776" cy="574" r="146" fill="#FAE8EE"/>
+  <rect x="72" y="92" width="816" height="536" rx="34" fill="white" fill-opacity="0.8" stroke="#E3C3D0" stroke-width="4"/>
+  <path d="M482 340C480 286 482 232 492 186" stroke="#678650" stroke-width="8" stroke-linecap="round"/>
+  <path d="M494 212C458 180 444 138 444 92C496 102 536 128 558 172" fill="url(#rose)"/>
+  <path d="M558 172C600 138 652 124 706 132C678 182 632 210 582 218" fill="#F1BED0"/>
+  <path d="M582 218C634 228 674 258 694 304C640 310 594 286 558 244" fill="#B94F78"/>
+  <circle cx="566" cy="210" r="18" fill="#FFE19B"/>
+  <path d="M462 288C426 268 410 238 408 198C448 206 478 228 496 258" fill="url(#leaf)"/>
+  <path d="M440 414H566L594 560C598 586 578 608 552 608H454C428 608 408 586 412 560L440 414Z" fill="#F4D4E1" stroke="#D48AA8" stroke-width="6"/>
+  <path d="M462 474C498 492 536 492 572 474" stroke="#FFF8FB" stroke-width="6" stroke-linecap="round" opacity="0.85"/>
+  <path d="M514 240V146" stroke="#678650" stroke-width="6" stroke-linecap="round" stroke-dasharray="10 14"/>
+  <path d="M514 584V642" stroke="#678650" stroke-width="6" stroke-linecap="round" stroke-dasharray="10 14"/>
+  <path d="M404 454H242" stroke="#C55B81" stroke-width="6" stroke-linecap="round" stroke-dasharray="10 14"/>
+  <path d="M620 454H786" stroke="#C55B81" stroke-width="6" stroke-linecap="round" stroke-dasharray="10 14"/>
+  <rect x="144" y="176" width="200" height="118" rx="26" fill="#FFF8FA" stroke="#DFC1CD" stroke-width="4"/>
+  <text x="176" y="228" fill="#8D4A64" font-family="Avenir Next, sans-serif" font-size="26" font-weight="700">Growers</text>
+  <text x="176" y="262" fill="#6E5C69" font-family="Avenir Next, sans-serif" font-size="20">care about post-harvest</text>
+  <text x="176" y="288" fill="#6E5C69" font-family="Avenir Next, sans-serif" font-size="20">value retention</text>
+  <rect x="616" y="176" width="200" height="118" rx="26" fill="#FFF8FA" stroke="#DFC1CD" stroke-width="4"/>
+  <text x="642" y="228" fill="#8D4A64" font-family="Avenir Next, sans-serif" font-size="26" font-weight="700">Distributors</text>
+  <text x="642" y="262" fill="#6E5C69" font-family="Avenir Next, sans-serif" font-size="20">need stable quality across</text>
+  <text x="642" y="288" fill="#6E5C69" font-family="Avenir Next, sans-serif" font-size="20">transport windows</text>
+  <rect x="120" y="492" width="228" height="118" rx="26" fill="#FFF8FA" stroke="#DFC1CD" stroke-width="4"/>
+  <text x="152" y="544" fill="#8D4A64" font-family="Avenir Next, sans-serif" font-size="26" font-weight="700">Florists</text>
+  <text x="152" y="578" fill="#6E5C69" font-family="Avenir Next, sans-serif" font-size="20">want practical care tools</text>
+  <rect x="636" y="492" width="188" height="118" rx="26" fill="#FFF8FA" stroke="#DFC1CD" stroke-width="4"/>
+  <text x="666" y="544" fill="#8D4A64" font-family="Avenir Next, sans-serif" font-size="26" font-weight="700">Consumers</text>
+  <text x="666" y="578" fill="#6E5C69" font-family="Avenir Next, sans-serif" font-size="20">need simple guidance</text>
+  <text x="388" y="670" fill="#6E5C69" font-family="Avenir Next, sans-serif" font-size="22">Good human practices pages make stakeholder logic visible at a glance.</text>
+</svg>

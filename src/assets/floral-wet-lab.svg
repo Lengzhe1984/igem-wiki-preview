@@ -1,0 +1,54 @@
+<svg width="960" height="720" viewBox="0 0 960 720" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="74" y1="60" x2="868" y2="654" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFF9FB"/>
+      <stop offset="1" stop-color="#F4E8EE"/>
+    </linearGradient>
+    <linearGradient id="rose" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#F6B4CA"/>
+      <stop offset="1" stop-color="#C45C82"/>
+    </linearGradient>
+    <linearGradient id="leaf" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#9AB66D"/>
+      <stop offset="1" stop-color="#5E7D49"/>
+    </linearGradient>
+  </defs>
+  <rect width="960" height="720" rx="38" fill="url(#bg)"/>
+  <circle cx="188" cy="130" r="88" fill="#F9DDE7"/>
+  <circle cx="784" cy="560" r="136" fill="#F8E8EE"/>
+  <rect x="74" y="92" width="812" height="536" rx="34" fill="white" fill-opacity="0.8" stroke="#E3C3D0" stroke-width="4"/>
+  <path d="M270 468C278 370 286 282 302 198" stroke="#678650" stroke-width="8" stroke-linecap="round"/>
+  <path d="M304 228C270 194 254 152 252 106C302 116 340 144 358 184" fill="url(#rose)"/>
+  <path d="M358 184C394 150 440 136 490 144C464 188 428 212 386 220" fill="#F2BDD0"/>
+  <path d="M386 220C430 230 462 258 478 296C432 302 394 282 364 246" fill="#BA5078"/>
+  <circle cx="370" cy="212" r="18" fill="#FFE19B"/>
+  <path d="M252 380C218 360 202 332 196 292C236 300 268 322 286 352" fill="url(#leaf)"/>
+  <rect x="170" y="474" width="208" height="92" rx="24" fill="#FFF8FA" stroke="#DEC1CD" stroke-width="4"/>
+  <path d="M206 526C232 494 264 478 302 478C328 478 352 486 372 504" stroke="#678650" stroke-width="7" stroke-linecap="round"/>
+  <path d="M206 540C236 548 266 546 294 528C324 508 350 502 372 504" stroke="#C45C82" stroke-width="7" stroke-linecap="round"/>
+  <circle cx="208" cy="540" r="8" fill="#C45C82"/>
+  <circle cx="264" cy="500" r="8" fill="#C45C82"/>
+  <circle cx="320" cy="492" r="8" fill="#C45C82"/>
+  <rect x="438" y="166" width="156" height="308" rx="26" fill="#FFF9FB" stroke="#DFC2CE" stroke-width="4"/>
+  <path d="M474 432V256" stroke="#D07A98" stroke-width="8" stroke-linecap="round"/>
+  <path d="M516 432V228" stroke="#678650" stroke-width="8" stroke-linecap="round"/>
+  <path d="M558 432V284" stroke="#D07A98" stroke-width="8" stroke-linecap="round"/>
+  <path d="M462 432H570" stroke="#CDBBC3" stroke-width="4"/>
+  <circle cx="474" cy="296" r="10" fill="#D07A98"/>
+  <circle cx="516" cy="266" r="10" fill="#678650"/>
+  <circle cx="558" cy="320" r="10" fill="#D07A98"/>
+  <text x="446" y="516" fill="#8C4B64" font-family="JetBrains Mono, monospace" font-size="22">ROS</text>
+  <text x="496" y="516" fill="#688855" font-family="JetBrains Mono, monospace" font-size="22">score</text>
+  <text x="566" y="516" fill="#8C4B64" font-family="JetBrains Mono, monospace" font-size="22">life</text>
+  <rect x="650" y="164" width="166" height="154" rx="26" fill="#FFF9FB" stroke="#DFC2CE" stroke-width="4"/>
+  <path d="M690 262L724 226L760 246L790 208" stroke="#C45C82" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="690" cy="262" r="8" fill="#688855"/>
+  <circle cx="724" cy="226" r="8" fill="#688855"/>
+  <circle cx="760" cy="246" r="8" fill="#688855"/>
+  <circle cx="790" cy="208" r="8" fill="#688855"/>
+  <rect x="650" y="350" width="166" height="154" rx="26" fill="#FFF9FB" stroke="#DFC2CE" stroke-width="4"/>
+  <path d="M686 468H780" stroke="#D07A98" stroke-width="8" stroke-linecap="round"/>
+  <path d="M686 434C708 414 736 404 766 404C786 404 802 410 816 424" stroke="#688855" stroke-width="7" stroke-linecap="round"/>
+  <text x="146" y="622" fill="#6F5B68" font-family="Avenir Next, sans-serif" font-size="22">Pair molecular readouts with visible floral quality.</text>
+  <text x="146" y="650" fill="#6F5B68" font-family="Avenir Next, sans-serif" font-size="22">That is what makes the wet lab page feel evidence-led.</text>
+</svg>

@@ -95,6 +95,14 @@ const storyFlowMarkup = homePage.storyFlow
   )
   .join('')
 
+const editorialChipMarkup = homePage.editorialFeature.chips
+  .map((chip) => `<span class="editorial-chip">${escapeHtml(chip)}</span>`)
+  .join('')
+
+const editorialPointMarkup = homePage.editorialFeature.points
+  .map((point) => `<li>${escapeHtml(point)}</li>`)
+  .join('')
+
 const groupCards = wikiGroups
   .map(
     (group, index) => `
@@ -232,6 +240,27 @@ document.querySelector('#app').innerHTML = `
         </div>
         <div class="flow-grid">
           ${storyFlowMarkup}
+        </div>
+      </section>
+
+      <section class="editorial-band fade-card">
+        <div class="editorial-figure">
+          <img class="editorial-art" src="${homePage.editorialFeature.image}" alt="${escapeHtml(homePage.editorialFeature.alt)}" />
+          <p class="visual-caption">${escapeHtml(homePage.editorialFeature.caption)}</p>
+        </div>
+        <div class="editorial-copy">
+          <p class="eyebrow">${escapeHtml(homePage.editorialFeature.eyebrow)}</p>
+          <h2>${escapeHtml(homePage.editorialFeature.title)}</h2>
+          <p class="section-copy">${escapeHtml(homePage.editorialFeature.summary)}</p>
+          <blockquote class="editorial-quote">
+            <p>${escapeHtml(homePage.editorialFeature.quote)}</p>
+          </blockquote>
+          <div class="editorial-chip-row">
+            ${editorialChipMarkup}
+          </div>
+          <ul class="mini-list mini-list-spacious">
+            ${editorialPointMarkup}
+          </ul>
         </div>
       </section>
 

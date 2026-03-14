@@ -1,0 +1,74 @@
+<svg width="1200" height="760" viewBox="0 0 1200 760" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="78" y1="54" x2="1082" y2="706" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFF8FB"/>
+      <stop offset="1" stop-color="#F5E8EF"/>
+    </linearGradient>
+    <linearGradient id="rose" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#F6B6CB"/>
+      <stop offset="1" stop-color="#C45C83"/>
+    </linearGradient>
+    <linearGradient id="leaf" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#94B36B"/>
+      <stop offset="1" stop-color="#5E7D48"/>
+    </linearGradient>
+    <linearGradient id="panel" x1="0" y1="0" x2="0" y2="1">
+      <stop stop-color="#FFFFFF" stop-opacity="0.88"/>
+      <stop offset="1" stop-color="#FFF4F8" stop-opacity="0.98"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="760" rx="42" fill="url(#bg)"/>
+  <circle cx="180" cy="148" r="118" fill="#F9DCE7" fill-opacity="0.88"/>
+  <circle cx="1032" cy="132" r="104" fill="#F4DBE8" fill-opacity="0.82"/>
+  <circle cx="1008" cy="612" r="168" fill="#FAE8EE" fill-opacity="0.9"/>
+  <path d="M164 384H1036" stroke="#C7678B" stroke-width="5" stroke-linecap="round" stroke-dasharray="12 16"/>
+  <path d="M998 362L1034 384L998 406" stroke="#C7678B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="84" y="198" width="232" height="320" rx="32" fill="url(#panel)" stroke="#E0BDCB" stroke-width="4"/>
+  <rect x="346" y="198" width="232" height="320" rx="32" fill="url(#panel)" stroke="#E0BDCB" stroke-width="4"/>
+  <rect x="608" y="198" width="232" height="320" rx="32" fill="url(#panel)" stroke="#E0BDCB" stroke-width="4"/>
+  <rect x="870" y="198" width="246" height="320" rx="32" fill="url(#panel)" stroke="#E0BDCB" stroke-width="4"/>
+  <text x="116" y="252" fill="#8D4A64" font-family="Avenir Next, sans-serif" font-size="28" font-weight="700">Harvest</text>
+  <text x="378" y="252" fill="#8D4A64" font-family="Avenir Next, sans-serif" font-size="28" font-weight="700">Transport</text>
+  <text x="640" y="252" fill="#8D4A64" font-family="Avenir Next, sans-serif" font-size="28" font-weight="700">Florist</text>
+  <text x="902" y="252" fill="#8D4A64" font-family="Avenir Next, sans-serif" font-size="28" font-weight="700">Smart Care</text>
+  <path d="M172 430C174 350 178 286 186 222" stroke="#64824D" stroke-width="8" stroke-linecap="round"/>
+  <path d="M184 274C148 246 132 208 128 164C180 174 220 204 238 244" fill="url(#rose)"/>
+  <path d="M238 244C274 210 320 196 370 204C344 250 308 272 264 278" fill="#F2BED1"/>
+  <path d="M264 278C306 288 338 316 356 354C310 360 272 338 242 304" fill="#BB5279"/>
+  <circle cx="248" cy="272" r="18" fill="#FFDE92"/>
+  <path d="M164 352C132 330 120 300 120 262C158 270 186 294 202 322" fill="url(#leaf)"/>
+  <path d="M154 454H216L236 502C240 520 226 536 208 536H162C144 536 130 520 134 502L154 454Z" fill="#F4D4E1" stroke="#D48AA7" stroke-width="5"/>
+  <text x="114" y="580" fill="#6E5A68" font-family="Avenir Next, sans-serif" font-size="20">Cutting starts a</text>
+  <text x="114" y="606" fill="#6E5A68" font-family="Avenir Next, sans-serif" font-size="20">rapid stress clock.</text>
+  <rect x="390" y="286" width="144" height="96" rx="22" fill="#FFF9FB" stroke="#DFC0CD" stroke-width="4"/>
+  <path d="M420 348C442 326 464 316 486 316C506 316 524 324 540 338" stroke="#688855" stroke-width="7" stroke-linecap="round"/>
+  <circle cx="426" cy="320" r="10" fill="#C65A81"/>
+  <circle cx="468" cy="304" r="10" fill="#C65A81"/>
+  <circle cx="508" cy="310" r="10" fill="#C65A81"/>
+  <rect x="392" y="404" width="140" height="96" rx="22" fill="#FFF9FB" stroke="#DFC0CD" stroke-width="4"/>
+  <path d="M420 468H510" stroke="#C65A81" stroke-width="8" stroke-linecap="round"/>
+  <path d="M420 438C438 420 460 410 486 410C508 410 528 420 544 438" stroke="#688855" stroke-width="7" stroke-linecap="round"/>
+  <text x="374" y="580" fill="#6E5A68" font-family="Avenir Next, sans-serif" font-size="20">Temperature swings</text>
+  <text x="374" y="606" fill="#6E5A68" font-family="Avenir Next, sans-serif" font-size="20">and dehydration accumulate.</text>
+  <rect x="654" y="294" width="140" height="204" rx="26" fill="#FFF9FB" stroke="#DFC0CD" stroke-width="4"/>
+  <path d="M696 336C690 388 694 430 708 468" stroke="#64824D" stroke-width="8" stroke-linecap="round"/>
+  <path d="M708 342C734 322 762 320 792 330C784 356 766 376 740 388" fill="url(#leaf)"/>
+  <path d="M682 330C656 314 642 290 642 258C678 266 706 286 722 312" fill="url(#rose)"/>
+  <path d="M718 312C746 286 782 276 820 280C800 316 770 336 736 340" fill="#F2BED1"/>
+  <path d="M736 340C768 348 792 370 806 398C770 402 740 386 716 360" fill="#BB5279"/>
+  <circle cx="722" cy="336" r="14" fill="#FFDE92"/>
+  <text x="636" y="580" fill="#6E5A68" font-family="Avenir Next, sans-serif" font-size="20">Display life depends on</text>
+  <text x="636" y="606" fill="#6E5A68" font-family="Avenir Next, sans-serif" font-size="20">care decisions and timing.</text>
+  <rect x="912" y="288" width="160" height="116" rx="24" fill="#FFF9FB" stroke="#DFC0CD" stroke-width="4"/>
+  <path d="M946 366C972 324 1004 300 1040 292C1064 286 1088 288 1108 302" stroke="#688855" stroke-width="7" stroke-linecap="round"/>
+  <path d="M944 350C970 362 1000 360 1034 334C1060 314 1086 306 1108 308" stroke="#C65A81" stroke-width="7" stroke-linecap="round"/>
+  <circle cx="944" cy="350" r="8" fill="#C65A81"/>
+  <circle cx="986" cy="312" r="8" fill="#C65A81"/>
+  <circle cx="1036" cy="294" r="8" fill="#C65A81"/>
+  <rect x="914" y="426" width="156" height="90" rx="24" fill="#FFF9FB" stroke="#DFC0CD" stroke-width="4"/>
+  <text x="944" y="468" fill="#688855" font-family="JetBrains Mono, monospace" font-size="22">detect</text>
+  <text x="1002" y="468" fill="#8D4A64" font-family="JetBrains Mono, monospace" font-size="22">respond</text>
+  <text x="966" y="496" fill="#688855" font-family="JetBrains Mono, monospace" font-size="22">predict</text>
+  <text x="904" y="580" fill="#6E5A68" font-family="Avenir Next, sans-serif" font-size="20">Programmable care can</text>
+  <text x="904" y="606" fill="#6E5A68" font-family="Avenir Next, sans-serif" font-size="20">replace static preservation.</text>
+</svg>

@@ -3,6 +3,10 @@ import floralStressArt from './assets/floral-stress.svg'
 import floralLabArt from './assets/floral-lab.svg'
 import smartVaseArt from './assets/floral-smart-vase.svg'
 import floralNotesArt from './assets/floral-notes.svg'
+import floralSupplyChainArt from './assets/floral-supply-chain.svg'
+import floralWetLabArt from './assets/floral-wet-lab.svg'
+import floralDryLabArt from './assets/floral-dry-lab.svg'
+import floralStakeholderMapArt from './assets/floral-stakeholder-map.svg'
 
 const paragraph = (text) => ({ type: 'paragraph', text })
 const list = (items, style = 'unordered') => ({ type: 'list', items, style })
@@ -140,6 +144,25 @@ const homePage = {
         'Move from a bench system toward florist and consumer-facing preservation tools that reduce waste in practice.',
     },
   ],
+  editorialFeature: {
+    eyebrow: 'Editorial feature',
+    title: 'From harvest stress to adaptive care, FloraGuard should feel like one continuous story',
+    summary:
+      'Many strong iGEM homepages show the project as a chain of linked decisions rather than isolated modules. FloraGuard can do the same by making the floral supply chain visible, then showing where programmable preservation changes the outcome.',
+    quote:
+      'The vase is not where the problem begins. It is where better intervention can finally become visible.',
+    image: floralSupplyChainArt,
+    alt:
+      'Illustrated floral supply chain from harvest to smart care, showing how stress accumulates before the bouquet reaches the user.',
+    caption:
+      'A visual scaffold for the homepage: stress begins before retail, and FloraGuard responds by turning static care into adaptive care.',
+    chips: ['Harvest stress', 'Cold-chain variability', 'Retail uncertainty', 'Adaptive response'],
+    points: [
+      'The preservation problem starts at cutting, not at home.',
+      'Transport and display conditions reshape flower quality before customers ever see the bouquet.',
+      'Programmable care only makes sense when the site shows how sensing, intervention, and recommendation connect across that journey.',
+    ],
+  },
   nextAdd: [
     'Experimental figures for ROS, ACC, ethylene, and vase life comparisons across treatments',
     'Smart vase photos, schematics, and a hardware workflow diagram',
@@ -464,6 +487,24 @@ const wikiGroups = [
         ],
         modules: [
           {
+            type: 'visual-panel',
+            tone: 'wet',
+            eyebrow: 'Figure preview',
+            title: 'A wet lab page should read like evidence: assay, phenotype, and vase life in one frame',
+            image: floralWetLabArt,
+            alt:
+              'Illustrated wet lab composite with flower assay readouts, scoring panels, and phenotype tracking.',
+            caption:
+              'A placeholder figure block showing the kind of composite visual that can later be replaced with real experiment photos and plots.',
+            lede:
+              'This is where a future winner-style figure can sit: one glance should show the assay logic, the visual phenotype, and the final preservation outcome.',
+            points: [
+              'Pair ROS or oxidative-stress readouts with phenotype scoring.',
+              'Use side-by-side treatment imagery instead of text-only descriptions.',
+              'End the visual with a clear vase-life outcome panel.',
+            ],
+          },
+          {
             type: 'metric-cards',
             eyebrow: 'Experimental logic',
             title: 'Wet lab readouts are organized around three connected questions',
@@ -567,6 +608,24 @@ const wikiGroups = [
         ],
         modules: [
           {
+            type: 'visual-panel',
+            tone: 'dry',
+            eyebrow: 'Model story',
+            title: 'The dry lab page should show how modeling changes timing, dose, and recommendations',
+            image: floralDryLabArt,
+            alt:
+              'Illustrated dry lab dashboard with prediction curves, dose controls, and decision outputs.',
+            caption:
+              'A model-first composition that can later be replaced with real plots, parameter tables, and prediction snapshots.',
+            lede:
+              'Good dry lab pages do not just describe equations. They show how prediction becomes a usable decision for flower care.',
+            points: [
+              'Show the input features that drive the prediction.',
+              'Make the intervention window visible, not buried in prose.',
+              'Use comparison views to show how modeling improves over fixed treatment logic.',
+            ],
+          },
+          {
             type: 'pipeline',
             eyebrow: 'Model pipeline',
             title: 'Dry lab work turns observations into intervention decisions',
@@ -646,6 +705,24 @@ const wikiGroups = [
           'A user workflow showing how measurements become recommendations',
         ],
         modules: [
+          {
+            type: 'visual-panel',
+            tone: 'hardware',
+            eyebrow: 'Prototype frame',
+            title: 'Hardware pages need an object, an interface, and a workflow in the same glance',
+            image: smartVaseArt,
+            alt:
+              'Illustrated smart vase prototype with sensors, interface card, and preservation dashboard.',
+            caption:
+              'A bridge visual for the hardware page: the device, the captured signals, and the recommendation interface all belong together.',
+            lede:
+              'This block creates space for future prototype renders, photos, and interface screenshots while already teaching the reader how the device fits the FloraGuard system.',
+            points: [
+              'Show the physical vase or enclosure, not only sensor names.',
+              'Connect the captured signals to the recommendation interface.',
+              'Keep the user workflow visible so the page feels deployable, not hypothetical.',
+            ],
+          },
           {
             type: 'step-cards',
             eyebrow: 'Prototype layers',
@@ -741,6 +818,24 @@ const wikiGroups = [
           'A feedback loop diagram showing how specific interviews changed design choices',
         ],
         modules: [
+          {
+            type: 'visual-panel',
+            tone: 'human',
+            eyebrow: 'Stakeholder picture',
+            title: 'Human practices should show who loses value, when, and how that changed the project',
+            image: floralStakeholderMapArt,
+            alt:
+              'Illustrated stakeholder map connecting growers, distributors, florists, and consumers to a central flower system.',
+            caption:
+              'A visual placeholder for a future stakeholder map or interview synthesis diagram.',
+            lede:
+              'Winner-style HP pages usually make stakeholder logic easy to grasp before the reader reaches long interview summaries.',
+            points: [
+              'Map stakeholders to specific pain points in the floral chain.',
+              'Show which feedback changed sensing, hardware, or implementation choices.',
+              'Use one simple visual to anchor the page before detailed quotes and interview notes.',
+            ],
+          },
           {
             type: 'stakeholder-grid',
             eyebrow: 'Stakeholder map',
