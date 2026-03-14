@@ -346,7 +346,8 @@ h1 {
 
 h2 {
   font-size: clamp(2rem, 4vw, 3rem);
-  max-width: 14ch;
+  max-width: 20ch;
+  text-wrap: balance;
 }
 
 h3 {
@@ -683,6 +684,19 @@ h3 {
 
 .section-heading {
   margin-bottom: 18px;
+  max-width: 72ch;
+}
+
+.section-heading h2 {
+  max-width: 24ch;
+}
+
+.feature-module .section-heading h2,
+.editorial-band .section-heading h2,
+.split-block .section-heading h2 {
+  max-width: 30ch;
+  font-size: clamp(1.8rem, 3vw, 2.7rem);
+  line-height: 1.06;
 }
 
 .panel-stack {
@@ -1046,7 +1060,7 @@ h3 {
 }
 
 .story-section h2 {
-  max-width: 22ch;
+  max-width: 28ch;
   font-size: clamp(1.7rem, 2.4vw, 2.3rem);
 }
 
