@@ -114,6 +114,32 @@ const homePage = {
         'A smart vase or florist-facing monitoring system gives FloraGuard a path from lab logic to a real preservation interface.',
     },
   ],
+  storyFlow: [
+    {
+      step: '01',
+      title: 'Detect senescence early',
+      detail:
+        'Sense ROS buildup, ethylene-associated decline, and dehydration pressure before visible collapse dominates the phenotype.',
+    },
+    {
+      step: '02',
+      title: 'Stabilize the flower',
+      detail:
+        'Use melatonin-centered protection and ethylene regulation to preserve flower quality rather than treating symptoms too late.',
+    },
+    {
+      step: '03',
+      title: 'Predict intervention timing',
+      detail:
+        'Combine environment, harvest context, and visible status tracking to estimate when action matters most.',
+    },
+    {
+      step: '04',
+      title: 'Translate to real use',
+      detail:
+        'Move from a bench system toward florist and consumer-facing preservation tools that reduce waste in practice.',
+    },
+  ],
   nextAdd: [
     'Experimental figures for ROS, ACC, ethylene, and vase life comparisons across treatments',
     'Smart vase photos, schematics, and a hardware workflow diagram',
@@ -436,6 +462,49 @@ const wikiGroups = [
           'Experimental timelines, replication counts, and protocol figures',
           'Representative photos and quantitative plots for each aim',
         ],
+        modules: [
+          {
+            type: 'metric-cards',
+            eyebrow: 'Experimental logic',
+            title: 'Wet lab readouts are organized around three connected questions',
+            items: [
+              {
+                label: 'Baseline biology',
+                value: 'Aim 1',
+                detail: 'How fast do different flowers move from healthy petals to visible senescence?',
+              },
+              {
+                label: 'Protective response',
+                value: 'Aim 2',
+                detail: 'Can melatonin-centered treatment measurably preserve flower quality and extend vase life?',
+              },
+              {
+                label: 'Ethylene control',
+                value: 'Aim 3',
+                detail: 'Does ACC reduction shift hormone-driven aging and increase usable post-harvest time?',
+              },
+            ],
+          },
+          {
+            type: 'step-cards',
+            eyebrow: 'Measurement stack',
+            title: 'Each experiment is meant to connect molecular change to visible floral quality',
+            items: [
+              {
+                title: 'Stress markers',
+                detail: 'Track ROS and related oxidative signatures so biochemical decline can be compared with visible senescence.',
+              },
+              {
+                title: 'Phenotype scoring',
+                detail: 'Use petal wilting and visual senescence scoring as consistent indicators of ornamental quality loss.',
+              },
+              {
+                title: 'Longevity outcome',
+                detail: 'Measure vase life extension as the most direct readout of whether FloraGuard changes real post-harvest performance.',
+              },
+            ],
+          },
+        ],
         sections: [
           {
             eyebrow: 'Aim 1',
@@ -496,6 +565,46 @@ const wikiGroups = [
           'Validation plots comparing predictions with measured vase life',
           'Sensitivity analysis for temperature, treatment, and harvest stage',
         ],
+        modules: [
+          {
+            type: 'pipeline',
+            eyebrow: 'Model pipeline',
+            title: 'Dry lab work turns observations into intervention decisions',
+            items: [
+              {
+                title: 'Inputs',
+                detail: 'Temperature, humidity, harvest stage, and treatment conditions define the starting state of the flower.',
+              },
+              {
+                title: 'Prediction',
+                detail: 'A senescence model estimates decline trajectory and points to when intervention is likely to be most useful.',
+              },
+              {
+                title: 'Optimization',
+                detail: 'Dose-response simulations help identify practical melatonin operating windows instead of relying on one arbitrary concentration.',
+              },
+              {
+                title: 'Decision support',
+                detail: 'The model feeds back into treatment timing and future hardware recommendations.',
+              },
+            ],
+          },
+          {
+            type: 'comparison-grid',
+            eyebrow: 'Why this matters',
+            title: 'Dry lab is not an add-on, it is what makes FloraGuard adaptive',
+            items: [
+              {
+                title: 'Without modeling',
+                detail: 'Preservation remains mostly static: fixed treatment, fixed timing, and little guidance across flower types or contexts.',
+              },
+              {
+                title: 'With modeling',
+                detail: 'Preservation becomes adaptive: timing, dose, and environmental context can all inform what the system should recommend.',
+              },
+            ],
+          },
+        ],
         sections: [
           {
             eyebrow: 'Prediction',
@@ -535,6 +644,50 @@ const wikiGroups = [
           'Device renders, wiring layout, and sensor selection table',
           'Prototype photos and physical enclosure design notes',
           'A user workflow showing how measurements become recommendations',
+        ],
+        modules: [
+          {
+            type: 'step-cards',
+            eyebrow: 'Prototype layers',
+            title: 'The smart vase is designed as a bridge from bench insight to usable monitoring',
+            items: [
+              {
+                title: 'Sensing layer',
+                detail: 'Environmental sensors capture temperature and time-linked context that strongly shapes post-harvest decline.',
+              },
+              {
+                title: 'Visual layer',
+                detail: 'Camera-based tracking provides a route to monitor visible flower condition and support image-informed scoring.',
+              },
+              {
+                title: 'Data layer',
+                detail: 'Logging and interpretation make it possible to compare conditions over time instead of relying on one-off observations.',
+              },
+              {
+                title: 'Recommendation layer',
+                detail: 'The device can eventually connect model output to preservation advice for florists or consumers.',
+              },
+            ],
+          },
+          {
+            type: 'journey-strip',
+            eyebrow: 'Use pathway',
+            title: 'How hardware supports a real preservation workflow',
+            items: [
+              {
+                title: 'Monitor',
+                detail: 'Observe temperature, elapsed time, and visible condition continuously.',
+              },
+              {
+                title: 'Interpret',
+                detail: 'Convert raw measurements into an estimate of flower stress and likely remaining vase life.',
+              },
+              {
+                title: 'Act',
+                detail: 'Recommend when treatment, replacement, or handling changes should happen.',
+              },
+            ],
+          },
         ],
         sections: [
           {
@@ -586,6 +739,50 @@ const wikiGroups = [
           'Interview counts, dates, and method summaries',
           'Quoted stakeholder insights with permissions or anonymization',
           'A feedback loop diagram showing how specific interviews changed design choices',
+        ],
+        modules: [
+          {
+            type: 'stakeholder-grid',
+            eyebrow: 'Stakeholder map',
+            title: 'Different actors experience flower loss at different points in the chain',
+            items: [
+              {
+                title: 'Growers',
+                detail: 'Need post-harvest strategies that preserve value after cutting without creating unsustainable complexity.',
+              },
+              {
+                title: 'Distributors',
+                detail: 'Care most about transport losses, handling windows, and how variable storage conditions affect quality.',
+              },
+              {
+                title: 'Florists',
+                detail: 'Need practical tools that improve display life and reduce uncertainty in care decisions.',
+              },
+              {
+                title: 'Consumers',
+                detail: 'Often lack actionable flower-care knowledge and respond best to simple, trustworthy guidance.',
+              },
+            ],
+          },
+          {
+            type: 'journey-strip',
+            eyebrow: 'Feedback loop',
+            title: 'Human practices reshaped the project in a concrete direction',
+            items: [
+              {
+                title: 'Listen',
+                detail: 'Map where value is lost and who experiences the pain most directly.',
+              },
+              {
+                title: 'Translate',
+                detail: 'Turn those problems into design criteria for sensing, usability, and deployment format.',
+              },
+              {
+                title: 'Integrate',
+                detail: 'Use the stakeholder perspective to justify why FloraGuard should become a practical preservation platform.',
+              },
+            ],
+          },
         ],
         sections: [
           {

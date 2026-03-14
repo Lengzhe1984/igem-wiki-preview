@@ -75,6 +75,101 @@ function renderReferences(items) {
   `
 }
 
+function renderModule(module, index) {
+  switch (module.type) {
+    case 'metric-cards':
+      return `
+        <section class="feature-module feature-module-wide fade-card" style="--delay:${index * 55}ms">
+          <div class="section-heading">
+            <p class="eyebrow">${escapeHtml(module.eyebrow)}</p>
+            <h2>${escapeHtml(module.title)}</h2>
+          </div>
+          <div class="metric-card-grid">
+            ${module.items
+              .map(
+                (item) => `
+                  <article class="feature-card metric-feature-card">
+                    <span class="feature-value">${escapeHtml(item.value)}</span>
+                    <h3>${escapeHtml(item.label)}</h3>
+                    <p>${escapeHtml(item.detail)}</p>
+                  </article>
+                `,
+              )
+              .join('')}
+          </div>
+        </section>
+      `
+    case 'step-cards':
+    case 'stakeholder-grid':
+      return `
+        <section class="feature-module fade-card" style="--delay:${index * 55}ms">
+          <div class="section-heading">
+            <p class="eyebrow">${escapeHtml(module.eyebrow)}</p>
+            <h2>${escapeHtml(module.title)}</h2>
+          </div>
+          <div class="feature-card-grid">
+            ${module.items
+              .map(
+                (item) => `
+                  <article class="feature-card">
+                    <h3>${escapeHtml(item.title)}</h3>
+                    <p>${escapeHtml(item.detail)}</p>
+                  </article>
+                `,
+              )
+              .join('')}
+          </div>
+        </section>
+      `
+    case 'pipeline':
+    case 'journey-strip':
+      return `
+        <section class="feature-module feature-module-wide fade-card" style="--delay:${index * 55}ms">
+          <div class="section-heading">
+            <p class="eyebrow">${escapeHtml(module.eyebrow)}</p>
+            <h2>${escapeHtml(module.title)}</h2>
+          </div>
+          <div class="journey-strip">
+            ${module.items
+              .map(
+                (item, itemIndex) => `
+                  <article class="journey-card">
+                    <span class="journey-index">${String(itemIndex + 1).padStart(2, '0')}</span>
+                    <h3>${escapeHtml(item.title)}</h3>
+                    <p>${escapeHtml(item.detail)}</p>
+                  </article>
+                `,
+              )
+              .join('')}
+          </div>
+        </section>
+      `
+    case 'comparison-grid':
+      return `
+        <section class="feature-module fade-card" style="--delay:${index * 55}ms">
+          <div class="section-heading">
+            <p class="eyebrow">${escapeHtml(module.eyebrow)}</p>
+            <h2>${escapeHtml(module.title)}</h2>
+          </div>
+          <div class="comparison-grid">
+            ${module.items
+              .map(
+                (item) => `
+                  <article class="comparison-card">
+                    <h3>${escapeHtml(item.title)}</h3>
+                    <p>${escapeHtml(item.detail)}</p>
+                  </article>
+                `,
+              )
+              .join('')}
+          </div>
+        </section>
+      `
+    default:
+      return ''
+  }
+}
+
 function renderBlock(block) {
   switch (block.type) {
     case 'paragraph':
@@ -139,6 +234,10 @@ const tocMarkup = page.sections
   )
   .join('')
 
+const moduleMarkup = (page.modules ?? [])
+  .map((module, index) => renderModule(module, index))
+  .join('')
+
 document.querySelector('#app').innerHTML = `
   <div class="wiki-shell">
     <header class="site-header">
@@ -189,6 +288,8 @@ document.querySelector('#app').innerHTML = `
               ${highlightMarkup}
             </ul>
           </section>
+
+          ${moduleMarkup}
 
           ${sectionMarkup}
         </article>
@@ -245,3 +346,51 @@ document.querySelector('#app').innerHTML = `
 `
 
 initDropdownNav()
+
+function initTocSpy() {
+  const links = Array.from(document.querySelectorAll('.toc-link'))
+  const sections = links
+    .map((link) => {
+      const href = link.getAttribute('href')
+      if (!href?.startsWith('#')) return null
+      const target = document.querySelector(href)
+      if (!target) return null
+      return { link, target }
+    })
+    .filter(Boolean)
+
+  if (!sections.length) return
+
+  const setActive = (id) => {
+    sections.forEach(({ link, target }) => {
+      link.classList.toggle('active', `#${target.id}` === id)
+    })
+  }
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      const visible = entries
+        .filter((entry) => entry.isIntersecting)
+        .sort((a, b) => a.boundingClientRect.top - b.boundingClientRect.top)
+
+      if (visible[0]) {
+        setActive(`#${visible[0].target.id}`)
+      }
+    },
+    {
+      rootMargin: '-20% 0px -60% 0px',
+      threshold: [0.1, 0.4, 0.7],
+    },
+  )
+
+  sections.forEach(({ target }) => observer.observe(target))
+
+  const initialHash = window.location.hash
+  if (initialHash) {
+    setActive(initialHash)
+  } else {
+    setActive(`#${sections[0].target.id}`)
+  }
+}
+
+initTocSpy()

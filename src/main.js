@@ -83,6 +83,18 @@ const showcaseMarkup = homePage.showcaseCards
   )
   .join('')
 
+const storyFlowMarkup = homePage.storyFlow
+  .map(
+    (item, index) => `
+      <article class="flow-card fade-card" style="--delay:${index * 55}ms">
+        <span class="flow-step">${escapeHtml(item.step)}</span>
+        <h3>${escapeHtml(item.title)}</h3>
+        <p>${escapeHtml(item.detail)}</p>
+      </article>
+    `,
+  )
+  .join('')
+
 const groupCards = wikiGroups
   .map(
     (group, index) => `
@@ -210,6 +222,16 @@ document.querySelector('#app').innerHTML = `
         </div>
         <div class="focus-grid">
           ${challengeMarkup}
+        </div>
+      </section>
+
+      <section class="section-block">
+        <div class="section-heading">
+          <p class="eyebrow">Story rhythm</p>
+          <h2>A winner-style homepage makes the project logic legible in four beats</h2>
+        </div>
+        <div class="flow-grid">
+          ${storyFlowMarkup}
         </div>
       </section>
 
