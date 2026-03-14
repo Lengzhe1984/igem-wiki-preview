@@ -236,6 +236,28 @@ const wikiGroups = [
             ],
           },
           {
+            type: 'metric-cards',
+            eyebrow: 'Key numbers',
+            title: 'The project frame becomes sharper when a few core facts stay visible',
+            items: [
+              {
+                label: 'Global floral market',
+                value: '40B+',
+                detail: 'A large commercial system depends on keeping cut flowers presentable after harvest.',
+              },
+              {
+                label: 'Stress axes',
+                value: '4',
+                detail: 'ROS, ethylene signaling, microbial blockage, and water imbalance together drive decline.',
+              },
+              {
+                label: 'Core biological levers',
+                value: '2',
+                detail: 'Melatonin-centered protection and ACC-linked ethylene control anchor the FloraGuard strategy.',
+              },
+            ],
+          },
+          {
             type: 'comparison-grid',
             eyebrow: 'Concept shift',
             title: 'FloraGuard changes the project from treatment-first thinking to systems-first thinking',
@@ -247,6 +269,28 @@ const wikiGroups = [
               {
                 title: 'Programmable preservation',
                 detail: 'Sense condition, buffer oxidative stress, modulate ethylene-linked decline, and adapt timing based on what the flower is actually experiencing.',
+              },
+            ],
+          },
+          {
+            type: 'evidence-strip',
+            eyebrow: 'Hypothesis board',
+            title: 'A strong project page usually makes the hypothesis readable in three connected panels',
+            items: [
+              {
+                label: 'Panel 01',
+                title: 'Stress accumulates as a system',
+                detail: 'The page should show that senescence is not one pathway but an interacting post-harvest network.',
+              },
+              {
+                label: 'Panel 02',
+                title: 'Two biological levers can intervene',
+                detail: 'Melatonin and ACC deaminase logic should appear as complementary rather than independent ideas.',
+              },
+              {
+                label: 'Panel 03',
+                title: 'Monitoring turns treatment into management',
+                detail: 'Hardware and prediction are what convert a treatment concept into a programmable preservation system.',
               },
             ],
           },
@@ -346,6 +390,28 @@ const wikiGroups = [
             ],
           },
           {
+            type: 'metric-cards',
+            eyebrow: 'Species snapshot',
+            title: 'The problem feels more real when vase-life pressure is attached to familiar flower types',
+            items: [
+              {
+                label: 'Rose',
+                value: '5-7 d',
+                detail: 'A popular cut flower with a narrow window before visible quality drops.',
+              },
+              {
+                label: 'Tulip',
+                value: '4-6 d',
+                detail: 'A short-lived example that makes timing and handling especially important.',
+              },
+              {
+                label: 'Carnation',
+                value: '7-10 d',
+                detail: 'Longer life does not remove the underlying stress and care challenges.',
+              },
+            ],
+          },
+          {
             type: 'step-cards',
             eyebrow: 'Pain points',
             title: 'Three things make current floral care feel structurally fragile',
@@ -361,6 +427,21 @@ const wikiGroups = [
               {
                 title: 'Retail and home care disconnect',
                 detail: 'By the time the bouquet reaches the user, hidden transport and storage damage may already dominate the outcome.',
+              },
+            ],
+          },
+          {
+            type: 'comparison-grid',
+            eyebrow: 'Care gap',
+            title: 'Current methods fail for different reasons at different points in the chain',
+            items: [
+              {
+                title: 'Before purchase',
+                detail: 'Transport temperature shifts, storage time, and dehydration create hidden damage before consumers ever see the flower.',
+              },
+              {
+                title: 'After purchase',
+                detail: 'Consumers inherit a stressed bouquet without enough information to know what care will still be effective.',
               },
             ],
           },
@@ -448,6 +529,33 @@ const wikiGroups = [
             ],
           },
           {
+            type: 'profile-grid',
+            eyebrow: 'Module roles',
+            title: 'Each design layer should have one clear job inside the platform',
+            items: [
+              {
+                label: 'L-01',
+                title: 'Sensing',
+                detail: 'Detect stress-linked cues early enough that intervention still matters.',
+              },
+              {
+                label: 'L-02',
+                title: 'Melatonin response',
+                detail: 'Buffer oxidative stress and stabilize flower tissues before visible collapse accelerates.',
+              },
+              {
+                label: 'L-03',
+                title: 'Ethylene regulation',
+                detail: 'Reduce ethylene-linked decline by acting on ACC-associated signaling logic.',
+              },
+              {
+                label: 'L-04',
+                title: 'Monitoring and prediction',
+                detail: 'Track changing context and convert observation into future intervention timing.',
+              },
+            ],
+          },
+          {
             type: 'journey-strip',
             eyebrow: 'Closed loop',
             title: 'Design is easiest to grasp when the platform reads as one loop',
@@ -467,6 +575,28 @@ const wikiGroups = [
               {
                 title: 'Predict',
                 detail: 'Feed those observations back into intervention timing and deployment strategy.',
+              },
+            ],
+          },
+          {
+            type: 'evidence-strip',
+            eyebrow: 'Architecture board',
+            title: 'A final design figure should explain the platform in three glances',
+            items: [
+              {
+                label: 'Panel 01',
+                title: 'Signal inputs',
+                detail: 'Show what stress signals the system watches and where they originate.',
+              },
+              {
+                label: 'Panel 02',
+                title: 'Response handoff',
+                detail: 'Show how sensing informs melatonin and ethylene-linked response logic.',
+              },
+              {
+                label: 'Panel 03',
+                title: 'Monitoring output',
+                detail: 'Show how hardware and modeling close the loop and guide intervention timing.',
               },
             ],
           },
@@ -578,6 +708,33 @@ const wikiGroups = [
             ],
           },
           {
+            type: 'metric-cards',
+            eyebrow: 'DBTL shorthand',
+            title: 'The engineering page should compress the iteration loop into four memorable moves',
+            items: [
+              {
+                label: 'Design',
+                value: 'D',
+                detail: 'Choose what signals, responses, and modules belong in FloraGuard.',
+              },
+              {
+                label: 'Build',
+                value: 'B',
+                detail: 'Turn those ideas into constructs, treatments, and prototype-ready components.',
+              },
+              {
+                label: 'Test',
+                value: 'T',
+                detail: 'Measure whether flower quality and senescence timing actually change.',
+              },
+              {
+                label: 'Learn',
+                value: 'L',
+                detail: 'Use the outcome to update thresholds, strategies, and deployment logic.',
+              },
+            ],
+          },
+          {
             type: 'journey-strip',
             eyebrow: 'DBTL cycle',
             title: 'Engineering becomes legible when each stage answers a different question',
@@ -597,6 +754,28 @@ const wikiGroups = [
               {
                 title: 'Learn',
                 detail: 'How do the results reshape thresholds, doses, and deployment logic?',
+              },
+            ],
+          },
+          {
+            type: 'evidence-strip',
+            eyebrow: 'Iteration board',
+            title: 'An engineering page becomes more convincing when each cycle leaves a visible artifact',
+            items: [
+              {
+                label: 'Cycle 01',
+                title: 'Architecture decision',
+                detail: 'What module arrangement or hypothesis was selected, and why was it worth building?',
+              },
+              {
+                label: 'Cycle 02',
+                title: 'Test evidence',
+                detail: 'What readout or phenotype made the team rethink or confirm the design?',
+              },
+              {
+                label: 'Cycle 03',
+                title: 'Learned revision',
+                detail: 'What threshold, dose, or response strategy changed after the result?',
               },
             ],
           },
