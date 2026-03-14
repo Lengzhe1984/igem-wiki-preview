@@ -140,6 +140,53 @@ function renderModule(module, index) {
           </div>
         </section>
       `
+    case 'use-case-cards':
+      return `
+        <section class="feature-module feature-module-wide fade-card" style="--delay:${index * 55}ms">
+          <div class="section-heading">
+            <p class="eyebrow">${escapeHtml(module.eyebrow)}</p>
+            <h2>${escapeHtml(module.title)}</h2>
+          </div>
+          <div class="scenario-grid">
+            ${module.items
+              .map(
+                (item) => `
+                  <article class="scenario-card">
+                    <span class="scenario-tag">${escapeHtml(item.tag)}</span>
+                    <h3>${escapeHtml(item.title)}</h3>
+                    <p>${escapeHtml(item.detail)}</p>
+                    <ul class="scenario-points">
+                      ${item.points.map((point) => `<li>${escapeHtml(point)}</li>`).join('')}
+                    </ul>
+                  </article>
+                `,
+              )
+              .join('')}
+          </div>
+        </section>
+      `
+    case 'profile-grid':
+      return `
+        <section class="feature-module fade-card" style="--delay:${index * 55}ms">
+          <div class="section-heading">
+            <p class="eyebrow">${escapeHtml(module.eyebrow)}</p>
+            <h2>${escapeHtml(module.title)}</h2>
+          </div>
+          <div class="profile-grid">
+            ${module.items
+              .map(
+                (item) => `
+                  <article class="profile-card">
+                    <span class="profile-label">${escapeHtml(item.label)}</span>
+                    <h3>${escapeHtml(item.title)}</h3>
+                    <p>${escapeHtml(item.detail)}</p>
+                  </article>
+                `,
+              )
+              .join('')}
+          </div>
+        </section>
+      `
     case 'pipeline':
     case 'journey-strip':
       return `
@@ -177,6 +224,30 @@ function renderModule(module, index) {
                   <article class="comparison-card">
                     <h3>${escapeHtml(item.title)}</h3>
                     <p>${escapeHtml(item.detail)}</p>
+                  </article>
+                `,
+              )
+              .join('')}
+          </div>
+        </section>
+      `
+    case 'citation-clusters':
+      return `
+        <section class="feature-module feature-module-wide fade-card" style="--delay:${index * 55}ms">
+          <div class="section-heading">
+            <p class="eyebrow">${escapeHtml(module.eyebrow)}</p>
+            <h2>${escapeHtml(module.title)}</h2>
+          </div>
+          <div class="citation-grid">
+            ${module.items
+              .map(
+                (item) => `
+                  <article class="citation-card">
+                    <span class="citation-support">${escapeHtml(item.support)}</span>
+                    <h3>${escapeHtml(item.title)}</h3>
+                    <ul class="citation-list">
+                      ${item.papers.map((paper) => `<li>${escapeHtml(paper)}</li>`).join('')}
+                    </ul>
                   </article>
                 `,
               )

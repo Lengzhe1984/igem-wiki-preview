@@ -7,6 +7,8 @@ import floralSupplyChainArt from './assets/floral-supply-chain.svg'
 import floralWetLabArt from './assets/floral-wet-lab.svg'
 import floralDryLabArt from './assets/floral-dry-lab.svg'
 import floralStakeholderMapArt from './assets/floral-stakeholder-map.svg'
+import floralTeamCollageArt from './assets/floral-team-collage.svg'
+import floralReferenceMapArt from './assets/floral-reference-map.svg'
 
 const paragraph = (text) => ({ type: 'paragraph', text })
 const list = (items, style = 'unordered') => ({ type: 'list', items, style })
@@ -1172,7 +1174,7 @@ const wikiGroups = [
         modules: [
           {
             type: 'visual-panel',
-            tone: 'hardware',
+            tone: 'implementation',
             eyebrow: 'Deployment picture',
             title: 'Implementation pages should show what FloraGuard becomes outside the lab',
             image: smartVaseArt,
@@ -1200,6 +1202,65 @@ const wikiGroups = [
               {
                 title: 'Consumer-facing format',
                 detail: 'A simpler smart-vase or care-assistant version should prioritize clarity, trust, and low-friction recommendations at home.',
+              },
+            ],
+          },
+          {
+            type: 'use-case-cards',
+            eyebrow: 'Journey scenarios',
+            title: 'Implementation gets much stronger when each user journey is concrete',
+            items: [
+              {
+                tag: 'Research',
+                title: 'Bench validation workflow',
+                detail: 'The lab version focuses on controlled observation, treatment testing, and senescence measurement under reproducible conditions.',
+                points: [
+                  'High data density',
+                  'Protocol-first operation',
+                  'Supports model calibration',
+                ],
+              },
+              {
+                tag: 'Florist',
+                title: 'Professional preservation workflow',
+                detail: 'The florist version prioritizes display life, transport handling, and practical recommendations that fit a fast-paced retail setting.',
+                points: [
+                  'Fewer inputs, faster decisions',
+                  'Operational care guidance',
+                  'Quality retention during display',
+                ],
+              },
+              {
+                tag: 'Home',
+                title: 'Consumer smart-care workflow',
+                detail: 'The household version emphasizes trust, simple guidance, and low-friction feedback that helps consumers care for flowers without expert knowledge.',
+                points: [
+                  'Simple prompts',
+                  'Low-maintenance hardware',
+                  'Clear remaining-life guidance',
+                ],
+              },
+            ],
+          },
+          {
+            type: 'profile-grid',
+            eyebrow: 'Deployment checkpoints',
+            title: 'Three conditions matter before FloraGuard can leave the lab',
+            items: [
+              {
+                label: 'Safety',
+                title: 'Use controlled output formats',
+                detail: 'Implementation should favor cell-free, purified, or otherwise tightly bounded forms over direct release of engineered organisms.',
+              },
+              {
+                label: 'Usability',
+                title: 'Make recommendations easy to act on',
+                detail: 'A preservation platform only helps if users can quickly understand what to do and when to do it.',
+              },
+              {
+                label: 'Evidence',
+                title: 'Link recommendation to measurable benefit',
+                detail: 'Deployment needs a clear chain from monitoring signal to treatment decision to visible flower-quality outcome.',
               },
             ],
           },
@@ -1347,9 +1408,9 @@ const wikiGroups = [
             tone: 'team',
             eyebrow: 'Team picture',
             title: 'Great team pages connect people to work packages, not just names to faces',
-            image: floralNotesArt,
+            image: floralTeamCollageArt,
             alt:
-              'Illustrated planning board and floral notebook representing multidisciplinary teamwork.',
+              'Illustrated collage of team role clusters around a central floral project.',
             caption:
               'A placeholder for future team photos, role diagrams, and collaboration snapshots.',
             lede:
@@ -1380,6 +1441,33 @@ const wikiGroups = [
               {
                 title: 'Narrative and human practices',
                 detail: 'Connect the science to stakeholder needs, implementation, and clear public communication.',
+              },
+            ],
+          },
+          {
+            type: 'profile-grid',
+            eyebrow: 'Work packages',
+            title: 'A future team page can already preview how ownership will be shown',
+            items: [
+              {
+                label: 'WP-01',
+                title: 'Wet lab and senescence assays',
+                detail: 'Responsible for flower treatment design, measurement strategy, and experimental evidence generation.',
+              },
+              {
+                label: 'WP-02',
+                title: 'Dry lab and modeling',
+                detail: 'Responsible for predictive logic, parameter thinking, and turning observations into recommendations.',
+              },
+              {
+                label: 'WP-03',
+                title: 'Hardware and interface',
+                detail: 'Responsible for sensing hardware, device framing, and the smart-care experience.',
+              },
+              {
+                label: 'WP-04',
+                title: 'Human practices and wiki',
+                detail: 'Responsible for stakeholder integration, implementation logic, and public-facing project narrative.',
               },
             ],
           },
@@ -1431,9 +1519,9 @@ const wikiGroups = [
             tone: 'references',
             eyebrow: 'Literature map',
             title: 'Reference pages work better when the reader can see what each paper supports',
-            image: floralNotesArt,
+            image: floralReferenceMapArt,
             alt:
-              'Illustrated literature notes and floral research motifs representing the project bibliography.',
+              'Illustrated reference map linking different literature pillars to the FloraGuard project.',
             caption:
               'A placeholder for future citation clusters or an annotated bibliography overview.',
             lede:
@@ -1460,6 +1548,35 @@ const wikiGroups = [
               {
                 title: 'Post-harvest physiology',
                 detail: 'Supports the broader framing that cut flower decline is a systems problem involving water balance, microbes, and stress signaling.',
+              },
+            ],
+          },
+          {
+            type: 'citation-clusters',
+            eyebrow: 'Citation groups',
+            title: 'The bibliography becomes more useful when it is organized by what part of FloraGuard it supports',
+            items: [
+              {
+                support: 'Supports oxidative-stress control',
+                title: 'Melatonin literature',
+                papers: [
+                  'Arnao MB, Hernandez-Ruiz J. Melatonin in plants: growth regulator and antioxidant.',
+                  'Zhang N et al. Roles of melatonin in plant stress tolerance.',
+                ],
+              },
+              {
+                support: 'Supports ethylene-pathway control',
+                title: 'ACC deaminase literature',
+                papers: [
+                  'Ali S et al. ACC deaminase producing bacteria delay flower senescence.',
+                ],
+              },
+              {
+                support: 'Supports project framing and future growth',
+                title: 'Post-harvest and methods expansion',
+                papers: [
+                  'Future additions: cut flower physiology, ROS assays, vase life scoring, and smart monitoring references.',
+                ],
               },
             ],
           },
@@ -1548,14 +1665,14 @@ const pageMedia = {
     imageCaption: 'FloraGuard contributes a preservation framework, not just a single intervention.',
   },
   team: {
-    image: floralNotesArt,
-    imageAlt: 'Notebook and flower illustration representing team planning and authorship.',
-    imageCaption: 'A multidisciplinary team is needed to connect biology, hardware, and modeling.',
+    image: floralTeamCollageArt,
+    imageAlt: 'Illustrated team role collage around the FloraGuard project.',
+    imageCaption: 'A multidisciplinary team is needed to connect biology, hardware, modeling, and translation.',
   },
   references: {
-    image: floralNotesArt,
-    imageAlt: 'Notebook with flower motifs and literature lines.',
-    imageCaption: 'Core literature anchors FloraGuard in plant stress biology and senescence control.',
+    image: floralReferenceMapArt,
+    imageAlt: 'Illustrated literature map for the FloraGuard bibliography.',
+    imageCaption: 'Core literature anchors FloraGuard in plant stress biology, ethylene control, and post-harvest systems thinking.',
   },
 }
 

@@ -1,0 +1,49 @@
+<svg width="960" height="720" viewBox="0 0 960 720" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="88" y1="56" x2="850" y2="652" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FBFAFF"/>
+      <stop offset="1" stop-color="#F0ECFA"/>
+    </linearGradient>
+    <linearGradient id="paper" x1="0" y1="0" x2="0" y2="1">
+      <stop stop-color="#FFFFFF" stop-opacity="0.92"/>
+      <stop offset="1" stop-color="#F7F4FD" stop-opacity="0.98"/>
+    </linearGradient>
+    <linearGradient id="rose" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#F4B5CD"/>
+      <stop offset="1" stop-color="#C15B83"/>
+    </linearGradient>
+    <linearGradient id="leaf" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#98B56D"/>
+      <stop offset="1" stop-color="#5E7F4B"/>
+    </linearGradient>
+  </defs>
+  <rect width="960" height="720" rx="38" fill="url(#bg)"/>
+  <circle cx="176" cy="150" r="94" fill="#EAE4FA"/>
+  <circle cx="796" cy="568" r="146" fill="#F0EAFB"/>
+  <rect x="72" y="94" width="816" height="532" rx="34" fill="white" fill-opacity="0.82" stroke="#DBD3EE" stroke-width="4"/>
+  <rect x="126" y="146" width="234" height="144" rx="24" fill="url(#paper)" stroke="#D8D0EC" stroke-width="4"/>
+  <text x="154" y="192" fill="#865381" font-family="Avenir Next, sans-serif" font-size="22" font-weight="700">Melatonin biology</text>
+  <path d="M154 220H328" stroke="#E8E1F8" stroke-width="4" stroke-linecap="round"/>
+  <path d="M154 248H314" stroke="#E8E1F8" stroke-width="4" stroke-linecap="round"/>
+  <path d="M154 276H296" stroke="#E8E1F8" stroke-width="4" stroke-linecap="round"/>
+  <rect x="600" y="146" width="234" height="144" rx="24" fill="url(#paper)" stroke="#D8D0EC" stroke-width="4"/>
+  <text x="628" y="192" fill="#865381" font-family="Avenir Next, sans-serif" font-size="22" font-weight="700">ACC deaminase</text>
+  <path d="M628 220H802" stroke="#E8E1F8" stroke-width="4" stroke-linecap="round"/>
+  <path d="M628 248H790" stroke="#E8E1F8" stroke-width="4" stroke-linecap="round"/>
+  <path d="M628 276H766" stroke="#E8E1F8" stroke-width="4" stroke-linecap="round"/>
+  <rect x="362" y="396" width="236" height="156" rx="26" fill="url(#paper)" stroke="#D8D0EC" stroke-width="4"/>
+  <text x="392" y="444" fill="#865381" font-family="Avenir Next, sans-serif" font-size="22" font-weight="700">Post-harvest physiology</text>
+  <path d="M392 476H564" stroke="#E8E1F8" stroke-width="4" stroke-linecap="round"/>
+  <path d="M392 504H548" stroke="#E8E1F8" stroke-width="4" stroke-linecap="round"/>
+  <path d="M392 532H526" stroke="#E8E1F8" stroke-width="4" stroke-linecap="round"/>
+  <path d="M360 218H474" stroke="#C15B83" stroke-width="5" stroke-linecap="round" stroke-dasharray="10 14"/>
+  <path d="M600 218H486" stroke="#C15B83" stroke-width="5" stroke-linecap="round" stroke-dasharray="10 14"/>
+  <path d="M480 290V396" stroke="#5E7F4B" stroke-width="5" stroke-linecap="round" stroke-dasharray="10 14"/>
+  <path d="M470 304L480 286L490 304" stroke="#5E7F4B" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M462 116C428 84 414 42 414 -2C466 8 506 34 528 78" fill="url(#rose)"/>
+  <path d="M528 78C570 44 622 30 676 38C648 88 602 116 552 124" fill="#F2C1D5"/>
+  <path d="M552 124C604 134 644 164 664 210C610 216 564 192 528 150" fill="#B8547B"/>
+  <circle cx="536" cy="116" r="18" fill="#FFE29C"/>
+  <path d="M436 194C400 172 384 140 382 98C422 106 452 130 470 160" fill="url(#leaf)"/>
+  <text x="208" y="626" fill="#6E5D76" font-family="Avenir Next, sans-serif" font-size="22">References should show which pillar of FloraGuard each paper supports.</text>
+</svg>

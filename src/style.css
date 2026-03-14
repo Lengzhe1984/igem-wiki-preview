@@ -1092,6 +1092,12 @@ h3 {
     linear-gradient(180deg, rgba(255, 255, 255, 0.82) 0%, rgba(250, 242, 232, 0.98) 100%);
 }
 
+.feature-visual-implementation {
+  background:
+    radial-gradient(circle at top right, rgba(230, 167, 103, 0.16), transparent 24%),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.82) 0%, rgba(248, 240, 229, 0.98) 100%);
+}
+
 .feature-visual-human {
   background:
     radial-gradient(circle at top right, rgba(191, 84, 125, 0.12), transparent 24%),
@@ -1130,7 +1136,10 @@ h3 {
 
 .feature-card-grid,
 .metric-card-grid,
-.comparison-grid {
+.comparison-grid,
+.scenario-grid,
+.profile-grid,
+.citation-grid {
   display: grid;
   gap: 16px;
 }
@@ -1147,9 +1156,24 @@ h3 {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
+.scenario-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.profile-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.citation-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
 .feature-card,
 .comparison-card,
-.journey-card {
+.journey-card,
+.scenario-card,
+.profile-card,
+.citation-card {
   padding: 18px;
   border-radius: 22px;
   border: 1px solid rgba(191, 84, 125, 0.1);
@@ -1158,9 +1182,58 @@ h3 {
 
 .feature-card p,
 .comparison-card p,
-.journey-card p {
+.journey-card p,
+.scenario-card p,
+.profile-card p,
+.citation-card p {
   margin: 10px 0 0;
   color: var(--ink-soft);
+}
+
+.scenario-card,
+.profile-card,
+.citation-card {
+  display: grid;
+  align-content: start;
+  gap: 10px;
+}
+
+.scenario-tag,
+.profile-label,
+.citation-support {
+  display: inline-flex;
+  width: fit-content;
+  min-height: 32px;
+  align-items: center;
+  justify-content: center;
+  padding: 0.4rem 0.72rem;
+  border-radius: 999px;
+  font-family: var(--mono-font);
+  font-size: 0.78rem;
+}
+
+.scenario-tag {
+  background: rgba(230, 167, 103, 0.16);
+  color: #9b6430;
+}
+
+.profile-label {
+  background: rgba(191, 84, 125, 0.12);
+  color: var(--accent);
+}
+
+.citation-support {
+  background: rgba(145, 132, 179, 0.14);
+  color: #665a8e;
+}
+
+.scenario-points,
+.citation-list {
+  margin: 4px 0 0;
+  padding-left: 1rem;
+  color: var(--ink-soft);
+  display: grid;
+  gap: 8px;
 }
 
 .metric-feature-card {
@@ -1544,7 +1617,10 @@ body[data-page="references"] .story-summary {
   .feature-card-grid,
   .metric-card-grid,
   .comparison-grid,
-  .journey-strip {
+  .journey-strip,
+  .scenario-grid,
+  .profile-grid,
+  .citation-grid {
     grid-template-columns: 1fr;
   }
 

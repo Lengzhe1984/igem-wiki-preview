@@ -1,0 +1,53 @@
+<svg width="960" height="720" viewBox="0 0 960 720" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="88" y1="54" x2="856" y2="650" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFF9FB"/>
+      <stop offset="1" stop-color="#F7ECEF"/>
+    </linearGradient>
+    <linearGradient id="rose" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#F5B1C8"/>
+      <stop offset="1" stop-color="#C45A81"/>
+    </linearGradient>
+    <linearGradient id="leaf" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#99B56C"/>
+      <stop offset="1" stop-color="#5E7F49"/>
+    </linearGradient>
+  </defs>
+  <rect width="960" height="720" rx="38" fill="url(#bg)"/>
+  <circle cx="160" cy="144" r="96" fill="#F8DDE8"/>
+  <circle cx="784" cy="568" r="144" fill="#FAE8EE"/>
+  <rect x="74" y="94" width="812" height="532" rx="34" fill="white" fill-opacity="0.82" stroke="#E3C3D0" stroke-width="4"/>
+  <path d="M484 340C482 288 486 236 496 190" stroke="#678750" stroke-width="8" stroke-linecap="round"/>
+  <path d="M494 214C458 182 444 140 444 94C496 104 536 130 558 174" fill="url(#rose)"/>
+  <path d="M558 174C600 140 652 126 706 134C678 184 632 212 582 220" fill="#F2BDD0"/>
+  <path d="M582 220C634 230 674 260 694 306C640 312 594 288 558 246" fill="#B95079"/>
+  <circle cx="566" cy="212" r="18" fill="#FFE19B"/>
+  <path d="M462 294C426 272 410 240 408 198C448 206 478 230 496 260" fill="url(#leaf)"/>
+  <path d="M438 414H564L592 562C596 588 576 610 550 610H452C426 610 406 588 410 562L438 414Z" fill="#F4D4E1" stroke="#D48BA8" stroke-width="6"/>
+  <path d="M462 474C498 492 536 492 572 474" stroke="#FFF8FB" stroke-width="6" stroke-linecap="round" opacity="0.85"/>
+  <rect x="120" y="180" width="192" height="118" rx="26" fill="#FFF8FA" stroke="#DFC1CE" stroke-width="4"/>
+  <circle cx="172" cy="222" r="18" fill="#D58CA9"/>
+  <path d="M146 270C146 248 158 236 176 236C194 236 206 248 206 270V276H146V270Z" fill="#D58CA9"/>
+  <text x="222" y="228" fill="#8D4A64" font-family="Avenir Next, sans-serif" font-size="22" font-weight="700">Wet Lab</text>
+  <text x="222" y="258" fill="#6F5C69" font-family="Avenir Next, sans-serif" font-size="18">senescence assays</text>
+  <rect x="648" y="180" width="192" height="118" rx="26" fill="#FFF8FA" stroke="#DFC1CE" stroke-width="4"/>
+  <circle cx="700" cy="222" r="18" fill="#8FAE63"/>
+  <path d="M674 270C674 248 686 236 704 236C722 236 734 248 734 270V276H674V270Z" fill="#8FAE63"/>
+  <text x="748" y="228" fill="#8D4A64" font-family="Avenir Next, sans-serif" font-size="22" font-weight="700">Dry Lab</text>
+  <text x="748" y="258" fill="#6F5C69" font-family="Avenir Next, sans-serif" font-size="18">prediction + data</text>
+  <rect x="104" y="474" width="220" height="118" rx="26" fill="#FFF8FA" stroke="#DFC1CE" stroke-width="4"/>
+  <circle cx="160" cy="516" r="18" fill="#E3A768"/>
+  <path d="M134 564C134 542 146 530 164 530C182 530 194 542 194 564V570H134V564Z" fill="#E3A768"/>
+  <text x="210" y="520" fill="#8D4A64" font-family="Avenir Next, sans-serif" font-size="22" font-weight="700">Hardware</text>
+  <text x="210" y="550" fill="#6F5C69" font-family="Avenir Next, sans-serif" font-size="18">device + interface</text>
+  <rect x="626" y="474" width="230" height="118" rx="26" fill="#FFF8FA" stroke="#DFC1CE" stroke-width="4"/>
+  <circle cx="684" cy="516" r="18" fill="#C45A81"/>
+  <path d="M658 564C658 542 670 530 688 530C706 530 718 542 718 564V570H658V564Z" fill="#C45A81"/>
+  <text x="738" y="520" fill="#8D4A64" font-family="Avenir Next, sans-serif" font-size="22" font-weight="700">HP + Wiki</text>
+  <text x="738" y="550" fill="#6F5C69" font-family="Avenir Next, sans-serif" font-size="18">story + translation</text>
+  <path d="M312 240H430" stroke="#C45A81" stroke-width="5" stroke-linecap="round" stroke-dasharray="10 14"/>
+  <path d="M530 240H648" stroke="#C45A81" stroke-width="5" stroke-linecap="round" stroke-dasharray="10 14"/>
+  <path d="M324 534H430" stroke="#C45A81" stroke-width="5" stroke-linecap="round" stroke-dasharray="10 14"/>
+  <path d="M530 534H626" stroke="#C45A81" stroke-width="5" stroke-linecap="round" stroke-dasharray="10 14"/>
+  <text x="244" y="650" fill="#6E5C69" font-family="Avenir Next, sans-serif" font-size="22">The team page should show roles, collaboration, and ownership.</text>
+</svg>
