@@ -13,7 +13,8 @@
   --accent-warm-deep: #97516c;
   --leaf: #6d8c57;
   --leaf-soft: rgba(109, 140, 87, 0.14);
-  --shadow: 0 24px 60px rgba(63, 38, 55, 0.12);
+  --shadow: 0 18px 42px rgba(63, 38, 55, 0.1);
+  --shadow-soft: 0 12px 28px rgba(63, 38, 55, 0.07);
   --heading-font: "Iowan Old Style", "Baskerville", "Palatino Linotype", Georgia, serif;
   --body-font: "Avenir Next", "Segoe UI", "PingFang SC", "Noto Sans SC", sans-serif;
   --mono-font: "JetBrains Mono", "SFMono-Regular", Consolas, monospace;
@@ -77,9 +78,9 @@ select {
 }
 
 .wiki-shell {
-  width: min(1240px, calc(100% - 32px));
+  width: min(1288px, calc(100% - 36px));
   margin: 0 auto;
-  padding: 18px 0 56px;
+  padding: 16px 0 56px;
   position: relative;
   z-index: 1;
 }
@@ -112,8 +113,8 @@ select {
   grid-template-columns: minmax(240px, 1.05fr) minmax(0, 1.95fr);
   gap: 16px 18px;
   align-items: center;
-  border-radius: 28px;
-  padding: 18px 20px;
+  border-radius: 24px;
+  padding: 16px 18px;
 }
 
 .brand-block {
@@ -278,8 +279,8 @@ select {
   grid-template-columns: minmax(0, 1.05fr) minmax(360px, 0.95fr);
   align-items: start;
   gap: 20px;
-  border-radius: 34px;
-  padding: 34px;
+  border-radius: 30px;
+  padding: 30px;
 }
 
 .hero-banner::before,
@@ -692,6 +693,16 @@ h3 {
   max-width: 28ch;
 }
 
+.home-main .section-heading h2 {
+  max-width: 36ch;
+  font-size: clamp(1.55rem, 2.35vw, 2.05rem);
+  line-height: 1.12;
+}
+
+.home-main .section-copy {
+  max-width: 74ch;
+}
+
 .feature-module .section-heading h2,
 .editorial-band .section-heading h2,
 .split-block .section-heading h2 {
@@ -715,6 +726,7 @@ h3 {
 .content-card-grid {
   display: grid;
   gap: 18px;
+  align-items: stretch;
 }
 
 .focus-grid {
@@ -752,6 +764,7 @@ h3 {
 .principle-card,
 .structure-card,
 .content-card {
+  height: 100%;
   padding: 22px;
   border-radius: 24px;
 }
@@ -869,10 +882,10 @@ h3 {
 
 .split-block {
   display: grid;
-  grid-template-columns: minmax(0, 1.08fr) minmax(320px, 0.92fr);
+  grid-template-columns: minmax(0, 1.12fr) minmax(280px, 0.88fr);
   gap: 22px;
-  padding: 28px;
-  border-radius: 30px;
+  padding: 24px;
+  border-radius: 28px;
 }
 
 .page-block {
@@ -925,9 +938,9 @@ h3 {
 .page-banner {
   position: relative;
   overflow: hidden;
-  min-height: 420px;
+  min-height: 380px;
   margin-top: 16px;
-  border-radius: 34px;
+  border-radius: 30px;
   border: 1px solid var(--line);
   background: var(--panel);
   box-shadow: var(--shadow);
@@ -973,8 +986,8 @@ h3 {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  min-height: 420px;
-  padding: 34px;
+  min-height: 380px;
+  padding: 28px;
 }
 
 .page-banner .eyebrow,
@@ -990,8 +1003,9 @@ h3 {
 }
 
 .page-banner h1 {
-  max-width: 12ch;
-  font-size: clamp(2.8rem, 5.2vw, 4.6rem);
+  max-width: 14ch;
+  font-size: clamp(2.35rem, 4.6vw, 3.9rem);
+  line-height: 1;
 }
 
 .page-banner .lede {
@@ -1026,8 +1040,8 @@ h3 {
 
 .page-layout {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(280px, 320px);
-  gap: 22px;
+  grid-template-columns: minmax(0, 1fr) minmax(280px, 300px);
+  gap: 24px;
   margin-top: 22px;
   align-items: start;
 }
@@ -1039,22 +1053,23 @@ h3 {
 }
 
 .page-sidebar {
-  width: min(100%, 320px);
+  width: min(100%, 300px);
   justify-self: end;
   position: sticky;
-  top: 108px;
+  top: 96px;
 }
 
 .side-panel {
-  padding: 20px;
+  padding: 18px;
   border-radius: 24px;
+  box-shadow: var(--shadow-soft);
   background:
     linear-gradient(180deg, rgba(255, 255, 255, 0.72) 0%, rgba(249, 237, 244, 0.94) 100%);
 }
 
 .story-section {
-  padding: 26px;
-  border-radius: 28px;
+  padding: 24px;
+  border-radius: 24px;
   background:
     linear-gradient(180deg, rgba(255, 255, 255, 0.78) 0%, rgba(249, 237, 244, 0.96) 100%);
   scroll-margin-top: 110px;
@@ -1072,8 +1087,8 @@ h3 {
 }
 
 .feature-module {
-  padding: 24px;
-  border-radius: 28px;
+  padding: 22px;
+  border-radius: 24px;
   border: 1px solid var(--line);
   background:
     linear-gradient(180deg, rgba(255, 255, 255, 0.8) 0%, rgba(249, 237, 244, 0.96) 100%);
@@ -1175,6 +1190,7 @@ h3 {
 .citation-grid {
   display: grid;
   gap: 16px;
+  align-items: stretch;
 }
 
 .feature-card-grid {
@@ -1207,6 +1223,7 @@ h3 {
 .scenario-card,
 .profile-card,
 .citation-card {
+  height: 100%;
   padding: 18px;
   border-radius: 22px;
   border: 1px solid rgba(191, 84, 125, 0.1);
@@ -1292,6 +1309,7 @@ h3 {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 16px;
+  align-items: stretch;
 }
 
 .journey-card {
@@ -1463,6 +1481,7 @@ h3 {
 .media-card {
   display: grid;
   gap: 18px;
+  height: 100%;
   padding: 20px;
   border-radius: 28px;
   border: 1px solid var(--line);
