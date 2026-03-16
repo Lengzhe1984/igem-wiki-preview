@@ -9,6 +9,10 @@ import floralDryLabArt from './assets/floral-dry-lab.svg'
 import floralStakeholderMapArt from './assets/floral-stakeholder-map.svg'
 import floralTeamCollageArt from './assets/floral-team-collage.svg'
 import floralReferenceMapArt from './assets/floral-reference-map.svg'
+import floralPhenotypeBoardArt from './assets/floral-phenotype-board.svg'
+import floralAssayDashboardArt from './assets/floral-assay-dashboard.svg'
+import floralHardwareBlueprintArt from './assets/floral-hardware-blueprint.svg'
+import floralTeamNetworkArt from './assets/floral-team-network.svg'
 
 const paragraph = (text) => ({ type: 'paragraph', text })
 const list = (items, style = 'unordered') => ({ type: 'list', items, style })
@@ -118,6 +122,32 @@ const homePage = {
       title: 'Hardware makes the biology actionable',
       detail:
         'A smart vase or florist-facing monitoring system gives FloraGuard a path from lab logic to a real preservation interface.',
+    },
+  ],
+  atlasCards: [
+    {
+      image: floralSupplyChainArt,
+      alt: 'Illustrated flower supply chain showing where stress accumulates.',
+      label: 'Supply chain',
+      title: 'Stress starts before the bouquet reaches the vase',
+      detail:
+        'FloraGuard frames senescence as a chain of accumulating transport, storage, and retail pressures rather than a single late-stage household problem.',
+    },
+    {
+      image: floralPhenotypeBoardArt,
+      alt: 'Illustrated phenotype board showing flowers changing across several days.',
+      label: 'Evidence',
+      title: 'Bench evidence should feel visual before the final data are in',
+      detail:
+        'The project is now structured so real phenotype comparisons, assay figures, and vase-life plots can drop in without redesigning the whole story.',
+    },
+    {
+      image: floralHardwareBlueprintArt,
+      alt: 'Illustrated smart vase blueprint showing sensors and recommendation flow.',
+      label: 'Deployment',
+      title: 'A smart-care interface gives the biology a real-world form',
+      detail:
+        'Monitoring, interpretation, and action all sit in one deployment logic, which is why the hardware page matters to the story rather than feeling optional.',
     },
   ],
   storyFlow: [
@@ -980,6 +1010,37 @@ const wikiGroups = [
               },
             ],
           },
+          {
+            type: 'art-card-grid',
+            eyebrow: 'Figure atlas',
+            title: 'A strong wet lab page usually alternates between bench detail and visual proof',
+            items: [
+              {
+                image: floralPhenotypeBoardArt,
+                alt: 'Illustrated phenotype board across multiple post-harvest days.',
+                label: 'Phenotype board',
+                title: 'Track the same bouquet across a shared timeline',
+                detail:
+                  'Readers should be able to see control and treatment divergence in a single image sequence before they study the quantitative plots.',
+              },
+              {
+                image: floralAssayDashboardArt,
+                alt: 'Illustrated assay dashboard with petri dish and signal charts.',
+                label: 'Assay stack',
+                title: 'Pair visible decline with ROS, ACC, and antioxidant readouts',
+                detail:
+                  'The wet lab becomes more convincing when biochemical indicators and ornamental quality live side by side instead of on separate pages.',
+              },
+              {
+                image: floralWetLabArt,
+                alt: 'Illustrated wet lab figure composition with flower scoring and assay motifs.',
+                label: 'Bench record',
+                title: 'Make the experiment feel like a real protocol sequence',
+                detail:
+                  'A good figure board also shows how sampling, imaging, and scoring actually happen at the bench, not only the final summary result.',
+              },
+            ],
+          },
         ],
         sections: [
           {
@@ -1314,6 +1375,37 @@ const wikiGroups = [
                 label: 'Panel 03',
                 title: 'User workflow',
                 detail: 'Show how a florist or consumer would move from observation to action using the device.',
+              },
+            ],
+          },
+          {
+            type: 'art-card-grid',
+            eyebrow: 'Prototype gallery',
+            title: 'Hardware should feel equally like an object, a dashboard, and a care workflow',
+            items: [
+              {
+                image: floralHardwareBlueprintArt,
+                alt: 'Illustrated blueprint of a smart vase with sensing modules.',
+                label: 'Object',
+                title: 'Show the vase as a real instrumented form',
+                detail:
+                  'The enclosure, sensing ring, and timing inputs should read as one product architecture rather than a loose component list.',
+              },
+              {
+                image: smartVaseArt,
+                alt: 'Illustrated smart vase interface with flower monitoring signals.',
+                label: 'Interface',
+                title: 'Turn raw signals into a calm recommendation view',
+                detail:
+                  'The strongest hardware pages quickly show what the user sees, not just what the sensor captures.',
+              },
+              {
+                image: floralAssayDashboardArt,
+                alt: 'Illustrated dashboard showing linked signals and decision outputs.',
+                label: 'Decision',
+                title: 'Keep the signal-to-action chain visible',
+                detail:
+                  'A future device page should make it obvious how temperature, elapsed time, and visible state become practical flower-care advice.',
               },
             ],
           },
@@ -2155,6 +2247,37 @@ const wikiGroups = [
                 label: 'WP-04',
                 title: 'Human practices and wiki',
                 detail: 'Responsible for stakeholder integration, implementation logic, and public-facing project narrative.',
+              },
+            ],
+          },
+          {
+            type: 'art-card-grid',
+            eyebrow: 'Team atlas',
+            title: 'A memorable team page usually shows people, ownership, and collaboration in parallel',
+            items: [
+              {
+                image: floralTeamNetworkArt,
+                alt: 'Illustrated network of work packages connected to the FloraGuard core team.',
+                label: 'Coordination',
+                title: 'Map how the disciplines actually meet each other',
+                detail:
+                  'The page should explain why wet lab, modeling, hardware, and HP are interdependent instead of reading like four separate subteams.',
+              },
+              {
+                image: floralTeamCollageArt,
+                alt: 'Illustrated collage of team role clusters around the FloraGuard project.',
+                label: 'Presence',
+                title: 'Give the team a visible identity beyond a role list',
+                detail:
+                  'Even before real photos arrive, the structure should already reserve space for portraits, pairings, and project moments that feel personal.',
+              },
+              {
+                image: floralNotesArt,
+                alt: 'Illustrated notebook and planning board for project coordination.',
+                label: 'Workflow',
+                title: 'Show how the wiki, planning, and bench work stay linked',
+                detail:
+                  'Team pages get stronger when they reveal how decisions, documentation, and execution move together during the season.',
               },
             ],
           },

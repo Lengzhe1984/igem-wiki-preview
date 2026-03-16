@@ -1,0 +1,48 @@
+<svg width="1200" height="880" viewBox="0 0 1200 880" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="120" y1="80" x2="1080" y2="780" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFF8FB"/>
+      <stop offset="1" stop-color="#F8EEF4"/>
+    </linearGradient>
+    <linearGradient id="panel" x1="0" y1="0" x2="0" y2="1">
+      <stop stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#F9F0F4"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="880" rx="56" fill="url(#bg)"/>
+  <rect x="64" y="56" width="1072" height="768" rx="36" fill="#FFFDFE" stroke="#E7CBD7" stroke-width="2"/>
+  <rect x="96" y="96" width="280" height="462" rx="28" fill="url(#panel)" stroke="#E7CBD7" stroke-width="2"/>
+  <rect x="460" y="96" width="280" height="462" rx="28" fill="url(#panel)" stroke="#E7CBD7" stroke-width="2"/>
+  <rect x="824" y="96" width="280" height="462" rx="28" fill="url(#panel)" stroke="#E7CBD7" stroke-width="2"/>
+  <text x="124" y="144" fill="#A05071" font-family="Arial, sans-serif" font-size="32" font-weight="700">Day 01</text>
+  <text x="488" y="144" fill="#A05071" font-family="Arial, sans-serif" font-size="32" font-weight="700">Day 04</text>
+  <text x="852" y="144" fill="#A05071" font-family="Arial, sans-serif" font-size="32" font-weight="700">Day 07</text>
+  <rect x="180" y="398" width="116" height="92" rx="26" fill="#E9C0D2" stroke="#BF547D" stroke-width="4"/>
+  <path d="M238 396V270" stroke="#6D8C57" stroke-width="11" stroke-linecap="round"/>
+  <path d="M238 274C222 250 188 232 172 230C175 256 188 280 210 292" fill="#D76A92"/>
+  <path d="M238 266C258 238 294 224 314 224C308 250 290 276 266 290" fill="#BF547D"/>
+  <path d="M218 308C196 304 178 314 166 330C189 338 209 334 223 322" fill="#F3B4CA"/>
+  <path d="M260 308C280 300 302 304 318 320C296 332 276 332 260 320" fill="#D95E89"/>
+  <circle cx="238" cy="278" r="14" fill="#F4D07D"/>
+  <rect x="544" y="398" width="116" height="92" rx="26" fill="#E3B7C8" stroke="#BF547D" stroke-width="4"/>
+  <path d="M602 396V286" stroke="#6D8C57" stroke-width="11" stroke-linecap="round"/>
+  <path d="M602 290C586 272 550 260 530 262C538 286 556 304 578 314" fill="#D76A92"/>
+  <path d="M602 286C620 264 656 254 678 260C670 286 650 304 626 314" fill="#B54C78"/>
+  <path d="M578 326C556 332 536 352 528 376C552 374 572 366 586 348" fill="#E7A5BF"/>
+  <path d="M626 326C650 332 668 352 676 376C652 374 632 366 618 348" fill="#CD5B84"/>
+  <circle cx="602" cy="294" r="14" fill="#F4D07D"/>
+  <rect x="908" y="398" width="116" height="92" rx="26" fill="#DDAEC0" stroke="#BF547D" stroke-width="4"/>
+  <path d="M966 396V308" stroke="#6D8C57" stroke-width="11" stroke-linecap="round"/>
+  <path d="M966 312C948 302 916 300 894 306C908 326 930 334 950 334" fill="#C85B83"/>
+  <path d="M966 312C984 300 1016 298 1040 304C1028 326 1004 336 982 338" fill="#A84269"/>
+  <path d="M944 340C926 350 916 370 916 396C940 392 956 378 964 358" fill="#E0A5BD"/>
+  <path d="M988 340C1008 350 1018 370 1016 396C994 392 978 378 970 358" fill="#C55A80"/>
+  <circle cx="966" cy="316" r="14" fill="#F4D07D"/>
+  <rect x="96" y="594" width="1008" height="180" rx="30" fill="#FFF8FB" stroke="#E7CBD7" stroke-width="2"/>
+  <text x="128" y="642" fill="#A05071" font-family="Arial, sans-serif" font-size="28" font-weight="700">Phenotype + assay board</text>
+  <path d="M144 706C192 672 240 652 290 652C338 652 380 674 424 690C474 708 520 706 566 678C616 648 658 632 706 642C758 652 786 700 838 706C886 712 934 694 968 662" stroke="#BF547D" stroke-width="10" stroke-linecap="round"/>
+  <path d="M144 724C204 734 250 732 308 710C356 692 396 662 450 662C504 662 550 704 604 720C654 736 700 730 748 706C804 680 844 652 906 656C948 658 980 670 1018 692" stroke="#6D8C57" stroke-width="10" stroke-linecap="round"/>
+  <rect x="824" y="626" width="236" height="112" rx="24" fill="#FFFFFF" stroke="#E7CBD7" stroke-width="2"/>
+  <text x="852" y="672" fill="#432D44" font-family="Arial, sans-serif" font-size="24" font-weight="700">Vase life +2.1 days</text>
+  <text x="852" y="708" fill="#7A6876" font-family="Arial, sans-serif" font-size="21">Melatonin + ACC control group</text>
+</svg>

@@ -1,0 +1,40 @@
+<svg width="1200" height="880" viewBox="0 0 1200 880" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="120" y1="80" x2="1080" y2="780" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFF8FB"/>
+      <stop offset="1" stop-color="#EEF6F0"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="880" rx="56" fill="url(#bg)"/>
+  <rect x="68" y="58" width="1064" height="764" rx="40" fill="#FFFDFE" stroke="#D6E2D7" stroke-width="2"/>
+  <rect x="108" y="106" width="446" height="290" rx="34" fill="#FFFFFF" stroke="#D9E4DA" stroke-width="2"/>
+  <circle cx="330" cy="250" r="118" fill="#F6EFF3" stroke="#BF547D" stroke-width="6"/>
+  <circle cx="330" cy="250" r="76" fill="#FCE7EF" stroke="#E7BCD0" stroke-width="4"/>
+  <circle cx="330" cy="250" r="24" fill="#F4D07D"/>
+  <text x="136" y="154" fill="#432D44" font-family="Arial, sans-serif" font-size="28" font-weight="700">Antioxidant assay</text>
+  <rect x="604" y="106" width="488" height="290" rx="34" fill="#FFFFFF" stroke="#E7CBD7" stroke-width="2"/>
+  <text x="636" y="154" fill="#432D44" font-family="Arial, sans-serif" font-size="28" font-weight="700">Signal dashboard</text>
+  <path d="M656 328V188" stroke="#F0DCE5" stroke-width="2"/>
+  <path d="M656 328H1042" stroke="#F0DCE5" stroke-width="2"/>
+  <rect x="708" y="256" width="48" height="72" rx="16" fill="#E8C0D1"/>
+  <rect x="790" y="220" width="48" height="108" rx="16" fill="#D97598"/>
+  <rect x="872" y="180" width="48" height="148" rx="16" fill="#BF547D"/>
+  <rect x="954" y="238" width="48" height="90" rx="16" fill="#6D8C57"/>
+  <path d="M654 716H1072" stroke="#E2EAD9" stroke-width="2"/>
+  <path d="M654 716V494" stroke="#E2EAD9" stroke-width="2"/>
+  <path d="M686 686C728 650 760 616 804 604C838 594 866 606 902 588C936 572 968 540 1000 538C1026 536 1048 548 1072 566" stroke="#BF547D" stroke-width="10" stroke-linecap="round"/>
+  <path d="M686 648C724 624 764 618 802 628C842 638 876 664 916 670C954 676 994 664 1036 634" stroke="#6D8C57" stroke-width="10" stroke-linecap="round"/>
+  <rect x="108" y="444" width="486" height="332" rx="34" fill="#FFFFFF" stroke="#E7CBD7" stroke-width="2"/>
+  <text x="140" y="492" fill="#432D44" font-family="Arial, sans-serif" font-size="28" font-weight="700">Bench notebook</text>
+  <rect x="140" y="528" width="188" height="208" rx="22" fill="#FDF5F8" stroke="#E7CBD7" stroke-width="2"/>
+  <path d="M178 576H292" stroke="#D9B3C4" stroke-width="8" stroke-linecap="round"/>
+  <path d="M178 616H292" stroke="#D9B3C4" stroke-width="8" stroke-linecap="round"/>
+  <path d="M178 656H260" stroke="#D9B3C4" stroke-width="8" stroke-linecap="round"/>
+  <path d="M360 560H548" stroke="#E8EEDE" stroke-width="2"/>
+  <path d="M360 640H548" stroke="#E8EEDE" stroke-width="2"/>
+  <path d="M360 720H548" stroke="#E8EEDE" stroke-width="2"/>
+  <text x="360" y="586" fill="#7A6876" font-family="Arial, sans-serif" font-size="22">ROS marker set</text>
+  <text x="360" y="666" fill="#7A6876" font-family="Arial, sans-serif" font-size="22">ACC concentration</text>
+  <text x="360" y="746" fill="#7A6876" font-family="Arial, sans-serif" font-size="22">Visible senescence score</text>
+  <text x="656" y="486" fill="#432D44" font-family="Arial, sans-serif" font-size="28" font-weight="700">Prediction overlay</text>
+</svg>

@@ -83,6 +83,21 @@ const showcaseMarkup = homePage.showcaseCards
   )
   .join('')
 
+const atlasMarkup = homePage.atlasCards
+  .map(
+    (item, index) => `
+      <article class="art-card fade-card" style="--delay:${index * 70}ms">
+        <img class="art-card-image" src="${item.image}" alt="${escapeHtml(item.alt)}" />
+        <div class="art-card-copy">
+          <span class="art-card-label">${escapeHtml(item.label)}</span>
+          <h3>${escapeHtml(item.title)}</h3>
+          <p>${escapeHtml(item.detail)}</p>
+        </div>
+      </article>
+    `,
+  )
+  .join('')
+
 const storyFlowMarkup = homePage.storyFlow
   .map(
     (item, index) => `
@@ -324,6 +339,20 @@ document.querySelector('#app').innerHTML = `
         </div>
         <div class="content-card-grid">
           ${readerRouteMarkup}
+        </div>
+      </section>
+
+      <section class="section-block">
+        <div class="section-heading">
+          <p class="eyebrow">Project atlas</p>
+          <h2>Three visual anchors now carry the FloraGuard story from chain stress to deployable care</h2>
+          <p class="section-copy">
+            Instead of relying on generic feature cards alone, the homepage now reserves stronger visual slots for supply-chain context,
+            experimental proof, and the smart-care interface that ultimately turns the project into something usable.
+          </p>
+        </div>
+        <div class="art-card-grid">
+          ${atlasMarkup}
         </div>
       </section>
 

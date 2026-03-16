@@ -1,0 +1,29 @@
+<svg width="1200" height="880" viewBox="0 0 1200 880" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="880" rx="56" fill="#F8F3F7"/>
+  <rect x="64" y="56" width="1072" height="768" rx="40" fill="#FCFAFC" stroke="#DCCDD9" stroke-width="2"/>
+  <path d="M312 182H888" stroke="#D9CED6" stroke-width="2" stroke-dasharray="10 12"/>
+  <path d="M312 684H888" stroke="#D9CED6" stroke-width="2" stroke-dasharray="10 12"/>
+  <path d="M600 218L724 252L760 598C764 644 726 684 680 684H520C474 684 436 644 440 598L476 252L600 218Z" fill="#E9C0D1" stroke="#B7557A" stroke-width="6"/>
+  <path d="M502 314C544 340 656 340 698 314" stroke="#F7E9F0" stroke-width="8" stroke-linecap="round"/>
+  <rect x="490" y="136" width="220" height="62" rx="24" fill="#FFFFFF" stroke="#DCCDD9" stroke-width="2"/>
+  <text x="548" y="176" fill="#432D44" font-family="Arial, sans-serif" font-size="28" font-weight="700">Camera ring</text>
+  <path d="M600 198V218" stroke="#B7557A" stroke-width="5" stroke-linecap="round"/>
+  <rect x="228" y="256" width="170" height="108" rx="26" fill="#FFFFFF" stroke="#DCCDD9" stroke-width="2"/>
+  <text x="260" y="308" fill="#432D44" font-family="Arial, sans-serif" font-size="24" font-weight="700">Temperature</text>
+  <text x="260" y="340" fill="#7A6876" font-family="Arial, sans-serif" font-size="21">ambient stress input</text>
+  <path d="M398 310H470" stroke="#B7557A" stroke-width="4" stroke-linecap="round"/>
+  <rect x="800" y="244" width="186" height="124" rx="26" fill="#FFFFFF" stroke="#DCCDD9" stroke-width="2"/>
+  <text x="832" y="298" fill="#432D44" font-family="Arial, sans-serif" font-size="24" font-weight="700">Vision model</text>
+  <text x="832" y="330" fill="#7A6876" font-family="Arial, sans-serif" font-size="21">petal-state scoring</text>
+  <path d="M800 312H730" stroke="#B7557A" stroke-width="4" stroke-linecap="round"/>
+  <rect x="180" y="510" width="222" height="132" rx="28" fill="#FFFFFF" stroke="#DCCDD9" stroke-width="2"/>
+  <text x="212" y="560" fill="#432D44" font-family="Arial, sans-serif" font-size="24" font-weight="700">Elapsed time</text>
+  <text x="212" y="594" fill="#7A6876" font-family="Arial, sans-serif" font-size="21">cold-chain exposure</text>
+  <path d="M402 576H472" stroke="#B7557A" stroke-width="4" stroke-linecap="round"/>
+  <rect x="790" y="510" width="250" height="140" rx="28" fill="#FFFFFF" stroke="#DCCDD9" stroke-width="2"/>
+  <text x="822" y="560" fill="#432D44" font-family="Arial, sans-serif" font-size="24" font-weight="700">Recommendation UI</text>
+  <text x="822" y="594" fill="#7A6876" font-family="Arial, sans-serif" font-size="21">stable / monitor / intervene</text>
+  <path d="M790 584H726" stroke="#B7557A" stroke-width="4" stroke-linecap="round"/>
+  <rect x="466" y="736" width="268" height="48" rx="20" fill="#FFFFFF" stroke="#DCCDD9" stroke-width="2"/>
+  <text x="502" y="767" fill="#6D8C57" font-family="Arial, sans-serif" font-size="24" font-weight="700">Smart vase blueprint</text>
+</svg>

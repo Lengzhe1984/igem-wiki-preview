@@ -1,0 +1,35 @@
+<svg width="1200" height="880" viewBox="0 0 1200 880" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="880" rx="56" fill="#F8F2F5"/>
+  <rect x="72" y="64" width="1056" height="752" rx="40" fill="#FFFCFD" stroke="#E4D5DE" stroke-width="2"/>
+  <circle cx="600" cy="438" r="134" fill="#F7E9F0" stroke="#BF547D" stroke-width="6"/>
+  <circle cx="600" cy="438" r="38" fill="#F4D07D"/>
+  <path d="M600 400C572 362 522 342 488 338C494 382 520 412 560 424" fill="#D96D93"/>
+  <path d="M600 398C634 358 682 340 716 340C706 384 680 412 640 424" fill="#BF547D"/>
+  <path d="M576 456C536 452 504 474 486 506C528 516 562 510 584 490" fill="#E9ADC3"/>
+  <path d="M624 456C664 452 696 474 714 506C672 516 638 510 616 490" fill="#CC5B83"/>
+  <rect x="134" y="170" width="246" height="144" rx="28" fill="#FFFFFF" stroke="#E4D5DE" stroke-width="2"/>
+  <rect x="820" y="170" width="246" height="144" rx="28" fill="#FFFFFF" stroke="#E4D5DE" stroke-width="2"/>
+  <rect x="134" y="574" width="246" height="144" rx="28" fill="#FFFFFF" stroke="#E4D5DE" stroke-width="2"/>
+  <rect x="820" y="574" width="246" height="144" rx="28" fill="#FFFFFF" stroke="#E4D5DE" stroke-width="2"/>
+  <circle cx="206" cy="240" r="26" fill="#E9C0D1"/>
+  <circle cx="892" cy="240" r="26" fill="#D9E6CF"/>
+  <circle cx="206" cy="644" r="26" fill="#F1D5A0"/>
+  <circle cx="892" cy="644" r="26" fill="#D7CBE8"/>
+  <text x="248" y="228" fill="#432D44" font-family="Arial, sans-serif" font-size="26" font-weight="700">Wet lab + plant science</text>
+  <text x="248" y="266" fill="#7A6876" font-family="Arial, sans-serif" font-size="21">assays, senescence scoring, biology logic</text>
+  <text x="934" y="228" fill="#432D44" font-family="Arial, sans-serif" font-size="26" font-weight="700">Hardware + engineering</text>
+  <text x="934" y="266" fill="#7A6876" font-family="Arial, sans-serif" font-size="21">prototype, interface, deployment thinking</text>
+  <text x="248" y="632" fill="#432D44" font-family="Arial, sans-serif" font-size="26" font-weight="700">Modeling + data</text>
+  <text x="248" y="670" fill="#7A6876" font-family="Arial, sans-serif" font-size="21">prediction, thresholds, decision support</text>
+  <text x="934" y="632" fill="#432D44" font-family="Arial, sans-serif" font-size="26" font-weight="700">Wiki + human practices</text>
+  <text x="934" y="670" fill="#7A6876" font-family="Arial, sans-serif" font-size="21">story, stakeholders, implementation logic</text>
+  <path d="M380 242H470" stroke="#BF547D" stroke-width="4" stroke-linecap="round"/>
+  <path d="M820 242H730" stroke="#BF547D" stroke-width="4" stroke-linecap="round"/>
+  <path d="M380 646H470" stroke="#BF547D" stroke-width="4" stroke-linecap="round"/>
+  <path d="M820 646H730" stroke="#BF547D" stroke-width="4" stroke-linecap="round"/>
+  <path d="M300 314C362 372 424 396 468 406" stroke="#6D8C57" stroke-width="5" stroke-linecap="round"/>
+  <path d="M900 314C838 372 776 396 732 406" stroke="#6D8C57" stroke-width="5" stroke-linecap="round"/>
+  <path d="M300 574C362 518 424 490 468 478" stroke="#6D8C57" stroke-width="5" stroke-linecap="round"/>
+  <path d="M900 574C838 518 776 490 732 478" stroke="#6D8C57" stroke-width="5" stroke-linecap="round"/>
+  <text x="522" y="754" fill="#A05071" font-family="Arial, sans-serif" font-size="26" font-weight="700">FloraGuard team workflow</text>
+</svg>

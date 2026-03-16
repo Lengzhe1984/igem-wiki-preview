@@ -277,6 +277,31 @@ function renderModule(module, index) {
           </div>
         </section>
       `
+    case 'art-card-grid':
+      return `
+        <section class="feature-module feature-module-wide fade-card" style="--delay:${index * 55}ms">
+          <div class="section-heading">
+            <p class="eyebrow">${escapeHtml(module.eyebrow)}</p>
+            <h2>${escapeHtml(module.title)}</h2>
+          </div>
+          <div class="art-card-grid">
+            ${module.items
+              .map(
+                (item) => `
+                  <article class="art-card">
+                    <img class="art-card-image" src="${item.image}" alt="${escapeHtml(item.alt)}" />
+                    <div class="art-card-copy">
+                      <span class="art-card-label">${escapeHtml(item.label)}</span>
+                      <h3>${escapeHtml(item.title)}</h3>
+                      <p>${escapeHtml(item.detail)}</p>
+                    </div>
+                  </article>
+                `,
+              )
+              .join('')}
+          </div>
+        </section>
+      `
     default:
       return ''
   }
