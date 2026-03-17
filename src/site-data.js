@@ -13,6 +13,9 @@ import floralPhenotypeBoardArt from './assets/floral-phenotype-board.svg'
 import floralAssayDashboardArt from './assets/floral-assay-dashboard.svg'
 import floralHardwareBlueprintArt from './assets/floral-hardware-blueprint.svg'
 import floralTeamNetworkArt from './assets/floral-team-network.svg'
+import floralModelDecisionBoardArt from './assets/floral-model-decision-board.svg'
+import floralImplementationJourneyArt from './assets/floral-implementation-journey.svg'
+import floralInterviewWallArt from './assets/floral-interview-wall.svg'
 
 const paragraph = (text) => ({ type: 'paragraph', text })
 const list = (items, style = 'unordered') => ({ type: 'list', items, style })
@@ -1223,6 +1226,37 @@ const wikiGroups = [
               },
             ],
           },
+          {
+            type: 'art-card-grid',
+            eyebrow: 'Model atlas',
+            title: 'Dry lab gets easier to trust when the model, the evidence, and the decision sit in one frame',
+            items: [
+              {
+                image: floralModelDecisionBoardArt,
+                alt: 'Illustrated decision board with inputs, trajectories, and a highlighted intervention window.',
+                label: 'Window',
+                title: 'Make the intervention window visible before the reader reaches equations',
+                detail:
+                  'Strong modeling pages usually show where timing changes, not just that a model exists. This panel makes the decision zone itself legible.',
+              },
+              {
+                image: floralAssayDashboardArt,
+                alt: 'Illustrated dry-lab dashboard linking assays, plots, and predictions.',
+                label: 'Fit',
+                title: 'Keep prediction and observation close enough to compare at a glance',
+                detail:
+                  'Prediction feels more believable once phenotype, assay readouts, and fitted trajectories appear on the same evidence board.',
+              },
+              {
+                image: floralDryLabArt,
+                alt: 'Illustrated modeling interface with controls, curves, and dose settings.',
+                label: 'Output',
+                title: 'Show how the model changes dose and timing recommendations',
+                detail:
+                  'The dry lab should end with a usable decision: when to intervene, which conditions matter most, and how treatment strategy should adapt.',
+              },
+            ],
+          },
         ],
         sections: [
           {
@@ -1572,6 +1606,37 @@ const wikiGroups = [
               },
             ],
           },
+          {
+            type: 'art-card-grid',
+            eyebrow: 'Field wall',
+            title: 'Human practices should feel like an evidence wall of voices, tensions, and design consequences',
+            items: [
+              {
+                image: floralInterviewWallArt,
+                alt: 'Illustrated interview wall connecting stakeholder notes to a central flower system.',
+                label: 'Voices',
+                title: 'Show the interviews as textured field evidence rather than a detached appendix',
+                detail:
+                  'A visual interview wall helps readers feel that multiple conversations shaped the project before they reach the detailed tables and written summaries.',
+              },
+              {
+                image: floralStakeholderMapArt,
+                alt: 'Illustrated stakeholder map showing the floral supply chain around FloraGuard.',
+                label: 'Chain',
+                title: 'Place each stakeholder on the part of the floral chain where value is lost',
+                detail:
+                  'Good HP pages make it obvious who experiences which pain point, and when that pain appears along the post-harvest journey.',
+              },
+              {
+                image: floralHardwareBlueprintArt,
+                alt: 'Illustrated smart vase blueprint representing translation of stakeholder feedback into design.',
+                label: 'Change',
+                title: 'Connect stakeholder feedback to changes in hardware, recommendation style, and rollout format',
+                detail:
+                  'The strongest translation pages show exactly where a conversation changed the system, instead of leaving interviews floating beside the engineering work.',
+              },
+            ],
+          },
         ],
         sections: [
           {
@@ -1889,6 +1954,37 @@ const wikiGroups = [
               {
                 title: 'Simplify',
                 detail: 'Translate expert workflows into a consumer experience with low-friction prompts, understandable states, and trust signals.',
+              },
+            ],
+          },
+          {
+            type: 'art-card-grid',
+            eyebrow: 'Rollout atlas',
+            title: 'Implementation becomes more convincing when rollout, format, and interface sit in the same visual story',
+            items: [
+              {
+                image: floralImplementationJourneyArt,
+                alt: 'Illustrated staged implementation journey from lab validation to florist pilot to home use.',
+                label: 'Path',
+                title: 'Picture the staged rollout before discussing the final product',
+                detail:
+                  'A clear rollout journey makes FloraGuard feel responsible and believable because readers can see how evidence accumulates before the consumer-facing version appears.',
+              },
+              {
+                image: floralHardwareBlueprintArt,
+                alt: 'Illustrated hardware blueprint representing device and kit formats for deployment.',
+                label: 'Format',
+                title: 'Keep kit logic, device form, and deployment boundaries on the same page',
+                detail:
+                  'Implementation should not split product form from biosafety and usability. This board helps show how those constraints travel together.',
+              },
+              {
+                image: floralAssayDashboardArt,
+                alt: 'Illustrated dashboard linking signals, decisions, and care recommendations.',
+                label: 'Decision',
+                title: 'Show what users actually gain once signals become recommendations',
+                detail:
+                  'Readers trust the implementation story more when they can see how monitored condition becomes an understandable action for florists or consumers.',
               },
             ],
           },
@@ -2518,9 +2614,9 @@ const pageMedia = {
     imageCaption: 'Wet lab work links senescence markers to treatment performance.',
   },
   'dry-lab': {
-    image: smartVaseArt,
-    imageAlt: 'Monitoring interface and smart vase illustration.',
-    imageCaption: 'Dry lab modeling helps predict intervention timing and dose.',
+    image: floralModelDecisionBoardArt,
+    imageAlt: 'Illustrated modeling decision board with input lanes, trajectory curves, and intervention window.',
+    imageCaption: 'Dry lab should show how a model changes timing, dose, and downstream care decisions.',
   },
   hardware: {
     image: smartVaseArt,
@@ -2528,9 +2624,9 @@ const pageMedia = {
     imageCaption: 'Hardware turns the preservation concept into a usable monitoring device.',
   },
   'integrated-human-practices': {
-    image: floralStressArt,
-    imageAlt: 'Flowers and system flow illustration representing supply-chain context.',
-    imageCaption: 'Stakeholder needs shape how FloraGuard should be used outside the lab.',
+    image: floralInterviewWallArt,
+    imageAlt: 'Illustrated interview wall connecting growers, distributors, florists, and consumers to FloraGuard.',
+    imageCaption: 'Human practices should make field voices visible before the reader reaches long interview tables.',
   },
   safety: {
     image: floralLabArt,
@@ -2538,9 +2634,9 @@ const pageMedia = {
     imageCaption: 'Safety is grounded in confinement, controlled use, and responsible translation.',
   },
   implementation: {
-    image: smartVaseArt,
-    imageAlt: 'Illustrated smart vase and monitoring interface.',
-    imageCaption: 'Implementation asks what FloraGuard looks like in real workflows.',
+    image: floralImplementationJourneyArt,
+    imageAlt: 'Illustrated staged rollout from lab validation to florist pilot to home use.',
+    imageCaption: 'Implementation should feel like a staged translation path rather than a sudden jump to product.',
   },
   contribution: {
     image: floralHeroArt,

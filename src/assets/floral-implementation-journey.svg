@@ -1,0 +1,50 @@
+<svg width="1200" height="880" viewBox="0 0 1200 880" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="116" y1="88" x2="1080" y2="794" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFF8FB"/>
+      <stop offset="1" stop-color="#EDF7F0"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="880" rx="56" fill="url(#bg)"/>
+  <rect x="74" y="64" width="1052" height="752" rx="40" fill="#FFFCFD" stroke="#E5D6DF" stroke-width="2"/>
+  <text x="118" y="144" fill="#A05071" font-family="Arial, sans-serif" font-size="24" font-weight="700">Deployment rhythm</text>
+  <text x="118" y="218" fill="#432D44" font-family="Arial, sans-serif" font-size="58" font-weight="700">Implementation should look like a staged journey, not a leap to product.</text>
+  <rect x="118" y="286" width="280" height="356" rx="34" fill="#FFF8FB" stroke="#E7CBD7" stroke-width="2"/>
+  <rect x="460" y="244" width="280" height="398" rx="34" fill="#FFFEFF" stroke="#DCE7DA" stroke-width="2"/>
+  <rect x="802" y="286" width="280" height="356" rx="34" fill="#FFF8FB" stroke="#E7CBD7" stroke-width="2"/>
+  <circle cx="180" cy="338" r="28" fill="#F4DCE7"/>
+  <circle cx="522" cy="296" r="28" fill="#E3EEDB"/>
+  <circle cx="864" cy="338" r="28" fill="#F4DCE7"/>
+  <text x="165" y="349" fill="#A05071" font-family="Arial, sans-serif" font-size="24" font-weight="700">1</text>
+  <text x="507" y="307" fill="#6D8C57" font-family="Arial, sans-serif" font-size="24" font-weight="700">2</text>
+  <text x="849" y="349" fill="#A05071" font-family="Arial, sans-serif" font-size="24" font-weight="700">3</text>
+  <text x="156" y="406" fill="#432D44" font-family="Arial, sans-serif" font-size="34" font-weight="700">Validate in the lab</text>
+  <text x="156" y="450" fill="#7A6876" font-family="Arial, sans-serif" font-size="23">Lock down the signal-treatment-timing</text>
+  <text x="156" y="482" fill="#7A6876" font-family="Arial, sans-serif" font-size="23">relationship under controlled conditions.</text>
+  <rect x="156" y="524" width="200" height="18" rx="9" fill="#EBD1DD"/>
+  <rect x="156" y="556" width="168" height="18" rx="9" fill="#EEF4E8"/>
+  <rect x="156" y="588" width="224" height="18" rx="9" fill="#F5ECD2"/>
+  <text x="498" y="364" fill="#432D44" font-family="Arial, sans-serif" font-size="34" font-weight="700">Pilot with florists</text>
+  <text x="498" y="408" fill="#7A6876" font-family="Arial, sans-serif" font-size="23">Translate data into fast operational</text>
+  <text x="498" y="440" fill="#7A6876" font-family="Arial, sans-serif" font-size="23">choices around display quality and care.</text>
+  <rect x="498" y="488" width="98" height="88" rx="20" fill="#F8EEF3" stroke="#E7CBD7" stroke-width="2"/>
+  <rect x="518" y="512" width="58" height="52" rx="12" fill="#FFFFFF" stroke="#D8E2D3" stroke-width="2"/>
+  <rect x="612" y="488" width="98" height="88" rx="20" fill="#EEF4E8" stroke="#D8E2D3" stroke-width="2"/>
+  <rect x="632" y="506" width="58" height="14" rx="7" fill="#6D8C57"/>
+  <rect x="632" y="532" width="40" height="14" rx="7" fill="#BF547D"/>
+  <rect x="632" y="558" width="52" height="14" rx="7" fill="#D7A63D"/>
+  <text x="840" y="406" fill="#432D44" font-family="Arial, sans-serif" font-size="34" font-weight="700">Simplify at home</text>
+  <text x="840" y="450" fill="#7A6876" font-family="Arial, sans-serif" font-size="23">Offer calm, low-friction guidance that</text>
+  <text x="840" y="482" fill="#7A6876" font-family="Arial, sans-serif" font-size="23">consumers can trust without expertise.</text>
+  <circle cx="942" cy="552" r="44" fill="#F8E7EF" stroke="#BF547D" stroke-width="3"/>
+  <path d="M942 520C922 494 886 482 862 480C866 510 884 530 912 538" fill="#D96D93"/>
+  <path d="M944 520C966 494 998 482 1022 482C1014 510 996 530 970 538" fill="#BF547D"/>
+  <path d="M924 558C894 556 870 572 858 596C888 604 914 600 930 584" fill="#E9ADC3"/>
+  <path d="M960 558C990 556 1014 572 1026 596C996 604 970 600 954 584" fill="#CC5B83"/>
+  <path d="M398 438H450" stroke="#BF547D" stroke-width="5" stroke-linecap="round"/>
+  <path d="M742 438H794" stroke="#BF547D" stroke-width="5" stroke-linecap="round"/>
+  <path d="M434 422L450 438L434 454" stroke="#BF547D" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M778 422L794 438L778 454" stroke="#BF547D" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="118" y="690" width="964" height="88" rx="28" fill="#FFF7FA" stroke="#E7CBD7" stroke-width="2"/>
+  <text x="154" y="742" fill="#7A6876" font-family="Arial, sans-serif" font-size="24">Every stage should make the next interface simpler because more evidence, boundaries, and user context have already been resolved.</text>
+</svg>

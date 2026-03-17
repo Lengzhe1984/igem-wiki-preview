@@ -1,0 +1,52 @@
+<svg width="1200" height="880" viewBox="0 0 1200 880" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="112" y1="84" x2="1088" y2="796" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFF7FB"/>
+      <stop offset="1" stop-color="#EEF7F0"/>
+    </linearGradient>
+    <linearGradient id="panel" x1="180" y1="148" x2="1020" y2="708" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#FFFDFE"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="880" rx="56" fill="url(#bg)"/>
+  <rect x="74" y="64" width="1052" height="752" rx="40" fill="url(#panel)" stroke="#E5D6DF" stroke-width="2"/>
+  <rect x="116" y="112" width="308" height="296" rx="32" fill="#FFF8FB" stroke="#E7CBD7" stroke-width="2"/>
+  <rect x="446" y="112" width="302" height="296" rx="32" fill="#FFFCFD" stroke="#DCE7DA" stroke-width="2"/>
+  <rect x="770" y="112" width="314" height="296" rx="32" fill="#FFF8FB" stroke="#E7CBD7" stroke-width="2"/>
+  <rect x="116" y="438" width="968" height="320" rx="36" fill="#FFFEFF" stroke="#E5D6DF" stroke-width="2"/>
+  <text x="152" y="164" fill="#432D44" font-family="Arial, sans-serif" font-size="28" font-weight="700">Input lanes</text>
+  <text x="482" y="164" fill="#432D44" font-family="Arial, sans-serif" font-size="28" font-weight="700">Trajectory model</text>
+  <text x="806" y="164" fill="#432D44" font-family="Arial, sans-serif" font-size="28" font-weight="700">Decision window</text>
+  <rect x="152" y="204" width="236" height="46" rx="18" fill="#F8E7EF"/>
+  <rect x="152" y="272" width="236" height="46" rx="18" fill="#EEF4E8"/>
+  <rect x="152" y="340" width="236" height="46" rx="18" fill="#F5ECD2"/>
+  <circle cx="186" cy="227" r="12" fill="#BF547D"/>
+  <circle cx="186" cy="295" r="12" fill="#6D8C57"/>
+  <circle cx="186" cy="363" r="12" fill="#E0B24E"/>
+  <text x="216" y="236" fill="#7A6876" font-family="Arial, sans-serif" font-size="22">Temperature + humidity</text>
+  <text x="216" y="304" fill="#7A6876" font-family="Arial, sans-serif" font-size="22">Harvest stage + handling</text>
+  <text x="216" y="372" fill="#7A6876" font-family="Arial, sans-serif" font-size="22">Treatment + elapsed time</text>
+  <path d="M486 340V206" stroke="#E7EEE0" stroke-width="2"/>
+  <path d="M486 340H706" stroke="#E7EEE0" stroke-width="2"/>
+  <path d="M506 318C544 276 588 244 628 232C654 224 682 226 706 242" stroke="#BF547D" stroke-width="8" stroke-linecap="round"/>
+  <path d="M506 330C556 310 602 304 640 308C670 312 690 320 706 332" stroke="#D97A9A" stroke-width="8" stroke-linecap="round"/>
+  <path d="M506 352C548 350 586 354 624 364C656 372 682 384 706 404" stroke="#6D8C57" stroke-width="8" stroke-linecap="round"/>
+  <rect x="804" y="212" width="246" height="146" rx="26" fill="#FFFFFF" stroke="#E9D7DF" stroke-width="2"/>
+  <rect x="834" y="250" width="38" height="72" rx="16" fill="#EBD1DD"/>
+  <rect x="892" y="224" width="38" height="98" rx="16" fill="#D97A9A"/>
+  <rect x="950" y="188" width="38" height="134" rx="16" fill="#BF547D"/>
+  <rect x="1008" y="244" width="18" height="78" rx="9" fill="#F0E8D1"/>
+  <rect x="938" y="176" width="62" height="170" rx="26" fill="#FDE7EF" stroke="#BF547D" stroke-width="3"/>
+  <text x="826" y="382" fill="#7A6876" font-family="Arial, sans-serif" font-size="22">Intervene here before visible collapse dominates.</text>
+  <text x="152" y="498" fill="#A05071" font-family="Arial, sans-serif" font-size="24" font-weight="700">Decision board</text>
+  <text x="152" y="548" fill="#432D44" font-family="Arial, sans-serif" font-size="58" font-weight="700">Modeling should show not only fit, but what changes.</text>
+  <text x="154" y="618" fill="#7A6876" font-family="Arial, sans-serif" font-size="28">Readers should be able to see how signals, curves, and intervention timing come together</text>
+  <text x="154" y="656" fill="#7A6876" font-family="Arial, sans-serif" font-size="28">to improve preservation decisions instead of remaining a detached dry-lab appendix.</text>
+  <rect x="152" y="692" width="220" height="28" rx="14" fill="#F8E7EF"/>
+  <rect x="390" y="692" width="246" height="28" rx="14" fill="#EEF4E8"/>
+  <rect x="654" y="692" width="188" height="28" rx="14" fill="#F5ECD2"/>
+  <text x="180" y="712" fill="#A05071" font-family="Arial, sans-serif" font-size="19" font-weight="700">Input sensitivity</text>
+  <text x="422" y="712" fill="#6D8C57" font-family="Arial, sans-serif" font-size="19" font-weight="700">Prediction versus observation</text>
+  <text x="690" y="712" fill="#A88228" font-family="Arial, sans-serif" font-size="19" font-weight="700">Dose timing</text>
+</svg>

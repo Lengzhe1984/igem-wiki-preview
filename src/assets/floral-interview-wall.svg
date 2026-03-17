@@ -1,0 +1,43 @@
+<svg width="1200" height="880" viewBox="0 0 1200 880" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="120" y1="84" x2="1080" y2="796" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFF8FB"/>
+      <stop offset="1" stop-color="#EDF7F0"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="880" rx="56" fill="url(#bg)"/>
+  <rect x="72" y="64" width="1056" height="752" rx="40" fill="#FFFCFD" stroke="#E5D6DF" stroke-width="2"/>
+  <rect x="132" y="136" width="252" height="184" rx="26" fill="#FFF7FA" stroke="#E7CBD7" stroke-width="2"/>
+  <rect x="474" y="122" width="252" height="202" rx="26" fill="#FDFEFB" stroke="#DCE7DA" stroke-width="2"/>
+  <rect x="816" y="142" width="252" height="184" rx="26" fill="#FFF7FA" stroke="#E7CBD7" stroke-width="2"/>
+  <rect x="178" y="378" width="844" height="322" rx="34" fill="#FFFEFF" stroke="#E5D6DF" stroke-width="2"/>
+  <circle cx="258" cy="174" r="18" fill="#F4DCE7"/>
+  <circle cx="600" cy="162" r="18" fill="#E3EEDB"/>
+  <circle cx="942" cy="180" r="18" fill="#F4DCE7"/>
+  <text x="166" y="220" fill="#432D44" font-family="Arial, sans-serif" font-size="28" font-weight="700">Growers</text>
+  <text x="166" y="258" fill="#7A6876" font-family="Arial, sans-serif" font-size="22">Need practical post-harvest handling</text>
+  <text x="166" y="290" fill="#7A6876" font-family="Arial, sans-serif" font-size="22">that protects value without extra burden.</text>
+  <text x="508" y="206" fill="#432D44" font-family="Arial, sans-serif" font-size="28" font-weight="700">Distributors</text>
+  <text x="508" y="244" fill="#7A6876" font-family="Arial, sans-serif" font-size="22">See hidden quality loss during transport,</text>
+  <text x="508" y="276" fill="#7A6876" font-family="Arial, sans-serif" font-size="22">handling windows, and cold-chain variation.</text>
+  <text x="850" y="224" fill="#432D44" font-family="Arial, sans-serif" font-size="28" font-weight="700">Florists + consumers</text>
+  <text x="850" y="262" fill="#7A6876" font-family="Arial, sans-serif" font-size="22">Need trustworthy guidance instead of raw</text>
+  <text x="850" y="294" fill="#7A6876" font-family="Arial, sans-serif" font-size="22">signals and specialist care knowledge.</text>
+  <circle cx="602" cy="530" r="116" fill="#F8EEF3" stroke="#BF547D" stroke-width="5"/>
+  <circle cx="602" cy="530" r="34" fill="#F4D07D"/>
+  <path d="M602 492C572 452 518 432 482 428C490 474 518 506 560 518" fill="#D96D93"/>
+  <path d="M602 492C638 452 690 432 726 432C716 476 688 506 644 518" fill="#BF547D"/>
+  <path d="M576 548C534 544 500 568 482 602C526 612 562 606 586 584" fill="#E9ADC3"/>
+  <path d="M628 548C670 544 704 568 722 602C678 612 642 606 618 584" fill="#CC5B83"/>
+  <path d="M258 320C330 376 420 430 494 474" stroke="#BF547D" stroke-width="5" stroke-linecap="round"/>
+  <path d="M600 324V404" stroke="#6D8C57" stroke-width="5" stroke-linecap="round"/>
+  <path d="M942 326C870 380 782 430 710 474" stroke="#BF547D" stroke-width="5" stroke-linecap="round"/>
+  <rect x="238" y="622" width="198" height="46" rx="18" fill="#F8E7EF"/>
+  <rect x="502" y="622" width="198" height="46" rx="18" fill="#EEF4E8"/>
+  <rect x="766" y="622" width="198" height="46" rx="18" fill="#F5ECD2"/>
+  <text x="274" y="651" fill="#A05071" font-family="Arial, sans-serif" font-size="22" font-weight="700">Hidden stress</text>
+  <text x="544" y="651" fill="#6D8C57" font-family="Arial, sans-serif" font-size="22" font-weight="700">Usable guidance</text>
+  <text x="808" y="651" fill="#A88228" font-family="Arial, sans-serif" font-size="22" font-weight="700">Deployment fit</text>
+  <text x="246" y="742" fill="#7A6876" font-family="Arial, sans-serif" font-size="25">Good human-practices pages should feel like an interview wall that clearly shows how field voices</text>
+  <text x="246" y="776" fill="#7A6876" font-family="Arial, sans-serif" font-size="25">reshaped sensing, workflow design, and the final preservation format.</text>
+</svg>
