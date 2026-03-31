@@ -25,221 +25,221 @@ const references = (items) => ({ type: 'references', items })
 
 const siteMeta = {
   projectName: 'FloraGuard',
-  subtitle: 'A Programmable Senescence Management System for Cut Flowers',
+  subtitle: 'Engineered E. coli Melatonin Biosynthesis for Cut Flower Preservation',
   deck:
-    'A multi-page iGEM wiki draft focused on turning cut flower preservation from passive treatment into programmable senescence management.',
+    'A multi-page iGEM wiki draft focused on producing melatonin with engineered E. coli, verifying the pathway analytically, and testing whether that product can extend cut-flower vase life.',
 }
 
 const homePage = {
-  eyebrow: 'Synthetic biology for post-harvest resilience',
+  eyebrow: 'Synthetic biology for floral post-harvest care',
   heroImage: floralHeroArt,
   heroAlt:
-    'Stylized bouquet in a vase with petals, stems, and monitoring traces representing FloraGuard.',
+    'Stylized bouquet and floral system illustration used as the FloraGuard project banner.',
   heroCaption:
-    'A floral systems view: sensing, biological response, and smart monitoring around a cut-flower vase.',
+    'FloraGuard reframes cut-flower preservation as a bench-to-application workflow: produce, quantify, validate, and translate.',
   lead: [
-    'Cut flowers are among the most traded horticultural commodities worldwide. Yet once detached from the plant, flowers rapidly lose vitality due to dehydration, oxidative stress, microbial blockage, and hormonal imbalance. This leads to substantial waste across the floral supply chain.',
-    'Current preservation strategies mainly rely on passive treatments such as sugar solutions, chemical preservatives, and refrigeration. While these approaches can partially delay senescence, they cannot dynamically respond to the physiological status of the flower.',
-    'FloraGuard proposes a new paradigm: transforming flower preservation from passive treatment into programmable senescence management.',
+    'Cut flowers lose value quickly after harvest because dehydration, oxidative stress, hormone imbalance, and handling variability all accelerate senescence. The current floral industry mostly responds with static preservatives and cold-chain management, but those tools do not explain or control the biology behind decline.',
+    'Our latest project direction is narrower and stronger than the previous concept: instead of building a broad closed-loop preservation platform first, we focus on one biologically meaningful molecule, melatonin, and ask whether engineered Escherichia coli can become a controllable production chassis for floral preservation.',
+    'FloraGuard therefore connects three proof layers in one story: microbial melatonin biosynthesis, analytical confirmation of the product, and application validation on cut flowers under post-harvest stress.',
   ],
   status: [
-    'Narrative structure is in place across the full wiki.',
-    'The site is ready for experimental figures, photos, and validation plots.',
-    'Wet lab, dry lab, hardware, and stakeholder logic now read as one system.',
+    'The wiki now follows the latest project direction from the Tencent document rather than the older ACC-centered storyline.',
+    'Core science pages are organized around pathway design, melatonin production, quantification, and flower preservation validation.',
+    'The site is ready for future plasmid maps, titer plots, phenotype photos, and interview evidence.',
   ],
   metrics: [
     {
-      value: '40B+',
-      label: 'USD global cut flower market that depends on maintaining post-harvest quality',
+      value: '1',
+      label: 'core molecule, melatonin, anchors the whole project from metabolic engineering to preservation outcome',
     },
     {
-      value: '5',
-      label: 'integrated preservation layers spanning sensing, response, monitoring, and prediction',
+      value: '3',
+      label: 'proof layers: production, quantification, and cut-flower application',
     },
   ],
   challengeCards: [
     {
-      title: 'Dehydration and xylem failure',
+      title: 'Floral waste accumulates fast',
       detail:
-        'Once flowers are cut, water balance becomes fragile and microbial blockage can quickly reduce vascular transport.',
+        'Cut flowers can lose market value within days, and a large share of the loss happens before consumers even realize the bouquet is already stressed.',
     },
     {
-      title: 'Oxidative stress accumulation',
+      title: 'Current preservation is mostly static',
       detail:
-        'Reactive oxygen species damage petals and accelerate visible decline unless the system can buffer stress in time.',
+        'Sugar solutions, antimicrobials, and refrigeration help in some settings, but they do not create a biologically programmable preservation workflow.',
     },
     {
-      title: 'Ethylene-driven aging',
+      title: 'Melatonin is promising but supply and format matter',
       detail:
-        'Hormonal signaling pushes senescence forward, especially under transport and storage stress.',
+        'Literature suggests melatonin can buffer oxidative stress and delay senescence, but turning that into a practical floral strategy requires production and validation.',
     },
     {
-      title: 'Supply-chain variability',
+      title: 'Translation needs bounded outputs',
       detail:
-        'Temperature fluctuation, storage duration, and retail display conditions make one-size-fits-all preservation unreliable.',
+        'A useful iGEM project cannot stop at pathway engineering. It also needs to show how the product could be delivered without releasing engineered microbes into the floral chain.',
     },
   ],
   platformCards: [
     {
-      kicker: 'Sense',
-      title: 'Senescence sensing',
+      kicker: 'Frame',
+      title: 'Define the floral problem',
       detail:
-        'Track ROS accumulation, ethylene signaling, and dehydration stress so the system knows when preservation pressure should increase.',
+        'Anchor the project in cut-flower waste, short vase life, and the limitations of passive preservative strategies.',
     },
     {
-      kicker: 'Respond',
-      title: 'Melatonin response',
+      kicker: 'Engineer',
+      title: 'Build a microbial melatonin pathway',
       detail:
-        'Use melatonin as a multifunctional regulator to reinforce antioxidant capacity and slow oxidative damage.',
+        'Use engineered E. coli as the chassis for biosynthesizing melatonin from a tractable metabolic route.',
     },
     {
-      kicker: 'Regulate',
-      title: 'Ethylene control',
+      kicker: 'Verify',
+      title: 'Quantify the product',
       detail:
-        'Reduce ACC-driven ethylene production with ACC deaminase logic to slow hormone-mediated senescence.',
+        'Use analytical readouts to confirm whether pathway design and optimization actually increase melatonin output.',
     },
     {
-      kicker: 'Stabilize',
-      title: 'Microbiome-aware preservation',
+      kicker: 'Validate',
+      title: 'Test cut-flower preservation',
       detail:
-        'Treat microbial blockage as part of the preservation problem so water uptake and flower condition remain more stable.',
+        'Apply melatonin-centered formulations or purified outputs to flowers and measure vase life, ROS burden, and visible senescence.',
     },
     {
-      kicker: 'Predict',
-      title: 'Monitoring and modeling',
+      kicker: 'Translate',
+      title: 'Plan safe real-world formats',
       detail:
-        'Combine sensors, image-based status tracking, and predictive modeling to recommend timely intervention.',
+        'Frame future implementation around purified or otherwise bounded products rather than direct environmental release of living engineered cells.',
     },
   ],
   showcaseCards: [
     {
       image: floralStressArt,
-      alt: 'Fresh and stressed flowers connected by a flow arrow.',
-      title: 'Stress travels with the flower',
+      alt: 'Illustrated contrast between fresh and stressed flowers.',
+      title: 'The biological problem stays visible',
       detail:
-        'The problem is not confined to the vase. Transport, storage, dehydration, and microbial blockage shape senescence long before a consumer sees the bouquet.',
+        'Even with a new project core, the floral side of the story still matters: dehydration, ROS accumulation, and post-harvest handling define why a molecule like melatonin is worth engineering around.',
     },
     {
-      image: smartVaseArt,
-      alt: 'Illustrated smart vase with sensors and a monitoring dashboard.',
-      title: 'Hardware makes the biology actionable',
+      image: floralAssayDashboardArt,
+      alt: 'Illustrated assay dashboard linking molecule production to measured signals.',
+      title: 'Analytical proof becomes part of the narrative',
       detail:
-        'A smart vase or florist-facing monitoring system gives FloraGuard a path from lab logic to a real preservation interface.',
+        'This version of FloraGuard is not only about applying melatonin. It is about proving that the chassis can make it, and that the made product is worth validating on flowers.',
     },
   ],
   atlasCards: [
     {
       image: floralSupplyChainArt,
-      alt: 'Illustrated flower supply chain showing where stress accumulates.',
-      label: 'Supply chain',
-      title: 'Stress starts before the bouquet reaches the vase',
+      alt: 'Illustrated flower supply chain showing where senescence pressure accumulates.',
+      label: 'Problem',
+      title: 'Post-harvest stress begins long before the vase',
       detail:
-        'FloraGuard frames senescence as a chain of accumulating transport, storage, and retail pressures rather than a single late-stage household problem.',
+        'The homepage now starts from floral logistics and senescence pressure so the need for preservation stays concrete from the first screen onward.',
     },
     {
-      image: floralPhenotypeBoardArt,
-      alt: 'Illustrated phenotype board showing flowers changing across several days.',
-      label: 'Evidence',
-      title: 'Bench evidence should feel visual before the final data are in',
+      image: floralModelDecisionBoardArt,
+      alt: 'Illustrated board linking pathway logic, analytical output, and decision windows.',
+      label: 'Science',
+      title: 'Pathway design and quantification are now the center of the project',
       detail:
-        'The project is now structured so real phenotype comparisons, assay figures, and vase-life plots can drop in without redesigning the whole story.',
+        'Readers should understand that FloraGuard is first a metabolic-engineering project and only then a preservation application project.',
     },
     {
-      image: floralHardwareBlueprintArt,
-      alt: 'Illustrated smart vase blueprint showing sensors and recommendation flow.',
-      label: 'Deployment',
-      title: 'A smart-care interface gives the biology a real-world form',
+      image: floralImplementationJourneyArt,
+      alt: 'Illustrated staged rollout from lab work to bounded application formats.',
+      label: 'Translation',
+      title: 'Implementation is staged around bounded outputs',
       detail:
-        'Monitoring, interpretation, and action all sit in one deployment logic, which is why the hardware page matters to the story rather than feeling optional.',
+        'The project no longer implies a smart-vase-first rollout. Instead, it emphasizes purified products, florist-facing pilots, and careful translation.',
     },
   ],
   storyFlow: [
     {
       step: '01',
-      title: 'Detect senescence early',
+      title: 'Define the senescence problem',
       detail:
-        'Sense ROS buildup, ethylene-associated decline, and dehydration pressure before visible collapse dominates the phenotype.',
+        'Show why floral waste is driven by ROS, dehydration, and post-harvest stress rather than simple neglect alone.',
     },
     {
       step: '02',
-      title: 'Stabilize the flower',
+      title: 'Engineer melatonin biosynthesis',
       detail:
-        'Use melatonin-centered protection and ethylene regulation to preserve flower quality rather than treating symptoms too late.',
+        'Design a melatonin route in E. coli and treat pathway construction as the primary synthetic-biology task.',
     },
     {
       step: '03',
-      title: 'Predict intervention timing',
+      title: 'Measure whether the chassis works',
       detail:
-        'Combine environment, harvest context, and visible status tracking to estimate when action matters most.',
+        'Use production data and optimization logic to decide whether the pathway is viable enough for preservation testing.',
     },
     {
       step: '04',
-      title: 'Translate to real use',
+      title: 'Validate and translate carefully',
       detail:
-        'Move from a bench system toward florist and consumer-facing preservation tools that reduce waste in practice.',
+        'Apply the product to cut flowers, measure biological effect, and frame future use around non-release formats.',
     },
   ],
   editorialFeature: {
-    eyebrow: 'Editorial feature',
-    title: 'From harvest stress to adaptive care, FloraGuard should feel like one continuous story',
+    eyebrow: 'Project angle',
+    title: 'FloraGuard now reads as one bench-to-flower story instead of a loose collection of preservation ideas',
     summary:
-      'Many strong iGEM homepages show the project as a chain of linked decisions rather than isolated modules. FloraGuard can do the same by making the floral supply chain visible, then showing where programmable preservation changes the outcome.',
+      'The strongest revision from the Tencent document is conceptual. The project is no longer trying to solve every part of senescence at once. It now asks a more focused iGEM question: can an engineered microbial chassis make a molecule with real preservation value for cut flowers, and can we validate that value responsibly?',
     quote:
-      'The vase is not where the problem begins. It is where better intervention can finally become visible.',
+      'A stronger project is not always broader. Sometimes it is the version that can prove one thing clearly from pathway to phenotype.',
     image: floralSupplyChainArt,
     alt:
-      'Illustrated floral supply chain from harvest to smart care, showing how stress accumulates before the bouquet reaches the user.',
+      'Illustrated supply chain art showing cut flowers moving through harvest, transport, and care contexts.',
     caption:
-      'A visual scaffold for the homepage: stress begins before retail, and FloraGuard responds by turning static care into adaptive care.',
-    chips: ['Harvest stress', 'Cold-chain variability', 'Retail uncertainty', 'Adaptive response'],
+      'The homepage should connect floral waste, microbial production, and application validation in one continuous argument.',
+    chips: ['Cut flowers', 'Melatonin', 'E. coli chassis', 'Bounded translation'],
     points: [
-      'The preservation problem starts at cutting, not at home.',
-      'Transport and display conditions reshape flower quality before customers ever see the bouquet.',
-      'Programmable care only makes sense when the site shows how sensing, intervention, and recommendation connect across that journey.',
+      'Keep the industrial and consumer relevance of flower preservation visible.',
+      'Center the scientific novelty on microbial melatonin production rather than on generic smart monitoring.',
+      'Show that application validation and safety planning are part of the same story, not an afterthought.',
     ],
   },
   evidencePreview: [
     {
-      label: 'Biology evidence',
-      title: 'Wet lab should culminate in side-by-side treatment proof',
+      label: 'Production proof',
+      title: 'Construct maps, titer curves, and pathway bottlenecks should anchor the build story',
       detail:
-        'Readers need to see phenotype, stress markers, and vase-life outcome in one coordinated evidence board.',
+        'The new wet-lab core needs figures that show how the chassis was engineered and what actually improved output.',
     },
     {
-      label: 'Prediction evidence',
-      title: 'Dry lab should prove that timing and dose become more actionable',
+      label: 'Application proof',
+      title: 'Flower phenotype and vase-life boards should show why microbial melatonin is worth making',
       detail:
-        'The best computational pages show not only a model, but why the model changes real intervention decisions.',
+        'A preservation project becomes convincing only when readers can see both the cut-flower phenotype and the quantitative outcome.',
     },
     {
-      label: 'Prototype evidence',
-      title: 'Hardware should show the object, interface, and care workflow together',
+      label: 'Translation proof',
+      title: 'Safety and implementation should show bounded product formats',
       detail:
-        'A deployable-feeling page combines device form, captured signals, and user-facing recommendations in one narrative.',
+        'The site should make it obvious that future application depends on purified or otherwise controlled outputs, not live environmental release.',
     },
   ],
   readerRoutes: [
     {
-      eyebrow: 'Project logic',
-      title: 'Start with why senescence should be treated as a systems problem',
+      eyebrow: 'Science frame',
+      title: 'Start with the project question and why melatonin is the chosen preservation lever',
       detail:
-        'Project Description and Problem & Inspiration explain why ROS, ethylene, water imbalance, and post-harvest variability need to be understood together.',
+        'Project Description and Problem & Inspiration explain the floral problem, the limits of current preservation, and why melatonin became the centerpiece.',
       slug: 'project-description',
-      cta: 'Read the project frame',
+      cta: 'Read the scientific frame',
     },
     {
-      eyebrow: 'Closed loop',
-      title: 'Follow the platform from signal detection to intervention timing',
+      eyebrow: 'Build logic',
+      title: 'Follow the pathway from chassis design to flower validation',
       detail:
-        'Design, Engineering, Wet Lab, and Dry Lab together show how FloraGuard becomes a programmable preservation workflow instead of a static additive.',
+        'Design, Engineering, Wet Lab, and Dry Lab together show how FloraGuard moves from metabolic engineering to measurable floral outcome.',
       slug: 'design',
-      cta: 'Trace the system architecture',
+      cta: 'Trace the build path',
     },
     {
       eyebrow: 'Translation',
-      title: 'Jump ahead to real use, user context, and deployment boundaries',
+      title: 'Jump ahead to safety, stakeholders, and future product formats',
       detail:
-        'Human Practices, Safety, and Implementation clarify how the same logic changes when the user is a florist, a researcher, or a household consumer.',
+        'Human Practices, Safety, and Implementation explain how the project could leave the lab without leaving behind biosafety and real-world constraints.',
       slug: 'integrated-human-practices',
       cta: 'See the translation path',
     },
@@ -247,34 +247,34 @@ const homePage = {
   deploymentRhythm: [
     {
       step: 'A',
-      title: 'Bench proof first',
+      title: 'Build the route',
       detail:
-        'Validate senescence sensing, treatment response, and the timing window where intervention still changes visible flower quality.',
+        'Select a melatonin biosynthesis pathway, choose the chassis, and identify the enzymatic steps most likely to limit output.',
     },
     {
       step: 'B',
-      title: 'Professional pilot next',
+      title: 'Optimize production',
       detail:
-        'Translate the platform into florist-facing monitoring and preservation workflows where operational decisions happen quickly.',
+        'Use fermentation, precursor, and cofactor logic to push the pathway toward analytically visible melatonin production.',
     },
     {
       step: 'C',
-      title: 'Consumer care later',
+      title: 'Validate on flowers',
       detail:
-        'Reduce complexity into trustworthy recommendations that help households care for flowers without expert knowledge.',
+        'Compare controls and treatment groups with phenotype images, ROS-associated readouts, and vase-life measurements.',
     },
     {
       step: 'D',
-      title: 'Scale with evidence',
+      title: 'Translate responsibly',
       detail:
-        'Use each stage to refine a stronger cross-species preservation logic rather than treating every bouquet as an isolated case.',
+        'Move toward purified or bounded product formats and keep stakeholder and safety constraints visible from the start.',
     },
   ],
   nextAdd: [
-    'Experimental figures for ROS, ACC, ethylene, and vase life comparisons across treatments',
-    'Smart vase photos, schematics, and a hardware workflow diagram',
-    'Stakeholder interview pull quotes and floral supply chain context visuals',
-    'Species-specific performance data and representative flower images over time',
+    'Construct maps and pathway diagrams for the engineered E. coli chassis',
+    'Melatonin production plots, chromatograms, or other analytical confirmation figures',
+    'Flower phenotype timelines and vase-life comparison photos',
+    'Stakeholder quotes and use-case evidence for florist-facing preservation scenarios',
   ],
 }
 
@@ -283,99 +283,77 @@ const wikiGroups = [
     slug: 'project',
     title: 'Project',
     summary:
-      'State the problem, the system concept, and the design-build-test-learn logic behind FloraGuard.',
+      'Explain why microbial melatonin production is the scientific core of FloraGuard.',
     pages: [
       {
         slug: 'project-description',
         navTitle: 'Project Description',
         title: 'Project Description',
         summary:
-          'FloraGuard frames cut flower senescence as a controllable systems problem rather than a storage problem alone.',
+          'FloraGuard proposes using engineered E. coli to biosynthesize melatonin and testing that product as a cut-flower preservation strategy.',
         highlights: [
-          'Cut flower decline is driven by multiple interacting physiological pathways.',
-          'Melatonin and ACC pathway regulation give FloraGuard two complementary biological levers.',
-          'The project treats preservation as a programmable intervention strategy.',
+          'The project links metabolic engineering, analytics, and floral application in one workflow.',
+          'Melatonin is chosen because it is repeatedly associated with antioxidant buffering and delayed senescence.',
+          'The implementation path favors purified or otherwise bounded outputs rather than live release.',
         ],
         nextAdd: [
-          'A system overview schematic that connects sensing, response, and monitoring',
-          'Comparative baseline imagery of untreated versus treated flowers',
-          'Additional citations for species-specific senescence behavior',
+          'A one-page overview figure from pathway engineering to flower outcome',
+          'A clear construct map showing the chosen biosynthesis route',
+          'Additional floral post-harvest citations for species-specific senescence behavior',
         ],
         modules: [
           {
             type: 'visual-panel',
             tone: 'project',
             eyebrow: 'Project frame',
-            title: 'This page should explain why cut flower aging is controllable instead of inevitable',
+            title: 'The project starts with one narrower question: can we make a preservation molecule and prove that it matters?',
             image: floralSupplyChainArt,
             alt:
-              'Illustrated floral supply chain showing how stress accumulates and where FloraGuard can intervene.',
+              'Illustrated floral supply chain showing where value is lost before flowers reach consumers.',
             caption:
-              'A system-level framing figure for the Project Description page.',
+              'The floral problem stays visible even as the scientific core shifts toward metabolic engineering.',
             lede:
-              'Strong project-description pages quickly move from background facts to a clear systems hypothesis. Here, that hypothesis is that senescence can be detected, influenced, and timed rather than merely endured.',
+              'This page should immediately connect commercial flower loss to a tractable synthetic-biology task. Instead of solving every senescence pathway at once, FloraGuard now focuses on producing melatonin in a controllable chassis and validating that output on real cut flowers.',
             points: [
-              'Show that senescence is multi-factorial, not a single-cause problem.',
-              'Connect melatonin and ACC regulation as complementary levers rather than separate ideas.',
-              'Frame FloraGuard as a controllable intervention system from the beginning.',
+              'Keep the flower-industry problem visible from the start.',
+              'State clearly that microbial melatonin production is the new core engineering challenge.',
+              'Treat application testing as proof of relevance, not as a separate later idea.',
             ],
           },
           {
             type: 'metric-cards',
-            eyebrow: 'Key numbers',
-            title: 'The project frame becomes sharper when a few core facts stay visible',
+            eyebrow: 'Project logic',
+            title: 'Three layers make the new FloraGuard story readable at a glance',
             items: [
               {
-                label: 'Global floral market',
-                value: '40B+',
-                detail: 'A large commercial system depends on keeping cut flowers presentable after harvest.',
+                label: 'Problem layer',
+                value: '01',
+                detail: 'Cut flowers senesce rapidly, and current preservation is often static and species-dependent.',
               },
               {
-                label: 'Stress axes',
-                value: '4',
-                detail: 'ROS, ethylene signaling, microbial blockage, and water imbalance together drive decline.',
+                label: 'Engineering layer',
+                value: '02',
+                detail: 'Engineered E. coli is used to biosynthesize melatonin as a preservation-active molecule.',
               },
               {
-                label: 'Core biological levers',
-                value: '2',
-                detail: 'Melatonin-centered protection and ACC-linked ethylene control anchor the FloraGuard strategy.',
+                label: 'Validation layer',
+                value: '03',
+                detail: 'The produced or formulated melatonin is tested on flowers through phenotype and vase-life outcomes.',
               },
             ],
           },
           {
             type: 'comparison-grid',
             eyebrow: 'Concept shift',
-            title: 'FloraGuard changes the project from treatment-first thinking to systems-first thinking',
+            title: 'The current concept is more focused than the previous platform-style framing',
             items: [
               {
-                title: 'Conventional preservation',
-                detail: 'Apply sugar, antimicrobials, or cold storage and hope the flower responds well enough under variable conditions.',
+                title: 'Broad preservation platform',
+                detail: 'Many ideas were connected at once, but the scientific proof chain was diffuse and harder to validate cleanly.',
               },
               {
-                title: 'Programmable preservation',
-                detail: 'Sense condition, buffer oxidative stress, modulate ethylene-linked decline, and adapt timing based on what the flower is actually experiencing.',
-              },
-            ],
-          },
-          {
-            type: 'evidence-strip',
-            eyebrow: 'Hypothesis board',
-            title: 'A strong project page usually makes the hypothesis readable in three connected panels',
-            items: [
-              {
-                label: 'Panel 01',
-                title: 'Stress accumulates as a system',
-                detail: 'The page should show that senescence is not one pathway but an interacting post-harvest network.',
-              },
-              {
-                label: 'Panel 02',
-                title: 'Two biological levers can intervene',
-                detail: 'Melatonin and ACC deaminase logic should appear as complementary rather than independent ideas.',
-              },
-              {
-                label: 'Panel 03',
-                title: 'Monitoring turns treatment into management',
-                detail: 'Hardware and prediction are what convert a treatment concept into a programmable preservation system.',
+                title: 'Focused biosynthesis-and-validation project',
+                detail: 'The new version centers on one molecule, one chassis, and one translational question: can engineered melatonin production improve cut-flower preservation in a measurable way?',
               },
             ],
           },
@@ -383,57 +361,51 @@ const wikiGroups = [
         sections: [
           {
             eyebrow: 'Background',
-            title: 'Why cut flower senescence is a systems problem',
+            title: 'Why cut flower preservation remains a difficult biological problem',
             blocks: [
               paragraph(
-                'The global cut flower industry is worth more than 40 billion USD annually. However, a significant fraction of harvested flowers never reach consumers in optimal condition.',
-              ),
-              paragraph(
-                'Cut flower senescence is driven by several physiological processes that overlap rather than operate independently.',
+                'The global cut flower industry depends on keeping harvested flowers visually attractive during transport, retail display, and home use. Yet once flowers are detached from the plant, senescence accelerates because water balance, oxidative stress, hormone signaling, and handling variability all change at once.',
               ),
               list([
-                'reactive oxygen species (ROS) accumulation',
-                'ethylene-mediated senescence signaling',
-                'microbial blockage of xylem vessels',
-                'water balance disruption',
+                'reactive oxygen species accumulation',
+                'progressive dehydration and loss of vascular function',
+                'hormone-mediated senescence signaling',
+                'hidden transport and storage stress before purchase',
               ]),
               paragraph(
-                'These processes interact to accelerate petal wilting, discoloration, and loss of ornamental value.',
+                'That combination of pressures means floral preservation is not simply a storage problem. It is a post-harvest biology problem with direct commercial consequences.',
               ),
             ],
           },
           {
-            eyebrow: 'Scientific basis',
-            title: 'Why FloraGuard focuses on melatonin and ethylene control',
+            eyebrow: 'Scientific rationale',
+            title: 'Why melatonin became the centerpiece of FloraGuard',
             blocks: [
               paragraph(
-                'Recent research has demonstrated that melatonin acts as a multifunctional plant regulator capable of delaying senescence by enhancing antioxidant capacity and modulating hormone pathways.',
+                'Melatonin has been repeatedly reported as a multifunctional regulator in plants and post-harvest systems. It is associated with improved antioxidant capacity, reduced ROS burden, and delayed senescence under several stress contexts.',
               ),
               paragraph(
-                'At the same time, ethylene biosynthesis plays a crucial role in floral senescence. Enzymes such as ACC oxidase and ACC synthase regulate the ethylene pathway, while microbial enzymes such as ACC deaminase can reduce ethylene precursor levels.',
+                'That makes melatonin attractive not only as an exogenous treatment, but also as a target product for synthetic-biology production. If an engineered microbial chassis can generate it in a controllable way, the project gains a direct bridge between metabolic engineering and floral preservation.',
               ),
               callout(
-                'Together, these findings suggest that flower senescence may be controllable through combined regulation of oxidative stress and ethylene signaling.',
+                'The key hypothesis is simple: if engineered E. coli can produce melatonin reliably enough, that product may become the basis of a safer and more programmable cut-flower preservation strategy.',
               ),
             ],
           },
           {
-            eyebrow: 'Our idea',
-            title: 'A programmable senescence management system',
+            eyebrow: 'Project scope',
+            title: 'What FloraGuard now tries to prove',
             blocks: [
-              paragraph(
-                'Instead of simply applying exogenous preservatives, we aim to build a programmable senescence management system that can respond to flower status over time.',
-              ),
               list(
                 [
-                  'sensing senescence signals',
-                  'delaying oxidative stress using melatonin',
-                  'reducing ethylene-mediated senescence using ACC deaminase',
+                  'engineered E. coli can be designed to biosynthesize melatonin',
+                  'the pathway output can be analytically verified and optimized',
+                  'melatonin-centered treatment can improve cut-flower post-harvest performance',
                 ],
                 'ordered',
               ),
               paragraph(
-                'Combined with hardware monitoring and predictive modeling, this system provides an integrated preservation strategy for cut flowers.',
+                'The project therefore spans metabolic engineering, analytical chemistry, and post-harvest flower validation. That scope is ambitious but coherent, because every page now supports the same central proof chain.',
               ),
             ],
           },
@@ -444,89 +416,73 @@ const wikiGroups = [
         navTitle: 'Problem & Inspiration',
         title: 'Problem & Inspiration',
         summary:
-          'The project begins with the hidden cost of floral waste and the limitations of static preservation methods.',
+          'The problem page connects floral waste and short vase life to the decision to pursue melatonin biosynthesis as a preservation strategy.',
         highlights: [
-          'Cut flowers have short natural vase lives even before logistics stress is added.',
-          'Transport and retail conditions amplify dehydration and senescence.',
-          'Current preservation methods delay damage but rarely adapt to flower condition.',
+          'Cut flowers are economically valuable but physiologically fragile.',
+          'Current preservatives help, yet they rarely adapt to the actual biological state of the flower.',
+          'Melatonin offers a biologically grounded alternative worth producing and testing.',
         ],
         nextAdd: [
-          'A floral supply chain diagram from harvest to consumer',
-          'Images showing progressive senescence across representative species',
-          'Quantitative waste or loss estimates from stakeholder interviews or literature',
+          'Real species photographs showing senescence progression over time',
+          'Loss estimates or stakeholder-derived examples from the floral supply chain',
+          'A figure explaining why melatonin is a more interesting lever than a generic additive',
         ],
         modules: [
           {
             type: 'visual-panel',
             tone: 'problem',
             eyebrow: 'Problem picture',
-            title: 'The problem page should make floral waste feel visible before the reader reaches the science',
-            image: floralSupplyChainArt,
-            alt:
-              'Illustrated supply chain view of cut flowers moving from harvest through transport to smart care.',
+            title: 'Floral waste becomes easier to understand when readers can see where value is lost',
+            image: floralStressArt,
+            alt: 'Illustrated contrast between fresh bouquets and stressed flowers.',
             caption:
-              'A visual summary of where value is lost across the floral chain.',
+              'The problem page should make senescence pressure visible before the build strategy appears.',
             lede:
-              'Many strong iGEM pages use one simple image to make the problem legible. For FloraGuard, that means showing how transport stress, dehydration, and retail handling all compress vase life before the bouquet reaches home.',
+              'This page anchors the project in a real post-harvest problem. Flowers do not simply fade at home; they accumulate stress across harvest, storage, transport, retail display, and household care.',
             points: [
-              'Anchor the reader in the full journey from cutting to consumer use.',
-              'Use species examples to make loss feel concrete rather than abstract.',
-              'Set up why static preservation strategies break under variable real-world conditions.',
+              'Use flower examples that readers immediately recognize.',
+              'Show that the preservation challenge starts before the consumer ever sees the bouquet.',
+              'Connect that pressure to a need for better biological intervention.',
             ],
           },
           {
             type: 'metric-cards',
             eyebrow: 'Species snapshot',
-            title: 'The problem feels more real when vase-life pressure is attached to familiar flower types',
+            title: 'Representative cut flowers show how narrow the usable display window can be',
             items: [
               {
                 label: 'Rose',
                 value: '5-7 d',
-                detail: 'A popular cut flower with a narrow window before visible quality drops.',
+                detail: 'A commercially important cut flower where visible wilting quickly reduces value.',
               },
               {
                 label: 'Tulip',
                 value: '4-6 d',
-                detail: 'A short-lived example that makes timing and handling especially important.',
+                detail: 'A short-life flower that makes timing and water balance especially important.',
               },
               {
                 label: 'Carnation',
                 value: '7-10 d',
-                detail: 'Longer life does not remove the underlying stress and care challenges.',
+                detail: 'A relatively longer-lived comparison that still experiences cumulative post-harvest stress.',
               },
             ],
           },
           {
             type: 'step-cards',
-            eyebrow: 'Pain points',
-            title: 'Three things make current floral care feel structurally fragile',
+            eyebrow: 'Why current methods fall short',
+            title: 'Existing floral care methods are useful, but structurally limited',
             items: [
               {
-                title: 'Timing is opaque',
-                detail: 'People usually do not know when stress accumulation has crossed the point where intervention still helps.',
+                title: 'They are mostly static',
+                detail: 'Standard preservatives are often applied as fixed recipes, even though stress and species response vary widely.',
               },
               {
-                title: 'Responses vary by species',
-                detail: 'A treatment that helps one flower type may underperform or over-correct in another context.',
+                title: 'They do not explain mechanism',
+                detail: 'A bouquet may improve or fail without clarifying which stress process was actually buffered.',
               },
               {
-                title: 'Retail and home care disconnect',
-                detail: 'By the time the bouquet reaches the user, hidden transport and storage damage may already dominate the outcome.',
-              },
-            ],
-          },
-          {
-            type: 'comparison-grid',
-            eyebrow: 'Care gap',
-            title: 'Current methods fail for different reasons at different points in the chain',
-            items: [
-              {
-                title: 'Before purchase',
-                detail: 'Transport temperature shifts, storage time, and dehydration create hidden damage before consumers ever see the flower.',
-              },
-              {
-                title: 'After purchase',
-                detail: 'Consumers inherit a stressed bouquet without enough information to know what care will still be effective.',
+                title: 'They are hard to translate into new biology',
+                detail: 'Chemical preservation does not naturally open a path for iGEM-style pathway design, production, and validation.',
               },
             ],
           },
@@ -536,7 +492,7 @@ const wikiGroups = [
             eyebrow: 'Problem framing',
             title: 'The hidden cost of floral waste',
             blocks: [
-              paragraph('Cut flowers are highly perishable products.'),
+              paragraph('Cut flowers are highly perishable products with short, commercially meaningful display windows.'),
               table(
                 ['Flower', 'Typical vase life'],
                 [
@@ -547,32 +503,36 @@ const wikiGroups = [
                 ],
               ),
               paragraph(
-                'During transportation, storage, and retail display, flowers experience stress conditions such as temperature fluctuation and dehydration.',
-              ),
-              paragraph(
-                'These stresses accelerate senescence and reduce market value long before a bouquet reaches the consumer.',
+                'During transportation, storage, and retail display, flowers are exposed to dehydration, temperature fluctuation, and physiological stress that shorten vase life before the end user can intervene.',
               ),
             ],
           },
           {
             eyebrow: 'Inspiration',
-            title: 'Why current solutions are not enough',
+            title: 'Why melatonin is an appealing preservation lever',
             blocks: [
-              paragraph('Existing preservation methods often include:'),
+              paragraph(
+                'Literature on melatonin in plants and post-harvest systems consistently points to antioxidant buffering, improved stress tolerance, and delayed senescence-associated damage.',
+              ),
               list([
-                'sucrose supplements',
-                'antimicrobial agents',
-                'ethylene inhibitors',
-                'refrigeration',
+                'melatonin is associated with lower ROS burden',
+                'melatonin can help maintain membrane and cellular stability',
+                'melatonin has already shown promise in post-harvest horticultural contexts',
               ]),
-              paragraph('However, these methods suffer from several limitations:'),
-              list([
-                'lack of dynamic control',
-                'species-dependent responses',
-                'chemical residue concerns',
-              ]),
+              paragraph(
+                'Those observations inspired us to ask whether melatonin could become more than an externally purchased treatment. In FloraGuard, it becomes the product of a synthetic-biology chassis and the centerpiece of a preservation workflow.',
+              ),
+            ],
+          },
+          {
+            eyebrow: 'Project inspiration',
+            title: 'Why the biosynthesis angle matters',
+            blocks: [
+              paragraph(
+                'A melatonin application project alone would still be interesting, but an iGEM project becomes more distinctive when it asks how the molecule is made, optimized, measured, and translated. That is why the new version of FloraGuard focuses on engineered microbial production instead of preservation logic alone.',
+              ),
               callout(
-                'These shortcomings inspired us to explore a synthetic biology-based preservation system capable of actively managing senescence.',
+                'The inspiration behind FloraGuard is not only that melatonin may help flowers. It is that synthetic biology may make that help programmable, measurable, and eventually scalable.',
               ),
             ],
           },
@@ -583,175 +543,142 @@ const wikiGroups = [
         navTitle: 'Design',
         title: 'Design',
         summary:
-          'FloraGuard combines sensing, biological response, and smart monitoring into a closed-loop preservation architecture.',
+          'The design page turns FloraGuard into a modular route from pathway engineering to flower validation.',
         highlights: [
-          'The design uses modular biological and hardware layers rather than a single treatment.',
-          'Response logic centers on oxidative stress buffering and ethylene regulation.',
-          'Monitoring data supports future prediction of intervention timing.',
+          'The project is designed around a microbial chassis, a melatonin pathway, analytical verification, and application testing.',
+          'Route optimization may include precursor and cofactor logic such as BH4-related support when relevant.',
+          'The final design is bench-to-application, not hardware-first.',
         ],
         nextAdd: [
-          'A full system diagram linking each module and its inputs or outputs',
-          'Promoter or response logic details for the sensing module',
-          'A combined workflow figure connecting biology, hardware, and prediction',
+          'A pathway diagram showing the chosen enzymatic route from tryptophan to melatonin',
+          'Construct architecture and plasmid diagrams for the selected genes',
+          'A clean system schematic linking fermentation output to flower treatment validation',
         ],
         modules: [
           {
             type: 'visual-panel',
             tone: 'design',
             eyebrow: 'System architecture',
-            title: 'Design pages work best when they show how each module hands off to the next',
+            title: 'The design page should show one coherent chain from chassis engineering to flower outcome',
             image: floralHeroArt,
-            alt:
-              'Illustrated FloraGuard platform showing vase, floral modules, and monitoring traces.',
+            alt: 'Illustrated floral systems banner used as a design overview image.',
             caption:
-              'A closed-loop architecture placeholder for the Design page.',
+              'The design is now centered on production, quantification, and application rather than on a general smart-monitoring platform.',
             lede:
-              'The goal of this page is not only to list modules, but to show how sensing, biological response, and monitoring become one coherent platform.',
+              'A good design page does not merely list components. It explains how each module hands work to the next. In FloraGuard, the order is chassis design, pathway expression, product verification, and post-harvest validation.',
             points: [
-              'Start with the system overview before zooming into individual modules.',
-              'Keep the handoff between sensing, response, and prediction visible.',
-              'Use one architecture graphic to stop the design from feeling fragmented.',
+              'Keep the metabolic route visible, not hidden behind generic preservation language.',
+              'Explain where analytical confirmation happens before application testing.',
+              'Show how translation constraints influence the design from the start.',
             ],
           },
           {
             type: 'profile-grid',
             eyebrow: 'Module roles',
-            title: 'Each design layer should have one clear job inside the platform',
+            title: 'Each design layer has one clear responsibility in the project logic',
             items: [
               {
-                label: 'L-01',
-                title: 'Sensing',
-                detail: 'Detect stress-linked cues early enough that intervention still matters.',
+                label: 'M-01',
+                title: 'Chassis and pathway',
+                detail: 'Select E. coli and define the enzyme set needed to convert a tractable precursor stream into melatonin.',
               },
               {
-                label: 'L-02',
-                title: 'Melatonin response',
-                detail: 'Buffer oxidative stress and stabilize flower tissues before visible collapse accelerates.',
+                label: 'M-02',
+                title: 'Production optimization',
+                detail: 'Tune expression, precursor flow, and any needed cofactor support to raise melatonin output.',
               },
               {
-                label: 'L-03',
-                title: 'Ethylene regulation',
-                detail: 'Reduce ethylene-linked decline by acting on ACC-associated signaling logic.',
+                label: 'M-03',
+                title: 'Product verification',
+                detail: 'Use analytical methods to confirm that the pathway is generating melatonin rather than only upstream intermediates.',
               },
               {
-                label: 'L-04',
-                title: 'Monitoring and prediction',
-                detail: 'Track changing context and convert observation into future intervention timing.',
+                label: 'M-04',
+                title: 'Application validation',
+                detail: 'Test whether melatonin-centered treatments measurably improve cut-flower preservation outcomes.',
               },
             ],
           },
           {
             type: 'journey-strip',
-            eyebrow: 'Closed loop',
-            title: 'Design is easiest to grasp when the platform reads as one loop',
+            eyebrow: 'Bench-to-flower route',
+            title: 'The FloraGuard design is easiest to grasp when it reads as one ordered sequence',
             items: [
               {
-                title: 'Sense',
-                detail: 'Monitor ROS, ethylene-linked decline, and dehydration-associated stress cues.',
+                title: 'Engineer',
+                detail: 'Choose the chassis and biosynthesis route from tryptophan-derived metabolism to melatonin.',
               },
               {
-                title: 'Respond',
-                detail: 'Trigger melatonin-centered buffering and ACC-linked ethylene control.',
+                title: 'Optimize',
+                detail: 'Adjust route bottlenecks, precursor supply, and relevant cofactors or helper modules.',
               },
               {
-                title: 'Observe',
-                detail: 'Use hardware and image-informed monitoring to track how condition changes over time.',
+                title: 'Verify',
+                detail: 'Measure whether melatonin is actually produced at a useful and reproducible level.',
               },
               {
-                title: 'Predict',
-                detail: 'Feed those observations back into intervention timing and deployment strategy.',
-              },
-            ],
-          },
-          {
-            type: 'evidence-strip',
-            eyebrow: 'Architecture board',
-            title: 'A final design figure should explain the platform in three glances',
-            items: [
-              {
-                label: 'Panel 01',
-                title: 'Signal inputs',
-                detail: 'Show what stress signals the system watches and where they originate.',
-              },
-              {
-                label: 'Panel 02',
-                title: 'Response handoff',
-                detail: 'Show how sensing informs melatonin and ethylene-linked response logic.',
-              },
-              {
-                label: 'Panel 03',
-                title: 'Monitoring output',
-                detail: 'Show how hardware and modeling close the loop and guide intervention timing.',
+                title: 'Validate',
+                detail: 'Use preserved flowers, phenotype scoring, and vase-life outcomes to judge application value.',
               },
             ],
           },
         ],
         sections: [
           {
-            eyebrow: 'System overview',
-            title: 'Four core modules drive the FloraGuard architecture',
+            eyebrow: 'Module 1',
+            title: 'Chassis and pathway design',
             blocks: [
-              paragraph('FloraGuard consists of four functional modules that work together as a preservation system.'),
               paragraph(
-                'The overall logic is to detect senescence-associated stress, trigger or recommend protective responses, and use monitoring data to improve timing and intervention quality.',
+                'The project begins with engineered E. coli as a microbial cell factory. The pathway design centers on converting a tryptophan-derived metabolic stream toward melatonin through a set of decarboxylation, hydroxylation, acetylation, and methylation reactions.',
+              ),
+              paragraph(
+                'The exact enzyme combination can vary with route choice, but the design principle stays the same: make melatonin production explicit, modular, and optimizable.',
               ),
             ],
           },
           {
-            eyebrow: 'Module 1',
-            title: 'Senescence sensing',
-            blocks: [
-              paragraph('This module monitors physiological signals associated with flower senescence.'),
-              paragraph('Key indicators include:'),
-              list(['ROS accumulation', 'ethylene signaling', 'dehydration stress']),
-              paragraph('These signals serve as triggers for downstream responses.'),
-            ],
-          },
-          {
             eyebrow: 'Module 2',
-            title: 'Melatonin response',
+            title: 'Production optimization and route support',
             blocks: [
-              paragraph('Melatonin is produced or released in response to detected senescence signals.'),
-              paragraph('Melatonin functions as:'),
+              paragraph(
+                'A pathway that exists on paper may still perform poorly in cells. That is why FloraGuard includes a dedicated optimization layer for precursor balance, expression strength, and route bottlenecks.',
+              ),
               list([
-                'antioxidant regulator',
-                'stress tolerance enhancer',
-                'senescence inhibitor',
+                'promoter and expression balancing across pathway enzymes',
+                'precursor supplementation or routing from tryptophan metabolism',
+                'cofactor support, including BH4-related logic where the chosen route requires it',
               ]),
-              paragraph('This module helps maintain cellular stability and delay oxidative damage.'),
+              paragraph(
+                'This module is where metabolic engineering becomes practical rather than conceptual.',
+              ),
             ],
           },
           {
             eyebrow: 'Module 3',
-            title: 'Ethylene regulation',
+            title: 'Product verification',
             blocks: [
-              paragraph('To address ethylene-driven senescence, we introduce a complementary pathway.'),
               paragraph(
-                'ACC deaminase catalyzes the degradation of ACC, the precursor of ethylene. Reducing ACC levels lowers ethylene production and slows flower aging.',
+                'FloraGuard needs analytical proof before it can claim a preservation mechanism. Depending on available instrumentation, that proof may come from chromatographic methods, mass-confirmed detection, or other validated analytical assays.',
+              ),
+              table(
+                ['Question', 'Why it matters', 'Representative answer format'],
+                [
+                  ['Is melatonin present?', 'confirms route completion', 'chromatogram or mass-confirmed detection'],
+                  ['How much is produced?', 'supports optimization decisions', 'titer comparison across constructs or conditions'],
+                  ['Where are bottlenecks?', 'guides next DBTL cycle', 'intermediate accumulation or low-yield signatures'],
+                ],
               ),
             ],
           },
           {
             eyebrow: 'Module 4',
-            title: 'Smart monitoring system',
-            blocks: [
-              paragraph('FloraGuard integrates hardware monitoring to track environmental conditions.'),
-              paragraph('Sensors record:'),
-              list(['temperature', 'time after harvest', 'visual flower condition']),
-              paragraph(
-                'These data support predictive modeling and help determine optimal intervention timing.',
-              ),
-            ],
-          },
-          {
-            eyebrow: 'Integration',
-            title: 'From modules to a closed-loop platform',
+            title: 'Application validation on cut flowers',
             blocks: [
               paragraph(
-                'The design is meant to operate as a closed-loop preservation platform: sensing informs response, hardware tracks changing context, and predictive models help decide when intervention matters most.',
+                'The final module asks whether the produced or formulated melatonin actually helps flowers. Treatments are therefore tested on cut-flower material through phenotype images, ROS-associated readouts, and vase-life comparisons.',
               ),
-              paragraph(
-                'Within this broader logic, microbiome-aware preservation remains an important application layer because water uptake and xylem health strongly influence post-harvest quality.',
+              callout(
+                'The design only succeeds if production data and flower data can be read as one argument: FloraGuard made melatonin, and that melatonin changed a relevant floral outcome.',
               ),
             ],
           },
@@ -762,105 +689,81 @@ const wikiGroups = [
         navTitle: 'Engineering (DBTL)',
         title: 'Engineering (DBTL)',
         summary:
-          'The engineering story of FloraGuard follows a modular design-build-test-learn cycle.',
+          'The engineering story of FloraGuard now follows a clearer Design-Build-Test-Learn loop around melatonin biosynthesis and flower validation.',
         highlights: [
-          'The system is organized around modular sensing and response logic.',
-          'Testing connects molecular interventions to visible flower longevity outcomes.',
-          'Learning focuses on response thresholds and intervention strategies.',
+          'Design focuses on route choice, chassis logic, and what counts as evidence.',
+          'Build centers on assembling and expressing the pathway in E. coli.',
+          'Test and Learn connect production output to preservation performance and pathway revision.',
         ],
         nextAdd: [
-          'A DBTL diagram or timeline showing iteration points',
-          'Specific constructs, strains, or treatment variants used in each cycle',
-          'Result snapshots that show what changed after each learning stage',
+          'A DBTL figure showing specific constructs and iteration decisions',
+          'A strain table and construct naming scheme',
+          'Result snapshots for each round of pathway or application optimization',
         ],
         modules: [
           {
             type: 'visual-panel',
             tone: 'wet',
             eyebrow: 'Engineering logic',
-            title: 'A DBTL page should show iteration, not just four headings in sequence',
+            title: 'DBTL now follows one main object: the melatonin-producing chassis',
             image: floralLabArt,
-            alt:
-              'Illustrated floral lab scene showing experiment loops and measurement motifs.',
+            alt: 'Illustrated floral lab scene used as a DBTL cover image.',
             caption:
-              'A placeholder for a future DBTL cycle diagram or iteration storyboard.',
+              'A stronger engineering page shows how each iteration changed the route or the flower outcome.',
             lede:
-              'Good engineering pages make the learning loop tangible. The reader should understand what was designed, what was tested, and what changed after the test.',
+              'The earlier version of the site mixed many intervention ideas. The current engineering page is cleaner. Every DBTL cycle should answer whether the chassis, the output, or the application design improved.',
             points: [
-              'Use a loop or timeline, not isolated headings alone.',
-              'Tie each phase to a specific experimental or design decision.',
-              'Show what was learned, not only what was done.',
+              'Keep the iteration centered on one route rather than many disconnected modules.',
+              'Link pathway revisions to measurable analytical changes.',
+              'Use flower results to justify what is worth optimizing next.',
             ],
           },
           {
             type: 'metric-cards',
             eyebrow: 'DBTL shorthand',
-            title: 'The engineering page should compress the iteration loop into four memorable moves',
+            title: 'Each stage answers a different engineering question',
             items: [
               {
                 label: 'Design',
                 value: 'D',
-                detail: 'Choose what signals, responses, and modules belong in FloraGuard.',
+                detail: 'Which melatonin route, enzymes, and proof criteria should define the project?',
               },
               {
                 label: 'Build',
                 value: 'B',
-                detail: 'Turn those ideas into constructs, treatments, and prototype-ready components.',
+                detail: 'How do those decisions become strains, constructs, and testable culture conditions?',
               },
               {
                 label: 'Test',
                 value: 'T',
-                detail: 'Measure whether flower quality and senescence timing actually change.',
+                detail: 'Does the chassis make melatonin, and does the resulting treatment change flower outcome?',
               },
               {
                 label: 'Learn',
                 value: 'L',
-                detail: 'Use the outcome to update thresholds, strategies, and deployment logic.',
-              },
-            ],
-          },
-          {
-            type: 'journey-strip',
-            eyebrow: 'DBTL cycle',
-            title: 'Engineering becomes legible when each stage answers a different question',
-            items: [
-              {
-                title: 'Design',
-                detail: 'What signals and responses should the FloraGuard system include?',
-              },
-              {
-                title: 'Build',
-                detail: 'How do those ideas become constructs, treatments, and prototype parts?',
-              },
-              {
-                title: 'Test',
-                detail: 'Which outputs show that flower quality actually changes?',
-              },
-              {
-                title: 'Learn',
-                detail: 'How do the results reshape thresholds, doses, and deployment logic?',
+                detail: 'Which bottlenecks in pathway performance or application format should be revised next?',
               },
             ],
           },
           {
             type: 'evidence-strip',
             eyebrow: 'Iteration board',
-            title: 'An engineering page becomes more convincing when each cycle leaves a visible artifact',
+            title: 'A strong DBTL page leaves a visible artifact after every cycle',
             items: [
               {
                 label: 'Cycle 01',
-                title: 'Architecture decision',
-                detail: 'What module arrangement or hypothesis was selected, and why was it worth building?',
+                title: 'Route selection',
+                detail: 'Why this chassis and pathway combination was chosen over simpler but less controllable alternatives.',
               },
               {
                 label: 'Cycle 02',
-                title: 'Test evidence',
-                detail: 'What readout or phenotype made the team rethink or confirm the design?',
+                title: 'Analytical evidence',
+                detail: 'What measurements showed the construct was or was not producing usable melatonin.',
               },
               {
                 label: 'Cycle 03',
-                title: 'Learned revision',
-                detail: 'What threshold, dose, or response strategy changed after the result?',
+                title: 'Application learning',
+                detail: 'How flower experiments changed the next production, dose, or formulation decision.',
               },
             ],
           },
@@ -868,40 +771,40 @@ const wikiGroups = [
         sections: [
           {
             eyebrow: 'Design',
-            title: 'Define the system architecture',
+            title: 'Define the route and the proof chain',
             blocks: [
               paragraph(
-                'We designed a modular system combining senescence sensing and biological response so that cut flower decline could be addressed before irreversible damage accumulates.',
+                'We first defined FloraGuard around a clear proof chain: engineer a melatonin biosynthesis route in E. coli, verify that the molecule is produced, and test whether it improves cut-flower preservation outcomes.',
               ),
             ],
           },
           {
             eyebrow: 'Build',
-            title: 'Construct the biological components',
+            title: 'Assemble pathway constructs and test conditions',
             blocks: [
               paragraph(
-                'Biological components were constructed using standard cloning and microbial engineering techniques to support melatonin-centered protection and ACC deaminase-based regulation.',
+                'The build phase translates route logic into plasmids, strains, helper modules, and culture conditions that can be screened experimentally.',
+              ),
+              paragraph(
+                'Depending on the selected route, build work may also include precursor-routing changes or cofactor-support modules that help pathway completion.',
               ),
             ],
           },
           {
             eyebrow: 'Test',
-            title: 'Measure preservation performance',
+            title: 'Measure both production and preservation',
             blocks: [
               paragraph(
-                'We evaluated the effectiveness of melatonin treatment and ACC deaminase pathways in delaying flower senescence.',
-              ),
-              paragraph(
-                'Testing links molecular intervention to visible phenotypes such as vase life, wilting progression, and stress-associated biochemical markers.',
+                'Testing is divided into two linked questions. First, does the chassis produce melatonin? Second, does a melatonin-centered treatment measurably improve floral phenotype, ROS-associated stress, or vase life?',
               ),
             ],
           },
           {
             eyebrow: 'Learn',
-            title: 'Refine thresholds and strategy',
+            title: 'Use output and phenotype together to guide revision',
             blocks: [
               paragraph(
-                'Experimental results informed optimization of response thresholds and treatment strategies, helping us decide how sensing, timing, and preservation modules should interact in later iterations.',
+                'The learn stage is where FloraGuard becomes genuinely iterative. Low titers may suggest pathway bottlenecks, while weak flower outcomes may point to dose, formulation, or application-timing problems. Both kinds of evidence should shape the next cycle.',
               ),
             ],
           },
@@ -913,134 +816,92 @@ const wikiGroups = [
     slug: 'build',
     title: 'Build',
     summary:
-      'Show how wet lab, dry lab, and hardware converge on measurable vase-life decisions.',
+      'Show how production, quantification, and application experiments support the new FloraGuard concept.',
     pages: [
       {
         slug: 'wet-lab',
         navTitle: 'Wet Lab',
         title: 'Wet Lab',
         summary:
-          'The wet lab plan focuses on characterizing senescence, testing melatonin response, and assessing ACC deaminase effects.',
+          'The wet lab is now organized around pathway construction, melatonin quantification, and flower-preservation validation.',
         highlights: [
-          'The wet lab starts from baseline senescence characterization in selected flowers.',
-          'Melatonin treatment is assessed against untreated and combined-module groups.',
-          'ACC reduction is evaluated as a route to slow ethylene-associated aging.',
+          'Aim 1 builds the melatonin biosynthesis route in E. coli.',
+          'Aim 2 measures and optimizes output through pathway and culture variables.',
+          'Aim 3 tests whether melatonin-centered treatments delay senescence in cut flowers.',
         ],
         nextAdd: [
-          'Species selection rationale and cultivation or sourcing details',
-          'Experimental timelines, replication counts, and protocol figures',
-          'Representative photos and quantitative plots for each aim',
+          'Construct maps, strain tables, and fermentation timelines',
+          'Chromatograms or equivalent analytical evidence for melatonin production',
+          'Flower phenotype boards and replication-aware vase-life plots',
         ],
         modules: [
           {
             type: 'visual-panel',
             tone: 'wet',
             eyebrow: 'Figure preview',
-            title: 'A wet lab page should read like evidence: assay, phenotype, and vase life in one frame',
+            title: 'The wet lab should read as one chain from engineered cells to healthier flowers',
             image: floralWetLabArt,
-            alt:
-              'Illustrated wet lab composite with flower assay readouts, scoring panels, and phenotype tracking.',
+            alt: 'Illustrated wet-lab composition with assay motifs and flower scoring.',
             caption:
-              'A placeholder figure block showing the kind of composite visual that can later be replaced with real experiment photos and plots.',
+              'A future complete figure should show construct logic, analytical output, and floral phenotype on the same page.',
             lede:
-              'This is where a future winner-style figure can sit: one glance should show the assay logic, the visual phenotype, and the final preservation outcome.',
+              'This page is no longer about testing many unrelated senescence levers. It is about making one molecule, measuring it well, and deciding whether that molecule changes the flower.',
             points: [
-              'Pair ROS or oxidative-stress readouts with phenotype scoring.',
-              'Use side-by-side treatment imagery instead of text-only descriptions.',
-              'End the visual with a clear vase-life outcome panel.',
+              'Pair construct logic with analytical results.',
+              'Keep production and application experiments visibly linked.',
+              'Reserve space for side-by-side phenotype images across time.',
             ],
           },
           {
             type: 'metric-cards',
-            eyebrow: 'Experimental logic',
-            title: 'Wet lab readouts are organized around three connected questions',
+            eyebrow: 'Wet-lab aims',
+            title: 'The experimental plan is built around three connected aims',
             items: [
               {
-                label: 'Baseline biology',
-                value: 'Aim 1',
-                detail: 'How fast do different flowers move from healthy petals to visible senescence?',
+                label: 'Aim 1',
+                value: 'Build',
+                detail: 'Construct and express a melatonin biosynthesis pathway in E. coli.',
               },
               {
-                label: 'Protective response',
-                value: 'Aim 2',
-                detail: 'Can melatonin-centered treatment measurably preserve flower quality and extend vase life?',
+                label: 'Aim 2',
+                value: 'Verify',
+                detail: 'Measure melatonin production and identify the major bottlenecks in output.',
               },
               {
-                label: 'Ethylene control',
-                value: 'Aim 3',
-                detail: 'Does ACC reduction shift hormone-driven aging and increase usable post-harvest time?',
-              },
-            ],
-          },
-          {
-            type: 'step-cards',
-            eyebrow: 'Measurement stack',
-            title: 'Each experiment is meant to connect molecular change to visible floral quality',
-            items: [
-              {
-                title: 'Stress markers',
-                detail: 'Track ROS and related oxidative signatures so biochemical decline can be compared with visible senescence.',
-              },
-              {
-                title: 'Phenotype scoring',
-                detail: 'Use petal wilting and visual senescence scoring as consistent indicators of ornamental quality loss.',
-              },
-              {
-                title: 'Longevity outcome',
-                detail: 'Measure vase life extension as the most direct readout of whether FloraGuard changes real post-harvest performance.',
-              },
-            ],
-          },
-          {
-            type: 'evidence-strip',
-            eyebrow: 'Result board',
-            title: 'Three result panels will eventually make the wet lab page feel complete',
-            items: [
-              {
-                label: 'Panel 01',
-                title: 'Treatment phenotype board',
-                detail: 'Side-by-side flower images should show control versus treatment progression across the same timeline.',
-              },
-              {
-                label: 'Panel 02',
-                title: 'Stress and pathway readouts',
-                detail: 'ROS, ACC, ethylene, or antioxidant measurements should connect molecular change to the visible phenotype.',
-              },
-              {
-                label: 'Panel 03',
-                title: 'Vase-life outcome summary',
-                detail: 'A compact result view should show whether FloraGuard meaningfully extends useful display life.',
+                label: 'Aim 3',
+                value: 'Validate',
+                detail: 'Compare melatonin-centered treatments with controls on cut-flower preservation outcomes.',
               },
             ],
           },
           {
             type: 'art-card-grid',
-            eyebrow: 'Figure atlas',
-            title: 'A strong wet lab page usually alternates between bench detail and visual proof',
+            eyebrow: 'Wet-lab atlas',
+            title: 'The strongest experiment pages show constructs, chemistry, and phenotype in parallel',
             items: [
               {
-                image: floralPhenotypeBoardArt,
-                alt: 'Illustrated phenotype board across multiple post-harvest days.',
-                label: 'Phenotype board',
-                title: 'Track the same bouquet across a shared timeline',
+                image: floralAssayDashboardArt,
+                alt: 'Illustrated assay dashboard connecting signals to flower outcome.',
+                label: 'Analytics',
+                title: 'Production data should appear beside pathway decisions',
                 detail:
-                  'Readers should be able to see control and treatment divergence in a single image sequence before they study the quantitative plots.',
+                  'Readers should not need to jump between pages to understand whether the chassis really made melatonin.',
               },
               {
-                image: floralAssayDashboardArt,
-                alt: 'Illustrated assay dashboard with petri dish and signal charts.',
-                label: 'Assay stack',
-                title: 'Pair visible decline with ROS, ACC, and antioxidant readouts',
+                image: floralPhenotypeBoardArt,
+                alt: 'Illustrated phenotype board tracking flower appearance over multiple days.',
+                label: 'Phenotype',
+                title: 'Flower images should make the treatment effect obvious before the reader studies the plots',
                 detail:
-                  'The wet lab becomes more convincing when biochemical indicators and ornamental quality live side by side instead of on separate pages.',
+                  'A future winner-style evidence board will likely need a day-by-day visual timeline for control and treatment groups.',
               },
               {
                 image: floralWetLabArt,
-                alt: 'Illustrated wet lab figure composition with flower scoring and assay motifs.',
-                label: 'Bench record',
-                title: 'Make the experiment feel like a real protocol sequence',
+                alt: 'Illustrated bench scene with flowers, dishes, and scoring motifs.',
+                label: 'Protocol',
+                title: 'The page should also reveal how sampling and scoring are actually performed',
                 detail:
-                  'A good figure board also shows how sampling, imaging, and scoring actually happen at the bench, not only the final summary result.',
+                  'Good wet-lab pages show enough of the protocol rhythm that the reader trusts the measurements behind the final summary figure.',
               },
             ],
           },
@@ -1048,84 +909,68 @@ const wikiGroups = [
         sections: [
           {
             eyebrow: 'Aim 1',
-            title: 'Characterize senescence progression in selected cut flowers',
+            title: 'Construct a melatonin biosynthesis pathway in engineered E. coli',
             blocks: [
-              paragraph('We selected representative flower species and monitored the baseline progression of decline.'),
               paragraph(
-                'Species were chosen to span different expected vase-life ranges and senescence behaviors, allowing FloraGuard to be framed against realistic variation rather than one idealized flower type.',
+                'The first wet-lab objective is to establish a functional melatonin route in E. coli. This requires choosing a pathway architecture, assembling the necessary genes, and confirming that the chassis can move flux toward melatonin rather than stalling at upstream intermediates.',
               ),
               table(
-                ['Flower type', 'Why include it', 'Main readout emphasis'],
+                ['Design question', 'Why it matters', 'Representative output'],
                 [
-                  ['Rose', 'Commercially common and quality-sensitive', 'wilting and visible ornamental decline'],
-                  ['Tulip', 'Short vase life and rapid shape change', 'timing sensitivity and dehydration response'],
-                  ['Carnation or similar long-life flower', 'Provides a slower senescence comparison', 'extended decline curve and treatment durability'],
+                  ['Which enzymes are included?', 'determines whether the pathway can complete conversion to melatonin', 'construct map or plasmid schema'],
+                  ['How is expression balanced?', 'route bottlenecks can be caused by misaligned expression levels', 'promoter or construct comparison'],
+                  ['What support modules are needed?', 'precursor flow or cofactors may limit output', 'helper-module or culture-condition comparison'],
                 ],
               ),
-              paragraph('Measured observations include:'),
-              list(['ROS accumulation', 'petal wilting', 'vase life duration']),
             ],
           },
           {
             eyebrow: 'Aim 2',
-            title: 'Evaluate melatonin effects on flower longevity',
+            title: 'Measure melatonin production and optimize the route',
             blocks: [
-              paragraph('Experimental groups include:'),
-              list(
-                [
-                  'control (water)',
-                  'melatonin treatment',
-                  'combined melatonin plus secondary module',
-                ],
-                'ordered',
+              paragraph(
+                'Once the pathway is assembled, the next goal is to determine whether melatonin is produced in a detectable and optimizable way. This stage may involve chromatographic assays, standards-based comparison, and screening of culture or construct variables.',
               ),
-              table(
-                ['Group', 'Purpose'],
-                [
-                  ['Control (water)', 'Define untreated senescence baseline'],
-                  ['Melatonin treatment', 'Test whether antioxidant-centered buffering delays decline'],
-                  ['Melatonin + secondary module', 'Explore whether multi-module intervention outperforms a single treatment logic'],
-                ],
-              ),
-              paragraph('Measured parameters include:'),
               list([
-                'vase life',
-                'antioxidant enzyme activity',
-                'visual senescence scoring',
+                'compare production across constructs or induction settings',
+                'screen precursor supplementation or flux-routing changes',
+                'evaluate cofactor-related support such as BH4-linked route needs where relevant',
               ]),
               paragraph(
-                'By recording both biochemical and visible outputs over time, this aim is designed to show not only whether melatonin helps, but when its effect becomes most meaningful during the senescence trajectory.',
+                'This aim is essential because the project only becomes credible when the preservation story is backed by real production data.',
               ),
             ],
           },
           {
             eyebrow: 'Aim 3',
-            title: 'Assess ACC deaminase pathway effects',
+            title: 'Validate preservation performance on cut flowers',
             blocks: [
               paragraph(
-                'We examine whether ACC reduction can delay ethylene-related senescence and extend the usable life of cut flowers.',
+                'The third objective is to test whether melatonin-centered treatment delays cut-flower senescence relative to appropriate controls. Depending on formulation and safety boundaries, this may use purified melatonin, prepared treatment solutions, or carefully bounded extracts for experimental comparison.',
               ),
-              paragraph('Measurements include:'),
-              list(['ACC concentration', 'ethylene production', 'vase life extension']),
-              callout(
-                'This aim matters because it tests whether FloraGuard can act on hormone-linked decline directly rather than only buffering downstream stress damage.',
+              table(
+                ['Group', 'Purpose'],
+                [
+                  ['Control', 'define untreated post-harvest decline'],
+                  ['Reference preservative or simple formulation', 'provide a practical comparison baseline'],
+                  ['Melatonin-centered treatment', 'test whether FloraGuard changes floral outcome'],
+                ],
               ),
+              paragraph('Representative readouts include ROS-associated indicators, visual senescence score, relative freshness, and total vase life.'),
             ],
           },
           {
-            eyebrow: 'Readout strategy',
-            title: 'How wet lab measurements connect mechanism to outcome',
+            eyebrow: 'Readouts',
+            title: 'How wet-lab measurements connect mechanism to outcome',
             blocks: [
               table(
                 ['Readout', 'Why it matters', 'What it should explain'],
                 [
-                  ['ROS and oxidative markers', 'Track stress burden in petals', 'whether treatment reduces biochemical damage'],
-                  ['Visual senescence score', 'Captures ornamental quality loss', 'whether users would actually perceive improvement'],
-                  ['Vase life', 'Most intuitive outcome metric', 'whether FloraGuard changes usable post-harvest duration'],
+                  ['Melatonin titer', 'proves the chassis is functioning', 'whether route engineering succeeded'],
+                  ['Intermediate profile', 'reveals where flux stalls', 'which step should be optimized next'],
+                  ['Visual senescence score', 'captures ornamental value loss', 'whether the treatment effect is visible to users'],
+                  ['Vase life', 'most intuitive preservation outcome', 'whether FloraGuard creates a practically meaningful gain'],
                 ],
-              ),
-              paragraph(
-                'Together, these readouts keep the wet lab page grounded in both mechanism and practical relevance, which is usually what makes strong iGEM experiment pages feel convincing.',
               ),
             ],
           },
@@ -1136,178 +981,111 @@ const wikiGroups = [
         navTitle: 'Dry Lab',
         title: 'Dry Lab',
         summary:
-          'The dry lab builds predictive logic around senescence timing and treatment optimization.',
+          'The dry lab supports both pathway optimization and flower-application decisions in the new FloraGuard workflow.',
         highlights: [
-          'The model uses environmental and physiological inputs to estimate decline trajectories.',
-          'Prediction is meant to guide intervention timing, not just describe outcomes after the fact.',
-          'Dose optimization helps identify practical melatonin treatment windows.',
+          'Modeling can help identify route bottlenecks and promising optimization directions.',
+          'Dose and timing analysis support more defensible flower-treatment experiments.',
+          'Dry lab now serves the wet lab instead of acting like a separate platform.',
         ],
         nextAdd: [
-          'Model diagram, equations, and parameter assumptions',
-          'Validation plots comparing predictions with measured vase life',
-          'Sensitivity analysis for temperature, treatment, and harvest stage',
+          'A pathway map with candidate bottleneck steps and route assumptions',
+          'Dose-response or intervention-window plots for flower treatment',
+          'Validation plots comparing modeled expectations with measured output and vase life',
         ],
         modules: [
           {
             type: 'visual-panel',
             tone: 'dry',
             eyebrow: 'Model story',
-            title: 'The dry lab page should show how modeling changes timing, dose, and recommendations',
+            title: 'Dry lab is strongest when it helps choose what to build and what to test next',
             image: floralDryLabArt,
-            alt:
-              'Illustrated dry lab dashboard with prediction curves, dose controls, and decision outputs.',
+            alt: 'Illustrated modeling interface with trajectories and decision outputs.',
             caption:
-              'A model-first composition that can later be replaced with real plots, parameter tables, and prediction snapshots.',
+              'The dry lab now exists to support pathway and application decisions, not to become a separate product on its own.',
             lede:
-              'Good dry lab pages do not just describe equations. They show how prediction becomes a usable decision for flower care.',
+              'A useful model can narrow experimental choices. In FloraGuard, that means helping us think about pathway bottlenecks, likely intervention windows, and which treatment comparisons are most informative.',
             points: [
-              'Show the input features that drive the prediction.',
-              'Make the intervention window visible, not buried in prose.',
-              'Use comparison views to show how modeling improves over fixed treatment logic.',
+              'Use modeling to prioritize route optimization rather than to decorate the project.',
+              'Keep production-side and flower-side decisions connected.',
+              'End with a decision, not only a curve.',
             ],
           },
           {
             type: 'pipeline',
             eyebrow: 'Model pipeline',
-            title: 'Dry lab work turns observations into intervention decisions',
+            title: 'Dry-lab work can be organized around three decision layers',
             items: [
               {
-                title: 'Inputs',
-                detail: 'Temperature, humidity, harvest stage, and treatment conditions define the starting state of the flower.',
+                title: 'Pathway support',
+                detail: 'Use route knowledge and measured intermediates to identify where melatonin production is likely to bottleneck.',
               },
               {
-                title: 'Prediction',
-                detail: 'A senescence model estimates decline trajectory and points to when intervention is likely to be most useful.',
+                title: 'Treatment design',
+                detail: 'Use expected concentration ranges and senescence timing to choose realistic flower-treatment experiments.',
               },
               {
-                title: 'Optimization',
-                detail: 'Dose-response simulations help identify practical melatonin operating windows instead of relying on one arbitrary concentration.',
-              },
-              {
-                title: 'Decision support',
-                detail: 'The model feeds back into treatment timing and future hardware recommendations.',
+                title: 'Validation loop',
+                detail: 'Compare modeled expectations with measured titers and preservation outcomes to update the next cycle.',
               },
             ],
           },
           {
             type: 'comparison-grid',
-            eyebrow: 'Why this matters',
-            title: 'Dry lab is not an add-on, it is what makes FloraGuard adaptive',
+            eyebrow: 'Why it matters',
+            title: 'Without dry lab, both pathway optimization and application testing become less efficient',
             items: [
               {
-                title: 'Without modeling',
-                detail: 'Preservation remains mostly static: fixed treatment, fixed timing, and little guidance across flower types or contexts.',
+                title: 'Without modeling support',
+                detail: 'Construct choice, culture conditions, and treatment concentration are selected mostly by guesswork and literature analogy.',
               },
               {
-                title: 'With modeling',
-                detail: 'Preservation becomes adaptive: timing, dose, and environmental context can all inform what the system should recommend.',
-              },
-            ],
-          },
-          {
-            type: 'evidence-strip',
-            eyebrow: 'Validation board',
-            title: 'A strong dry lab page usually proves three things at once',
-            items: [
-              {
-                label: 'Panel 01',
-                title: 'Input sensitivity',
-                detail: 'Show which environmental or harvest variables most strongly shift predicted senescence timing.',
-              },
-              {
-                label: 'Panel 02',
-                title: 'Model fit and validation',
-                detail: 'Use prediction-versus-observation snapshots so readers can judge whether the model is trustworthy.',
-              },
-              {
-                label: 'Panel 03',
-                title: 'Decision gain',
-                detail: 'Demonstrate how the model changes dose or intervention timing compared with static treatment rules.',
-              },
-            ],
-          },
-          {
-            type: 'art-card-grid',
-            eyebrow: 'Model atlas',
-            title: 'Dry lab gets easier to trust when the model, the evidence, and the decision sit in one frame',
-            items: [
-              {
-                image: floralModelDecisionBoardArt,
-                alt: 'Illustrated decision board with inputs, trajectories, and a highlighted intervention window.',
-                label: 'Window',
-                title: 'Make the intervention window visible before the reader reaches equations',
-                detail:
-                  'Strong modeling pages usually show where timing changes, not just that a model exists. This panel makes the decision zone itself legible.',
-              },
-              {
-                image: floralAssayDashboardArt,
-                alt: 'Illustrated dry-lab dashboard linking assays, plots, and predictions.',
-                label: 'Fit',
-                title: 'Keep prediction and observation close enough to compare at a glance',
-                detail:
-                  'Prediction feels more believable once phenotype, assay readouts, and fitted trajectories appear on the same evidence board.',
-              },
-              {
-                image: floralDryLabArt,
-                alt: 'Illustrated modeling interface with controls, curves, and dose settings.',
-                label: 'Output',
-                title: 'Show how the model changes dose and timing recommendations',
-                detail:
-                  'The dry lab should end with a usable decision: when to intervene, which conditions matter most, and how treatment strategy should adapt.',
+                title: 'With modeling support',
+                detail: 'The team can prioritize bottlenecks, set more rational concentration ranges, and define which experiments should be run first.',
               },
             ],
           },
         ],
         sections: [
           {
-            eyebrow: 'Prediction',
-            title: 'Senescence prediction model',
+            eyebrow: 'Production support',
+            title: 'Model the pathway as an optimization problem',
             blocks: [
               paragraph(
-                'We developed a computational model to predict flower senescence based on environmental and physiological parameters.',
+                'A dry-lab layer can help interpret why one construct outperforms another. Even a simple route model can highlight whether low output is more likely to come from precursor limitation, enzyme imbalance, or incomplete conversion to melatonin.',
               ),
-              paragraph('Model inputs include:'),
-              list(['temperature', 'humidity', 'harvest stage', 'treatment conditions']),
               table(
-                ['Input class', 'Example variable', 'Why it matters'],
+                ['Input class', 'Representative variable', 'Decision supported'],
                 [
-                  ['Environment', 'temperature or humidity', 'strongly affects dehydration and metabolic stress'],
-                  ['Harvest context', 'developmental stage at cutting', 'changes baseline vase-life potential'],
-                  ['Intervention', 'treatment identity or dose', 'determines whether the decline curve can shift'],
+                  ['Construct design', 'enzyme set or expression balance', 'which route architecture is worth keeping'],
+                  ['Culture condition', 'precursor feeding or induction setting', 'which fermentation condition is worth scaling'],
+                  ['Analytical result', 'titer or intermediate accumulation', 'where the pathway likely stalls'],
                 ],
               ),
-              callout('Model output: predicted vase life and intervention timing.'),
             ],
           },
           {
-            eyebrow: 'Optimization',
-            title: 'Dose optimization for treatment strategy',
+            eyebrow: 'Application support',
+            title: 'Use dry lab to plan dose and timing experiments',
             blocks: [
               paragraph(
-                'We simulated melatonin concentration-response relationships to determine optimal treatment strategies and identify useful operating ranges for preservation.',
+                'On the flower side, the model does not need to be overly complicated to be useful. It can still guide concentration ranges, exposure times, and which species or handling contexts are most informative for testing.',
               ),
-              paragraph(
-                'The goal is not to pick one arbitrary concentration, but to understand where treatment becomes effective, where gains plateau, and where intervention could become impractical or wasteful.',
-              ),
+              list([
+                'estimate practical melatonin concentration windows',
+                'compare early versus late intervention timing',
+                'prioritize which flower species or stress contexts are worth testing first',
+              ]),
             ],
           },
           {
             eyebrow: 'Validation',
-            title: 'How the dry lab should be validated against experiments',
+            title: 'How the dry-lab layer should be judged',
             blocks: [
               paragraph(
-                'A useful model must be judged against experimental outcomes rather than only internal consistency. For FloraGuard, that means comparing predicted decline timing and predicted treatment benefit against measured vase-life and senescence observations.',
-              ),
-              list(
-                [
-                  'compare predicted vase life with observed vase life across conditions',
-                  'test whether model sensitivity matches biological intuition',
-                  'check whether recommendations improve over static treatment timing',
-                ],
-                'ordered',
+                'The important question is not whether the model is mathematically elegant. It is whether the model leads to better experimental decisions. For FloraGuard, validation should therefore compare modeled expectations with measured production data and measured flower outcomes.',
               ),
               callout(
-                'The most important validation question is not “is the model mathematically elegant?” but “does it lead to better preservation decisions?”',
+                'Dry lab succeeds when it helps the team pick smarter builds and smarter flower assays, not when it becomes a disconnected appendix.',
               ),
             ],
           },
@@ -1315,185 +1093,104 @@ const wikiGroups = [
       },
       {
         slug: 'hardware',
-        navTitle: 'Hardware',
-        title: 'Hardware',
+        navTitle: 'Application Support',
+        title: 'Application Support',
         summary:
-          'The hardware layer translates FloraGuard from laboratory reasoning into a deployable smart vase concept.',
+          'This page now covers optional imaging, logging, and assay-support tools that help standardize flower evaluation rather than acting as the core project itself.',
         highlights: [
-          'The prototype is designed to record environment and visible flower status.',
-          'Hardware supports prediction, recommendation, and future intervention timing.',
-          'The smart vase bridges wet lab insights and real use conditions.',
+          'Hardware is no longer the main project spine.',
+          'Simple imaging and logging can still strengthen phenotyping and application validation.',
+          'Future support tools should serve bounded treatment workflows and better evidence capture.',
         ],
         nextAdd: [
-          'Device renders, wiring layout, and sensor selection table',
-          'Prototype photos and physical enclosure design notes',
-          'A user workflow showing how measurements become recommendations',
+          'A simple imaging rig or standardized phenotype-recording setup',
+          'Temperature and time logging workflow for post-harvest experiments',
+          'A table showing which measurements are manual versus tool-assisted',
         ],
         modules: [
           {
             type: 'visual-panel',
             tone: 'hardware',
-            eyebrow: 'Prototype frame',
-            title: 'Hardware pages need an object, an interface, and a workflow in the same glance',
-            image: smartVaseArt,
+            eyebrow: 'Support role',
+            title: 'Application-support tools now exist to improve evidence quality, not to define the whole project',
+            image: floralHardwareBlueprintArt,
             alt:
-              'Illustrated smart vase prototype with sensors, interface card, and preservation dashboard.',
+              'Illustrated blueprint-like panel for a measurement and support workflow.',
             caption:
-              'A bridge visual for the hardware page: the device, the captured signals, and the recommendation interface all belong together.',
+              'The role of hardware has been reduced and clarified in this project version.',
             lede:
-              'This block creates space for future prototype renders, photos, and interface screenshots while already teaching the reader how the device fits the FloraGuard system.',
+              'A simple support layer can still be valuable. Standardized image capture, condition logging, and treatment records can make flower comparisons more convincing even when hardware is not the scientific centerpiece.',
             points: [
-              'Show the physical vase or enclosure, not only sensor names.',
-              'Connect the captured signals to the recommendation interface.',
-              'Keep the user workflow visible so the page feels deployable, not hypothetical.',
+              'Use tools to standardize phenotype documentation.',
+              'Keep the support layer clearly subordinate to the biosynthesis-and-validation story.',
+              'Avoid implying that a user-facing device is already the main output of the project.',
             ],
           },
           {
             type: 'step-cards',
-            eyebrow: 'Prototype layers',
-            title: 'The smart vase is designed as a bridge from bench insight to usable monitoring',
+            eyebrow: 'Possible support tasks',
+            title: 'A light support layer can still improve the experimental workflow',
             items: [
               {
-                title: 'Sensing layer',
-                detail: 'Environmental sensors capture temperature and time-linked context that strongly shapes post-harvest decline.',
+                title: 'Image capture',
+                detail: 'Standardized flower photos across time points make visual comparisons much more credible.',
               },
               {
-                title: 'Visual layer',
-                detail: 'Camera-based tracking provides a route to monitor visible flower condition and support image-informed scoring.',
+                title: 'Condition logging',
+                detail: 'Temperature, elapsed time, and treatment record-keeping help explain variation between assays.',
               },
               {
-                title: 'Data layer',
-                detail: 'Logging and interpretation make it possible to compare conditions over time instead of relying on one-off observations.',
-              },
-              {
-                title: 'Recommendation layer',
-                detail: 'The device can eventually connect model output to preservation advice for florists or consumers.',
+                title: 'Result organization',
+                detail: 'A simple interface or dashboard can keep phenotype, titer, and treatment metadata aligned for later analysis.',
               },
             ],
           },
           {
-            type: 'journey-strip',
-            eyebrow: 'Use pathway',
-            title: 'How hardware supports a real preservation workflow',
+            type: 'comparison-grid',
+            eyebrow: 'Why it helps',
+            title: 'Structured phenotyping is more useful than informal flower photography',
             items: [
               {
-                title: 'Monitor',
-                detail: 'Observe temperature, elapsed time, and visible condition continuously.',
+                title: 'Without support tools',
+                detail: 'Images, timelines, and treatment metadata drift apart, which makes application results harder to trust.',
               },
               {
-                title: 'Interpret',
-                detail: 'Convert raw measurements into an estimate of flower stress and likely remaining vase life.',
-              },
-              {
-                title: 'Act',
-                detail: 'Recommend when treatment, replacement, or handling changes should happen.',
-              },
-            ],
-          },
-          {
-            type: 'evidence-strip',
-            eyebrow: 'Prototype board',
-            title: 'Hardware pages become convincing when they show the product from three angles',
-            items: [
-              {
-                label: 'Panel 01',
-                title: 'Object and enclosure',
-                detail: 'Show what the smart vase or prototype physically looks like in use, not only as a component list.',
-              },
-              {
-                label: 'Panel 02',
-                title: 'Dashboard and signals',
-                detail: 'Show the captured data or UI so the recommendation logic is visible to the reader.',
-              },
-              {
-                label: 'Panel 03',
-                title: 'User workflow',
-                detail: 'Show how a florist or consumer would move from observation to action using the device.',
-              },
-            ],
-          },
-          {
-            type: 'art-card-grid',
-            eyebrow: 'Prototype gallery',
-            title: 'Hardware should feel equally like an object, a dashboard, and a care workflow',
-            items: [
-              {
-                image: floralHardwareBlueprintArt,
-                alt: 'Illustrated blueprint of a smart vase with sensing modules.',
-                label: 'Object',
-                title: 'Show the vase as a real instrumented form',
-                detail:
-                  'The enclosure, sensing ring, and timing inputs should read as one product architecture rather than a loose component list.',
-              },
-              {
-                image: smartVaseArt,
-                alt: 'Illustrated smart vase interface with flower monitoring signals.',
-                label: 'Interface',
-                title: 'Turn raw signals into a calm recommendation view',
-                detail:
-                  'The strongest hardware pages quickly show what the user sees, not just what the sensor captures.',
-              },
-              {
-                image: floralAssayDashboardArt,
-                alt: 'Illustrated dashboard showing linked signals and decision outputs.',
-                label: 'Decision',
-                title: 'Keep the signal-to-action chain visible',
-                detail:
-                  'A future device page should make it obvious how temperature, elapsed time, and visible state become practical flower-care advice.',
+                title: 'With support tools',
+                detail: 'The team can keep time-series photos, environmental context, and treatment records aligned across flower experiments.',
               },
             ],
           },
         ],
         sections: [
           {
-            eyebrow: 'Prototype',
-            title: 'Smart vase monitoring system',
+            eyebrow: 'Current scope',
+            title: 'What this page means in the latest project version',
             blocks: [
               paragraph(
-                'To bridge laboratory research with real-world application, we designed a smart vase monitoring system.',
+                'In the current FloraGuard concept, hardware is no longer the core innovation. Instead, any tool-like layer exists to support better flower phenotyping, experiment logging, and future demonstration of the treatment workflow.',
               ),
-              paragraph('Core features include:'),
-              list([
-                'environmental sensors',
-                'camera-based flower status tracking',
-                'data logging',
-              ]),
+            ],
+          },
+          {
+            eyebrow: 'Useful measurements',
+            title: 'What is worth recording during flower validation',
+            blocks: [
               table(
-                ['Signal', 'Why capture it', 'How it informs care'],
+                ['Measurement', 'Why capture it', 'How it helps interpretation'],
                 [
-                  ['Temperature', 'Strongly shapes senescence rate', 'helps estimate remaining vase life'],
-                  ['Elapsed time after harvest', 'Tracks cumulative stress exposure', 'provides context for intervention urgency'],
-                  ['Visual flower condition', 'Captures visible quality decline', 'supports user-facing scoring and recommendation'],
+                  ['Phenotype images', 'show visible senescence progression', 'supports side-by-side comparison'],
+                  ['Elapsed time after harvest', 'captures cumulative stress exposure', 'helps align experiments across days'],
+                  ['Temperature or environment', 'explains between-condition variability', 'supports fairer interpretation of treatment effect'],
                 ],
               ),
             ],
           },
           {
-            eyebrow: 'Use case',
-            title: 'What the device enables',
+            eyebrow: 'Future role',
+            title: 'How support tools could evolve later',
             blocks: [
               paragraph(
-                'This device supports senescence prediction and preservation recommendations, creating a path from experimental understanding toward florist and consumer-facing tools.',
-              ),
-              list(
-                [
-                  'observe condition continuously instead of relying on occasional manual inspection',
-                  'translate model output into readable preservation prompts',
-                  'compare different storage or handling conditions over time',
-                ],
-                'ordered',
-              ),
-            ],
-          },
-          {
-            eyebrow: 'Workflow',
-            title: 'From measurement to recommendation',
-            blocks: [
-              paragraph(
-                'The hardware concept matters because it turns FloraGuard from a scientific idea into a usable workflow. A florist or consumer does not need raw sensor traces; they need a simple answer about whether the flower is stable, declining, or in need of intervention.',
-              ),
-              callout(
-                'A future hardware figure should make the interface legible enough that a reader can immediately understand how the recommendation is produced.',
+                'If the project eventually moves toward florist-facing use, the same light support tools could become part of a pilot workflow. For now, their main role is to make preservation experiments better documented and easier to compare.',
               ),
             ],
           },
@@ -1505,135 +1202,82 @@ const wikiGroups = [
     slug: 'translation',
     title: 'Translation',
     summary:
-      'Connect stakeholder needs, biosafety, deployment, and community contribution.',
+      'Connect stakeholder need, biosafety, bounded deployment, and the broader contribution of FloraGuard.',
     pages: [
       {
         slug: 'integrated-human-practices',
         navTitle: 'Human Practices',
         title: 'Integrated Human Practices',
         summary:
-          'Stakeholder interviews shaped FloraGuard as a practical preservation platform rather than a purely academic construct.',
+          'Human Practices now focuses on whether a melatonin-based floral preservation product would be meaningful, affordable, and safe in real post-harvest settings.',
         highlights: [
-          'Interviews span growers, distributors, florists, and consumers.',
-          'Supply-chain loss and weak end-user flower care emerged as central problems.',
-          'These conversations pushed the project toward usable preservation tools.',
+          'Stakeholders still include growers, distributors, florists, and consumers.',
+          'The new project direction raises stronger questions about cost, formulation, and bounded use than the previous broad platform concept.',
+          'Social value comes from reducing waste without increasing biosafety burden.',
         ],
         nextAdd: [
-          'Interview counts, dates, and method summaries',
-          'Quoted stakeholder insights with permissions or anonymization',
-          'A feedback loop diagram showing how specific interviews changed design choices',
+          'Interview dates, methods, and anonymized quotes',
+          'A diagram mapping stakeholder needs to specific design revisions',
+          'Comparisons between academic feasibility and operational practicality',
         ],
         modules: [
           {
             type: 'visual-panel',
             tone: 'human',
             eyebrow: 'Stakeholder picture',
-            title: 'Human practices should show who loses value, when, and how that changed the project',
+            title: 'Human Practices should explain why this biosynthesis project matters beyond the bench',
             image: floralStakeholderMapArt,
             alt:
-              'Illustrated stakeholder map connecting growers, distributors, florists, and consumers to a central flower system.',
+              'Illustrated stakeholder map connecting the floral chain to the FloraGuard project.',
             caption:
-              'A visual placeholder for a future stakeholder map or interview synthesis diagram.',
+              'The latest HP direction is less about generic flower care and more about meaningful, bounded translation.',
             lede:
-              'Winner-style HP pages usually make stakeholder logic easy to grasp before the reader reaches long interview summaries.',
+              'A stakeholder-driven page helps answer whether a melatonin-based preservation strategy would actually solve a real problem for the floral chain. It also helps define what format would be acceptable outside the lab.',
             points: [
-              'Map stakeholders to specific pain points in the floral chain.',
-              'Show which feedback changed sensing, hardware, or implementation choices.',
-              'Use one simple visual to anchor the page before detailed quotes and interview notes.',
+              'Keep floral waste and product practicality in the same conversation.',
+              'Ask how a preservation molecule would be used, not only whether it can be produced.',
+              'Use HP to justify cost, safety, and deployment choices.',
             ],
           },
           {
             type: 'stakeholder-grid',
             eyebrow: 'Stakeholder map',
-            title: 'Different actors experience flower loss at different points in the chain',
+            title: 'Different actors care about different parts of the preservation problem',
             items: [
               {
                 title: 'Growers',
-                detail: 'Need post-harvest strategies that preserve value after cutting without creating unsustainable complexity.',
+                detail: 'Care about maintaining value after harvest without adding unrealistic treatment or process burden.',
               },
               {
                 title: 'Distributors',
-                detail: 'Care most about transport losses, handling windows, and how variable storage conditions affect quality.',
+                detail: 'Need solutions that still make sense under transport variability and imperfect cold-chain conditions.',
               },
               {
                 title: 'Florists',
-                detail: 'Need practical tools that improve display life and reduce uncertainty in care decisions.',
+                detail: 'Want preservation tools that are practical, affordable, and easy to act on during retail display and bouquet handling.',
               },
               {
                 title: 'Consumers',
-                detail: 'Often lack actionable flower-care knowledge and respond best to simple, trustworthy guidance.',
-              },
-            ],
-          },
-          {
-            type: 'metric-cards',
-            eyebrow: 'Interview coverage',
-            title: 'Three recurring patterns kept surfacing across stakeholder conversations',
-            items: [
-              {
-                label: 'Stakeholder groups',
-                value: '4',
-                detail: 'Growers, distributors, florists, and consumers all encounter flower loss from a different operational position.',
-              },
-              {
-                label: 'Recurring pain points',
-                value: '3',
-                detail: 'Hidden transport stress, uncertain care decisions, and weak consumer guidance repeatedly appeared in interviews.',
-              },
-              {
-                label: 'Design consequences',
-                value: '2',
-                detail: 'The project needed both better monitoring and simpler recommendation output, not biology alone.',
+                detail: 'Mostly want flowers to last longer without needing to understand synthetic biology or post-harvest chemistry.',
               },
             ],
           },
           {
             type: 'journey-strip',
             eyebrow: 'Feedback loop',
-            title: 'Human practices reshaped the project in a concrete direction',
+            title: 'Stakeholder input should reshape the project in concrete ways',
             items: [
               {
-                title: 'Listen',
-                detail: 'Map where value is lost and who experiences the pain most directly.',
+                title: 'Need',
+                detail: 'Map where value is lost and what users actually need from a preservation product.',
               },
               {
-                title: 'Translate',
-                detail: 'Turn those problems into design criteria for sensing, usability, and deployment format.',
+                title: 'Constraint',
+                detail: 'Identify whether cost, handling, or biosafety would block adoption even if the biology works.',
               },
               {
-                title: 'Integrate',
-                detail: 'Use the stakeholder perspective to justify why FloraGuard should become a practical preservation platform.',
-              },
-            ],
-          },
-          {
-            type: 'art-card-grid',
-            eyebrow: 'Field wall',
-            title: 'Human practices should feel like an evidence wall of voices, tensions, and design consequences',
-            items: [
-              {
-                image: floralInterviewWallArt,
-                alt: 'Illustrated interview wall connecting stakeholder notes to a central flower system.',
-                label: 'Voices',
-                title: 'Show the interviews as textured field evidence rather than a detached appendix',
-                detail:
-                  'A visual interview wall helps readers feel that multiple conversations shaped the project before they reach the detailed tables and written summaries.',
-              },
-              {
-                image: floralStakeholderMapArt,
-                alt: 'Illustrated stakeholder map showing the floral supply chain around FloraGuard.',
-                label: 'Chain',
-                title: 'Place each stakeholder on the part of the floral chain where value is lost',
-                detail:
-                  'Good HP pages make it obvious who experiences which pain point, and when that pain appears along the post-harvest journey.',
-              },
-              {
-                image: floralHardwareBlueprintArt,
-                alt: 'Illustrated smart vase blueprint representing translation of stakeholder feedback into design.',
-                label: 'Change',
-                title: 'Connect stakeholder feedback to changes in hardware, recommendation style, and rollout format',
-                detail:
-                  'The strongest translation pages show exactly where a conversation changed the system, instead of leaving interviews floating beside the engineering work.',
+                title: 'Revision',
+                detail: 'Use those constraints to favor purified, bounded, and operationally plausible translation formats.',
               },
             ],
           },
@@ -1641,90 +1285,59 @@ const wikiGroups = [
         sections: [
           {
             eyebrow: 'Stakeholders',
-            title: 'Who we spoke with',
+            title: 'Who this project may ultimately affect',
             blocks: [
-              paragraph('We conducted interviews with stakeholders across the floral supply chain, including:'),
-              list([
-                'flower growers',
-                'wholesale distributors',
-                'florists',
-                'consumers',
-              ]),
+              paragraph(
+                'We frame Human Practices around the floral supply chain rather than around laboratory curiosity alone. That includes growers, wholesale distributors, florists, and consumers, each of whom experiences flower loss from a different position.',
+              ),
               table(
-                ['Stakeholder', 'What we asked about'],
+                ['Stakeholder', 'Main concern'],
                 [
-                  ['Growers', 'post-harvest handling, loss points, and treatment practicality'],
-                  ['Distributors', 'transport conditions, storage windows, and quality variability'],
-                  ['Florists', 'display life, uncertainty in care decisions, and customer expectations'],
-                  ['Consumers', 'flower-care habits, confusion points, and desired guidance'],
+                  ['Growers', 'maintaining harvested value without impractical extra burden'],
+                  ['Distributors', 'reducing losses during transport and storage variability'],
+                  ['Florists', 'keeping bouquets attractive during display and sale'],
+                  ['Consumers', 'making flowers last longer with simple care'],
                 ],
               ),
             ],
           },
           {
             eyebrow: 'Insights',
-            title: 'What we learned',
+            title: 'What the latest project direction makes newly important',
             blocks: [
-              paragraph('Key insights included:'),
+              paragraph(
+                'Once FloraGuard becomes a melatonin biosynthesis project, Human Practices changes too. The central questions are no longer only about monitoring or flower-care advice. They are also about whether the molecule can be delivered affordably, whether users would accept the product format, and how translation can stay safe.',
+              ),
               list([
-                'high post-harvest loss during transport',
-                'limited knowledge of flower care among consumers',
-                'strong interest in technologies that extend vase life',
+                'stakeholders care about post-harvest loss, but not about live engineered cells entering the floral chain',
+                'florists need simple and operationally plausible treatment formats',
+                'social value improves when preservation gains do not create new biosafety concerns',
               ]),
-              paragraph(
-                'These interviews reinforced that floral waste is not caused by one actor making one mistake. Instead, losses accumulate when every stage in the chain has incomplete information about flower condition.',
-              ),
             ],
           },
           {
-            eyebrow: 'Decision map',
-            title: 'How stakeholder feedback translated into design choices',
+            eyebrow: 'Design consequences',
+            title: 'How stakeholder thinking changes the project',
             blocks: [
               table(
-                ['Observed need', 'Why it mattered', 'Project response'],
+                ['Observed need', 'Why it matters', 'Project response'],
                 [
-                  ['Stress is often invisible during transport', 'quality may decline before visual damage becomes obvious', 'strengthened the case for monitoring hardware and prediction'],
-                  ['Florists need practical, fast decisions', 'retail handling leaves little room for complex interpretation', 'pushed the project toward clear intervention recommendations'],
-                  ['Consumers lack confidence in flower care', 'good preservation logic fails if end users do not trust it', 'reinforced the need for a simple smart-care interface'],
-                ],
-              ),
-              paragraph(
-                'This mapping keeps human practices from becoming a list of interviews. Instead, each conversation justifies a design decision that later appears in hardware, implementation, or communication.',
-              ),
-            ],
-          },
-          {
-            eyebrow: 'Stakeholder tension',
-            title: 'Where user priorities diverge across the floral chain',
-            blocks: [
-              table(
-                ['Stakeholder', 'Primary concern', 'Design implication'],
-                [
-                  ['Growers', 'maintain value after harvest without adding unrealistic process burden', 'preservation logic must remain operationally plausible'],
-                  ['Distributors', 'reduce loss during handling and variable cold-chain conditions', 'monitoring must capture cumulative stress rather than one static snapshot'],
-                  ['Florists', 'extend display quality with minimal extra work', 'recommendations must be fast, legible, and easy to act on'],
-                  ['Consumers', 'want flowers to last longer without learning specialist care', 'the final interface should favor simple prompts over raw biological data'],
+                  ['Practical post-harvest use', 'a product that is too complex will not be adopted', 'favor simple treatment formats over device-heavy deployment'],
+                  ['Low biosafety burden', 'users will not accept open-ended live-cell exposure', 'frame translation around purified or bounded outputs'],
+                  ['Visible value', 'preservation claims need to be obvious in practice', 'prioritize phenotype and vase-life validation on flowers'],
                 ],
               ),
               callout(
-                'A strong final HP page can later add one representative pull quote under each row to show how those tensions appeared in real conversations.',
+                'Human Practices should now reinforce one key message: even if engineered cells stay in the lab, the preservation value can still be translated through safer output formats.',
               ),
             ],
           },
           {
-            eyebrow: 'Integration',
-            title: 'How human practices changed the project',
+            eyebrow: 'Social value',
+            title: 'Why this project could matter beyond iGEM',
             blocks: [
               paragraph(
-                'These insights guided the design of FloraGuard as a practical preservation system rather than a single laboratory intervention. They reinforced the need for monitoring, prediction, and formats that could work for both professionals and consumers.',
-              ),
-              list(
-                [
-                  'stakeholder concern about hidden transport stress strengthened the case for monitoring hardware',
-                  'consumer uncertainty strengthened the case for simple recommendation outputs',
-                  'professional demand for practical value strengthened the focus on deployable preservation formats',
-                ],
-                'ordered',
+                'If FloraGuard succeeds, it contributes more than one experiment. It suggests that synthetic biology can address post-harvest waste in a controlled, molecule-centered way that connects lab engineering to real horticultural value.',
               ),
             ],
           },
@@ -1735,155 +1348,111 @@ const wikiGroups = [
         navTitle: 'Safety',
         title: 'Safety',
         summary:
-          'Safety is built around laboratory confinement, controlled translation, and responsible downstream application.',
+          'Safety in the new FloraGuard concept is built around laboratory confinement, analytical clarity, and non-release translation.',
         highlights: [
-          'No environmental release is intended in the project design.',
-          'Laboratory practice remains aligned with institutional biosafety rules.',
-          'Future application pathways emphasize cell-free or purified outputs where possible.',
+          'Engineered E. coli remains confined to laboratory use.',
+          'Future application should rely on purified or otherwise bounded outputs rather than live-cell deployment.',
+          'Safety now applies to both biological handling and product-format decisions.',
         ],
         nextAdd: [
-          'Organism list, strain table, and biosafety level context',
-          'Risk assessment for any engineered microbes or treatment components',
-          'A future-use decision tree distinguishing lab-only versus deployable formats',
+          'A strain and containment table',
+          'An explicit comparison of live-cell, cell-free, and purified-product translation paths',
+          'Risk notes for storage, handling, and user-facing formulations',
         ],
         modules: [
           {
             type: 'comparison-grid',
             eyebrow: 'Boundary setting',
-            title: 'Safety pages become clearer when they separate present lab practice from future deployment thinking',
+            title: 'The clearest safety distinction is between what stays in the lab and what could leave it later',
             items: [
               {
                 title: 'Current project boundary',
-                detail: 'Engineered systems remain confined to laboratory use, with no environmental release intended in the present project scope.',
+                detail: 'Engineered E. coli and route-testing experiments remain in controlled laboratory settings under institutional biosafety practice.',
               },
               {
                 title: 'Future translation boundary',
-                detail: 'Any real-world preservation product should move toward cell-free, purified, or otherwise tightly controlled formats before practical deployment.',
+                detail: 'Any preservation product should be based on purified or otherwise bounded outputs, not on direct release of engineered microbes to bouquets or the environment.',
               },
             ],
           },
           {
             type: 'step-cards',
             eyebrow: 'Safety principles',
-            title: 'Three ideas should stay visible throughout the whole project narrative',
+            title: 'Three ideas organize the safety page',
             items: [
               {
                 title: 'Confinement',
-                detail: 'Keep engineered biological components inside approved laboratory settings.',
+                detail: 'Keep pathway engineering and microbial production inside approved lab workflows.',
               },
               {
-                title: 'Control',
-                detail: 'Treat future translation formats as a separate design problem, not an automatic extension of lab work.',
+                title: 'Separation',
+                detail: 'Separate the making of melatonin from the form in which a user might eventually encounter a preservation product.',
               },
               {
-                title: 'Responsibility',
-                detail: 'Make risk assessment and user context part of implementation thinking from the start.',
+                title: 'Transparency',
+                detail: 'Make the preferred translation path explicit so the wiki never implies open environmental release.',
               },
             ],
           },
           {
             type: 'journey-strip',
             eyebrow: 'Staged translation',
-            title: 'Safety questions change as FloraGuard moves closer to real users',
+            title: 'Safety questions change across the project lifecycle',
             items: [
               {
-                title: 'Research scope',
-                detail: 'Inside the lab, the central question is whether engineered biological logic can be tested safely under confinement.',
+                title: 'Lab engineering',
+                detail: 'Can the pathway be tested safely under standard microbial containment?',
               },
               {
-                title: 'Pilot translation',
-                detail: 'Once the project is framed as a florist or monitoring tool, product form and user handling become as important as biological mechanism.',
+                title: 'Analytical and formulation stage',
+                detail: 'Can the molecule be confirmed and handled in bounded experimental forms?',
               },
               {
-                title: 'Future deployment',
-                detail: 'A user-facing version should rely on tightly bounded, non-release formats rather than simply extending live engineered systems into the field.',
+                title: 'Future user-facing stage',
+                detail: 'Can preservation value be delivered without live engineered organisms entering the floral chain?',
               },
             ],
           },
         ],
         sections: [
           {
-            eyebrow: 'Principles',
-            title: 'Safety by design',
+            eyebrow: 'Core principle',
+            title: 'Engineered cells stay in the lab',
             blocks: [
-              paragraph('Safety considerations are essential in synthetic biology projects.'),
-              paragraph('Our system is designed with the following principles:'),
+              paragraph(
+                'The central biosafety principle of FloraGuard is straightforward: the engineered microbial chassis is a laboratory tool for making and studying melatonin. It is not intended for direct environmental release or direct exposure to end users in the floral chain.',
+              ),
+            ],
+          },
+          {
+            eyebrow: 'Translation boundary',
+            title: 'Preferred downstream formats are bounded outputs',
+            blocks: [
+              paragraph(
+                'The most responsible translation path is to separate product value from live-cell deployment. That means favoring purified melatonin, bounded intermediate formulations, or similarly controlled outputs when discussing future implementation.',
+              ),
+              table(
+                ['Format', 'Safety view', 'Why it matters'],
+                [
+                  ['Live engineered cells', 'not preferred for deployment', 'creates avoidable biosafety and acceptance barriers'],
+                  ['Cell-free or processed outputs', 'more plausible transitional format', 'retains molecular value while reducing biological uncertainty'],
+                  ['Purified product', 'preferred long-term direction', 'best aligns preservation utility with bounded exposure'],
+                ],
+              ),
+            ],
+          },
+          {
+            eyebrow: 'Operational safety',
+            title: 'Safety also applies to how the product is interpreted and used',
+            blocks: [
+              paragraph(
+                'A preservation product is not only a biological entity; it is also a handling workflow. For that reason, user-facing translation must be clear about dosing, storage, and intended use, and should not rely on opaque or autonomous decision logic.',
+              ),
               list([
-                'engineered organisms are confined to laboratory environments',
-                'no environmental release is intended',
-                'downstream applications may use cell-free systems or purified compounds',
+                'keep formulation and intended use understandable to operators',
+                'avoid implying that all flower types respond identically',
+                'treat stakeholder acceptance as part of safety, not outside it',
               ]),
-              table(
-                ['Risk area', 'Current boundary', 'Mitigation logic'],
-                [
-                  ['Engineered biological components', 'lab use only', 'containment and institutional biosafety practice'],
-                  ['Future preservation product', 'not directly released as engineered cells', 'favor purified or cell-free formats'],
-                  ['User interpretation', 'recommendation systems must remain transparent', 'separate decision support from uncontrolled autonomous action'],
-                ],
-              ),
-            ],
-          },
-          {
-            eyebrow: 'Practice',
-            title: 'Laboratory biosafety and translation boundaries',
-            blocks: [
-              paragraph(
-                'All laboratory work follows institutional biosafety guidelines. As the project moves toward application thinking, we treat deployable formats separately from laboratory engineering so that future translation remains responsible and controlled.',
-              ),
-              callout(
-                'For FloraGuard, the safest translation path is staged: validate in the lab first, then redesign for tightly controlled non-release applications.',
-              ),
-            ],
-          },
-          {
-            eyebrow: 'Use-context matrix',
-            title: 'Different use contexts create different safety questions',
-            blocks: [
-              table(
-                ['Context', 'Likely biological form', 'Main user contact', 'Primary control question'],
-                [
-                  ['Laboratory research', 'engineered cells or test systems', 'trained researchers', 'are containment and biosafety practices sufficient for mechanism testing?'],
-                  ['Florist-facing pilot', 'purified compounds, bounded kits, or controlled support tools', 'professional operators', 'can preservation benefits be delivered without open-ended biological exposure?'],
-                  ['Consumer-facing future device', 'non-release outputs plus recommendation software', 'general users', 'is the experience safe, understandable, and low-risk without specialist oversight?'],
-                ],
-              ),
-              paragraph(
-                'This matrix matters because the right safety answer depends on context. A lab construct, a professional tool, and a consumer product cannot be judged by the same deployment assumptions.',
-              ),
-            ],
-          },
-          {
-            eyebrow: 'Decision support',
-            title: 'Recommendation systems also need safety boundaries',
-            blocks: [
-              paragraph(
-                'FloraGuard is not only about biological safety. If the platform eventually produces care recommendations, those recommendations also need to be interpretable and bounded. Users should understand what is being suggested, why it is being suggested, and where uncertainty remains.',
-              ),
-              list(
-                [
-                  'keep user-facing prompts simple enough to avoid unsafe improvisation',
-                  'show that recommendations are based on observed condition rather than hidden black-box authority',
-                  'preserve a manual decision path so the system supports human judgment instead of replacing it',
-                ],
-                'ordered',
-              ),
-            ],
-          },
-          {
-            eyebrow: 'Preferred pathway',
-            title: 'Why staged translation matters',
-            blocks: [
-              paragraph(
-                'A staged pathway avoids collapsing research logic and product logic into one step. Laboratory engineering answers whether FloraGuard can work; implementation design answers how a future version could be used safely.',
-              ),
-              list(
-                [
-                  'validate biological logic under controlled conditions',
-                  'define which outputs or compounds could be separated from living systems',
-                  'only then consider user-facing preservation formats',
-                ],
-                'ordered',
-              ),
             ],
           },
         ],
@@ -1893,157 +1462,92 @@ const wikiGroups = [
         navTitle: 'Implementation',
         title: 'Implementation',
         summary:
-          'FloraGuard is designed to move from a research platform toward deployable preservation tools.',
+          'Implementation now centers on how a melatonin-based floral preservation concept could move from the lab toward bounded and practical use formats.',
         highlights: [
-          'The same logic can support research, florist, and consumer formats.',
-          'Implementation depends on combining treatment modules with monitoring.',
-          'The project aims to reduce waste while improving flower care decisions.',
+          'The most realistic path is lab validation, then florist-facing pilot, then simplified consumer translation.',
+          'Implementation is tied to product format and biosafety boundary, not only to user interface.',
+          'The project should never imply that live engineered cells go directly to bouquets.',
         ],
         nextAdd: [
-          'User journey diagrams for florist and consumer scenarios',
-          'A deployment comparison table covering cost, complexity, and biosafety',
-          'Photos or mockups for kit packaging and smart vase use',
+          'A formulation comparison table for pilot scenarios',
+          'Mockups for florist-facing treatment kits or protocol cards',
+          'A simple user-flow diagram for how bounded outputs could be deployed in practice',
         ],
         modules: [
           {
             type: 'visual-panel',
             tone: 'implementation',
             eyebrow: 'Deployment picture',
-            title: 'Implementation pages should show what FloraGuard becomes outside the lab',
-            image: smartVaseArt,
+            title: 'Implementation is now about bounded product formats, not about pushing a device to market too early',
+            image: floralImplementationJourneyArt,
             alt:
-              'Illustrated smart vase and interface showing a possible deployment direction for FloraGuard.',
+              'Illustrated staged rollout from lab validation to florist pilot and later simplified use.',
             caption:
-              'A visual transition from research platform to product-facing preservation formats.',
+              'The current FloraGuard translation logic is staged, conservative, and product-format-aware.',
             lede:
-              'This page is where the project starts to feel real: what does FloraGuard look like in a florist workflow, and what changes when the user is a consumer instead of a researcher?',
+              'This page now answers a more realistic question: if melatonin production and floral benefit are demonstrated, what forms of translation would still make operational and biosafety sense?',
             points: [
-              'Translate the platform into concrete use formats.',
-              'Keep biosafety and practicality in the same conversation.',
-              'Show how monitoring changes recommendations for different users.',
+              'Start from lab evidence, not from product branding.',
+              'Prefer florist-facing pilot scenarios before household claims.',
+              'Keep purified or bounded outputs explicit throughout the page.',
             ],
           },
           {
             type: 'comparison-grid',
             eyebrow: 'Deployment formats',
-            title: 'Different users need different versions of the same platform logic',
+            title: 'Different users need different versions of the same preservation value',
             items: [
               {
-                title: 'Florist-facing format',
-                detail: 'Higher-touch monitoring and recommendation tools can help manage transport, storage, and display quality at professional scale.',
+                title: 'Florist-facing pilot',
+                detail: 'A bounded treatment format, supported by clear instructions and phenotype-based evaluation, is a realistic early translation step.',
               },
               {
-                title: 'Consumer-facing format',
-                detail: 'A simpler smart-vase or care-assistant version should prioritize clarity, trust, and low-friction recommendations at home.',
+                title: 'Consumer-facing future use',
+                detail: 'A later household version would need even simpler delivery, lower risk, and clear confidence that the effect is meaningful across everyday conditions.',
               },
             ],
           },
           {
             type: 'journey-strip',
             eyebrow: 'Rollout cadence',
-            title: 'Implementation is strongest when each stage narrows the distance between data and action',
+            title: 'The strongest implementation path narrows the distance between molecule and market step by step',
             items: [
               {
                 title: 'Validate',
-                detail: 'Show that condition signals, treatment logic, and intervention timing together improve vase-life outcome under controlled conditions.',
+                detail: 'Prove that the engineered pathway produces melatonin and that melatonin changes a relevant floral outcome.',
+              },
+              {
+                title: 'Purify and bound',
+                detail: 'Move from live-cell research to bounded treatment formats that can be handled more safely and credibly.',
               },
               {
                 title: 'Pilot',
-                detail: 'Adapt the workflow for florists, where operational decisions must be practical, fast, and visibly useful.',
-              },
-              {
-                title: 'Simplify',
-                detail: 'Translate expert workflows into a consumer experience with low-friction prompts, understandable states, and trust signals.',
-              },
-            ],
-          },
-          {
-            type: 'art-card-grid',
-            eyebrow: 'Rollout atlas',
-            title: 'Implementation becomes more convincing when rollout, format, and interface sit in the same visual story',
-            items: [
-              {
-                image: floralImplementationJourneyArt,
-                alt: 'Illustrated staged implementation journey from lab validation to florist pilot to home use.',
-                label: 'Path',
-                title: 'Picture the staged rollout before discussing the final product',
-                detail:
-                  'A clear rollout journey makes FloraGuard feel responsible and believable because readers can see how evidence accumulates before the consumer-facing version appears.',
-              },
-              {
-                image: floralHardwareBlueprintArt,
-                alt: 'Illustrated hardware blueprint representing device and kit formats for deployment.',
-                label: 'Format',
-                title: 'Keep kit logic, device form, and deployment boundaries on the same page',
-                detail:
-                  'Implementation should not split product form from biosafety and usability. This board helps show how those constraints travel together.',
-              },
-              {
-                image: floralAssayDashboardArt,
-                alt: 'Illustrated dashboard linking signals, decisions, and care recommendations.',
-                label: 'Decision',
-                title: 'Show what users actually gain once signals become recommendations',
-                detail:
-                  'Readers trust the implementation story more when they can see how monitored condition becomes an understandable action for florists or consumers.',
+                detail: 'Test whether florist-facing use creates visible value under practical post-harvest conditions.',
               },
             ],
           },
           {
             type: 'use-case-cards',
             eyebrow: 'Journey scenarios',
-            title: 'Implementation gets much stronger when each user journey is concrete',
+            title: 'Implementation becomes more believable when each use context has its own logic',
             items: [
               {
                 tag: 'Research',
-                title: 'Bench validation workflow',
-                detail: 'The lab version focuses on controlled observation, treatment testing, and senescence measurement under reproducible conditions.',
-                points: [
-                  'High data density',
-                  'Protocol-first operation',
-                  'Supports model calibration',
-                ],
+                title: 'Laboratory production and validation',
+                detail: 'The lab version prioritizes route construction, analytical measurement, and tightly controlled flower testing.',
+                points: ['High measurement density', 'construct revision', 'evidence generation'],
               },
               {
                 tag: 'Florist',
-                title: 'Professional preservation workflow',
-                detail: 'The florist version prioritizes display life, transport handling, and practical recommendations that fit a fast-paced retail setting.',
-                points: [
-                  'Fewer inputs, faster decisions',
-                  'Operational care guidance',
-                  'Quality retention during display',
-                ],
+                title: 'Professional pilot format',
+                detail: 'An early pilot should prioritize simple handling, visible value, and minimal extra workflow burden for professional users.',
+                points: ['bounded treatment', 'clear instructions', 'display-life benefit'],
               },
               {
-                tag: 'Home',
-                title: 'Consumer smart-care workflow',
-                detail: 'The household version emphasizes trust, simple guidance, and low-friction feedback that helps consumers care for flowers without expert knowledge.',
-                points: [
-                  'Simple prompts',
-                  'Low-maintenance hardware',
-                  'Clear remaining-life guidance',
-                ],
-              },
-            ],
-          },
-          {
-            type: 'profile-grid',
-            eyebrow: 'Deployment checkpoints',
-            title: 'Three conditions matter before FloraGuard can leave the lab',
-            items: [
-              {
-                label: 'Safety',
-                title: 'Use controlled output formats',
-                detail: 'Implementation should favor cell-free, purified, or otherwise tightly bounded forms over direct release of engineered organisms.',
-              },
-              {
-                label: 'Usability',
-                title: 'Make recommendations easy to act on',
-                detail: 'A preservation platform only helps if users can quickly understand what to do and when to do it.',
-              },
-              {
-                label: 'Evidence',
-                title: 'Link recommendation to measurable benefit',
-                detail: 'Deployment needs a clear chain from monitoring signal to treatment decision to visible flower-quality outcome.',
+                tag: 'Future',
+                title: 'Consumer translation',
+                detail: 'A later consumer-facing version would need simplified presentation and stronger confidence in safety, consistency, and benefit.',
+                points: ['low-friction use', 'clear storage and dose', 'trustworthy claims'],
               },
             ],
           },
@@ -2051,90 +1555,45 @@ const wikiGroups = [
         sections: [
           {
             eyebrow: 'Research use',
-            title: 'Laboratory system',
+            title: 'Laboratory platform',
             blocks: [
-              paragraph('This format is used for studying flower senescence biology and testing preservation logic under controlled conditions.'),
               paragraph(
-                'The laboratory version is where FloraGuard can be measured most rigorously, because treatment, timing, and environmental variables can be compared under structured experimental conditions.',
+                'In the present project scope, FloraGuard is first a laboratory platform for melatonin biosynthesis and cut-flower validation. That is where the strongest evidence can be generated and where the pathway can be revised most safely.',
               ),
             ],
           },
           {
-            eyebrow: 'Professional use',
-            title: 'Florist preservation kit',
+            eyebrow: 'Pilot use',
+            title: 'Florist-oriented pilot',
             blocks: [
               paragraph(
-                'A florist-oriented version would pair preservation solutions with monitoring tools to improve storage, transport, and display decisions.',
+                'If the project progresses beyond proof-of-concept, a florist-facing pilot is a more realistic first deployment target than immediate consumer use. Florists already handle flowers professionally and can judge whether a preservation treatment has visible value during display and sale.',
               ),
               list([
-                'helps prioritize intervention for bouquets at highest risk',
-                'supports more consistent display quality during retail handling',
-                'creates a professional-facing use case before home deployment',
+                'treatment must be simple to apply',
+                'benefit must be visible within retail timeframes',
+                'product form must avoid introducing live engineered cells into routine handling',
               ]),
             ],
           },
           {
-            eyebrow: 'Pilot pathway',
-            title: 'What a realistic early deployment path could look like',
+            eyebrow: 'Longer-term use',
+            title: 'Consumer translation',
             blocks: [
               paragraph(
-                'A strong implementation page should show not just eventual applications, but the order in which those applications become plausible. For FloraGuard, florist-facing use is a more realistic intermediate step than going straight from bench work to a household product.',
-              ),
-              list(
-                [
-                  'start with controlled validation where treatment timing and readouts are measurable',
-                  'move to florist-oriented monitoring where workflow simplicity matters',
-                  'only then simplify the platform further for consumer-facing use',
-                ],
-                'ordered',
+                'A future household format would require additional simplification and stronger proof. It would also need careful communication about what the treatment is, how it is used, and what kinds of flowers or conditions it is expected to help.',
               ),
             ],
           },
           {
-            eyebrow: 'Consumer use',
-            title: 'Consumer smart vase',
+            eyebrow: 'Implementation principle',
+            title: 'Why staged translation matters',
             blocks: [
               paragraph(
-                'A household device could provide flower care recommendations, bringing predictive preservation into the home and improving consumer experience.',
-              ),
-              list([
-                'translate complex biology into simple flower-care prompts',
-                'reduce guesswork about when to change water or intervene',
-                'make post-purchase flower care feel more trustworthy and useful',
-              ]),
-            ],
-          },
-          {
-            eyebrow: 'Goal',
-            title: 'Why these formats matter',
-            blocks: [
-              paragraph(
-                'Together, these implementations aim to reduce floral waste while showing that synthetic biology can support practical post-harvest management rather than remain locked inside the lab.',
-              ),
-              table(
-                ['Format', 'Main user', 'Primary value'],
-                [
-                  ['Laboratory system', 'researchers', 'evidence generation and mechanism testing'],
-                  ['Florist kit', 'professionals', 'better operational preservation decisions'],
-                  ['Consumer smart vase', 'households', 'simple guidance and improved flower care'],
-                ],
-              ),
-            ],
-          },
-          {
-            eyebrow: 'Interface logic',
-            title: 'What different users should actually see',
-            blocks: [
-              table(
-                ['User', 'Signals in the background', 'What they see', 'Desired decision'],
-                [
-                  ['Researcher', 'full treatment, timing, and measurement detail', 'raw data plus experimental comparison', 'interpret mechanism and optimize assays'],
-                  ['Florist', 'sensor trends, elapsed time, and quality state', 'clear care priority or intervention prompt', 'decide which bouquets need attention first'],
-                  ['Consumer', 'simplified condition estimate and recommendation timing', 'easy-to-follow care guidance', 'change water, adjust placement, or intervene at the right time'],
-                ],
+                'The implementation story is stronger when it stays aligned with safety. FloraGuard should not jump from engineered cells in the lab to household use in one step. It should move through bounded outputs, pilot contexts, and evidence-based use claims.',
               ),
               callout(
-                'Implementation becomes much more believable once every user context is linked to the exact decision the interface is supposed to improve.',
+                'Implementation succeeds when the product format, the user context, and the biosafety boundary are all legible on the same page.',
               ),
             ],
           },
@@ -2145,49 +1604,49 @@ const wikiGroups = [
         navTitle: 'Contribution',
         title: 'Contribution',
         summary:
-          'FloraGuard contributes a systems-level preservation framework that connects biology, hardware, and predictive reasoning.',
+          'FloraGuard now contributes a more focused synthetic-biology framework for connecting microbial melatonin production to post-harvest flower preservation.',
         highlights: [
-          'The project proposes a programmable senescence management framework.',
-          'It integrates biological intervention with monitoring hardware.',
-          'It broadens how synthetic biology can address horticultural preservation.',
+          'The project bridges metabolic engineering and floriculture rather than treating them as separate topics.',
+          'It proposes a staged proof chain from route design to preservation outcome.',
+          'It emphasizes bounded translation rather than premature live-cell deployment.',
         ],
         nextAdd: [
-          'A comparison to existing flower preservation approaches',
-          'Reusable protocols, code, or hardware documentation for other teams',
-          'A clear statement of what parts of the framework are novel or transferable',
+          'A comparison against purely chemical or purely horticultural preservation strategies',
+          'Reusable build and assay documentation for future teams',
+          'A clear list of what would remain useful even if the final application format changes',
         ],
         modules: [
           {
             type: 'comparison-grid',
             eyebrow: 'Contribution lens',
-            title: 'The contribution is stronger when it is framed against what floral preservation usually looks like',
+            title: 'The current contribution is stronger because it is narrower and more testable',
             items: [
               {
-                title: 'Typical preservation framing',
-                detail: 'Focuses on a single additive, treatment, or storage condition without integrating timing, sensing, and downstream usability.',
+                title: 'Generic preservation concept',
+                detail: 'Interesting but harder to prove cleanly because the scientific object keeps shifting across pages.',
               },
               {
-                title: 'FloraGuard framing',
-                detail: 'Treats post-harvest quality as a programmable systems problem where biology, hardware, and prediction support each other.',
+                title: 'Focused melatonin biosynthesis project',
+                detail: 'Easier to evaluate because the build target, analytical proof, and flower-validation goal all point to the same central claim.',
               },
             ],
           },
           {
             type: 'step-cards',
             eyebrow: 'Reusable outputs',
-            title: 'What other teams or users could borrow from FloraGuard',
+            title: 'Several parts of FloraGuard are transferable even beyond this exact flower application',
             items: [
               {
-                title: 'Framework',
-                detail: 'A general way to think about preservation as closed-loop management rather than static treatment.',
+                title: 'Pathway-centered project logic',
+                detail: 'A clear example of how to tie one engineered molecule to one real post-harvest problem.',
               },
               {
-                title: 'Integration pattern',
-                detail: 'A project structure that combines wet lab, dry lab, hardware, and implementation in one logic chain.',
+                title: 'Bench-to-application proof chain',
+                detail: 'A workflow that links route construction, analytical verification, and phenotype validation without losing coherence.',
               },
               {
-                title: 'Transferable methods',
-                detail: 'Protocols, monitoring ideas, and modeling logic that could extend to other horticultural preservation problems.',
+                title: 'Bounded translation framing',
+                detail: 'A model for discussing real-world use without implying that live engineered cells must become the deployed product.',
               },
             ],
           },
@@ -2197,57 +1656,36 @@ const wikiGroups = [
             eyebrow: 'Contribution',
             title: 'What FloraGuard contributes',
             blocks: [
-              paragraph('Our project contributes to synthetic biology by:'),
               list([
-                'developing a programmable senescence management framework',
-                'integrating biological and hardware systems',
-                'proposing a new preservation strategy for horticultural products',
+                'a synthetic-biology route for thinking about cut-flower preservation through microbial melatonin production',
+                'an integrated proof chain from engineered chassis to floral phenotype outcome',
+                'a translation framework that keeps purified or bounded outputs central to implementation',
               ]),
               paragraph(
-                'Taken together, these contributions mean that FloraGuard is not only a treatment concept. It is a proposal for how synthetic biology can reason about post-harvest quality as a controllable systems problem.',
+                'These contributions make FloraGuard more than a flower-care idea. It becomes a structured example of how metabolic engineering can be connected to a post-harvest horticultural use case.',
               ),
             ],
           },
           {
             eyebrow: 'Why it matters',
-            title: 'Beyond a single project outcome',
+            title: 'Why the contribution is broader than one molecule',
             blocks: [
               paragraph(
-                'The broader contribution of FloraGuard is conceptual as well as technical. It reframes preservation as an active systems problem, opening a new direction for synthetic biology in post-harvest applications.',
+                'Even if the final product format evolves, the project still contributes a reusable way to design synthetic-biology projects for applied plant-care problems: choose a tractable molecule, build the production route, verify the chemistry, validate the phenotype, and translate cautiously.',
               ),
             ],
           },
           {
             eyebrow: 'Comparison',
-            title: 'How FloraGuard differs from typical flower-preservation thinking',
+            title: 'How FloraGuard differs from typical preservation thinking',
             blocks: [
               table(
                 ['Question', 'Typical approach', 'FloraGuard approach'],
                 [
-                  ['What is adjusted?', 'one additive or storage condition', 'a connected system of sensing, response, and monitoring'],
-                  ['When does intervention happen?', 'mostly fixed timing', 'timing informed by condition and prediction'],
-                  ['What counts as success?', 'delay visible wilting', 'improve quality, timing, and future decision support together'],
+                  ['What is the main object?', 'a preservative recipe or handling condition', 'an engineered molecule and the route that produces it'],
+                  ['What counts as proof?', 'some extension of vase life', 'production evidence plus flower outcome'],
+                  ['How is translation discussed?', 'often as a generic product idea', 'through explicit bounded-output and biosafety logic'],
                 ],
-              ),
-              paragraph(
-                'This comparison matters because the novelty of FloraGuard is not just in any single module. It lies in how the modules work together as one preservation logic.',
-              ),
-            ],
-          },
-          {
-            eyebrow: 'Reusability',
-            title: 'What parts of the project could be reused by others',
-            blocks: [
-              list(
-                [
-                  'the preservation-as-feedback-loop framework',
-                  'the pattern of combining wet lab, dry lab, hardware, and implementation in one story',
-                  'the idea of translating biological condition into recommendation logic',
-                ],
-                'ordered',
-              ),
-              callout(
-                'Even before all experiments are complete, FloraGuard already contributes a transferable project architecture that other teams could adapt to different post-harvest or plant-care problems.',
               ),
             ],
           },
@@ -2259,121 +1697,103 @@ const wikiGroups = [
     slug: 'team',
     title: 'Team',
     summary:
-      'Introduce the people behind the project and the literature grounding the design.',
+      'Introduce the people, literature, and coordination logic behind the current FloraGuard concept.',
     pages: [
       {
         slug: 'team',
         navTitle: 'Team',
         title: 'Team',
         summary:
-          'FloraGuard is developed by a multidisciplinary team bringing together synthetic biology, plant science, engineering, and data analysis.',
+          'FloraGuard depends on metabolic engineering, plant physiology, analytics, modeling, and translation work moving together.',
         highlights: [
-          'The project depends on cross-disciplinary collaboration.',
-          'Plant physiology, engineering, and modeling are all central to the system.',
-          'Team structure should ultimately connect people to concrete work packages.',
+          'This project requires stronger analytical and pathway-design support than the earlier concept.',
+          'Plant and floral physiology remain central because preservation outcome must still be measured on flowers.',
+          'A coherent wiki depends on clear work-package ownership.',
         ],
         nextAdd: [
-          'Member names, photos, and short biographies',
-          'Role matrix across wet lab, dry lab, hardware, and wiki work',
-          'Advisor, instructor, and institutional support acknowledgements',
+          'Member names, portraits, and biographies',
+          'An ownership matrix for pathway engineering, analytics, flower assays, and HP',
+          'Advisor and institutional acknowledgements',
         ],
         modules: [
           {
             type: 'visual-panel',
             tone: 'team',
             eyebrow: 'Team picture',
-            title: 'Great team pages connect people to work packages, not just names to faces',
+            title: 'A strong team page should explain who carries each part of the proof chain',
             image: floralTeamCollageArt,
             alt:
-              'Illustrated collage of team role clusters around a central floral project.',
+              'Illustrated team collage showing multiple work packages around the FloraGuard project.',
             caption:
-              'A placeholder for future team photos, role diagrams, and collaboration snapshots.',
+              'This page now needs to map people to pathway engineering, analytics, flower assays, and translation.',
             lede:
-              'This page should eventually show who built what, how the team coordinated across disciplines, and what kind of expertise made FloraGuard possible.',
+              'Because FloraGuard now spans microbial engineering and plant application, the team page should make those responsibilities visible rather than presenting one generic member list.',
             points: [
-              'Map people to wet lab, dry lab, hardware, HP, and wiki work.',
-              'Use photos and role groupings to make the team memorable.',
-              'Show collaboration flow, not just membership.',
-            ],
-          },
-          {
-            type: 'step-cards',
-            eyebrow: 'Role clusters',
-            title: 'The team works because different expertise areas support different parts of the story',
-            items: [
-              {
-                title: 'Biology and plant science',
-                detail: 'Define senescence mechanisms, treatment strategy, and experimental readouts.',
-              },
-              {
-                title: 'Engineering and hardware',
-                detail: 'Translate the project into a monitorable and eventually deployable device concept.',
-              },
-              {
-                title: 'Modeling and data',
-                detail: 'Turn observations into prediction, intervention timing, and decision support.',
-              },
-              {
-                title: 'Narrative and human practices',
-                detail: 'Connect the science to stakeholder needs, implementation, and clear public communication.',
-              },
+              'Map people to pathway work and flower work separately.',
+              'Reserve space for analytical chemistry and data interpretation roles.',
+              'Keep team structure aligned with the project proof chain.',
             ],
           },
           {
             type: 'profile-grid',
             eyebrow: 'Work packages',
-            title: 'A future team page can already preview how ownership will be shown',
+            title: 'The team can be organized around five practical work packages',
             items: [
               {
                 label: 'WP-01',
-                title: 'Wet lab and senescence assays',
-                detail: 'Responsible for flower treatment design, measurement strategy, and experimental evidence generation.',
+                title: 'Pathway engineering',
+                detail: 'Construct design, strain building, and route optimization in E. coli.',
               },
               {
                 label: 'WP-02',
-                title: 'Dry lab and modeling',
-                detail: 'Responsible for predictive logic, parameter thinking, and turning observations into recommendations.',
+                title: 'Analytics',
+                detail: 'Melatonin detection, standards, quantification, and interpretation of production data.',
               },
               {
                 label: 'WP-03',
-                title: 'Hardware and interface',
-                detail: 'Responsible for sensing hardware, device framing, and the smart-care experience.',
+                title: 'Flower assays',
+                detail: 'Cut-flower treatment setup, phenotype scoring, and vase-life measurement.',
               },
               {
                 label: 'WP-04',
-                title: 'Human practices and wiki',
-                detail: 'Responsible for stakeholder integration, implementation logic, and public-facing project narrative.',
+                title: 'Modeling and data',
+                detail: 'Dry-lab support for route optimization and treatment-design decisions.',
+              },
+              {
+                label: 'WP-05',
+                title: 'HP and implementation',
+                detail: 'Stakeholder integration, safety framing, and public-facing project narrative.',
               },
             ],
           },
           {
             type: 'art-card-grid',
             eyebrow: 'Team atlas',
-            title: 'A memorable team page usually shows people, ownership, and collaboration in parallel',
+            title: 'Coordination matters because no single work package can prove the project alone',
             items: [
               {
                 image: floralTeamNetworkArt,
-                alt: 'Illustrated network of work packages connected to the FloraGuard core team.',
+                alt: 'Illustrated team network connecting work packages.',
                 label: 'Coordination',
-                title: 'Map how the disciplines actually meet each other',
+                title: 'The pathway team and flower team need each other continuously',
                 detail:
-                  'The page should explain why wet lab, modeling, hardware, and HP are interdependent instead of reading like four separate subteams.',
-              },
-              {
-                image: floralTeamCollageArt,
-                alt: 'Illustrated collage of team role clusters around the FloraGuard project.',
-                label: 'Presence',
-                title: 'Give the team a visible identity beyond a role list',
-                detail:
-                  'Even before real photos arrive, the structure should already reserve space for portraits, pairings, and project moments that feel personal.',
+                  'Production data changes which flower assays are worth running, and flower results determine whether more pathway optimization is justified.',
               },
               {
                 image: floralNotesArt,
-                alt: 'Illustrated notebook and planning board for project coordination.',
-                label: 'Workflow',
-                title: 'Show how the wiki, planning, and bench work stay linked',
+                alt: 'Illustrated notebook and planning board.',
+                label: 'Planning',
+                title: 'Documentation is part of the work, not separate from it',
                 detail:
-                  'Team pages get stronger when they reveal how decisions, documentation, and execution move together during the season.',
+                  'A strong wiki should eventually reveal how build decisions, assay plans, and HP revisions were coordinated across the season.',
+              },
+              {
+                image: floralTeamCollageArt,
+                alt: 'Illustrated team collage around the project.',
+                label: 'Identity',
+                title: 'The team page should eventually feel personal as well as structural',
+                detail:
+                  'Once names and photos are added, the page should still preserve the clarity of who owned which proof layer.',
               },
             ],
           },
@@ -2383,60 +1803,37 @@ const wikiGroups = [
             eyebrow: 'Composition',
             title: 'A multidisciplinary team',
             blocks: [
-              paragraph('FloraGuard is developed by a multidisciplinary team including:'),
+              paragraph('FloraGuard is best supported by a team that includes:'),
               list([
-                'synthetic biology researchers',
-                'plant physiologists',
-                'engineers',
-                'data scientists',
+                'metabolic engineering and microbial genetics',
+                'plant physiology and post-harvest biology',
+                'analytical chemistry or assay validation',
+                'modeling, data analysis, and project translation',
               ]),
-              paragraph(
-                'That mix matters because no single discipline can carry the whole project alone: FloraGuard depends on biological mechanism, quantitative reasoning, device thinking, and clear public explanation at the same time.',
-              ),
-            ],
-          },
-          {
-            eyebrow: 'Shared goal',
-            title: 'Working toward sustainable floral care',
-            blocks: [
-              paragraph(
-                'Together we aim to build sustainable solutions for the floral industry by combining biological insight with practical monitoring and deployment thinking.',
-              ),
             ],
           },
           {
             eyebrow: 'Organization',
-            title: 'How the team can be organized across work packages',
+            title: 'How the work packages fit the new project direction',
             blocks: [
               table(
                 ['Work package', 'Main responsibilities', 'What it contributes to the wiki'],
                 [
-                  ['Wet Lab', 'treatment design, assays, senescence measurements', 'evidence for mechanism and outcome'],
-                  ['Dry Lab', 'prediction logic, dose analysis, validation strategy', 'evidence for decision support'],
-                  ['Hardware', 'device concept, sensing, interface thinking', 'evidence for deployment and usability'],
-                  ['HP + Wiki', 'stakeholder integration, public narrative, page structure', 'evidence for implementation and social relevance'],
+                  ['Pathway Engineering', 'strain design, construct assembly, route optimization', 'evidence for the build core'],
+                  ['Analytics', 'melatonin detection and quantification', 'evidence that the chassis works'],
+                  ['Flower Assays', 'treatment comparison and vase-life validation', 'evidence that the product matters'],
+                  ['Modeling', 'dry-lab support and decision logic', 'evidence for smarter iteration'],
+                  ['HP + Translation', 'stakeholder logic, safety, implementation', 'evidence for real-world relevance'],
                 ],
-              ),
-              paragraph(
-                'This kind of work-package framing will make it easier later to plug in real member names, photos, and biographies without needing to redesign the page structure.',
               ),
             ],
           },
           {
-            eyebrow: 'Collaboration',
+            eyebrow: 'Coordination',
             title: 'Why coordination matters as much as specialization',
             blocks: [
               paragraph(
-                'The project only works when each work package informs the others. Wet lab results should influence the model; hardware needs to know which signals matter; human practices should reshape implementation; and the wiki must make all of those feedback loops legible.',
-              ),
-              list(
-                [
-                  'biology defines what should be measured',
-                  'modeling defines how those measurements become decisions',
-                  'hardware defines how the decisions become usable',
-                  'human practices define whether the use case is actually meaningful',
-                ],
-                'ordered',
+                'The project only feels coherent when every work package informs the others. A beautiful pathway means little without flower validation, and a promising flower result means little without trustworthy production evidence.',
               ),
             ],
           },
@@ -2447,80 +1844,64 @@ const wikiGroups = [
         navTitle: 'References',
         title: 'References',
         summary:
-          'The current literature set anchors FloraGuard in melatonin biology, plant stress tolerance, and ACC deaminase-enabled senescence delay.',
+          'The literature base now supports melatonin biology, microbial melatonin biosynthesis, and post-harvest floral preservation.',
         highlights: [
-          'Melatonin literature supports the antioxidant and regulatory logic of the project.',
-          'ACC deaminase literature supports ethylene precursor control as a preservation strategy.',
-          'This page can expand into a full bibliography as methods and results mature.',
+          'Core references justify why melatonin is worth targeting biologically.',
+          'Microbial biosynthesis papers support the chassis and route-design logic.',
+          'Cut-flower and post-harvest papers support the application side of the project.',
         ],
         nextAdd: [
-          'More cut flower senescence and post-harvest physiology papers',
-          'Method references for ROS, ACC, and vase life measurements',
-          'Hardware and modeling references once those sections are finalized',
+          'Method papers for analytical melatonin detection and quantification',
+          'More cut-flower specific post-harvest studies as the target species set is finalized',
+          'Additional references for pathway optimization and fermentation engineering',
         ],
         modules: [
           {
             type: 'visual-panel',
             tone: 'references',
             eyebrow: 'Literature map',
-            title: 'Reference pages work better when the reader can see what each paper supports',
+            title: 'The bibliography should make it clear which papers support which part of FloraGuard',
             image: floralReferenceMapArt,
             alt:
-              'Illustrated reference map linking different literature pillars to the FloraGuard project.',
+              'Illustrated literature map used as the cover art for the references page.',
             caption:
-              'A placeholder for future citation clusters or an annotated bibliography overview.',
+              'This version of the bibliography is grouped around project logic rather than dumped as an undifferentiated list.',
             lede:
-              'Instead of feeling like a dump of citations, this page should explain which papers justify the senescence model, the treatment logic, and the future deployment path.',
+              'The new project direction depends on three literature pillars: melatonin biology, microbial biosynthesis, and post-harvest preservation. Organizing references this way makes the whole wiki more legible.',
             points: [
-              'Group literature by what part of FloraGuard it supports.',
-              'Grow from core citations into a full methods and modeling bibliography.',
-              'Keep references tied to the project logic, not detached from it.',
-            ],
-          },
-          {
-            type: 'step-cards',
-            eyebrow: 'Literature pillars',
-            title: 'The current bibliography already supports three core pillars of the project',
-            items: [
-              {
-                title: 'Melatonin biology',
-                detail: 'Supports antioxidant buffering, stress tolerance, and the choice of a senescence-delaying regulator.',
-              },
-              {
-                title: 'ACC deaminase and ethylene',
-                detail: 'Supports the idea that manipulating the ethylene precursor pathway can delay floral aging.',
-              },
-              {
-                title: 'Post-harvest physiology',
-                detail: 'Supports the broader framing that cut flower decline is a systems problem involving water balance, microbes, and stress signaling.',
-              },
+              'Group papers by what they justify.',
+              'Keep build-side and application-side references balanced.',
+              'Add method papers as the experiments become more specific.',
             ],
           },
           {
             type: 'citation-clusters',
             eyebrow: 'Citation groups',
-            title: 'The bibliography becomes more useful when it is organized by what part of FloraGuard it supports',
+            title: 'The current literature set already maps onto the new project fairly cleanly',
             items: [
               {
-                support: 'Supports oxidative-stress control',
-                title: 'Melatonin literature',
+                support: 'Supports melatonin biology and senescence delay',
+                title: 'Melatonin in plant stress and post-harvest systems',
                 papers: [
                   'Arnao MB, Hernandez-Ruiz J. Melatonin in plants: growth regulator and antioxidant.',
                   'Zhang N et al. Roles of melatonin in plant stress tolerance.',
+                  'The role of melatonin in delaying senescence and maintaining quality in postharvest horticultural products.',
                 ],
               },
               {
-                support: 'Supports ethylene-pathway control',
-                title: 'ACC deaminase literature',
+                support: 'Supports the synthetic-biology build core',
+                title: 'Microbial melatonin biosynthesis',
                 papers: [
-                  'Ali S et al. ACC deaminase producing bacteria delay flower senescence.',
+                  'Combining protein and metabolic engineering strategies for biosynthesis of melatonin in Escherichia coli.',
+                  'Biosynthesis of melatonin from L-tryptophan by an engineered microbial cell factory.',
                 ],
               },
               {
-                support: 'Supports project framing and future growth',
-                title: 'Post-harvest and methods expansion',
+                support: 'Supports flower-facing application validation',
+                title: 'Cut-flower and ornamental preservation studies',
                 papers: [
-                  'Future additions: cut flower physiology, ROS assays, vase life scoring, and smart monitoring references.',
+                  'Eco-friendly extension of postharvest longevity in Alstroemeria cut flowers using melatonin and putrescine treatments.',
+                  'Nanochitosan-encapsulated melatonin: an eco-friendly strategy to delay petal senescence in cut gerbera flowers.',
                 ],
               },
             ],
@@ -2534,33 +1915,25 @@ const wikiGroups = [
               references([
                 'Arnao MB, Hernandez-Ruiz J. Melatonin in plants: growth regulator and antioxidant. Plant Cell Physiology (2015).',
                 'Zhang N et al. Roles of melatonin in plant stress tolerance. Journal of Pineal Research (2015).',
-                'Ali S et al. ACC deaminase producing bacteria delay flower senescence. Plant Physiology and Biochemistry (2012).',
+                'Combining protein and metabolic engineering strategies for biosynthesis of melatonin in Escherichia coli. Microbial Cell Factories (2021).',
+                'Biosynthesis of melatonin from L-tryptophan by an engineered microbial cell factory. Bioresources and Bioprocessing (2024).',
+                'Eco-friendly extension of postharvest longevity in Alstroemeria cut flowers using melatonin and putrescine treatments. South African Journal of Botany (2025).',
+                'Nanochitosan-encapsulated melatonin: an eco-friendly strategy to delay petal senescence in cut gerbera flowers. BMC Plant Biology (2024).',
+                'The role of melatonin in delaying senescence and maintaining quality in postharvest horticultural products. Critical Reviews in Food Science and Nutrition (2024).',
               ]),
             ],
           },
           {
-            eyebrow: 'Next step',
-            title: 'From core references to a full bibliography',
-            blocks: [
-              paragraph(
-                'As wet lab, dry lab, and hardware sections become more detailed, this page should grow into a structured bibliography covering post-harvest physiology, modeling, instrumentation, and synthetic biology methods.',
-              ),
-            ],
-          },
-          {
             eyebrow: 'Reference map',
-            title: 'How the current literature maps onto the FloraGuard story',
+            title: 'How the bibliography maps onto the current wiki',
             blocks: [
               table(
                 ['Literature pillar', 'Supports pages', 'Main idea supported'],
                 [
-                  ['Melatonin biology', 'Project Description, Design, Wet Lab', 'oxidative-stress buffering and senescence delay'],
-                  ['ACC deaminase / ethylene control', 'Project Description, Design, Wet Lab', 'ethylene-pathway intervention as a preservation lever'],
-                  ['Post-harvest physiology', 'Problem, Human Practices, Implementation', 'cut flower decline as a systems-level commercial problem'],
+                  ['Melatonin biology', 'Project Description, Problem, Wet Lab', 'why melatonin is a plausible anti-senescence lever'],
+                  ['Microbial biosynthesis', 'Design, Engineering, Wet Lab', 'why engineered E. coli is a reasonable chassis and route target'],
+                  ['Post-harvest preservation', 'Problem, Wet Lab, Implementation', 'why flower validation matters and what outcomes should be measured'],
                 ],
-              ),
-              paragraph(
-                'Organizing references this way makes the bibliography more helpful for readers, because it shows why each citation exists inside the FloraGuard argument rather than leaving references detached from the pages they justify.',
               ),
             ],
           },
@@ -2570,14 +1943,14 @@ const wikiGroups = [
             blocks: [
               list(
                 [
-                  'cut flower post-harvest physiology and vase-life studies',
-                  'methods for ROS, ACC, and visual senescence scoring',
-                  'modeling and sensor references for hardware-enabled prediction',
+                  'analytical methods for melatonin detection and quantification',
+                  'species-specific cut-flower senescence studies for the chosen floral models',
+                  'route-optimization and fermentation-engineering references for later DBTL cycles',
                 ],
                 'ordered',
               ),
               callout(
-                'A strong final reference page will not just be longer. It will be more clearly grouped by what part of the project each paper supports.',
+                'A good final references page will support every major claim in the proof chain: why melatonin, why this chassis, and why these flower readouts.',
               ),
             ],
           },
@@ -2590,68 +1963,68 @@ const wikiGroups = [
 const pageMedia = {
   'project-description': {
     image: floralHeroArt,
-    imageAlt: 'Illustrated bouquet and vase representing the FloraGuard platform.',
-    imageCaption: 'Project framing around a programmable preservation platform.',
+    imageAlt: 'Illustrated floral systems banner for the project description page.',
+    imageCaption: 'FloraGuard now centers on engineered melatonin production and flower validation.',
   },
   'problem-inspiration': {
     image: floralStressArt,
-    imageAlt: 'Illustration contrasting fresh and stressed flowers.',
-    imageCaption: 'Post-harvest stress accumulates across the floral supply chain.',
+    imageAlt: 'Illustrated contrast between fresh flowers and senescing flowers.',
+    imageCaption: 'Cut-flower senescence is a visible post-harvest problem with real commercial cost.',
   },
   design: {
     image: floralHeroArt,
-    imageAlt: 'Floral system illustration with sensing and vase motifs.',
-    imageCaption: 'Design brings sensing, response, and monitoring into one closed loop.',
+    imageAlt: 'Illustrated floral systems banner representing the design architecture.',
+    imageCaption: 'The design links chassis, pathway, analytics, and application in one sequence.',
   },
   engineering: {
     image: floralLabArt,
-    imageAlt: 'Flower and lab illustration with experimental motifs.',
-    imageCaption: 'The DBTL cycle connects construct logic to visible flower outcomes.',
+    imageAlt: 'Floral lab illustration used for the engineering page.',
+    imageCaption: 'The DBTL cycle now revolves around one central build target: microbial melatonin production.',
   },
   'wet-lab': {
     image: floralLabArt,
-    imageAlt: 'Flower, petri dish, and lab instrumentation illustration.',
-    imageCaption: 'Wet lab work links senescence markers to treatment performance.',
+    imageAlt: 'Flower and lab instrumentation illustration for the wet-lab page.',
+    imageCaption: 'Wet lab work moves from pathway construction to preserved flowers.',
   },
   'dry-lab': {
     image: floralModelDecisionBoardArt,
-    imageAlt: 'Illustrated modeling decision board with input lanes, trajectory curves, and intervention window.',
-    imageCaption: 'Dry lab should show how a model changes timing, dose, and downstream care decisions.',
+    imageAlt: 'Illustrated model board showing trajectories and intervention windows.',
+    imageCaption: 'Dry lab supports route optimization and treatment design rather than becoming a separate platform.',
   },
   hardware: {
-    image: smartVaseArt,
-    imageAlt: 'Smart vase with sensors and dashboard illustration.',
-    imageCaption: 'Hardware turns the preservation concept into a usable monitoring device.',
+    image: floralHardwareBlueprintArt,
+    imageAlt: 'Illustrated blueprint panel for measurement and support tools.',
+    imageCaption: 'Application-support tools now serve evidence capture and phenotyping.',
   },
   'integrated-human-practices': {
     image: floralInterviewWallArt,
-    imageAlt: 'Illustrated interview wall connecting growers, distributors, florists, and consumers to FloraGuard.',
-    imageCaption: 'Human practices should make field voices visible before the reader reaches long interview tables.',
+    imageAlt: 'Illustrated interview wall connecting stakeholders to the project.',
+    imageCaption: 'Human Practices now asks what kind of melatonin-based preservation product would be useful and acceptable.',
   },
   safety: {
     image: floralLabArt,
     imageAlt: 'Lab-and-flower illustration suggesting controlled biosafety practice.',
-    imageCaption: 'Safety is grounded in confinement, controlled use, and responsible translation.',
+    imageCaption: 'Safety is grounded in confinement, separation of product from live cells, and bounded translation.',
   },
   implementation: {
     image: floralImplementationJourneyArt,
-    imageAlt: 'Illustrated staged rollout from lab validation to florist pilot to home use.',
-    imageCaption: 'Implementation should feel like a staged translation path rather than a sudden jump to product.',
+    imageAlt: 'Illustrated staged rollout journey from lab work to bounded deployment formats.',
+    imageCaption: 'Implementation now emphasizes staged translation and product-form boundaries.',
   },
   contribution: {
     image: floralHeroArt,
-    imageAlt: 'Bouquet and system illustration representing a synthetic biology platform.',
-    imageCaption: 'FloraGuard contributes a preservation framework, not just a single intervention.',
+    imageAlt: 'Illustrated banner representing FloraGuard as a synthetic-biology framework.',
+    imageCaption: 'The project contributes a focused build-to-application framework for floriculture.',
   },
   team: {
     image: floralTeamCollageArt,
-    imageAlt: 'Illustrated team role collage around the FloraGuard project.',
-    imageCaption: 'A multidisciplinary team is needed to connect biology, hardware, modeling, and translation.',
+    imageAlt: 'Illustrated team role collage for the FloraGuard team page.',
+    imageCaption: 'The team structure should mirror the project proof chain from pathway to phenotype.',
   },
   references: {
     image: floralReferenceMapArt,
     imageAlt: 'Illustrated literature map for the FloraGuard bibliography.',
-    imageCaption: 'Core literature anchors FloraGuard in plant stress biology, ethylene control, and post-harvest systems thinking.',
+    imageCaption: 'The bibliography is now organized around melatonin biology, microbial biosynthesis, and post-harvest application.',
   },
 }
 
