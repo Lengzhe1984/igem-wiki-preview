@@ -10,7 +10,7 @@ import {
   wikiGroups,
 } from './site-data.js'
 
-document.title = `${siteMeta.projectName} | iGEM Wiki Draft`
+document.title = `${siteMeta.projectName} | iGEM Wiki`
 
 const totalPages = flattenPages().length
 

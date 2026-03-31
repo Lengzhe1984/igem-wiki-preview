@@ -838,8 +838,8 @@ const wikiGroups = [
           {
             type: 'visual-panel',
             tone: 'wet',
-            eyebrow: 'Figure preview',
-            title: 'The wet lab should read as one chain from engineered cells to healthier flowers',
+            eyebrow: 'Figure board',
+            title: 'The wet lab follows one chain from engineered cells to healthier flowers',
             image: floralWetLabArt,
             alt: 'Illustrated wet-lab composition with assay motifs and flower scoring.',
             caption:
@@ -883,7 +883,7 @@ const wikiGroups = [
                 image: floralAssayDashboardArt,
                 alt: 'Illustrated assay dashboard connecting signals to flower outcome.',
                 label: 'Analytics',
-                title: 'Production data should appear beside pathway decisions',
+                title: 'Production data appears beside pathway decisions',
                 detail:
                   'Readers should not need to jump between pages to understand whether the chassis really made melatonin.',
               },
@@ -899,7 +899,7 @@ const wikiGroups = [
                 image: floralWetLabArt,
                 alt: 'Illustrated bench scene with flowers, dishes, and scoring motifs.',
                 label: 'Protocol',
-                title: 'Sampling and scoring should also remain visible',
+                title: 'Sampling and scoring remain visible',
                 detail:
                   'Good wet-lab pages show enough of the protocol rhythm that the reader trusts the measurements behind the final summary figure.',
               },
@@ -1079,7 +1079,7 @@ const wikiGroups = [
           },
           {
             eyebrow: 'Validation',
-            title: 'How the dry-lab layer should be judged',
+            title: 'How the dry-lab layer is judged',
             blocks: [
               paragraph(
                 'The important question is not whether the model is mathematically elegant. It is whether the model leads to better experimental decisions. For FloraGuard, validation should therefore compare modeled expectations with measured production data and measured flower outcomes.',
@@ -1265,7 +1265,7 @@ const wikiGroups = [
           {
             type: 'journey-strip',
             eyebrow: 'Feedback loop',
-            title: 'Stakeholder input should reshape the project in concrete ways',
+            title: 'Stakeholder input reshapes the project in concrete ways',
             items: [
               {
                 title: 'Need',
@@ -1791,7 +1791,7 @@ const wikiGroups = [
                 image: floralTeamCollageArt,
                 alt: 'Illustrated team collage around the project.',
                 label: 'Identity',
-                title: 'The team page should feel personal as well as structural',
+                title: 'The team page feels personal as well as structural',
                 detail:
                   'Once names and photos are added, the page can still preserve the clarity of who owned which proof layer.',
               },
@@ -1939,7 +1939,7 @@ const wikiGroups = [
           },
           {
             eyebrow: 'Expansion plan',
-            title: 'What the bibliography should include next',
+            title: 'What the bibliography will deepen next',
             blocks: [
               list(
                 [
