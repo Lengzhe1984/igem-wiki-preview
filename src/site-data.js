@@ -27,7 +27,7 @@ const siteMeta = {
   projectName: 'FloraGuard',
   subtitle: 'Engineered E. coli Melatonin Biosynthesis for Cut Flower Preservation',
   deck:
-    'A multi-page iGEM wiki draft focused on producing melatonin with engineered E. coli, verifying the pathway analytically, and testing whether that product can extend cut-flower vase life.',
+    'A multi-page iGEM wiki focused on producing melatonin with engineered E. coli, verifying the pathway analytically, and testing whether that product can extend cut-flower vase life.',
 }
 
 const homePage = {
@@ -39,13 +39,13 @@ const homePage = {
     'FloraGuard reframes cut-flower preservation as a bench-to-application workflow: produce, quantify, validate, and translate.',
   lead: [
     'Cut flowers lose value quickly after harvest because dehydration, oxidative stress, hormone imbalance, and handling variability all accelerate senescence. The current floral industry mostly responds with static preservatives and cold-chain management, but those tools do not explain or control the biology behind decline.',
-    'Our latest project direction is narrower and stronger than the previous concept: instead of building a broad closed-loop preservation platform first, we focus on one biologically meaningful molecule, melatonin, and ask whether engineered Escherichia coli can become a controllable production chassis for floral preservation.',
+    'FloraGuard focuses on one biologically meaningful molecule, melatonin, and asks whether engineered Escherichia coli can become a controllable production chassis for floral preservation.',
     'FloraGuard therefore connects three proof layers in one story: microbial melatonin biosynthesis, analytical confirmation of the product, and application validation on cut flowers under post-harvest stress.',
   ],
   status: [
-    'The wiki now follows the latest project direction from the Tencent document rather than the older ACC-centered storyline.',
-    'Core science pages are organized around pathway design, melatonin production, quantification, and flower preservation validation.',
-    'The site is ready for future plasmid maps, titer plots, phenotype photos, and interview evidence.',
+    'The project is organized around pathway design, melatonin production, quantification, and flower preservation validation.',
+    'The build story now runs cleanly from engineered chassis to floral phenotype outcome.',
+    'Safety and implementation are framed around purified or otherwise bounded output formats.',
   ],
   metrics: [
     {
@@ -183,14 +183,14 @@ const homePage = {
     eyebrow: 'Project angle',
     title: 'FloraGuard now reads as one bench-to-flower story instead of a loose collection of preservation ideas',
     summary:
-      'The strongest revision from the Tencent document is conceptual. The project is no longer trying to solve every part of senescence at once. It now asks a more focused iGEM question: can an engineered microbial chassis make a molecule with real preservation value for cut flowers, and can we validate that value responsibly?',
+      'FloraGuard asks a focused iGEM question: can an engineered microbial chassis make a molecule with real preservation value for cut flowers, and can that value be validated responsibly from pathway to phenotype?',
     quote:
-      'A stronger project is not always broader. Sometimes it is the version that can prove one thing clearly from pathway to phenotype.',
+      'A convincing preservation project should prove one clear chain from pathway output to flower outcome.',
     image: floralSupplyChainArt,
     alt:
       'Illustrated supply chain art showing cut flowers moving through harvest, transport, and care contexts.',
     caption:
-      'The homepage should connect floral waste, microbial production, and application validation in one continuous argument.',
+      'The homepage connects floral waste, microbial production, and application validation in one continuous argument.',
     chips: ['Cut flowers', 'Melatonin', 'E. coli chassis', 'Bounded translation'],
     points: [
       'Keep the industrial and consumer relevance of flower preservation visible.',
@@ -207,15 +207,15 @@ const homePage = {
     },
     {
       label: 'Application proof',
-      title: 'Flower phenotype and vase-life boards should show why microbial melatonin is worth making',
+      title: 'Flower phenotype and vase-life boards reveal why microbial melatonin is worth making',
       detail:
         'A preservation project becomes convincing only when readers can see both the cut-flower phenotype and the quantitative outcome.',
     },
     {
       label: 'Translation proof',
-      title: 'Safety and implementation should show bounded product formats',
+      title: 'Safety and implementation keep bounded product formats visible',
       detail:
-        'The site should make it obvious that future application depends on purified or otherwise controlled outputs, not live environmental release.',
+        'Future application depends on purified or otherwise controlled outputs, not live environmental release.',
     },
   ],
   readerRoutes: [
@@ -313,7 +313,7 @@ const wikiGroups = [
             caption:
               'The floral problem stays visible even as the scientific core shifts toward metabolic engineering.',
             lede:
-              'This page should immediately connect commercial flower loss to a tractable synthetic-biology task. Instead of solving every senescence pathway at once, FloraGuard now focuses on producing melatonin in a controllable chassis and validating that output on real cut flowers.',
+              'This page connects commercial flower loss to a tractable synthetic-biology task. FloraGuard focuses on producing melatonin in a controllable chassis and validating that output on real cut flowers.',
             points: [
               'Keep the flower-industry problem visible from the start.',
               'State clearly that microbial melatonin production is the new core engineering challenge.',
@@ -436,7 +436,7 @@ const wikiGroups = [
             image: floralStressArt,
             alt: 'Illustrated contrast between fresh bouquets and stressed flowers.',
             caption:
-              'The problem page should make senescence pressure visible before the build strategy appears.',
+              'The problem page makes senescence pressure visible before the build strategy appears.',
             lede:
               'This page anchors the project in a real post-harvest problem. Flowers do not simply fade at home; they accumulate stress across harvest, storage, transport, retail display, and household care.',
             points: [
@@ -559,13 +559,13 @@ const wikiGroups = [
             type: 'visual-panel',
             tone: 'design',
             eyebrow: 'System architecture',
-            title: 'The design page should show one coherent chain from chassis engineering to flower outcome',
+            title: 'One coherent chain links chassis engineering, product verification, and flower outcome',
             image: floralHeroArt,
             alt: 'Illustrated floral systems banner used as a design overview image.',
             caption:
               'The design is now centered on production, quantification, and application rather than on a general smart-monitoring platform.',
             lede:
-              'A good design page does not merely list components. It explains how each module hands work to the next. In FloraGuard, the order is chassis design, pathway expression, product verification, and post-harvest validation.',
+              'The design links each module to the next. In FloraGuard, the order is chassis design, pathway expression, product verification, and post-harvest validation.',
             points: [
               'Keep the metabolic route visible, not hidden behind generic preservation language.',
               'Explain where analytical confirmation happens before application testing.',
@@ -711,7 +711,7 @@ const wikiGroups = [
             caption:
               'A stronger engineering page shows how each iteration changed the route or the flower outcome.',
             lede:
-              'The earlier version of the site mixed many intervention ideas. The current engineering page is cleaner. Every DBTL cycle should answer whether the chassis, the output, or the application design improved.',
+              'Every DBTL cycle should answer whether the chassis, the output, or the application design improved.',
             points: [
               'Keep the iteration centered on one route rather than many disconnected modules.',
               'Link pathway revisions to measurable analytical changes.',
@@ -748,7 +748,7 @@ const wikiGroups = [
           {
             type: 'evidence-strip',
             eyebrow: 'Iteration board',
-            title: 'A strong DBTL page leaves a visible artifact after every cycle',
+            title: 'Each DBTL cycle should leave a visible artifact',
             items: [
               {
                 label: 'Cycle 01',
@@ -843,9 +843,9 @@ const wikiGroups = [
             image: floralWetLabArt,
             alt: 'Illustrated wet-lab composition with assay motifs and flower scoring.',
             caption:
-              'A future complete figure should show construct logic, analytical output, and floral phenotype on the same page.',
+              'A complete figure should show construct logic, analytical output, and floral phenotype on the same page.',
             lede:
-              'This page is no longer about testing many unrelated senescence levers. It is about making one molecule, measuring it well, and deciding whether that molecule changes the flower.',
+              'This page is about making one molecule, measuring it well, and deciding whether that molecule changes the flower.',
             points: [
               'Pair construct logic with analytical results.',
               'Keep production and application experiments visibly linked.',
@@ -891,15 +891,15 @@ const wikiGroups = [
                 image: floralPhenotypeBoardArt,
                 alt: 'Illustrated phenotype board tracking flower appearance over multiple days.',
                 label: 'Phenotype',
-                title: 'Flower images should make the treatment effect obvious before the reader studies the plots',
+                title: 'Flower images make the treatment effect obvious before the reader studies the plots',
                 detail:
-                  'A future winner-style evidence board will likely need a day-by-day visual timeline for control and treatment groups.',
+                  'A strong evidence board benefits from a day-by-day visual timeline for control and treatment groups.',
               },
               {
                 image: floralWetLabArt,
                 alt: 'Illustrated bench scene with flowers, dishes, and scoring motifs.',
                 label: 'Protocol',
-                title: 'The page should also reveal how sampling and scoring are actually performed',
+                title: 'Sampling and scoring should also remain visible',
                 detail:
                   'Good wet-lab pages show enough of the protocol rhythm that the reader trusts the measurements behind the final summary figure.',
               },
@@ -1164,10 +1164,10 @@ const wikiGroups = [
         sections: [
           {
             eyebrow: 'Current scope',
-            title: 'What this page means in the latest project version',
+            title: 'What this page contributes to the current project',
             blocks: [
               paragraph(
-                'In the current FloraGuard concept, hardware is no longer the core innovation. Instead, any tool-like layer exists to support better flower phenotyping, experiment logging, and future demonstration of the treatment workflow.',
+                'In FloraGuard, hardware is not the core innovation. Any tool-like layer exists to support better flower phenotyping, experiment logging, and demonstration of the treatment workflow.',
               ),
             ],
           },
@@ -1225,7 +1225,7 @@ const wikiGroups = [
             type: 'visual-panel',
             tone: 'human',
             eyebrow: 'Stakeholder picture',
-            title: 'Human Practices should explain why this biosynthesis project matters beyond the bench',
+            title: 'Human Practices explains why this biosynthesis project matters beyond the bench',
             image: floralStakeholderMapArt,
             alt:
               'Illustrated stakeholder map connecting the floral chain to the FloraGuard project.',
@@ -1303,7 +1303,7 @@ const wikiGroups = [
           },
           {
             eyebrow: 'Insights',
-            title: 'What the latest project direction makes newly important',
+            title: 'What becomes most important once the project centers on melatonin biosynthesis',
             blocks: [
               paragraph(
                 'Once FloraGuard becomes a melatonin biosynthesis project, Human Practices changes too. The central questions are no longer only about monitoring or flower-care advice. They are also about whether the molecule can be delivered affordably, whether users would accept the product format, and how translation can stay safe.',
@@ -1720,14 +1720,14 @@ const wikiGroups = [
             type: 'visual-panel',
             tone: 'team',
             eyebrow: 'Team picture',
-            title: 'A strong team page should explain who carries each part of the proof chain',
+            title: 'The team page explains who carries each part of the proof chain',
             image: floralTeamCollageArt,
             alt:
               'Illustrated team collage showing multiple work packages around the FloraGuard project.',
             caption:
               'This page now needs to map people to pathway engineering, analytics, flower assays, and translation.',
             lede:
-              'Because FloraGuard now spans microbial engineering and plant application, the team page should make those responsibilities visible rather than presenting one generic member list.',
+              'Because FloraGuard spans microbial engineering and plant application, the team page makes those responsibilities visible rather than presenting one generic member list.',
             points: [
               'Map people to pathway work and flower work separately.',
               'Reserve space for analytical chemistry and data interpretation roles.',
@@ -1737,7 +1737,7 @@ const wikiGroups = [
           {
             type: 'profile-grid',
             eyebrow: 'Work packages',
-            title: 'The team can be organized around five practical work packages',
+            title: 'Five practical work packages organize the team structure',
             items: [
               {
                 label: 'WP-01',
@@ -1785,15 +1785,15 @@ const wikiGroups = [
                 label: 'Planning',
                 title: 'Documentation is part of the work, not separate from it',
                 detail:
-                  'A strong wiki should eventually reveal how build decisions, assay plans, and HP revisions were coordinated across the season.',
+                  'The page should reveal how build decisions, assay plans, and HP revisions were coordinated across the season.',
               },
               {
                 image: floralTeamCollageArt,
                 alt: 'Illustrated team collage around the project.',
                 label: 'Identity',
-                title: 'The team page should eventually feel personal as well as structural',
+                title: 'The team page should feel personal as well as structural',
                 detail:
-                  'Once names and photos are added, the page should still preserve the clarity of who owned which proof layer.',
+                  'Once names and photos are added, the page can still preserve the clarity of who owned which proof layer.',
               },
             ],
           },
@@ -1860,7 +1860,7 @@ const wikiGroups = [
             type: 'visual-panel',
             tone: 'references',
             eyebrow: 'Literature map',
-            title: 'The bibliography should make it clear which papers support which part of FloraGuard',
+            title: 'The bibliography makes it clear which papers support which part of FloraGuard',
             image: floralReferenceMapArt,
             alt:
               'Illustrated literature map used as the cover art for the references page.',

@@ -248,14 +248,13 @@ document.querySelector('#app').innerHTML = `
       <section class="section-block split-block">
         <div>
           <div class="section-heading">
-            <p class="eyebrow">Current build</p>
-            <h2>This version now reflects the latest project direction instead of the older broad-preservation concept</h2>
+            <p class="eyebrow">Project focus</p>
+            <h2>FloraGuard centers on one molecule, one chassis, and one preservation question</h2>
           </div>
           <p class="section-copy">
-            The homepage now matches the updated science story from the latest project notes:
-            microbial melatonin biosynthesis first, flower validation second, and bounded
-            translation third. The layout still carries the more polished winner-style visual
-            language, but the content spine is now much closer to the current idea.
+            This homepage is organized around a simple scientific chain: define the post-harvest
+            problem, engineer microbial melatonin production, validate that output on cut flowers,
+            and translate the result through bounded product formats.
           </p>
           <ul class="mini-list mini-list-spacious">
             ${statusMarkup}
@@ -286,7 +285,7 @@ document.querySelector('#app').innerHTML = `
       <section class="section-block">
         <div class="section-heading">
           <p class="eyebrow">Story rhythm</p>
-          <h2>The homepage should make the project readable in four scientific beats</h2>
+          <h2>The project logic becomes easier to follow when it is read in four scientific beats</h2>
         </div>
         <div class="flow-grid">
           ${storyFlowMarkup}
@@ -319,9 +318,9 @@ document.querySelector('#app').innerHTML = `
           <p class="eyebrow">Evidence rhythm</p>
           <h2>The strongest science pages usually show where proof will land before every figure is final</h2>
           <p class="section-copy">
-            FloraGuard can already reserve the right kinds of result panels now, so later we swap in
-            real chromatograms, titer curves, flower photos, and vase-life plots instead of redesigning
-            the whole page.
+            The site is already structured around the main evidence types that matter most here:
+            chromatograms or titer curves for production, phenotype boards for flowers, and clear
+            bounded-use logic for translation.
           </p>
         </div>
         <div class="evidence-grid">
@@ -382,7 +381,7 @@ document.querySelector('#app').innerHTML = `
       <section class="section-block">
         <div class="section-heading">
           <p class="eyebrow">Deployment rhythm</p>
-          <h2>The homepage should already show how FloraGuard grows from bench proof into bounded use</h2>
+          <h2>The homepage already traces how FloraGuard grows from bench proof into bounded use</h2>
           <p class="section-copy">
             This keeps Implementation, Safety, and Human Practices connected to the front page instead of
             feeling like late-stage appendices. The rollout logic becomes part of the project identity.
@@ -406,11 +405,10 @@ document.querySelector('#app').innerHTML = `
       <section class="section-block split-block">
         <div>
           <div class="section-heading">
-            <p class="eyebrow">Next additions</p>
-            <h2>The narrative draft is ready for figures, datasets, and images</h2>
+            <p class="eyebrow">Evidence focus</p>
+            <h2>The next round of work is about strengthening proof, not changing the project spine</h2>
           </div>
           <p class="section-copy">
-            The site now reads like a project-specific wiki rather than a placeholder scaffold.
             From here, the biggest gains will come from adding construct diagrams, quantitative
             production results, flower phenotype figures, and stakeholder evidence without changing the overall page
             architecture again.
@@ -423,8 +421,8 @@ document.querySelector('#app').innerHTML = `
     </main>
 
     <footer class="site-footer">
-      <p>FloraGuard is now structured as a narrative iGEM wiki draft that can absorb pathway data, analytical figures, and flower-validation media as the project matures.</p>
-      <p>This GitHub Pages build is meant for review and iteration before migration into the official competition host.</p>
+      <p>FloraGuard links metabolic engineering, flower biology, and bounded translation across one continuous wiki narrative.</p>
+      <p>This GitHub Pages site is used to iterate on the project structure before final migration into the official iGEM host.</p>
     </footer>
   </div>
 `

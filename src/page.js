@@ -352,17 +352,6 @@ const highlightMarkup = page.highlights
   .map((item) => `<li>${escapeHtml(item)}</li>`)
   .join('')
 
-const nextAddMarkup = page.nextAdd
-  .map(
-    (item, index) => `
-      <li class="check-item fade-card" style="--delay:${index * 45}ms">
-        <span class="check-mark" aria-hidden="true"></span>
-        <span>${escapeHtml(item)}</span>
-      </li>
-    `,
-  )
-  .join('')
-
 const tocMarkup = page.sections
   .map(
     (section) => `
@@ -408,7 +397,7 @@ document.querySelector('#app').innerHTML = `
           <p class="lede">${escapeHtml(page.summary)}</p>
           <div class="meta-line">
             <span>${String(currentIndex + 1).padStart(2, '0')} / ${String(allPages.length).padStart(2, '0')}</span>
-            <span>FloraGuard wiki draft</span>
+            <span>FloraGuard wiki</span>
           </div>
           <p class="visual-caption">${escapeHtml(page.imageCaption)}</p>
         </div>
@@ -418,7 +407,7 @@ document.querySelector('#app').innerHTML = `
         <article class="article-stack">
           <section class="story-section story-summary fade-card">
             <p class="story-section-label">At a glance</p>
-            <h2>Why this page matters in the FloraGuard story</h2>
+            <h2>Key points on this page</h2>
             <ul class="mini-list mini-list-spacious">
               ${highlightMarkup}
             </ul>
@@ -442,13 +431,6 @@ document.querySelector('#app').innerHTML = `
             <div class="pill-list compact">
               ${siblingMarkup}
             </div>
-          </section>
-
-          <section class="side-panel">
-            <p class="panel-kicker">Next to add</p>
-            <ul class="check-grid">
-              ${nextAddMarkup}
-            </ul>
           </section>
         </aside>
       </section>
@@ -474,8 +456,8 @@ document.querySelector('#app').innerHTML = `
     </main>
 
     <footer class="site-footer">
-      <p>Each FloraGuard page now carries narrative content first, with space reserved for figures, data, and evidence as they become available.</p>
-      <p>This preview remains structured for rapid review before final migration into the official iGEM wiki host.</p>
+      <p>Each FloraGuard page connects pathway engineering, flower validation, or bounded translation back to the same central project logic.</p>
+      <p>This GitHub Pages site is used to refine the public project narrative before final migration into the official iGEM wiki host.</p>
     </footer>
   </div>
 `
