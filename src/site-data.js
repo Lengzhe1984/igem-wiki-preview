@@ -1,4 +1,3 @@
-import floralHeroArt from './assets/floraguard-hero.svg'
 import floralBenchToFlowerArt from './assets/floraguard-bench-to-flower.svg'
 import floralStressArt from './assets/floral-stress.svg'
 import floralLabArt from './assets/floral-lab.svg'
@@ -10,14 +9,12 @@ import floralStakeholderMapArt from './assets/floral-stakeholder-map.svg'
 import floralTeamCollageArt from './assets/floral-team-collage.svg'
 import floralReferenceMapArt from './assets/floral-reference-map.svg'
 import floralPhenotypeBoardArt from './assets/floral-phenotype-board.svg'
-import floralAssayDashboardArt from './assets/floral-assay-dashboard.svg'
 import floralHardwareBlueprintArt from './assets/floral-hardware-blueprint.svg'
 import floralPathwayBoardArt from './assets/floral-pathway-board.svg'
 import floralFermentationBoardArt from './assets/floral-fermentation-board.svg'
 import floralBoundedFormatsArt from './assets/floral-bounded-formats.svg'
 import floralTeamNetworkArt from './assets/floral-team-network.svg'
 import floralModelDecisionBoardArt from './assets/floral-model-decision-board.svg'
-import floralImplementationJourneyArt from './assets/floral-implementation-journey.svg'
 import floralInterviewWallArt from './assets/floral-interview-wall.svg'
 
 const paragraph = (text) => ({ type: 'paragraph', text })
@@ -127,7 +124,7 @@ const homePage = {
       alt: 'Illustrated fermentation and validation board linking construct design to flower readout.',
       title: 'Production proof now looks like an experimental chain rather than an isolated assay',
       detail:
-        'This version of FloraGuard is not only about applying melatonin. It is about showing how route construction, fermentation output, and flower validation sit next to one another on the same page.',
+        'FloraGuard is not only about applying melatonin. It is about showing how route construction, fermentation output, and flower validation sit next to one another on the same page.',
     },
   ],
   atlasCards: [
@@ -145,7 +142,7 @@ const homePage = {
       label: 'Science',
       title: 'Pathway design and quantification now sit visibly at the center of the project',
       detail:
-        'Readers should understand that FloraGuard is first a metabolic-engineering project and only then a preservation application project.',
+        'Readers can see that FloraGuard is first a metabolic-engineering project and only then a preservation application project.',
     },
     {
       image: floralBoundedFormatsArt,
@@ -184,11 +181,11 @@ const homePage = {
   ],
   editorialFeature: {
     eyebrow: 'Project angle',
-    title: 'FloraGuard now reads as one bench-to-flower story instead of a loose collection of preservation ideas',
+    title: 'FloraGuard reads as one bench-to-flower story instead of a loose collection of preservation ideas',
     summary:
       'FloraGuard asks a focused iGEM question: can an engineered microbial chassis make a molecule with real preservation value for cut flowers, and can that value be validated responsibly from pathway to phenotype?',
     quote:
-      'A convincing preservation project should prove one clear chain from pathway output to flower outcome.',
+      'A convincing preservation project reads as one clear chain from pathway output to flower outcome.',
     image: floralSupplyChainArt,
     alt:
       'Illustrated supply chain art showing cut flowers moving through harvest, transport, and care contexts.',
@@ -611,7 +608,7 @@ const wikiGroups = [
                 image: floralPathwayBoardArt,
                 alt: 'Illustrated pathway board with melatonin route stages.',
                 label: 'Route',
-                title: 'The chemistry should be visible enough that readers can trace where melatonin comes from',
+                title: 'The chemistry stays visible enough that readers can trace where melatonin comes from',
                 detail:
                   'A design page is stronger when the route from tryptophan-derived metabolism to melatonin is visible before readers reach the construct details.',
               },
@@ -627,7 +624,7 @@ const wikiGroups = [
                 image: floralBoundedFormatsArt,
                 alt: 'Illustrated bounded product formats and translation boundaries.',
                 label: 'Boundary',
-                title: 'Implementation constraints should already shape what counts as a good design',
+                title: 'Implementation constraints already shape what counts as a good design',
                 detail:
                   'The design is stronger when it anticipates bounded outputs and does not imply that live engineered cells are the deployed product.',
               },
@@ -726,7 +723,7 @@ const wikiGroups = [
         navTitle: 'Engineering (DBTL)',
         title: 'Engineering (DBTL)',
         summary:
-          'The engineering story of FloraGuard now follows a clearer Design-Build-Test-Learn loop around melatonin biosynthesis and flower validation.',
+          'The engineering story of FloraGuard follows a clear Design-Build-Test-Learn loop around melatonin biosynthesis and flower validation.',
         highlights: [
           'Design focuses on route choice, chassis logic, and what counts as evidence.',
           'Build centers on assembling and expressing the pathway in E. coli.',
@@ -742,13 +739,13 @@ const wikiGroups = [
             type: 'visual-panel',
             tone: 'wet',
             eyebrow: 'Engineering logic',
-            title: 'DBTL now follows one main object: the melatonin-producing chassis',
-            image: floralLabArt,
-            alt: 'Illustrated floral lab scene used as a DBTL cover image.',
+            title: 'DBTL follows one main object: the melatonin-producing chassis',
+            image: floralFermentationBoardArt,
+            alt: 'Illustrated fermentation board used as a DBTL cover image.',
             caption:
-              'A stronger engineering page shows how each iteration changed the route or the flower outcome.',
+              'A stronger engineering page shows how each iteration changed the route, the assay signal, or the flower outcome.',
             lede:
-              'Every DBTL cycle should answer whether the chassis, the output, or the application design improved.',
+              'Every DBTL cycle answers whether the chassis, the output, or the application design improved.',
             points: [
               'Keep the iteration centered on one route rather than many disconnected modules.',
               'Link pathway revisions to measurable analytical changes.',
@@ -763,7 +760,7 @@ const wikiGroups = [
               {
                 label: 'Design',
                 value: 'D',
-                detail: 'Which melatonin route, enzymes, and proof criteria should define the project?',
+                detail: 'Which melatonin route, enzymes, and proof criteria define the project?',
               },
               {
                 label: 'Build',
@@ -778,14 +775,14 @@ const wikiGroups = [
               {
                 label: 'Learn',
                 value: 'L',
-                detail: 'Which bottlenecks in pathway performance or application format should be revised next?',
+                detail: 'Which bottlenecks in pathway performance or application format are revised next?',
               },
             ],
           },
           {
             type: 'evidence-strip',
             eyebrow: 'Iteration board',
-            title: 'Each DBTL cycle should leave a visible artifact',
+            title: 'Each DBTL cycle leaves a visible artifact',
             items: [
               {
                 label: 'Cycle 01',
@@ -922,7 +919,7 @@ const wikiGroups = [
                 label: 'Analytics',
                 title: 'Production data appears beside pathway decisions',
                 detail:
-                  'Readers should not need to jump between pages to understand whether the chassis really made melatonin.',
+                  'Readers do not need to jump between pages to understand whether the chassis really made melatonin.',
               },
               {
                 image: floralPhenotypeBoardArt,
@@ -1136,7 +1133,7 @@ const wikiGroups = [
         navTitle: 'Application Support',
         title: 'Application Support',
         summary:
-          'This page now covers optional imaging, logging, and assay-support tools that help standardize flower evaluation rather than acting as the core project itself.',
+          'This page covers optional imaging, logging, and assay-support tools that help standardize flower evaluation rather than acting as the core project itself.',
         highlights: [
           'Hardware is no longer the main project spine.',
           'Simple imaging and logging can still strengthen phenotyping and application validation.',
@@ -1368,7 +1365,7 @@ const wikiGroups = [
                 ],
               ),
               callout(
-                'Human Practices should now reinforce one key message: even if engineered cells stay in the lab, the preservation value can still be translated through safer output formats.',
+                'Human Practices reinforces one key message: even if engineered cells stay in the lab, the preservation value can still be translated through safer output formats.',
               ),
             ],
           },
@@ -1502,7 +1499,7 @@ const wikiGroups = [
         navTitle: 'Implementation',
         title: 'Implementation',
         summary:
-          'Implementation now centers on how a melatonin-based floral preservation concept could move from the lab toward bounded and practical use formats.',
+          'Implementation centers on how a melatonin-based floral preservation concept could move from the lab toward bounded and practical use formats.',
         highlights: [
           'The most realistic path is lab validation, then florist-facing pilot, then simplified consumer translation.',
           'Implementation is tied to product format and biosafety boundary, not only to user interface.',
@@ -1525,7 +1522,7 @@ const wikiGroups = [
             caption:
               'The current FloraGuard translation logic is staged, conservative, and explicitly separated from live-cell deployment.',
             lede:
-              'This page now answers a more realistic question: if melatonin production and floral benefit are demonstrated, what forms of translation would still make operational and biosafety sense?',
+              'This page answers a more realistic question: if melatonin production and floral benefit are demonstrated, what forms of translation would still make operational and biosafety sense?',
             points: [
               'Start from lab evidence, not from product branding.',
               'Prefer florist-facing pilot scenarios before household claims.',
@@ -1765,7 +1762,7 @@ const wikiGroups = [
             alt:
               'Illustrated team collage showing multiple work packages around the FloraGuard project.',
             caption:
-              'This page now needs to map people to pathway engineering, analytics, flower assays, and translation.',
+              'This page maps people to pathway engineering, analytics, flower assays, and translation.',
             lede:
               'Because FloraGuard spans microbial engineering and plant application, the team page makes those responsibilities visible rather than presenting one generic member list.',
             points: [
@@ -1825,7 +1822,7 @@ const wikiGroups = [
                 label: 'Planning',
                 title: 'Documentation is part of the work, not separate from it',
                 detail:
-                  'The page should reveal how build decisions, assay plans, and HP revisions were coordinated across the season.',
+                  'This section shows how build decisions, assay plans, and HP revisions were coordinated across the season.',
               },
               {
                 image: floralTeamCollageArt,
@@ -1884,7 +1881,7 @@ const wikiGroups = [
         navTitle: 'References',
         title: 'References',
         summary:
-          'The literature base now supports melatonin biology, microbial melatonin biosynthesis, and post-harvest floral preservation.',
+          'The literature base supports melatonin biology, microbial melatonin biosynthesis, and post-harvest floral preservation.',
         highlights: [
           'Core references justify why melatonin is worth targeting biologically.',
           'Microbial biosynthesis papers support the chassis and route-design logic.',
@@ -1905,7 +1902,7 @@ const wikiGroups = [
             alt:
               'Illustrated literature map used as the cover art for the references page.',
             caption:
-              'This version of the bibliography is grouped around project logic rather than dumped as an undifferentiated list.',
+              'The bibliography is grouped around project logic rather than dumped as an undifferentiated list.',
             lede:
               'The new project direction depends on three literature pillars: melatonin biology, microbial biosynthesis, and post-harvest preservation. Organizing references this way makes the whole wiki more legible.',
             points: [
@@ -2002,9 +1999,9 @@ const wikiGroups = [
 
 const pageMedia = {
   'project-description': {
-    image: floralHeroArt,
-    imageAlt: 'Illustrated floral systems banner for the project description page.',
-    imageCaption: 'FloraGuard now centers on engineered melatonin production and flower validation.',
+    image: floralBenchToFlowerArt,
+    imageAlt: 'Illustrated bench-to-flower workflow for the project description page.',
+    imageCaption: 'FloraGuard reads as one chain from pathway engineering to flower outcome.',
   },
   'problem-inspiration': {
     image: floralStressArt,
@@ -2012,19 +2009,19 @@ const pageMedia = {
     imageCaption: 'Cut-flower senescence is a visible post-harvest problem with real commercial cost.',
   },
   design: {
-    image: floralHeroArt,
-    imageAlt: 'Illustrated floral systems banner representing the design architecture.',
-    imageCaption: 'The design links chassis, pathway, analytics, and application in one sequence.',
+    image: floralPathwayBoardArt,
+    imageAlt: 'Illustrated pathway architecture board representing the design sequence.',
+    imageCaption: 'The design links route chemistry, optimization levers, analytics, and application in one sequence.',
   },
   engineering: {
-    image: floralLabArt,
-    imageAlt: 'Floral lab illustration used for the engineering page.',
-    imageCaption: 'The DBTL cycle now revolves around one central build target: microbial melatonin production.',
+    image: floralFermentationBoardArt,
+    imageAlt: 'Fermentation and readout board used for the engineering page.',
+    imageCaption: 'The DBTL cycle revolves around one central build target: measurable microbial melatonin production.',
   },
   'wet-lab': {
-    image: floralLabArt,
-    imageAlt: 'Flower and lab instrumentation illustration for the wet-lab page.',
-    imageCaption: 'Wet lab work moves from pathway construction to preserved flowers.',
+    image: floralFermentationBoardArt,
+    imageAlt: 'Fermentation and flower validation illustration for the wet-lab page.',
+    imageCaption: 'Wet-lab work now moves clearly from pathway construction to assay signal to preserved flowers.',
   },
   'dry-lab': {
     image: floralModelDecisionBoardArt,
@@ -2034,32 +2031,32 @@ const pageMedia = {
   hardware: {
     image: floralHardwareBlueprintArt,
     imageAlt: 'Illustrated blueprint panel for measurement and support tools.',
-    imageCaption: 'Application-support tools now serve evidence capture and phenotyping.',
+    imageCaption: 'Application-support tools serve evidence capture and phenotyping.',
   },
   'integrated-human-practices': {
     image: floralInterviewWallArt,
     imageAlt: 'Illustrated interview wall connecting stakeholders to the project.',
-    imageCaption: 'Human Practices now asks what kind of melatonin-based preservation product would be useful and acceptable.',
+    imageCaption: 'Human Practices asks what kind of melatonin-based preservation product would be useful and acceptable.',
   },
   safety: {
-    image: floralLabArt,
-    imageAlt: 'Lab-and-flower illustration suggesting controlled biosafety practice.',
+    image: floralBoundedFormatsArt,
+    imageAlt: 'Illustrated bounded-format board suggesting controlled biosafety practice.',
     imageCaption: 'Safety is grounded in confinement, separation of product from live cells, and bounded translation.',
   },
   implementation: {
-    image: floralImplementationJourneyArt,
-    imageAlt: 'Illustrated staged rollout journey from lab work to bounded deployment formats.',
-    imageCaption: 'Implementation now emphasizes staged translation and product-form boundaries.',
+    image: floralBoundedFormatsArt,
+    imageAlt: 'Illustrated bounded-format journey from lab work to deployment contexts.',
+    imageCaption: 'Implementation emphasizes staged translation and product-format boundaries.',
   },
   contribution: {
-    image: floralHeroArt,
-    imageAlt: 'Illustrated banner representing FloraGuard as a synthetic-biology framework.',
+    image: floralBenchToFlowerArt,
+    imageAlt: 'Illustrated bench-to-flower banner representing FloraGuard as a synthetic-biology framework.',
     imageCaption: 'The project contributes a focused build-to-application framework for floriculture.',
   },
   team: {
     image: floralTeamCollageArt,
     imageAlt: 'Illustrated team role collage for the FloraGuard team page.',
-    imageCaption: 'The team structure should mirror the project proof chain from pathway to phenotype.',
+    imageCaption: 'The team structure mirrors the project proof chain from pathway to phenotype.',
   },
   references: {
     image: floralReferenceMapArt,

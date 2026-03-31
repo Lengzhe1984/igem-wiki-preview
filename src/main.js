@@ -331,7 +331,7 @@ document.querySelector('#app').innerHTML = `
       <section class="section-block">
         <div class="section-heading">
           <p class="eyebrow">Reader routes</p>
-          <h2>Different readers should be able to enter the FloraGuard story from different angles</h2>
+          <h2>Different readers can enter the FloraGuard story from different angles</h2>
           <p class="section-copy">
             Many strong team wikis are easy to browse because they quietly offer more than one reading path.
             FloraGuard now does that with one route for the scientific question, one for the build-and-validation
@@ -361,7 +361,7 @@ document.querySelector('#app').innerHTML = `
       <section class="section-block">
         <div class="section-heading">
           <p class="eyebrow">Visual direction</p>
-          <h2>Flowers, route chemistry, and analytical proof should all be visible in the interface</h2>
+          <h2>Flowers, route chemistry, and analytical proof all stay visible in the interface</h2>
         </div>
         <div class="showcase-grid">
           ${showcaseMarkup}
