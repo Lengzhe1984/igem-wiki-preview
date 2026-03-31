@@ -1,0 +1,67 @@
+<svg width="1200" height="900" viewBox="0 0 1200 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="108" y1="74" x2="1062" y2="842" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F9F6EE"/>
+      <stop offset="1" stop-color="#E4ECE6"/>
+    </linearGradient>
+    <linearGradient id="panel" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#FFFDF7"/>
+      <stop offset="1" stop-color="#EEF2E9"/>
+    </linearGradient>
+    <linearGradient id="reactor" x1="620" y1="228" x2="620" y2="670" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#E9F3EF"/>
+      <stop offset="1" stop-color="#CEE0D7"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="900" rx="48" fill="url(#bg)"/>
+  <circle cx="174" cy="136" r="94" fill="#E0ECE6"/>
+  <circle cx="1048" cy="162" r="124" fill="#E7DDD6"/>
+  <circle cx="1010" cy="760" r="156" fill="#DCE9E1"/>
+  <rect x="76" y="68" width="1048" height="764" rx="40" fill="#FCFAF3" stroke="#D6DFD7" stroke-width="2"/>
+  <text x="122" y="142" fill="#2F7E82" font-family="Arial, sans-serif" font-size="24" font-weight="700">Bench-to-flower logic</text>
+  <text x="122" y="214" fill="#223128" font-family="Arial, sans-serif" font-size="58" font-weight="700">Engineer one route.</text>
+  <text x="122" y="278" fill="#223128" font-family="Arial, sans-serif" font-size="58" font-weight="700">Verify one molecule.</text>
+  <text x="122" y="342" fill="#223128" font-family="Arial, sans-serif" font-size="58" font-weight="700">Test one floral outcome.</text>
+  <rect x="122" y="396" width="280" height="188" rx="28" fill="url(#panel)" stroke="#D9E1DA" stroke-width="2"/>
+  <text x="154" y="444" fill="#6A425D" font-family="Arial, sans-serif" font-size="24" font-weight="700">Chassis + pathway</text>
+  <rect x="154" y="476" width="216" height="14" rx="7" fill="#2F6B59"/>
+  <rect x="154" y="510" width="180" height="14" rx="7" fill="#2F7E82"/>
+  <rect x="154" y="544" width="144" height="14" rx="7" fill="#6F688B"/>
+  <circle cx="366" cy="526" r="18" fill="#C9B1C2"/>
+  <text x="152" y="632" fill="#5E6D64" font-family="Arial, sans-serif" font-size="23">Build a tractable melatonin route in E. coli.</text>
+  <rect x="122" y="616" width="280" height="152" rx="28" fill="url(#panel)" stroke="#D9E1DA" stroke-width="2"/>
+  <text x="154" y="664" fill="#A97B38" font-family="Arial, sans-serif" font-size="24" font-weight="700">Evidence gate</text>
+  <path d="M154 708H368" stroke="#D6DED6" stroke-width="2"/>
+  <path d="M154 734C188 692 220 678 256 680C286 682 320 698 364 742" stroke="#2F7E82" stroke-width="8" stroke-linecap="round"/>
+  <path d="M154 734C194 722 230 728 270 746C304 760 336 756 368 714" stroke="#6A425D" stroke-width="8" stroke-linecap="round"/>
+  <text x="152" y="764" fill="#5E6D64" font-family="Arial, sans-serif" font-size="21">Keep route logic, chemistry, and phenotype visible together.</text>
+  <rect x="466" y="208" width="310" height="444" rx="40" fill="url(#reactor)" stroke="#BFD1C7" stroke-width="3"/>
+  <rect x="532" y="176" width="176" height="66" rx="22" fill="#FCFAF3" stroke="#D0DAD1" stroke-width="2"/>
+  <text x="563" y="218" fill="#2F6B59" font-family="Arial, sans-serif" font-size="26" font-weight="700">Fermentation</text>
+  <path d="M560 258H682L706 612C708 636 690 656 666 656H576C552 656 534 636 536 612L560 258Z" fill="#F7FBF8" stroke="#2F6B59" stroke-width="4"/>
+  <path d="M582 334C606 350 630 356 658 354C678 352 696 344 704 336" stroke="#2F7E82" stroke-width="6" stroke-linecap="round"/>
+  <path d="M576 410C608 430 646 430 686 408" stroke="#C98B73" stroke-width="6" stroke-linecap="round"/>
+  <path d="M590 470C620 482 646 482 678 468" stroke="#6A425D" stroke-width="6" stroke-linecap="round"/>
+  <circle cx="620" cy="552" r="76" fill="#D8E7DF" stroke="#2F7E82" stroke-width="4"/>
+  <circle cx="620" cy="552" r="26" fill="#A97B38"/>
+  <path d="M450 472H118" stroke="#2F7E82" stroke-width="4" stroke-linecap="round" stroke-dasharray="10 12"/>
+  <path d="M782 472H1092" stroke="#2F7E82" stroke-width="4" stroke-linecap="round" stroke-dasharray="10 12"/>
+  <path d="M428 456L450 472L428 488" stroke="#2F7E82" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M1070 456L1092 472L1070 488" stroke="#2F7E82" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="826" y="396" width="242" height="196" rx="28" fill="url(#panel)" stroke="#D9E1DA" stroke-width="2"/>
+  <text x="858" y="444" fill="#2F7E82" font-family="Arial, sans-serif" font-size="24" font-weight="700">Flower validation</text>
+  <path d="M900 540C880 502 846 490 820 488C826 518 848 540 876 548" fill="#C9B1C2"/>
+  <path d="M906 538C930 504 962 492 992 494C986 522 964 544 934 550" fill="#6A425D"/>
+  <path d="M894 578C862 576 838 592 826 618C858 626 886 620 902 604" fill="#E4C2C1"/>
+  <path d="M922 578C954 576 978 592 990 618C958 626 930 620 914 604" fill="#D18C69"/>
+  <path d="M906 552V640" stroke="#2F6B59" stroke-width="6" stroke-linecap="round"/>
+  <rect x="968" y="512" width="66" height="18" rx="9" fill="#2F7E82"/>
+  <rect x="968" y="544" width="46" height="18" rx="9" fill="#A97B38"/>
+  <rect x="968" y="576" width="84" height="18" rx="9" fill="#6A425D"/>
+  <rect x="824" y="620" width="244" height="148" rx="28" fill="url(#panel)" stroke="#D9E1DA" stroke-width="2"/>
+  <text x="856" y="668" fill="#6A425D" font-family="Arial, sans-serif" font-size="24" font-weight="700">Bounded translation</text>
+  <rect x="856" y="700" width="62" height="26" rx="13" fill="#DCE8E1"/>
+  <rect x="934" y="700" width="62" height="26" rx="13" fill="#F0E5E8"/>
+  <rect x="1012" y="700" width="62" height="26" rx="13" fill="#EEE7D9"/>
+  <text x="856" y="748" fill="#5E6D64" font-family="Arial, sans-serif" font-size="21">Keep live engineering in the lab and move only bounded formats forward.</text>
+</svg>

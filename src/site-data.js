@@ -1,7 +1,7 @@
 import floralHeroArt from './assets/floraguard-hero.svg'
+import floralBenchToFlowerArt from './assets/floraguard-bench-to-flower.svg'
 import floralStressArt from './assets/floral-stress.svg'
 import floralLabArt from './assets/floral-lab.svg'
-import smartVaseArt from './assets/floral-smart-vase.svg'
 import floralNotesArt from './assets/floral-notes.svg'
 import floralSupplyChainArt from './assets/floral-supply-chain.svg'
 import floralWetLabArt from './assets/floral-wet-lab.svg'
@@ -12,6 +12,9 @@ import floralReferenceMapArt from './assets/floral-reference-map.svg'
 import floralPhenotypeBoardArt from './assets/floral-phenotype-board.svg'
 import floralAssayDashboardArt from './assets/floral-assay-dashboard.svg'
 import floralHardwareBlueprintArt from './assets/floral-hardware-blueprint.svg'
+import floralPathwayBoardArt from './assets/floral-pathway-board.svg'
+import floralFermentationBoardArt from './assets/floral-fermentation-board.svg'
+import floralBoundedFormatsArt from './assets/floral-bounded-formats.svg'
 import floralTeamNetworkArt from './assets/floral-team-network.svg'
 import floralModelDecisionBoardArt from './assets/floral-model-decision-board.svg'
 import floralImplementationJourneyArt from './assets/floral-implementation-journey.svg'
@@ -32,11 +35,11 @@ const siteMeta = {
 
 const homePage = {
   eyebrow: 'Synthetic biology for floral post-harvest care',
-  heroImage: floralHeroArt,
+  heroImage: floralBenchToFlowerArt,
   heroAlt:
-    'Stylized bouquet and floral system illustration used as the FloraGuard project banner.',
+    'Illustrated bench-to-flower workflow showing route engineering, fermentation, and cut-flower validation.',
   heroCaption:
-    'FloraGuard reframes cut-flower preservation as a bench-to-application workflow: produce, quantify, validate, and translate.',
+    'FloraGuard reframes cut-flower preservation as one scientific chain: build the route, verify the molecule, test the flower, then translate bounded formats.',
   lead: [
     'Cut flowers lose value quickly after harvest because dehydration, oxidative stress, hormone imbalance, and handling variability all accelerate senescence. The current floral industry mostly responds with static preservatives and cold-chain management, but those tools do not explain or control the biology behind decline.',
     'FloraGuard focuses on one biologically meaningful molecule, melatonin, and asks whether engineered Escherichia coli can become a controllable production chassis for floral preservation.',
@@ -120,11 +123,11 @@ const homePage = {
         'Even with a new project core, the floral side of the story still matters: dehydration, ROS accumulation, and post-harvest handling define why a molecule like melatonin is worth engineering around.',
     },
     {
-      image: floralAssayDashboardArt,
-      alt: 'Illustrated assay dashboard linking molecule production to measured signals.',
-      title: 'Analytical proof becomes part of the narrative',
+      image: floralFermentationBoardArt,
+      alt: 'Illustrated fermentation and validation board linking construct design to flower readout.',
+      title: 'Production proof now looks like an experimental chain rather than an isolated assay',
       detail:
-        'This version of FloraGuard is not only about applying melatonin. It is about proving that the chassis can make it, and that the made product is worth validating on flowers.',
+        'This version of FloraGuard is not only about applying melatonin. It is about showing how route construction, fermentation output, and flower validation sit next to one another on the same page.',
     },
   ],
   atlasCards: [
@@ -137,15 +140,15 @@ const homePage = {
         'The homepage now starts from floral logistics and senescence pressure so the need for preservation stays concrete from the first screen onward.',
     },
     {
-      image: floralModelDecisionBoardArt,
+      image: floralPathwayBoardArt,
       alt: 'Illustrated board linking pathway logic, analytical output, and decision windows.',
       label: 'Science',
-      title: 'Pathway design and quantification are now the center of the project',
+      title: 'Pathway design and quantification now sit visibly at the center of the project',
       detail:
         'Readers should understand that FloraGuard is first a metabolic-engineering project and only then a preservation application project.',
     },
     {
-      image: floralImplementationJourneyArt,
+      image: floralBoundedFormatsArt,
       alt: 'Illustrated staged rollout from lab work to bounded application formats.',
       label: 'Translation',
       title: 'Implementation is staged around bounded outputs',
@@ -201,7 +204,7 @@ const homePage = {
   evidencePreview: [
     {
       label: 'Production proof',
-      title: 'Construct maps, titer curves, and pathway bottlenecks should anchor the build story',
+      title: 'Construct maps, titer curves, and bottleneck evidence anchor the build story',
       detail:
         'The new wet-lab core needs figures that show how the chassis was engineered and what actually improved output.',
     },
@@ -560,10 +563,10 @@ const wikiGroups = [
             tone: 'design',
             eyebrow: 'System architecture',
             title: 'One coherent chain links chassis engineering, product verification, and flower outcome',
-            image: floralHeroArt,
-            alt: 'Illustrated floral systems banner used as a design overview image.',
+            image: floralPathwayBoardArt,
+            alt: 'Illustrated pathway board connecting melatonin chemistry, optimization levers, and evidence gates.',
             caption:
-              'The design is now centered on production, quantification, and application rather than on a general smart-monitoring platform.',
+              'The design page now makes the route, the optimization layer, and the evidence gate legible on one board.',
             lede:
               'The design links each module to the next. In FloraGuard, the order is chassis design, pathway expression, product verification, and post-harvest validation.',
             points: [
@@ -600,6 +603,37 @@ const wikiGroups = [
             ],
           },
           {
+            type: 'art-card-grid',
+            eyebrow: 'Design atlas',
+            title: 'Three design visuals make the scientific chain easier to read before the final figures arrive',
+            items: [
+              {
+                image: floralPathwayBoardArt,
+                alt: 'Illustrated pathway board with melatonin route stages.',
+                label: 'Route',
+                title: 'The chemistry should be visible enough that readers can trace where melatonin comes from',
+                detail:
+                  'A design page is stronger when the route from tryptophan-derived metabolism to melatonin is visible before readers reach the construct details.',
+              },
+              {
+                image: floralFermentationBoardArt,
+                alt: 'Illustrated fermentation and validation board.',
+                label: 'Evidence',
+                title: 'The route only matters if the assay layer is already built into the design',
+                detail:
+                  'FloraGuard now treats quantification as a design requirement instead of something added after the constructs are built.',
+              },
+              {
+                image: floralBoundedFormatsArt,
+                alt: 'Illustrated bounded product formats and translation boundaries.',
+                label: 'Boundary',
+                title: 'Implementation constraints should already shape what counts as a good design',
+                detail:
+                  'The design is stronger when it anticipates bounded outputs and does not imply that live engineered cells are the deployed product.',
+              },
+            ],
+          },
+          {
             type: 'journey-strip',
             eyebrow: 'Bench-to-flower route',
             title: 'The FloraGuard design is easiest to grasp when it reads as one ordered sequence',
@@ -630,6 +664,9 @@ const wikiGroups = [
             blocks: [
               paragraph(
                 'The project begins with engineered E. coli as a microbial cell factory. The pathway design centers on converting a tryptophan-derived metabolic stream toward melatonin through a set of decarboxylation, hydroxylation, acetylation, and methylation reactions.',
+              ),
+              paragraph(
+                'A practical route can therefore be described as a candidate enzyme sequence from tryptophan-derived intermediates to serotonin, then to N-acetylserotonin, and finally to melatonin. The exact enzyme set may vary, but the route has to stay readable enough that each later optimization step makes sense.',
               ),
               paragraph(
                 'The exact enzyme combination can vary with route choice, but the design principle stays the same: make melatonin production explicit, modular, and optimizable.',
@@ -840,10 +877,10 @@ const wikiGroups = [
             tone: 'wet',
             eyebrow: 'Figure board',
             title: 'The wet lab follows one chain from engineered cells to healthier flowers',
-            image: floralWetLabArt,
-            alt: 'Illustrated wet-lab composition with assay motifs and flower scoring.',
+            image: floralFermentationBoardArt,
+            alt: 'Illustrated wet-lab chain with route build, fermentation check, and flower readout.',
             caption:
-              'A complete figure should show construct logic, analytical output, and floral phenotype on the same page.',
+              'A strong wet-lab spread now reads left to right: route build, production check, and flower outcome.',
             lede:
               'This page is about making one molecule, measuring it well, and deciding whether that molecule changes the flower.',
             points: [
@@ -880,8 +917,8 @@ const wikiGroups = [
             title: 'The strongest experiment pages show constructs, chemistry, and phenotype in parallel',
             items: [
               {
-                image: floralAssayDashboardArt,
-                alt: 'Illustrated assay dashboard connecting signals to flower outcome.',
+                image: floralFermentationBoardArt,
+                alt: 'Illustrated fermentation board connecting build decisions to assay outputs.',
                 label: 'Analytics',
                 title: 'Production data appears beside pathway decisions',
                 detail:
@@ -913,6 +950,9 @@ const wikiGroups = [
             blocks: [
               paragraph(
                 'The first wet-lab objective is to establish a functional melatonin route in E. coli. This requires choosing a pathway architecture, assembling the necessary genes, and confirming that the chassis can move flux toward melatonin rather than stalling at upstream intermediates.',
+              ),
+              paragraph(
+                'In practice, that means treating the route as a sequence with named intermediates. The team should be able to explain which step converts the tryptophan-derived precursor stream into serotonin, which step generates N-acetylserotonin, and which step closes the route to melatonin.',
               ),
               table(
                 ['Design question', 'Why it matters', 'Representative output'],
@@ -964,7 +1004,7 @@ const wikiGroups = [
             title: 'How wet-lab measurements connect mechanism to outcome',
             blocks: [
               table(
-                ['Readout', 'Why it matters', 'What it should explain'],
+                ['Readout', 'Why it matters', 'What it explains'],
                 [
                   ['Melatonin titer', 'proves the chassis is functioning', 'whether route engineering succeeded'],
                   ['Intermediate profile', 'reveals where flux stalls', 'which step should be optimized next'],
@@ -1479,11 +1519,11 @@ const wikiGroups = [
             tone: 'implementation',
             eyebrow: 'Deployment picture',
             title: 'Implementation is now about bounded product formats, not about pushing a device to market too early',
-            image: floralImplementationJourneyArt,
+            image: floralBoundedFormatsArt,
             alt:
-              'Illustrated staged rollout from lab validation to florist pilot and later simplified use.',
+              'Illustrated translation board showing lab confinement, bounded outputs, and user-facing formats.',
             caption:
-              'The current FloraGuard translation logic is staged, conservative, and product-format-aware.',
+              'The current FloraGuard translation logic is staged, conservative, and explicitly separated from live-cell deployment.',
             lede:
               'This page now answers a more realistic question: if melatonin production and floral benefit are demonstrated, what forms of translation would still make operational and biosafety sense?',
             points: [
@@ -1499,11 +1539,11 @@ const wikiGroups = [
             items: [
               {
                 title: 'Florist-facing pilot',
-                detail: 'A bounded treatment format, supported by clear instructions and phenotype-based evaluation, is a realistic early translation step.',
+                detail: 'A bounded treatment format, such as a prepared concentrate or protocol-bound stock, is a realistic early translation step when paired with clear instructions and phenotype-based evaluation.',
               },
               {
                 title: 'Consumer-facing future use',
-                detail: 'A later household version would need even simpler delivery, lower risk, and clear confidence that the effect is meaningful across everyday conditions.',
+                detail: 'A later household version would need even simpler delivery, lower risk, and a format that does not ask users to interpret laboratory concepts or open-ended dosing logic.',
               },
             ],
           },
@@ -1534,13 +1574,13 @@ const wikiGroups = [
               {
                 tag: 'Research',
                 title: 'Laboratory production and validation',
-                detail: 'The lab version prioritizes route construction, analytical measurement, and tightly controlled flower testing.',
+                detail: 'The lab version prioritizes route construction, analytical measurement, and tightly controlled flower testing before any user-facing claims are made.',
                 points: ['High measurement density', 'construct revision', 'evidence generation'],
               },
               {
                 tag: 'Florist',
                 title: 'Professional pilot format',
-                detail: 'An early pilot should prioritize simple handling, visible value, and minimal extra workflow burden for professional users.',
+                detail: 'An early pilot should prioritize simple handling, visible value, and minimal extra workflow burden for professional users, ideally in a prepared or pre-measured treatment format.',
                 points: ['bounded treatment', 'clear instructions', 'display-life benefit'],
               },
               {

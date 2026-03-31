@@ -361,7 +361,7 @@ document.querySelector('#app').innerHTML = `
       <section class="section-block">
         <div class="section-heading">
           <p class="eyebrow">Visual direction</p>
-          <h2>Flowers, stress, and analytical proof should all be visible in the interface</h2>
+          <h2>Flowers, route chemistry, and analytical proof should all be visible in the interface</h2>
         </div>
         <div class="showcase-grid">
           ${showcaseMarkup}
@@ -405,13 +405,13 @@ document.querySelector('#app').innerHTML = `
       <section class="section-block split-block">
         <div>
           <div class="section-heading">
-            <p class="eyebrow">Evidence focus</p>
-            <h2>The next round of work is about strengthening proof, not changing the project spine</h2>
+            <p class="eyebrow">Evidence package</p>
+            <h2>The strongest final wiki will deepen these proof layers without changing the project spine</h2>
           </div>
           <p class="section-copy">
-            From here, the biggest gains will come from adding construct diagrams, quantitative
-            production results, flower phenotype figures, and stakeholder evidence without changing the overall page
-            architecture again.
+            The remaining highest-value additions are clear route diagrams, quantitative production
+            results, flower phenotype figures, and stakeholder evidence. Those materials will make the
+            existing structure feel less like a scaffold and more like a finished scientific story.
           </p>
         </div>
         <ul class="check-grid">

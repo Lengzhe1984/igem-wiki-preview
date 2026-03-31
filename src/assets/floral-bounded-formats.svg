@@ -1,0 +1,44 @@
+<svg width="1200" height="880" viewBox="0 0 1200 880" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="116" y1="74" x2="1082" y2="806" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F9F6EE"/>
+      <stop offset="1" stop-color="#E6ECE5"/>
+    </linearGradient>
+    <linearGradient id="card" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#FFFDF7"/>
+      <stop offset="1" stop-color="#EEF2E9"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="880" rx="56" fill="url(#bg)"/>
+  <rect x="72" y="62" width="1056" height="756" rx="40" fill="#FCFAF3" stroke="#D5DED6" stroke-width="2"/>
+  <text x="118" y="142" fill="#2F7E82" font-family="Arial, sans-serif" font-size="24" font-weight="700">Translation boundary</text>
+  <text x="118" y="214" fill="#223128" font-family="Arial, sans-serif" font-size="56" font-weight="700">Move the molecule forward, not the engineered cell.</text>
+  <rect x="118" y="292" width="288" height="352" rx="32" fill="url(#card)" stroke="#D8E0D9" stroke-width="2"/>
+  <text x="152" y="340" fill="#6A425D" font-family="Arial, sans-serif" font-size="24" font-weight="700">Inside the lab</text>
+  <rect x="154" y="378" width="216" height="170" rx="24" fill="#F2F6F2" stroke="#D7E0D8" stroke-width="2"/>
+  <rect x="198" y="414" width="128" height="22" rx="11" fill="#2F6B59"/>
+  <rect x="198" y="452" width="92" height="22" rx="11" fill="#2F7E82"/>
+  <rect x="198" y="490" width="144" height="22" rx="11" fill="#6F688B"/>
+  <text x="152" y="592" fill="#5E6D64" font-family="Arial, sans-serif" font-size="22">Route engineering, fermentation, and strain revision stay under containment.</text>
+  <rect x="456" y="252" width="288" height="392" rx="32" fill="url(#card)" stroke="#D8E0D9" stroke-width="2"/>
+  <text x="490" y="300" fill="#A97B38" font-family="Arial, sans-serif" font-size="24" font-weight="700">Bounded outputs</text>
+  <rect x="490" y="342" width="220" height="70" rx="22" fill="#EEF4EF" stroke="#D8E0D9" stroke-width="2"/>
+  <text x="522" y="386" fill="#223128" font-family="Arial, sans-serif" font-size="24" font-weight="700">Purified stock</text>
+  <rect x="490" y="438" width="220" height="70" rx="22" fill="#F0EBDE" stroke="#DED8C7" stroke-width="2"/>
+  <text x="518" y="482" fill="#223128" font-family="Arial, sans-serif" font-size="24" font-weight="700">Prepared concentrate</text>
+  <rect x="490" y="534" width="220" height="70" rx="22" fill="#EFE5E9" stroke="#DDD4DA" stroke-width="2"/>
+  <text x="526" y="578" fill="#223128" font-family="Arial, sans-serif" font-size="24" font-weight="700">Protocol-bound pilot</text>
+  <rect x="794" y="292" width="288" height="352" rx="32" fill="url(#card)" stroke="#D8E0D9" stroke-width="2"/>
+  <text x="828" y="340" fill="#2F6B59" font-family="Arial, sans-serif" font-size="24" font-weight="700">Use contexts</text>
+  <rect x="830" y="380" width="216" height="84" rx="24" fill="#F1F6F2" stroke="#D7E0D8" stroke-width="2"/>
+  <text x="862" y="430" fill="#223128" font-family="Arial, sans-serif" font-size="24" font-weight="700">Florist-facing pilot</text>
+  <rect x="830" y="490" width="216" height="84" rx="24" fill="#F3ECE1" stroke="#DED8C7" stroke-width="2"/>
+  <text x="866" y="540" fill="#223128" font-family="Arial, sans-serif" font-size="24" font-weight="700">Later consumer use</text>
+  <text x="828" y="610" fill="#5E6D64" font-family="Arial, sans-serif" font-size="22">Translation becomes more plausible when each format has a clear boundary and operator.</text>
+  <path d="M406 468H456" stroke="#2F7E82" stroke-width="6" stroke-linecap="round"/>
+  <path d="M744 468H794" stroke="#2F7E82" stroke-width="6" stroke-linecap="round"/>
+  <path d="M430 450L456 468L430 486" stroke="#2F7E82" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M768 450L794 468L768 486" stroke="#2F7E82" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="118" y="708" width="964" height="72" rx="28" fill="#EFF4EF" stroke="#D8E0D9" stroke-width="2"/>
+  <text x="152" y="754" fill="#5E6D64" font-family="Arial, sans-serif" font-size="24">The implementation story is strongest when the molecule, the format, and the user context are separated cleanly from live engineering.</text>
+</svg>

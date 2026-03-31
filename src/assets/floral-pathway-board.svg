@@ -1,0 +1,59 @@
+<svg width="1200" height="880" viewBox="0 0 1200 880" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="120" y1="82" x2="1068" y2="804" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F9F6EE"/>
+      <stop offset="1" stop-color="#E5ECE6"/>
+    </linearGradient>
+    <linearGradient id="card" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#FFFDF7"/>
+      <stop offset="1" stop-color="#EEF2EA"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="880" rx="56" fill="url(#bg)"/>
+  <rect x="72" y="62" width="1056" height="756" rx="40" fill="#FCFAF3" stroke="#D5DED6" stroke-width="2"/>
+  <text x="118" y="142" fill="#2F7E82" font-family="Arial, sans-serif" font-size="24" font-weight="700">Pathway architecture</text>
+  <text x="118" y="214" fill="#223128" font-family="Arial, sans-serif" font-size="56" font-weight="700">Make the route legible before the construct is optimized.</text>
+  <rect x="118" y="286" width="204" height="196" rx="30" fill="url(#card)" stroke="#D8E0D9" stroke-width="2"/>
+  <rect x="360" y="286" width="204" height="196" rx="30" fill="url(#card)" stroke="#D8E0D9" stroke-width="2"/>
+  <rect x="602" y="286" width="204" height="196" rx="30" fill="url(#card)" stroke="#D8E0D9" stroke-width="2"/>
+  <rect x="844" y="286" width="204" height="196" rx="30" fill="url(#card)" stroke="#D8E0D9" stroke-width="2"/>
+  <text x="152" y="338" fill="#6A425D" font-family="Arial, sans-serif" font-size="24" font-weight="700">Tryptophan</text>
+  <circle cx="224" cy="398" r="42" fill="#E8D9E1"/>
+  <circle cx="224" cy="398" r="14" fill="#6A425D"/>
+  <text x="392" y="338" fill="#6A425D" font-family="Arial, sans-serif" font-size="24" font-weight="700">Serotonin</text>
+  <circle cx="466" cy="398" r="42" fill="#DCE9E1"/>
+  <circle cx="466" cy="398" r="14" fill="#2F6B59"/>
+  <text x="618" y="338" fill="#6A425D" font-family="Arial, sans-serif" font-size="22" font-weight="700">N-acetylserotonin</text>
+  <circle cx="708" cy="398" r="42" fill="#E6EEF0"/>
+  <circle cx="708" cy="398" r="14" fill="#2F7E82"/>
+  <text x="892" y="338" fill="#6A425D" font-family="Arial, sans-serif" font-size="24" font-weight="700">Melatonin</text>
+  <circle cx="950" cy="398" r="42" fill="#EEE4D7"/>
+  <circle cx="950" cy="398" r="14" fill="#A97B38"/>
+  <path d="M322 398H360" stroke="#2F7E82" stroke-width="6" stroke-linecap="round"/>
+  <path d="M564 398H602" stroke="#2F7E82" stroke-width="6" stroke-linecap="round"/>
+  <path d="M806 398H844" stroke="#2F7E82" stroke-width="6" stroke-linecap="round"/>
+  <path d="M344 382L360 398L344 414" stroke="#2F7E82" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M586 382L602 398L586 414" stroke="#2F7E82" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M828 382L844 398L828 414" stroke="#2F7E82" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="118" y="540" width="308" height="214" rx="30" fill="url(#card)" stroke="#D8E0D9" stroke-width="2"/>
+  <text x="152" y="590" fill="#2F6B59" font-family="Arial, sans-serif" font-size="24" font-weight="700">Candidate enzyme layer</text>
+  <rect x="152" y="626" width="110" height="20" rx="10" fill="#2F6B59"/>
+  <text x="278" y="642" fill="#5E6D64" font-family="Arial, sans-serif" font-size="22">TDC or AADC logic</text>
+  <rect x="152" y="666" width="110" height="20" rx="10" fill="#2F7E82"/>
+  <text x="278" y="682" fill="#5E6D64" font-family="Arial, sans-serif" font-size="22">TPH-like or hydroxylase step</text>
+  <rect x="152" y="706" width="110" height="20" rx="10" fill="#6F688B"/>
+  <text x="278" y="722" fill="#5E6D64" font-family="Arial, sans-serif" font-size="22">SNAT plus ASMT or COMT finish</text>
+  <rect x="448" y="540" width="308" height="214" rx="30" fill="url(#card)" stroke="#D8E0D9" stroke-width="2"/>
+  <text x="482" y="590" fill="#A97B38" font-family="Arial, sans-serif" font-size="24" font-weight="700">Optimization levers</text>
+  <rect x="482" y="626" width="240" height="18" rx="9" fill="#E1E8DF"/>
+  <rect x="482" y="662" width="194" height="18" rx="9" fill="#D9E8E6"/>
+  <rect x="482" y="698" width="218" height="18" rx="9" fill="#E6DEE5"/>
+  <text x="482" y="746" fill="#5E6D64" font-family="Arial, sans-serif" font-size="22">Balance expression, precursor flow, and route support before scaling flower assays.</text>
+  <rect x="778" y="540" width="270" height="214" rx="30" fill="url(#card)" stroke="#D8E0D9" stroke-width="2"/>
+  <text x="812" y="590" fill="#6A425D" font-family="Arial, sans-serif" font-size="24" font-weight="700">Evidence gate</text>
+  <path d="M812 726H1010" stroke="#D4DDD5" stroke-width="2"/>
+  <path d="M812 726V620" stroke="#D4DDD5" stroke-width="2"/>
+  <path d="M842 704C870 664 890 650 920 652C944 654 970 674 1008 712" stroke="#2F7E82" stroke-width="8" stroke-linecap="round"/>
+  <path d="M842 690C870 690 900 706 932 702C958 698 982 680 1008 644" stroke="#A97B38" stroke-width="8" stroke-linecap="round"/>
+  <text x="812" y="616" fill="#5E6D64" font-family="Arial, sans-serif" font-size="22">Titer, intermediate profile, and flower response must all point in the same direction.</text>
+</svg>

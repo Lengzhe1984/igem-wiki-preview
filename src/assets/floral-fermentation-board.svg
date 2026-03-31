@@ -1,0 +1,50 @@
+<svg width="1200" height="880" viewBox="0 0 1200 880" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="112" y1="70" x2="1088" y2="812" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F8F6EE"/>
+      <stop offset="1" stop-color="#E4ECE7"/>
+    </linearGradient>
+    <linearGradient id="card" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#FFFDF7"/>
+      <stop offset="1" stop-color="#EEF2E9"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="880" rx="56" fill="url(#bg)"/>
+  <rect x="72" y="62" width="1056" height="756" rx="40" fill="#FCFAF3" stroke="#D5DED6" stroke-width="2"/>
+  <text x="118" y="142" fill="#2F7E82" font-family="Arial, sans-serif" font-size="24" font-weight="700">Wet-lab chain</text>
+  <text x="118" y="214" fill="#223128" font-family="Arial, sans-serif" font-size="56" font-weight="700">Build the route, read the chemistry, then read the flower.</text>
+  <rect x="118" y="288" width="294" height="420" rx="32" fill="url(#card)" stroke="#D8E0D9" stroke-width="2"/>
+  <text x="152" y="338" fill="#6A425D" font-family="Arial, sans-serif" font-size="24" font-weight="700">1. Route build</text>
+  <rect x="152" y="374" width="228" height="20" rx="10" fill="#2F6B59"/>
+  <rect x="152" y="412" width="196" height="20" rx="10" fill="#2F7E82"/>
+  <rect x="152" y="450" width="170" height="20" rx="10" fill="#6F688B"/>
+  <rect x="152" y="488" width="212" height="20" rx="10" fill="#A97B38"/>
+  <rect x="152" y="544" width="228" height="108" rx="22" fill="#F5F7F1" stroke="#D9E1DA" stroke-width="2"/>
+  <text x="176" y="592" fill="#5E6D64" font-family="Arial, sans-serif" font-size="22">Construct maps, strain IDs, and culture conditions stay visible beside the data.</text>
+  <rect x="452" y="248" width="296" height="460" rx="32" fill="url(#card)" stroke="#D8E0D9" stroke-width="2"/>
+  <text x="486" y="298" fill="#2F6B59" font-family="Arial, sans-serif" font-size="24" font-weight="700">2. Production check</text>
+  <path d="M540 352H660L682 624C684 646 668 664 646 664H554C532 664 516 646 518 624L540 352Z" fill="#F8FBF8" stroke="#2F6B59" stroke-width="4"/>
+  <path d="M558 430C584 446 616 448 648 434C664 426 674 416 680 408" stroke="#2F7E82" stroke-width="6" stroke-linecap="round"/>
+  <path d="M560 498C592 512 624 512 656 494" stroke="#C98B73" stroke-width="6" stroke-linecap="round"/>
+  <circle cx="600" cy="584" r="70" fill="#D9E7E0" stroke="#2F7E82" stroke-width="4"/>
+  <circle cx="600" cy="584" r="22" fill="#A97B38"/>
+  <rect x="524" y="322" width="152" height="24" rx="12" fill="#EFF4EF"/>
+  <text x="544" y="340" fill="#5E6D64" font-family="Arial, sans-serif" font-size="20">fermentation</text>
+  <rect x="788" y="288" width="294" height="420" rx="32" fill="url(#card)" stroke="#D8E0D9" stroke-width="2"/>
+  <text x="822" y="338" fill="#A97B38" font-family="Arial, sans-serif" font-size="24" font-weight="700">3. Flower readout</text>
+  <rect x="822" y="382" width="226" height="118" rx="24" fill="#F8FBF8" stroke="#D8E0D9" stroke-width="2"/>
+  <path d="M874 470C852 432 816 420 790 418C796 448 820 470 848 478" fill="#C9B1C2"/>
+  <path d="M882 468C906 432 940 420 968 422C962 450 940 472 908 480" fill="#6A425D"/>
+  <path d="M868 512C834 510 808 530 796 556C830 566 858 560 876 540" fill="#E4C2C1"/>
+  <path d="M900 512C934 510 960 530 972 556C938 566 910 560 892 540" fill="#D18C69"/>
+  <path d="M884 486V572" stroke="#2F6B59" stroke-width="6" stroke-linecap="round"/>
+  <rect x="822" y="536" width="226" height="18" rx="9" fill="#E1E8DF"/>
+  <rect x="822" y="570" width="194" height="18" rx="9" fill="#D9E8E6"/>
+  <rect x="822" y="604" width="214" height="18" rx="9" fill="#EEE4D7"/>
+  <path d="M412 496H452" stroke="#2F7E82" stroke-width="6" stroke-linecap="round"/>
+  <path d="M748 496H788" stroke="#2F7E82" stroke-width="6" stroke-linecap="round"/>
+  <path d="M432 478L452 496L432 514" stroke="#2F7E82" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M768 478L788 496L768 514" stroke="#2F7E82" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+  <rect x="118" y="738" width="964" height="44" rx="22" fill="#EFF4EF" stroke="#D8E0D9" stroke-width="2"/>
+  <text x="150" y="767" fill="#5E6D64" font-family="Arial, sans-serif" font-size="22">The most convincing wet-lab page makes constructs, analytics, and phenotype read like one experimental sentence.</text>
+</svg>
