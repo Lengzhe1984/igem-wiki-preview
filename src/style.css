@@ -1003,6 +1003,13 @@ h3 {
   justify-content: flex-end;
   min-height: 380px;
   padding: 28px;
+  background: linear-gradient(
+    90deg,
+    rgba(22, 35, 29, 0.76) 0%,
+    rgba(22, 35, 29, 0.56) 32%,
+    rgba(22, 35, 29, 0.18) 62%,
+    rgba(22, 35, 29, 0) 100%
+  );
 }
 
 .page-banner .eyebrow,
@@ -1018,9 +1025,10 @@ h3 {
 }
 
 .page-banner h1 {
-  max-width: 16ch;
-  font-size: clamp(2.15rem, 4vw, 3.55rem);
-  line-height: 1;
+  max-width: 18ch;
+  font-size: clamp(1.95rem, 3.4vw, 3.15rem);
+  line-height: 0.98;
+  text-wrap: balance;
 }
 
 .page-banner .lede {
@@ -1858,7 +1866,8 @@ body[data-page="references"] .story-summary {
   }
 
   .page-banner h1 {
-    font-size: clamp(2.2rem, 12vw, 3.2rem);
+    max-width: 15ch;
+    font-size: clamp(2rem, 10vw, 2.9rem);
   }
 
   .nav-home,

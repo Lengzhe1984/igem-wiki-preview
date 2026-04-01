@@ -38,14 +38,14 @@ const homePage = {
   heroCaption:
     'From pathway design to flower assays, FloraGuard asks whether microbial melatonin can become a practical preservation strategy.',
   lead: [
-    'Cut flowers lose value quickly after harvest because dehydration, oxidative stress, hormone imbalance, and handling variability all accelerate senescence. The current floral industry mostly responds with static preservatives and cold-chain management, but those tools do not explain or control the biology behind decline.',
-    'FloraGuard focuses on one biologically meaningful molecule, melatonin, and asks whether engineered Escherichia coli can become a controllable production chassis for floral preservation.',
-    'FloraGuard therefore connects three proof layers: microbial melatonin biosynthesis, analytical confirmation of the product, and application validation on cut flowers under post-harvest stress.',
+    'Cut flowers lose value quickly after harvest. Dehydration, oxidative stress, hormone imbalance, and handling variability all push the bouquet toward senescence long before consumers think the flowers are old.',
+    'In practice, preservation still relies on sugar solutions, preservatives, and cold storage. Those approaches help, but they do not tell us much about the biology of decline or how to intervene more precisely.',
+    'We chose melatonin as a single molecular target and built FloraGuard around three linked questions: can engineered Escherichia coli make it, can we verify that production analytically, and does that product help cut flowers last longer?',
   ],
   status: [
-    'The project centers on pathway design, melatonin production, quantification, and flower assays.',
-    'The experimental chain runs from engineered chassis to floral phenotype.',
-    'Safety and implementation focus on purified or otherwise bounded output formats.',
+    'We design and optimize a melatonin pathway in E. coli.',
+    'We verify production before making preservation claims.',
+    'We only discuss downstream use through purified or otherwise bounded outputs.',
   ],
   metrics: [
     {
@@ -61,7 +61,7 @@ const homePage = {
     {
       title: 'Floral waste accumulates fast',
       detail:
-        'Cut flowers can lose market value within days, and a large share of the loss happens before consumers even realize the bouquet is already stressed.',
+        'A bouquet can lose market value in just a few days, and much of that loss happens during transport, storage, and retail display rather than at home.',
     },
     {
       title: 'Current preservation is mostly static',
@@ -71,12 +71,12 @@ const homePage = {
     {
       title: 'Melatonin is promising but supply and format matter',
       detail:
-        'Literature suggests melatonin can buffer oxidative stress and delay senescence, but turning that into a practical floral strategy requires production and validation.',
+        'Melatonin appears repeatedly in the literature as a stress-buffering molecule, but using it well still requires a reliable source, a measurable dose, and a realistic application format.',
     },
     {
       title: 'Translation needs bounded outputs',
       detail:
-        'A useful iGEM project cannot stop at pathway engineering. It also needs to show how the product could be delivered without releasing engineered microbes into the floral chain.',
+        'Pathway engineering is only half the project. We also need to show how any useful output could be delivered without putting engineered microbes into the floral chain.',
     },
   ],
   platformCards: [
@@ -117,14 +117,14 @@ const homePage = {
       alt: 'Illustrated contrast between fresh and stressed flowers.',
       title: 'The floral problem remains the reason this project matters',
       detail:
-        'The floral side still matters: dehydration, ROS accumulation, and post-harvest handling define why a molecule like melatonin is worth engineering around.',
+        'Dehydration, ROS accumulation, and post-harvest handling still define the problem. Without that floral context, the biosynthesis work would have no clear application target.',
     },
     {
       image: floralFermentationBoardArt,
       alt: 'Illustrated fermentation and validation board linking construct design to flower readout.',
       title: 'Production proof connects construct design to flower readout',
       detail:
-        'FloraGuard is not only about applying melatonin. It is about showing how route construction, fermentation output, and flower validation sit next to one another on the same page.',
+        'The point is not simply to apply melatonin. The point is to connect route construction, fermentation output, and flower validation as one experimental chain.',
     },
   ],
   atlasCards: [
@@ -183,9 +183,9 @@ const homePage = {
     eyebrow: 'Project focus',
     title: 'One molecule links the whole FloraGuard project',
     summary:
-      'We are not trying to solve flower preservation with a loose collection of ideas. We are asking whether microbial melatonin production can be built, measured, and tested on cut flowers in one coherent workflow.',
+      'Instead of combining many preservation ideas at once, we built FloraGuard around one molecule and one question: can microbial melatonin production be turned into a measurable preservation strategy for cut flowers?',
     quote:
-      'Our core claim is simple: make melatonin, verify it, and test whether it improves post-harvest flower performance.',
+      'If FloraGuard works, the same melatonin signal should appear in the fermenter, in the assay, and in the flower.',
     image: floralSupplyChainArt,
     alt:
       'Illustrated supply chain art showing cut flowers moving through harvest, transport, and care contexts.',
@@ -193,9 +193,9 @@ const homePage = {
       'FloraGuard links floral waste, microbial production, and application testing in one argument.',
     chips: ['Cut flowers', 'Melatonin', 'E. coli chassis', 'Bounded translation'],
     points: [
-      'Cut-flower loss gives the project a concrete post-harvest problem.',
-      'Microbial melatonin production is the central engineering task.',
-      'Implementation stays within bounded, non-release formats.',
+      'The application problem is cut-flower loss.',
+      'The engineering task is microbial melatonin production.',
+      'Any downstream use stays within bounded, non-release formats.',
     ],
   },
   evidencePreview: [
@@ -203,19 +203,19 @@ const homePage = {
       label: 'Production proof',
       title: 'Construct maps, titers, and bottleneck data establish the build',
       detail:
-        'The new wet-lab core needs figures that show how the chassis was engineered and what actually improved output.',
+        'These figures need to show what we built, what changed across iterations, and which changes actually improved output.',
     },
     {
       label: 'Application proof',
       title: 'Flower images and vase-life data show whether melatonin matters',
       detail:
-        'A preservation project becomes convincing only when readers can see both the cut-flower phenotype and the quantitative outcome.',
+        'Readers need both the visible phenotype and the quantitative result to judge whether the treatment is worth taking seriously.',
     },
     {
       label: 'Translation proof',
       title: 'Safety and implementation define how a bounded product could be used',
       detail:
-        'Future application depends on purified or otherwise controlled outputs, not live environmental release.',
+        'Any future application has to be framed around purified or otherwise controlled outputs, not live environmental release.',
     },
   ],
   readerRoutes: [
@@ -313,7 +313,7 @@ const wikiGroups = [
             caption:
               'Floral loss is the application problem; microbial melatonin production is the engineering response.',
             lede:
-              'FloraGuard begins with a post-harvest problem and narrows it to a synthetic-biology question: can we make melatonin in a controllable chassis and show that it helps cut flowers?',
+              'We start from a post-harvest problem and turn it into a synthetic-biology question: can we make melatonin in a controllable chassis and show that it improves flower performance?',
             points: [
               'Cut-flower loss begins before retail display.',
               'Melatonin gives the project a specific biological target.',
@@ -338,7 +338,7 @@ const wikiGroups = [
               {
                 label: 'Validation layer',
                 value: '03',
-                detail: 'The produced or formulated melatonin is tested on flowers through phenotype and vase-life outcomes.',
+                detail: 'The produced or formulated melatonin is tested on flowers through phenotype and vase-life measurements.',
               },
             ],
           },
@@ -361,7 +361,7 @@ const wikiGroups = [
         sections: [
           {
             eyebrow: 'Background',
-            title: 'Why cut flower preservation remains a difficult biological problem',
+            title: 'Cut flowers deteriorate quickly after harvest',
             blocks: [
               paragraph(
                 'The global cut flower industry depends on keeping harvested flowers visually attractive during transport, retail display, and home use. Yet once flowers are detached from the plant, senescence accelerates because water balance, oxidative stress, hormone signaling, and handling variability all change at once.',
@@ -379,22 +379,22 @@ const wikiGroups = [
           },
           {
             eyebrow: 'Scientific rationale',
-            title: 'Why melatonin became the centerpiece of FloraGuard',
+            title: 'Why we chose melatonin',
             blocks: [
               paragraph(
                 'Melatonin has been repeatedly reported as a multifunctional regulator in plants and post-harvest systems. It is associated with improved antioxidant capacity, reduced ROS burden, and delayed senescence under several stress contexts.',
               ),
               paragraph(
-                'That makes melatonin attractive not only as an exogenous treatment, but also as a target product for synthetic-biology production. If an engineered microbial chassis can generate it in a controllable way, the project gains a direct bridge between metabolic engineering and floral preservation.',
+                'That makes melatonin attractive not only as an exogenous treatment, but also as a product for synthetic-biology production. If an engineered microbial chassis can generate it in a controllable way, we can connect metabolic engineering directly to floral preservation.',
               ),
               callout(
-                'The key hypothesis is simple: if engineered E. coli can produce melatonin reliably enough, that product may become the basis of a safer and more programmable cut-flower preservation strategy.',
+                'Our working hypothesis is straightforward: if engineered E. coli can produce melatonin reliably enough, that product may become the basis of a safer and more controllable preservation strategy.',
               ),
             ],
           },
           {
             eyebrow: 'Project scope',
-            title: 'What FloraGuard sets out to prove',
+            title: 'Our working hypothesis',
             blocks: [
               list(
                 [
@@ -405,7 +405,7 @@ const wikiGroups = [
                 'ordered',
               ),
               paragraph(
-                'The project therefore spans metabolic engineering, analytical chemistry, and post-harvest flower validation. The scope is still ambitious, but every page points to the same central proof chain.',
+                'This puts metabolic engineering, analytical chemistry, and post-harvest flower validation into the same project. The scope is broad, but the core claim stays the same from page to page.',
               ),
             ],
           },
@@ -526,13 +526,13 @@ const wikiGroups = [
           },
           {
             eyebrow: 'Project inspiration',
-            title: 'Why the biosynthesis angle matters',
+            title: 'Why we moved from treatment to biosynthesis',
             blocks: [
               paragraph(
-                'A melatonin application project alone would still be interesting, but an iGEM project becomes more distinctive when it asks how the molecule is made, optimized, measured, and translated. That is why the new version of FloraGuard focuses on engineered microbial production instead of preservation logic alone.',
+                'Testing purchased melatonin on flowers would still be interesting, but it would leave the main synthetic-biology question untouched. We wanted to ask how the molecule is made, optimized, measured, and translated, so biosynthesis became the center of the project.',
               ),
               callout(
-                'The inspiration behind FloraGuard is not only that melatonin may help flowers. It is that synthetic biology may make that help programmable, measurable, and eventually scalable.',
+                'The key shift is this: instead of only asking whether melatonin helps flowers, we ask whether synthetic biology can produce that help in a controllable way.',
               ),
             ],
           },
@@ -565,7 +565,7 @@ const wikiGroups = [
             caption:
               'The design places route choice, optimization, measurement, and application in one workflow.',
             lede:
-              'FloraGuard is designed as a sequence: choose a chassis, build a melatonin pathway, verify the product, then test flower outcomes.',
+              'We designed FloraGuard as a sequence: choose a chassis, build a melatonin pathway, verify the product, then test flower outcomes.',
             points: [
               'The metabolic route remains explicit.',
               'Analytics comes before application claims.',
@@ -626,7 +626,7 @@ const wikiGroups = [
                 label: 'Boundary',
                 title: 'Implementation constraints already shape what counts as a good design',
                 detail:
-                  'The project works better when it plans for bounded outputs and does not imply that live engineered cells are the deployed product.',
+                  'The design already assumes bounded outputs and does not treat live engineered cells as the deployed product.',
               },
             ],
           },
@@ -660,7 +660,7 @@ const wikiGroups = [
             title: 'Chassis and pathway design',
             blocks: [
               paragraph(
-                'The project begins with engineered E. coli as a microbial cell factory. The pathway design centers on converting a tryptophan-derived metabolic stream toward melatonin through a set of decarboxylation, hydroxylation, acetylation, and methylation reactions.',
+                'We begin with engineered E. coli as a microbial cell factory. The pathway design centers on converting a tryptophan-derived metabolic stream toward melatonin through decarboxylation, hydroxylation, acetylation, and methylation steps.',
               ),
               paragraph(
                 'A practical route can therefore be described as a candidate enzyme sequence from tryptophan-derived intermediates to serotonin, then to N-acetylserotonin, and finally to melatonin. The exact enzyme set may vary, but the route has to stay readable enough that each later optimization step makes sense.',
@@ -675,7 +675,7 @@ const wikiGroups = [
             title: 'Production optimization and route support',
             blocks: [
               paragraph(
-                'A pathway that exists on paper may still perform poorly in cells. That is why FloraGuard includes a dedicated optimization layer for precursor balance, expression strength, and route bottlenecks.',
+                'A pathway that looks complete on paper may still perform poorly in cells. That is why FloraGuard includes a separate optimization layer for precursor balance, expression strength, and route bottlenecks.',
               ),
               list([
                 'promoter and expression balancing across pathway enzymes',
@@ -946,7 +946,7 @@ const wikiGroups = [
             title: 'Construct a melatonin biosynthesis pathway in engineered E. coli',
             blocks: [
               paragraph(
-                'The first wet-lab objective is to establish a functional melatonin route in E. coli. This requires choosing a pathway architecture, assembling the necessary genes, and confirming that the chassis can move flux toward melatonin rather than stalling at upstream intermediates.',
+                'The first wet-lab objective is to establish a functional melatonin route in E. coli. That means choosing a pathway architecture, assembling the necessary genes, and checking that flux reaches melatonin rather than stalling upstream.',
               ),
               paragraph(
                 'In practice, that means treating the route as a sequence with named intermediates. The team should be able to explain which step converts the tryptophan-derived precursor stream into serotonin, which step generates N-acetylserotonin, and which step closes the route to melatonin.',
@@ -966,7 +966,7 @@ const wikiGroups = [
             title: 'Measure melatonin production and optimize the route',
             blocks: [
               paragraph(
-                'Once the pathway is assembled, the next goal is to determine whether melatonin is produced in a detectable and optimizable way. This stage may involve chromatographic assays, standards-based comparison, and screening of culture or construct variables.',
+                'Once the pathway is assembled, the next goal is to determine whether melatonin is produced at a detectable and optimizable level. This stage may involve chromatographic assays, standards-based comparison, and screening of culture or construct variables.',
               ),
               list([
                 'compare production across constructs or induction settings',
@@ -983,7 +983,7 @@ const wikiGroups = [
             title: 'Validate preservation performance on cut flowers',
             blocks: [
               paragraph(
-                'The third objective is to test whether melatonin-centered treatment delays cut-flower senescence relative to appropriate controls. Depending on formulation and safety boundaries, this may use purified melatonin, prepared treatment solutions, or carefully bounded extracts for experimental comparison.',
+                'The third objective is to test whether melatonin-centered treatment delays cut-flower senescence relative to appropriate controls. Depending on formulation and safety boundaries, this may use purified melatonin, prepared treatment solutions, or other carefully bounded experimental materials.',
               ),
               table(
                 ['Group', 'Purpose'],
@@ -1522,7 +1522,7 @@ const wikiGroups = [
             caption:
               'FloraGuard separates lab work with engineered cells from downstream use of bounded outputs.',
             lede:
-              'If FloraGuard shows melatonin production and flower benefit, the next question is not whether to release engineered cells. It is how to move toward practical, bounded formats.',
+              'If FloraGuard shows both melatonin production and flower benefit, the next question is how to move toward practical, bounded formats without crossing the lab-release boundary.',
             points: [
               'Translation starts from lab evidence.',
               'Florist-facing pilots come before household claims.',
@@ -1566,7 +1566,7 @@ const wikiGroups = [
           {
             type: 'use-case-cards',
             eyebrow: 'Journey scenarios',
-            title: 'Implementation becomes more believable when each use context has its own logic',
+            title: 'Each use context imposes different practical constraints',
             items: [
               {
                 tag: 'Research',
@@ -1764,7 +1764,7 @@ const wikiGroups = [
             caption:
               'FloraGuard depends on coordinated work across pathway engineering, analytics, flower assays, and translation.',
             lede:
-              'Because FloraGuard spans microbial engineering and plant application, the team structure needs to make those responsibilities visible.',
+              'Because FloraGuard spans microbial engineering and plant application, we need a team structure that makes those responsibilities visible.',
             points: [
               'Pathway work and flower work need clear owners.',
               'Analytical chemistry and data interpretation need visible roles.',
@@ -1830,7 +1830,7 @@ const wikiGroups = [
                 label: 'Identity',
                 title: 'The team page feels personal as well as structural',
                 detail:
-                  'Once names and photos are added, the page can still preserve the clarity of who owned which proof layer.',
+                  'Once names and photos are added, the page should still make it obvious who owned which part of the work.',
               },
             ],
           },
@@ -1870,7 +1870,7 @@ const wikiGroups = [
             title: 'Why coordination matters as much as specialization',
             blocks: [
               paragraph(
-                'The project only feels coherent when every work package informs the others. A beautiful pathway means little without flower validation, and a promising flower result means little without trustworthy production evidence.',
+                'Every work package depends on the others. A strong pathway result means little without flower validation, and a promising flower result means little without trustworthy production evidence.',
               ),
             ],
           },
@@ -1999,9 +1999,9 @@ const wikiGroups = [
 
 const pageMedia = {
   'project-description': {
-    image: floralBenchToFlowerArt,
-    imageAlt: 'Illustrated bench-to-flower workflow for the project description page.',
-    imageCaption: 'FloraGuard links pathway engineering to flower outcome.',
+    image: floralSupplyChainArt,
+    imageAlt: 'Illustrated floral supply chain showing post-harvest stress before flowers reach consumers.',
+    imageCaption: 'The project begins with post-harvest loss and narrows toward a microbial preservation strategy.',
   },
   'problem-inspiration': {
     image: floralStressArt,
