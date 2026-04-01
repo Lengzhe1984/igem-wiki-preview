@@ -393,8 +393,13 @@ document.querySelector('#app').innerHTML = `
 
       <section class="section-block">
         <div class="section-heading">
-          <p class="eyebrow">Site structure</p>
-          <h2>The project is organized as a multi-page wiki</h2>
+          <p class="eyebrow">Project chapters</p>
+          <h2>Each chapter follows the same bench-to-flower proof chain</h2>
+          <p class="section-copy">
+            Readers can move in from the biology, the build, or the implementation edge, but every
+            chapter still feeds back into the same central claim about microbial melatonin and
+            cut-flower preservation.
+          </p>
         </div>
         <div class="structure-grid">
           ${groupCards}
@@ -404,13 +409,14 @@ document.querySelector('#app').innerHTML = `
       <section class="section-block split-block">
         <div>
           <div class="section-heading">
-            <p class="eyebrow">Planned figures</p>
-            <h2>The next version needs data, images, and methods to match the structure already in place</h2>
+            <p class="eyebrow">Core evidence package</p>
+            <h2>FloraGuard is built around a small set of figures and data products</h2>
           </div>
           <p class="section-copy">
-            The highest-value additions are pathway diagrams, production results, flower phenotype
-            figures, and stakeholder evidence. Those materials will turn this structure into a
-            full scientific record.
+            The strongest version of this project will be the one that keeps construct logic,
+            production measurements, flower outcomes, and use-context evidence visible at the same
+            time. These are the materials that ultimately determine whether the preservation claim
+            is persuasive.
           </p>
         </div>
         <ul class="check-grid">
@@ -420,8 +426,8 @@ document.querySelector('#app').innerHTML = `
     </main>
 
     <footer class="site-footer">
-      <p>FloraGuard links metabolic engineering, flower biology, and bounded translation across one continuous wiki narrative.</p>
-      <p>We use GitHub Pages to refine structure and content before moving the final version to the official iGEM host.</p>
+      <p>FloraGuard links metabolic engineering, flower biology, and bounded translation across one continuous project narrative.</p>
+      <p>The site follows the project from pathway design and analytical validation to flower assays, safety boundaries, and future use contexts.</p>
     </footer>
   </div>
 `

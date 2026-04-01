@@ -993,6 +993,10 @@ h3 {
   height: 100%;
   display: block;
   object-fit: cover;
+  transform: scale(1.06);
+  transform-origin: center;
+  filter: blur(8px) saturate(0.84) brightness(0.74);
+  opacity: 0.94;
 }
 
 .page-banner-overlay {
@@ -1005,9 +1009,9 @@ h3 {
   padding: 28px;
   background: linear-gradient(
     90deg,
-    rgba(22, 35, 29, 0.76) 0%,
-    rgba(22, 35, 29, 0.56) 32%,
-    rgba(22, 35, 29, 0.18) 62%,
+    rgba(18, 30, 25, 0.84) 0%,
+    rgba(18, 30, 25, 0.66) 34%,
+    rgba(18, 30, 25, 0.26) 66%,
     rgba(22, 35, 29, 0) 100%
   );
 }

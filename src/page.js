@@ -407,7 +407,7 @@ document.querySelector('#app').innerHTML = `
         <article class="article-stack">
           <section class="story-section story-summary fade-card">
             <p class="story-section-label">Overview</p>
-            <h2>What this section covers</h2>
+            <h2>Key points in this chapter</h2>
             <ul class="mini-list mini-list-spacious">
               ${highlightMarkup}
             </ul>
@@ -420,14 +420,14 @@ document.querySelector('#app').innerHTML = `
 
         <aside class="page-sidebar">
           <section class="side-panel">
-            <p class="panel-kicker">On this page</p>
-            <nav class="toc-list" aria-label="On this page">
+            <p class="panel-kicker">In this chapter</p>
+            <nav class="toc-list" aria-label="In this chapter">
               ${tocMarkup}
             </nav>
           </section>
 
           <section class="side-panel">
-            <p class="panel-kicker">Same-section pages</p>
+            <p class="panel-kicker">More in this section</p>
             <div class="pill-list compact">
               ${siblingMarkup}
             </div>
@@ -457,7 +457,7 @@ document.querySelector('#app').innerHTML = `
 
     <footer class="site-footer">
       <p>Each FloraGuard page connects pathway engineering, flower validation, or bounded translation back to the same central project logic.</p>
-      <p>This GitHub Pages site is used to refine the public project narrative before final migration into the official iGEM wiki host.</p>
+      <p>The project narrative stays anchored in one question: can engineered microbial melatonin become a credible preservation strategy for cut flowers?</p>
     </footer>
   </div>
 `
