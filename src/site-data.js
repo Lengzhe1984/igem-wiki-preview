@@ -1246,11 +1246,11 @@ const wikiGroups = [
         navTitle: 'Human Practices',
         title: 'Integrated Human Practices',
         summary:
-          'Human Practices focuses on whether a melatonin-based floral preservation product would be meaningful, affordable, and safe in real post-harvest settings.',
+          'Human Practices asks whether a melatonin-based preservation product would be usable, affordable, and acceptable in real post-harvest settings.',
         highlights: [
-          'Stakeholders still include growers, distributors, florists, and consumers.',
-          'The project raises practical questions about cost, formulation, and bounded use.',
-          'Social value comes from reducing waste without increasing biosafety burden.',
+          'Growers, distributors, florists, and consumers care about the problem in different ways.',
+          'The key questions are cost, handling burden, and whether the format feels safe enough to use.',
+          'The project only has social value if it reduces waste without adding new biosafety burden.',
         ],
         nextAdd: [
           'Interview dates, methods, and anonymized quotes',
@@ -1262,24 +1262,24 @@ const wikiGroups = [
             type: 'visual-panel',
             tone: 'human',
             eyebrow: 'Stakeholder picture',
-            title: 'Human Practices asks whether FloraGuard would be useful beyond the bench',
+            title: 'Human Practices asks who would actually use FloraGuard and under what conditions',
             image: floralStakeholderMapArt,
             alt:
               'Illustrated stakeholder map connecting the floral chain to the FloraGuard project.',
             caption:
-              'Stakeholder input helps define acceptable, practical, and bounded use.',
+              'Stakeholder input helps us move from a lab result to a realistic use case.',
             lede:
-              'Stakeholder input helps us ask whether a melatonin-based preservation strategy solves a real problem and what form of product would be acceptable outside the lab.',
+              'We use Human Practices to check whether a melatonin-based preservation strategy solves a real problem and what kind of product format people would actually accept outside the lab.',
             points: [
-              'Floral waste and product practicality belong in the same conversation.',
-              'The question is how a preservation molecule would be used, not only how it is produced.',
-              'HP helps justify cost, safety, and deployment choices.',
+              'Waste reduction and daily workflow have to be discussed together.',
+              'Production only matters if the final format makes sense to users.',
+              'Stakeholder feedback changes deployment and safety decisions.',
             ],
           },
           {
             type: 'stakeholder-grid',
             eyebrow: 'Stakeholder map',
-            title: 'Different actors care about different parts of the preservation problem',
+            title: 'Each group sees a different bottleneck in the floral chain',
             items: [
               {
                 title: 'Growers',
@@ -1302,7 +1302,7 @@ const wikiGroups = [
           {
             type: 'journey-strip',
             eyebrow: 'Feedback loop',
-            title: 'Stakeholder input changes the project in concrete ways',
+            title: 'Stakeholder feedback changes what we build and how we describe it',
             items: [
               {
                 title: 'Need',
@@ -1340,10 +1340,10 @@ const wikiGroups = [
           },
           {
             eyebrow: 'Insights',
-            title: 'What becomes most important once the project centers on melatonin biosynthesis',
+            title: 'What changed once biosynthesis became the project core',
             blocks: [
               paragraph(
-                'Once FloraGuard becomes a melatonin biosynthesis project, Human Practices changes too. The central questions are no longer only about monitoring or flower-care advice. They are also about whether the molecule can be delivered affordably, whether users would accept the product format, and how translation can stay safe.',
+                'Once biosynthesis became the center of FloraGuard, Human Practices changed as well. The important questions were no longer only about flower-care advice or monitoring. They became questions about price, handling, acceptance, and how to move toward use without crossing the live-cell boundary.',
               ),
               list([
                 'stakeholders care about post-harvest loss, but not about live engineered cells entering the floral chain',
@@ -1354,7 +1354,7 @@ const wikiGroups = [
           },
           {
             eyebrow: 'Design consequences',
-            title: 'How stakeholder thinking changes the project',
+            title: 'How stakeholder input changes the project',
             blocks: [
               table(
                 ['Observed need', 'Why it matters', 'Project response'],
@@ -1365,7 +1365,7 @@ const wikiGroups = [
                 ],
               ),
               callout(
-                'Human Practices reinforces one key message: even if engineered cells stay in the lab, the preservation value can still be translated through safer output formats.',
+                'The main HP takeaway is that value can leave the lab even if engineered cells do not.',
               ),
             ],
           },
@@ -1374,7 +1374,7 @@ const wikiGroups = [
             title: 'Why this project could matter beyond iGEM',
             blocks: [
               paragraph(
-                'If FloraGuard succeeds, it contributes more than one experiment. It suggests that synthetic biology can address post-harvest waste in a controlled, molecule-centered way that connects lab engineering to real horticultural value.',
+                'If FloraGuard succeeds, it shows one concrete way synthetic biology could address post-harvest waste: make a defined molecule, verify it carefully, and carry only the bounded output into a real horticultural setting.',
               ),
             ],
           },
@@ -1385,11 +1385,11 @@ const wikiGroups = [
         navTitle: 'Safety',
         title: 'Safety',
         summary:
-          'Safety in the new FloraGuard concept is built around laboratory confinement, analytical clarity, and non-release translation.',
+          'Safety is built around laboratory confinement, clear product boundaries, and non-release translation.',
         highlights: [
           'Engineered E. coli remains confined to laboratory use.',
-          'Future application should rely on purified or otherwise bounded outputs rather than live-cell deployment.',
-          'Safety applies to both biological handling and product-format decisions.',
+          'Any future application should rely on purified or otherwise bounded outputs rather than live-cell deployment.',
+          'Safety here includes both biosafety and the way a user-facing product would be handled.',
         ],
         nextAdd: [
           'A strain and containment table',
@@ -1400,7 +1400,7 @@ const wikiGroups = [
           {
             type: 'comparison-grid',
             eyebrow: 'Boundary setting',
-            title: 'Safety starts with a firm boundary between lab work and deployment',
+            title: 'The first safety decision is whether engineered cells ever leave the lab',
             items: [
               {
                 title: 'Current project boundary',
@@ -1415,7 +1415,7 @@ const wikiGroups = [
           {
             type: 'step-cards',
             eyebrow: 'Safety principles',
-            title: 'Three safety principles guide FloraGuard',
+            title: 'Three safety principles shape the project',
             items: [
               {
                 title: 'Confinement',
@@ -1434,7 +1434,7 @@ const wikiGroups = [
           {
             type: 'journey-strip',
             eyebrow: 'Staged translation',
-            title: 'Safety questions change across the project lifecycle',
+            title: 'The safety question changes from stage to stage',
             items: [
               {
                 title: 'Lab engineering',
@@ -1466,7 +1466,7 @@ const wikiGroups = [
             title: 'Preferred downstream formats are bounded outputs',
             blocks: [
               paragraph(
-                'The most responsible translation path is to separate product value from live-cell deployment. That means favoring purified melatonin, bounded intermediate formulations, or similarly controlled outputs when discussing future implementation.',
+                'The safest translation path is to separate product value from live-cell deployment. In practice, that means talking about purified melatonin, bounded intermediate formulations, or other controlled outputs instead of engineered cells in bouquets.',
               ),
               table(
                 ['Format', 'Safety view', 'Why it matters'],
@@ -1483,7 +1483,7 @@ const wikiGroups = [
             title: 'Safety also applies to how the product is interpreted and used',
             blocks: [
               paragraph(
-                'A preservation product is not only a biological entity; it is also a handling workflow. For that reason, user-facing translation must be clear about dosing, storage, and intended use, and should not rely on opaque or autonomous decision logic.',
+                'A preservation product is not only a biological material; it is also a handling workflow. For that reason, any user-facing format would need plain instructions for dose, storage, and intended use, without ambiguous or open-ended decision logic.',
               ),
               list([
                 'keep formulation and intended use understandable to operators',
@@ -1499,11 +1499,11 @@ const wikiGroups = [
         navTitle: 'Implementation',
         title: 'Implementation',
         summary:
-          'Implementation centers on how a melatonin-based floral preservation concept could move from the lab toward bounded and practical use formats.',
+          'Implementation asks how a melatonin-based preservation concept could move from the lab into bounded, usable formats.',
         highlights: [
-          'The most realistic path is lab validation, then florist-facing pilot, then simplified consumer translation.',
-          'Implementation is tied to product format and biosafety boundary, not only to user interface.',
-          'The project should never imply that live engineered cells go directly to bouquets.',
+          'The most realistic path is lab validation first, florist-facing pilot second, and consumer use only much later.',
+          'Implementation is mainly about product format and biosafety boundary, not app features or interface polish.',
+          'FloraGuard should never imply that live engineered cells go directly into bouquets.',
         ],
         nextAdd: [
           'A formulation comparison table for pilot scenarios',
@@ -1532,7 +1532,7 @@ const wikiGroups = [
           {
             type: 'comparison-grid',
             eyebrow: 'Deployment formats',
-            title: 'Professional and consumer use require different formats',
+            title: 'Florists and consumers would not use the same format',
             items: [
               {
                 title: 'Florist-facing pilot',
@@ -1547,7 +1547,7 @@ const wikiGroups = [
           {
             type: 'journey-strip',
             eyebrow: 'Translation path',
-            title: 'FloraGuard moves toward use in measured steps',
+            title: 'Any move toward use has to happen in stages',
             items: [
               {
                 title: 'Validate',
@@ -1566,7 +1566,7 @@ const wikiGroups = [
           {
             type: 'use-case-cards',
             eyebrow: 'Journey scenarios',
-            title: 'Each use context imposes different practical constraints',
+            title: 'Each use context changes what counts as a workable product',
             items: [
               {
                 tag: 'Research',
@@ -1595,7 +1595,7 @@ const wikiGroups = [
             title: 'Laboratory platform',
             blocks: [
               paragraph(
-                'In the present project scope, FloraGuard is first a laboratory platform for melatonin biosynthesis and cut-flower validation. That is where the clearest evidence can be generated and where the pathway can be revised most safely.',
+                'Within the present project scope, FloraGuard is first a laboratory platform for melatonin biosynthesis and cut-flower validation. That is where evidence can be generated most rigorously and where the pathway can still be revised safely.',
               ),
             ],
           },
@@ -1604,7 +1604,7 @@ const wikiGroups = [
             title: 'Florist-oriented pilot',
             blocks: [
               paragraph(
-                'If the project progresses beyond proof-of-concept, a florist-facing pilot is a more realistic first deployment target than immediate consumer use. Florists already handle flowers professionally and can judge whether a preservation treatment has visible value during display and sale.',
+                'If the project progresses beyond proof-of-concept, a florist-facing pilot makes more sense than immediate consumer use. Florists already handle flowers professionally and can judge whether a preservation treatment produces visible value during display and sale.',
               ),
               list([
                 'treatment must be simple to apply',
@@ -1618,7 +1618,7 @@ const wikiGroups = [
             title: 'Consumer translation',
             blocks: [
               paragraph(
-                'A future household format would require additional simplification and more evidence. It would also need careful communication about what the treatment is, how it is used, and what kinds of flowers or conditions it is expected to help.',
+                'A future household format would require far more simplification and much stronger evidence. It would also need careful communication about what the treatment is, how it is used, and which flowers or conditions it is expected to help.',
               ),
             ],
           },
@@ -1627,10 +1627,10 @@ const wikiGroups = [
             title: 'Why staged translation matters',
             blocks: [
               paragraph(
-                'Implementation must stay aligned with safety. FloraGuard should not jump from engineered cells in the lab to household use in one step. It should move through bounded outputs, pilot contexts, and evidence-based use claims.',
+                'Implementation has to stay aligned with safety. FloraGuard should not jump from engineered cells in the lab to household use in one step. It has to move through bounded outputs, pilot contexts, and evidence-based claims.',
               ),
               callout(
-                'Implementation succeeds when the product format, the user context, and the biosafety boundary are all legible on the same page.',
+                'A credible implementation plan states three things clearly: what the product is, who uses it, and why that use stays within the biosafety boundary.',
               ),
             ],
           },
@@ -1641,7 +1641,7 @@ const wikiGroups = [
         navTitle: 'Contribution',
         title: 'Contribution',
         summary:
-          'FloraGuard contributes a focused synthetic-biology framework for connecting microbial melatonin production to post-harvest flower preservation.',
+          'FloraGuard contributes a focused way to connect microbial melatonin production with post-harvest flower preservation.',
         highlights: [
           'The project bridges metabolic engineering and floriculture rather than treating them as separate topics.',
           'It proposes a staged proof chain from route design to preservation outcome.',
@@ -1656,7 +1656,7 @@ const wikiGroups = [
           {
             type: 'comparison-grid',
             eyebrow: 'Contribution lens',
-            title: 'Why a narrower scope helps FloraGuard',
+            title: 'Why this narrower scope is useful',
             items: [
               {
                 title: 'Generic preservation concept',
@@ -1664,26 +1664,26 @@ const wikiGroups = [
               },
               {
                 title: 'Focused melatonin biosynthesis project',
-                detail: 'Easier to evaluate because the build target, analytical proof, and flower-validation goal all point to the same central claim.',
+                detail: 'Easier to evaluate because the build target, analytical proof, and flower-validation goal all point to the same claim.',
               },
             ],
           },
           {
             type: 'step-cards',
             eyebrow: 'Reusable outputs',
-            title: 'Several parts of FloraGuard are transferable even beyond this exact flower application',
+            title: 'Several parts of FloraGuard could still be useful beyond this exact flower application',
             items: [
               {
                 title: 'Pathway-centered project logic',
-                detail: 'A clear example of how to tie one engineered molecule to one real post-harvest problem.',
+                detail: 'An example of how to tie one engineered molecule to one real post-harvest problem.',
               },
               {
                 title: 'Bench-to-application proof chain',
-                detail: 'A workflow that links route construction, analytical verification, and phenotype validation without losing coherence.',
+                detail: 'A workflow that links route construction, analytical verification, and phenotype validation in one sequence.',
               },
               {
                 title: 'Bounded translation framing',
-                detail: 'A model for discussing real-world use without implying that live engineered cells must become the deployed product.',
+                detail: 'A way to discuss real-world use without implying that live engineered cells must become the deployed product.',
               },
             ],
           },
@@ -1699,7 +1699,7 @@ const wikiGroups = [
                 'a translation framework that keeps purified or bounded outputs central to implementation',
               ]),
               paragraph(
-                'These contributions make FloraGuard more than a flower-care idea. It becomes a structured example of how metabolic engineering can be connected to a post-harvest horticultural use case.',
+                'These contributions make FloraGuard more than a flower-care idea. They show how metabolic engineering can be connected to a post-harvest horticultural use case without losing sight of application, safety, or evidence.',
               ),
             ],
           },
@@ -1708,7 +1708,7 @@ const wikiGroups = [
             title: 'Why the contribution is broader than one molecule',
             blocks: [
               paragraph(
-                'Even if the final product format evolves, the project still contributes a reusable way to design synthetic-biology projects for applied plant-care problems: choose a tractable molecule, build the production route, verify the chemistry, validate the phenotype, and translate cautiously.',
+                'Even if the final product format changes, the project still leaves behind a reusable sequence for applied plant-care work: choose a tractable molecule, build the production route, verify the chemistry, validate the phenotype, and translate cautiously.',
               ),
             ],
           },
@@ -1744,8 +1744,8 @@ const wikiGroups = [
           'FloraGuard depends on metabolic engineering, plant physiology, analytics, modeling, and translation work moving together.',
         highlights: [
           'This project needs strong pathway-design and analytical support.',
-          'Plant and floral physiology remain central because preservation outcome must still be measured on flowers.',
-          'A coherent wiki depends on clear work-package ownership.',
+          'Plant and floral physiology remain central because the final readout is still the flower.',
+          'Work-package ownership matters because no one subgroup can prove the whole project alone.',
         ],
         nextAdd: [
           'Member names, portraits, and biographies',
@@ -1757,18 +1757,18 @@ const wikiGroups = [
             type: 'visual-panel',
             tone: 'team',
             eyebrow: 'Team picture',
-            title: 'The team page shows who owns each part of the project',
+            title: 'The team page shows who owns each part of FloraGuard',
             image: floralTeamCollageArt,
             alt:
               'Illustrated team collage showing multiple work packages around the FloraGuard project.',
             caption:
               'FloraGuard depends on coordinated work across pathway engineering, analytics, flower assays, and translation.',
             lede:
-              'Because FloraGuard spans microbial engineering and plant application, we need a team structure that makes those responsibilities visible.',
+              'Because FloraGuard spans microbial engineering and plant application, the team structure has to make those responsibilities visible.',
             points: [
               'Pathway work and flower work need clear owners.',
-              'Analytical chemistry and data interpretation need visible roles.',
-              'Team structure should match the project proof chain.',
+              'Analytics and data interpretation need named responsibility.',
+              'The team structure should mirror the proof chain.',
             ],
           },
           {
@@ -1806,7 +1806,7 @@ const wikiGroups = [
           {
             type: 'art-card-grid',
             eyebrow: 'Coordination',
-            title: 'No single work package can prove FloraGuard on its own',
+            title: 'No single work package can prove FloraGuard alone',
             items: [
               {
                 image: floralTeamNetworkArt,
@@ -1814,7 +1814,7 @@ const wikiGroups = [
                 label: 'Coordination',
                 title: 'The pathway team and flower team need each other continuously',
                 detail:
-                  'Production data changes which flower assays are worth running, and flower results determine whether more pathway optimization is justified.',
+                  'Production data changes which flower assays are worth running, and flower results decide whether more pathway optimization is justified.',
               },
               {
                 image: floralNotesArt,
@@ -1822,13 +1822,13 @@ const wikiGroups = [
                 label: 'Planning',
                 title: 'Documentation stays tied to experiments and decisions',
                 detail:
-                  'This section shows how build decisions, assay plans, and HP revisions were coordinated across the season.',
+                  'Build decisions, assay plans, and HP revisions need to stay synchronized across the season.',
               },
               {
                 image: floralTeamCollageArt,
                 alt: 'Illustrated team collage around the project.',
                 label: 'Identity',
-                title: 'The team page feels personal as well as structural',
+                title: 'The page still needs to show the people behind the work',
                 detail:
                   'Once names and photos are added, the page should still make it obvious who owned which part of the work.',
               },
@@ -1881,7 +1881,7 @@ const wikiGroups = [
         navTitle: 'References',
         title: 'References',
         summary:
-          'The literature base supports melatonin biology, microbial melatonin biosynthesis, and post-harvest floral preservation.',
+          'The literature base for FloraGuard falls into three groups: melatonin biology, microbial biosynthesis, and post-harvest preservation.',
         highlights: [
           'Core references justify why melatonin is worth targeting biologically.',
           'Microbial biosynthesis papers support the chassis and route-design logic.',
@@ -1897,14 +1897,14 @@ const wikiGroups = [
             type: 'visual-panel',
             tone: 'references',
             eyebrow: 'Literature map',
-            title: 'The references follow the logic of the project',
+            title: 'The references are grouped by what they justify in the project',
             image: floralReferenceMapArt,
             alt:
               'Illustrated literature map used as the cover art for the references page.',
             caption:
               'The literature is grouped by what it supports in FloraGuard.',
             lede:
-              'The project depends on three literature pillars: melatonin biology, microbial biosynthesis, and post-harvest preservation.',
+              'FloraGuard does not rest on one kind of paper. It depends on literature about melatonin itself, literature about making it microbially, and literature about what it does in post-harvest flowers.',
             points: [
               'Group papers by what they justify.',
               'Keep build-side and application-side references balanced.',
@@ -1914,7 +1914,7 @@ const wikiGroups = [
           {
             type: 'citation-clusters',
             eyebrow: 'Citation groups',
-            title: 'The literature base falls into three main groups',
+            title: 'Three literature groups support the main claims',
             items: [
               {
                 support: 'Supports melatonin biology and senescence delay',
@@ -1987,7 +1987,7 @@ const wikiGroups = [
                 'ordered',
               ),
               callout(
-                'The final references list should support every major claim in the project: why melatonin, why this chassis, and why these flower readouts.',
+                'The final reference list should support every major claim in the project: why melatonin, why this chassis, and why these flower readouts.',
               ),
             ],
           },
