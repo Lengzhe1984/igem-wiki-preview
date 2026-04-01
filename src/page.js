@@ -397,7 +397,7 @@ document.querySelector('#app').innerHTML = `
           <p class="lede">${escapeHtml(page.summary)}</p>
           <div class="meta-line">
             <span>${String(currentIndex + 1).padStart(2, '0')} / ${String(allPages.length).padStart(2, '0')}</span>
-            <span>FloraGuard wiki</span>
+            <span>FloraGuard project</span>
           </div>
           <p class="visual-caption">${escapeHtml(page.imageCaption)}</p>
         </div>
@@ -406,8 +406,8 @@ document.querySelector('#app').innerHTML = `
       <section class="page-layout">
         <article class="article-stack">
           <section class="story-section story-summary fade-card">
-            <p class="story-section-label">At a glance</p>
-            <h2>Key points on this page</h2>
+            <p class="story-section-label">Overview</p>
+            <h2>What this section covers</h2>
             <ul class="mini-list mini-list-spacious">
               ${highlightMarkup}
             </ul>

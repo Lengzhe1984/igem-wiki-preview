@@ -252,7 +252,7 @@ document.querySelector('#app').innerHTML = `
             <h2>FloraGuard centers on one molecule, one chassis, and one preservation question</h2>
           </div>
           <p class="section-copy">
-            This homepage is organized around a simple scientific chain: define the post-harvest
+            The homepage follows a simple scientific chain: define the post-harvest
             problem, engineer microbial melatonin production, validate that output on cut flowers,
             and translate the result through bounded product formats.
           </p>
@@ -272,9 +272,9 @@ document.querySelector('#app').innerHTML = `
           <p class="eyebrow">Challenge snapshot</p>
           <h2>Why preserving cut flowers is harder than choosing a preservative recipe</h2>
           <p class="section-copy">
-            FloraGuard now starts from a simpler premise: floral waste is real, melatonin is a
+            We start from a straightforward premise: floral waste is real, melatonin is a
             promising anti-senescence molecule, and synthetic biology gives us a way to make and
-            test that molecule in a more programmable way.
+            test that molecule in a controlled way.
           </p>
         </div>
         <div class="focus-grid">
@@ -284,8 +284,8 @@ document.querySelector('#app').innerHTML = `
 
       <section class="section-block">
         <div class="section-heading">
-          <p class="eyebrow">Story rhythm</p>
-          <h2>The project logic becomes easier to follow when it is read in four scientific beats</h2>
+          <p class="eyebrow">Project flow</p>
+          <h2>FloraGuard moves through four connected stages</h2>
         </div>
         <div class="flow-grid">
           ${storyFlowMarkup}
@@ -315,12 +315,12 @@ document.querySelector('#app').innerHTML = `
 
       <section class="section-block">
         <div class="section-heading">
-          <p class="eyebrow">Evidence rhythm</p>
-          <h2>The strongest science pages usually show where proof will land before every figure is final</h2>
+          <p class="eyebrow">Evidence</p>
+          <h2>The core evidence falls into three groups</h2>
           <p class="section-copy">
-            The site is already structured around the main evidence types that matter most here:
-            chromatograms or titer curves for production, phenotype boards for flowers, and clear
-            bounded-use logic for translation.
+            FloraGuard needs three kinds of proof: production data for melatonin biosynthesis,
+            flower phenotype and vase-life results, and a clear boundary for how bounded outputs
+            could be used outside the lab.
           </p>
         </div>
         <div class="evidence-grid">
@@ -330,12 +330,12 @@ document.querySelector('#app').innerHTML = `
 
       <section class="section-block">
         <div class="section-heading">
-          <p class="eyebrow">Reader routes</p>
-          <h2>Different readers can enter the FloraGuard story from different angles</h2>
+          <p class="eyebrow">Start here</p>
+          <h2>You can enter FloraGuard from the problem, the build, or the translation path</h2>
           <p class="section-copy">
-            Many strong team wikis are easy to browse because they quietly offer more than one reading path.
-            FloraGuard now does that with one route for the scientific question, one for the build-and-validation
-            workflow, and one for safety and real-world translation.
+            Some readers want the biological rationale first. Others want the engineering workflow
+            or the real-world boundary. The site is organized so each of those entry points still
+            leads back to the same core claim.
           </p>
         </div>
         <div class="content-card-grid">
@@ -345,12 +345,11 @@ document.querySelector('#app').innerHTML = `
 
       <section class="section-block">
         <div class="section-heading">
-          <p class="eyebrow">Project atlas</p>
-          <h2>Three visual anchors now carry the FloraGuard story from floral stress to bounded translation</h2>
+          <p class="eyebrow">Project overview</p>
+          <h2>Three visual anchors carry FloraGuard from floral stress to bounded translation</h2>
           <p class="section-copy">
-            Instead of relying on generic feature cards alone, the homepage now reserves stronger visual slots for
-            supply-chain context, pathway-and-analytics logic, and the staged implementation path that keeps the
-            project realistic.
+            The homepage keeps the floral problem, the biosynthesis route, and the implementation
+            boundary visible at the same time.
           </p>
         </div>
         <div class="art-card-grid">
@@ -361,7 +360,7 @@ document.querySelector('#app').innerHTML = `
       <section class="section-block">
         <div class="section-heading">
           <p class="eyebrow">Visual direction</p>
-          <h2>Flowers, route chemistry, and analytical proof all stay visible in the interface</h2>
+          <h2>Flowers, pathway chemistry, and assay data stay visible throughout the site</h2>
         </div>
         <div class="showcase-grid">
           ${showcaseMarkup}
@@ -380,11 +379,11 @@ document.querySelector('#app').innerHTML = `
 
       <section class="section-block">
         <div class="section-heading">
-          <p class="eyebrow">Deployment rhythm</p>
-          <h2>The homepage already traces how FloraGuard grows from bench proof into bounded use</h2>
+          <p class="eyebrow">Translation path</p>
+          <h2>FloraGuard moves from lab proof to bounded use in clear stages</h2>
           <p class="section-copy">
-            This keeps Implementation, Safety, and Human Practices connected to the front page instead of
-            feeling like late-stage appendices. The rollout logic becomes part of the project identity.
+            Implementation, Safety, and Human Practices all grow out of the same bench-to-flower
+            logic instead of appearing as separate add-ons.
           </p>
         </div>
         <div class="flow-grid">
@@ -394,8 +393,8 @@ document.querySelector('#app').innerHTML = `
 
       <section class="section-block">
         <div class="section-heading">
-          <p class="eyebrow">Wiki map</p>
-          <h2>The FloraGuard story now lives in a complete multi-page structure</h2>
+          <p class="eyebrow">Site structure</p>
+          <h2>The project is organized as a multi-page wiki</h2>
         </div>
         <div class="structure-grid">
           ${groupCards}
@@ -405,13 +404,13 @@ document.querySelector('#app').innerHTML = `
       <section class="section-block split-block">
         <div>
           <div class="section-heading">
-            <p class="eyebrow">Evidence package</p>
-            <h2>The strongest final wiki will deepen these proof layers without changing the project spine</h2>
+            <p class="eyebrow">Planned figures</p>
+            <h2>The next version needs data, images, and methods to match the structure already in place</h2>
           </div>
           <p class="section-copy">
-            The remaining highest-value additions are clear route diagrams, quantitative production
-            results, flower phenotype figures, and stakeholder evidence. Those materials will make the
-            existing structure feel less like a scaffold and more like a finished scientific story.
+            The highest-value additions are pathway diagrams, production results, flower phenotype
+            figures, and stakeholder evidence. Those materials will turn this structure into a
+            full scientific record.
           </p>
         </div>
         <ul class="check-grid">
@@ -422,7 +421,7 @@ document.querySelector('#app').innerHTML = `
 
     <footer class="site-footer">
       <p>FloraGuard links metabolic engineering, flower biology, and bounded translation across one continuous wiki narrative.</p>
-      <p>This GitHub Pages site is used to iterate on the project structure before final migration into the official iGEM host.</p>
+      <p>We use GitHub Pages to refine structure and content before moving the final version to the official iGEM host.</p>
     </footer>
   </div>
 `
