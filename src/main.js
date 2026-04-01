@@ -5,9 +5,8 @@ import {
   flattenPages,
   homePage,
   initDropdownNav,
-  pageHref,
   siteMeta,
-  wikiGroups,
+  pageHref,
 } from './site-data.js'
 
 document.title = `${siteMeta.projectName} | iGEM Wiki`
@@ -21,17 +20,6 @@ const metricItems = [
     label: 'core wiki pages arranged into a reviewable bench-to-flower narrative',
   },
 ]
-
-const metricMarkup = metricItems
-  .map(
-    (item, index) => `
-      <div class="stat-card fade-card" style="--delay:${index * 55}ms">
-        <strong>${escapeHtml(item.value)}</strong>
-        <span>${escapeHtml(item.label)}</span>
-      </div>
-    `,
-  )
-  .join('')
 
 const floatingMetricMarkup = metricItems
   .slice(0, 2)
@@ -51,33 +39,6 @@ const challengeMarkup = homePage.challengeCards
       <article class="focus-card fade-card" style="--delay:${index * 65}ms">
         <h3>${escapeHtml(item.title)}</h3>
         <p>${escapeHtml(item.detail)}</p>
-      </article>
-    `,
-  )
-  .join('')
-
-const moduleMarkup = homePage.platformCards
-  .map(
-    (item, index) => `
-      <article class="module-card fade-card" style="--delay:${index * 60}ms">
-        <p class="card-kicker">${escapeHtml(item.kicker)}</p>
-        <h3>${escapeHtml(item.title)}</h3>
-        <p>${escapeHtml(item.detail)}</p>
-      </article>
-    `,
-  )
-  .join('')
-
-const showcaseMarkup = homePage.showcaseCards
-  .map(
-    (item, index) => `
-      <article class="media-card fade-card" style="--delay:${index * 70}ms">
-        <img class="media-art" src="${item.image}" alt="${escapeHtml(item.alt)}" />
-        <div class="media-copy">
-          <p class="card-kicker">Visual anchor</p>
-          <h3>${escapeHtml(item.title)}</h3>
-          <p>${escapeHtml(item.detail)}</p>
-        </div>
       </article>
     `,
   )
@@ -122,31 +83,6 @@ const evidencePreviewMarkup = homePage.evidencePreview
   )
   .join('')
 
-const readerRouteMarkup = homePage.readerRoutes
-  .map(
-    (item, index) => `
-      <article class="content-card fade-card" style="--delay:${index * 65}ms">
-        <p class="card-kicker">${escapeHtml(item.eyebrow)}</p>
-        <h3>${escapeHtml(item.title)}</h3>
-        <p>${escapeHtml(item.detail)}</p>
-        <a class="page-pill" href="${pageHref(item.slug)}">${escapeHtml(item.cta)}</a>
-      </article>
-    `,
-  )
-  .join('')
-
-const deploymentRhythmMarkup = homePage.deploymentRhythm
-  .map(
-    (item, index) => `
-      <article class="flow-card fade-card" style="--delay:${index * 55}ms">
-        <span class="flow-step">${escapeHtml(item.step)}</span>
-        <h3>${escapeHtml(item.title)}</h3>
-        <p>${escapeHtml(item.detail)}</p>
-      </article>
-    `,
-  )
-  .join('')
-
 const editorialChipMarkup = homePage.editorialFeature.chips
   .map((chip) => `<span class="editorial-chip">${escapeHtml(chip)}</span>`)
   .join('')
@@ -155,48 +91,8 @@ const editorialPointMarkup = homePage.editorialFeature.points
   .map((point) => `<li>${escapeHtml(point)}</li>`)
   .join('')
 
-const groupCards = wikiGroups
-  .map(
-    (group, index) => `
-      <article class="structure-card fade-card" style="--delay:${index * 70}ms">
-        <div class="structure-card-head">
-          <p class="card-kicker">${escapeHtml(group.title)}</p>
-          <p class="card-count">${group.pages.length} pages</p>
-        </div>
-        <h3>${escapeHtml(group.summary)}</h3>
-        <div class="pill-list">
-          ${group.pages
-            .map(
-              (page) => `
-                <a class="page-pill" href="${pageHref(page.slug)}">
-                  ${escapeHtml(page.navTitle ?? page.title)}
-                </a>
-              `,
-            )
-            .join('')}
-        </div>
-      </article>
-    `,
-  )
-  .join('')
-
-const nextAddMarkup = homePage.nextAdd
-  .map(
-    (item, index) => `
-      <li class="check-item fade-card" style="--delay:${index * 55}ms">
-        <span class="check-mark" aria-hidden="true"></span>
-        <span>${escapeHtml(item)}</span>
-      </li>
-    `,
-  )
-  .join('')
-
 const leadMarkup = homePage.lead
   .map((text) => `<p>${escapeHtml(text)}</p>`)
-  .join('')
-
-const statusMarkup = homePage.status
-  .map((text) => `<li>${escapeHtml(text)}</li>`)
   .join('')
 
 const systemPillMarkup = homePage.platformCards
@@ -242,28 +138,6 @@ document.querySelector('#app').innerHTML = `
             ${floatingMetricMarkup}
           </div>
           <p class="visual-caption">${escapeHtml(homePage.heroCaption)}</p>
-        </div>
-      </section>
-
-      <section class="section-block split-block">
-        <div>
-          <div class="section-heading">
-            <p class="eyebrow">Project focus</p>
-            <h2>FloraGuard centers on one molecule, one chassis, and one preservation question</h2>
-          </div>
-          <p class="section-copy">
-            The homepage follows a simple scientific chain: define the post-harvest
-            problem, engineer microbial melatonin production, validate that output on cut flowers,
-            and translate the result through bounded product formats.
-          </p>
-          <ul class="mini-list mini-list-spacious">
-            ${statusMarkup}
-          </ul>
-        </div>
-        <div class="panel-stack">
-          <div class="stat-grid">
-            ${metricMarkup}
-          </div>
         </div>
       </section>
 
@@ -330,21 +204,6 @@ document.querySelector('#app').innerHTML = `
 
       <section class="section-block">
         <div class="section-heading">
-          <p class="eyebrow">Start here</p>
-          <h2>You can enter FloraGuard from the problem, the build, or the translation path</h2>
-          <p class="section-copy">
-            Some readers want the biological rationale first. Others want the engineering workflow
-            or the real-world boundary. The site is organized so each of those entry points still
-            leads back to the same core claim.
-          </p>
-        </div>
-        <div class="content-card-grid">
-          ${readerRouteMarkup}
-        </div>
-      </section>
-
-      <section class="section-block">
-        <div class="section-heading">
           <p class="eyebrow">Project overview</p>
           <h2>Three visual anchors carry FloraGuard from floral stress to bounded translation</h2>
           <p class="section-copy">
@@ -357,72 +216,6 @@ document.querySelector('#app').innerHTML = `
         </div>
       </section>
 
-      <section class="section-block">
-        <div class="section-heading">
-          <p class="eyebrow">Visual direction</p>
-          <h2>Flowers, pathway chemistry, and assay data stay visible throughout the site</h2>
-        </div>
-        <div class="showcase-grid">
-          ${showcaseMarkup}
-        </div>
-      </section>
-
-      <section class="section-block">
-        <div class="section-heading">
-          <p class="eyebrow">Project spine</p>
-          <h2>Five layers connect the floral problem to a focused synthetic-biology proof chain</h2>
-        </div>
-        <div class="module-grid">
-          ${moduleMarkup}
-        </div>
-      </section>
-
-      <section class="section-block">
-        <div class="section-heading">
-          <p class="eyebrow">Translation path</p>
-          <h2>FloraGuard moves from lab proof to bounded use in clear stages</h2>
-          <p class="section-copy">
-            Implementation, Safety, and Human Practices all grow out of the same bench-to-flower
-            logic instead of appearing as separate add-ons.
-          </p>
-        </div>
-        <div class="flow-grid">
-          ${deploymentRhythmMarkup}
-        </div>
-      </section>
-
-      <section class="section-block">
-        <div class="section-heading">
-          <p class="eyebrow">Project chapters</p>
-          <h2>Each chapter follows the same bench-to-flower proof chain</h2>
-          <p class="section-copy">
-            Readers can move in from the biology, the build, or the implementation edge, but every
-            chapter still feeds back into the same central claim about microbial melatonin and
-            cut-flower preservation.
-          </p>
-        </div>
-        <div class="structure-grid">
-          ${groupCards}
-        </div>
-      </section>
-
-      <section class="section-block split-block">
-        <div>
-          <div class="section-heading">
-            <p class="eyebrow">Core evidence package</p>
-            <h2>FloraGuard is built around a small set of figures and data products</h2>
-          </div>
-          <p class="section-copy">
-            The strongest version of this project will be the one that keeps construct logic,
-            production measurements, flower outcomes, and use-context evidence visible at the same
-            time. These are the materials that ultimately determine whether the preservation claim
-            is persuasive.
-          </p>
-        </div>
-        <ul class="check-grid">
-          ${nextAddMarkup}
-        </ul>
-      </section>
     </main>
 
     <footer class="site-footer">
