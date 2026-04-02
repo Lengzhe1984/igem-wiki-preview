@@ -1,0 +1,41 @@
+<svg width="1200" height="760" viewBox="0 0 1200 760" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="760" rx="36" fill="#F7F4EC"/>
+  <rect x="40" y="40" width="1120" height="680" rx="30" fill="#FBFAF5" stroke="#E6DED2" stroke-width="2"/>
+  <text x="92" y="112" fill="#3D8A88" font-family="Arial, sans-serif" font-size="22" font-weight="700">Human Practices revision map</text>
+  <text x="92" y="166" fill="#26372D" font-family="Georgia, serif" font-size="42" font-weight="700">Field feedback matters when it changes the product boundary or workflow.</text>
+
+  <rect x="92" y="236" width="280" height="394" rx="28" fill="#FFF9FB" stroke="#E6D9E2" stroke-width="2"/>
+  <text x="128" y="286" fill="#26372D" font-family="Arial, sans-serif" font-size="28" font-weight="700">What stakeholders say</text>
+  <rect x="128" y="332" width="208" height="68" rx="18" fill="#F2DDE6"/>
+  <rect x="128" y="420" width="208" height="68" rx="18" fill="#D5E6F1"/>
+  <rect x="128" y="508" width="208" height="68" rx="18" fill="#E3F0E6"/>
+  <text x="150" y="372" fill="#7A6C74" font-family="Arial, sans-serif" font-size="18">“Do not add handling burden.”</text>
+  <text x="150" y="460" fill="#5A7584" font-family="Arial, sans-serif" font-size="18">“The format must feel safe.”</text>
+  <text x="150" y="548" fill="#557A62" font-family="Arial, sans-serif" font-size="18">“Value has to be visible fast.”</text>
+
+  <rect x="460" y="268" width="280" height="330" rx="28" fill="#F6FBF8" stroke="#D7E7DE" stroke-width="2"/>
+  <text x="496" y="318" fill="#26372D" font-family="Arial, sans-serif" font-size="28" font-weight="700">What we ask next</text>
+  <text x="500" y="390" fill="#6D716B" font-family="Arial, sans-serif" font-size="22">Can florists use a prepared kit</text>
+  <text x="500" y="422" fill="#6D716B" font-family="Arial, sans-serif" font-size="22">without extra device complexity?</text>
+  <text x="500" y="482" fill="#6D716B" font-family="Arial, sans-serif" font-size="22">How do we separate live-cell work</text>
+  <text x="500" y="514" fill="#6D716B" font-family="Arial, sans-serif" font-size="22">from downstream preservation use?</text>
+
+  <rect x="828" y="236" width="280" height="394" rx="28" fill="#FFF9F3" stroke="#E7D9D4" stroke-width="2"/>
+  <text x="864" y="286" fill="#26372D" font-family="Arial, sans-serif" font-size="28" font-weight="700">What changes in FloraGuard</text>
+  <rect x="864" y="332" width="208" height="68" rx="18" fill="#E3F0E6"/>
+  <rect x="864" y="420" width="208" height="68" rx="18" fill="#F1E6C9"/>
+  <rect x="864" y="508" width="208" height="68" rx="18" fill="#F2DDE6"/>
+  <text x="888" y="372" fill="#557A62" font-family="Arial, sans-serif" font-size="18">Prepared, bounded formats</text>
+  <text x="888" y="460" fill="#967A32" font-family="Arial, sans-serif" font-size="18">Florist-facing pilot before home use</text>
+  <text x="888" y="548" fill="#7A6C74" font-family="Arial, sans-serif" font-size="18">Phenotype-first value claims</text>
+
+  <path d="M372 366C408 366 424 366 460 366" stroke="#C8BCA9" stroke-width="10" stroke-linecap="round"/>
+  <path d="M372 454C408 454 424 454 460 454" stroke="#C8BCA9" stroke-width="10" stroke-linecap="round"/>
+  <path d="M372 542C408 542 424 542 460 542" stroke="#C8BCA9" stroke-width="10" stroke-linecap="round"/>
+  <path d="M740 366C776 366 792 366 828 366" stroke="#C8BCA9" stroke-width="10" stroke-linecap="round"/>
+  <path d="M740 454C776 454 792 454 828 454" stroke="#C8BCA9" stroke-width="10" stroke-linecap="round"/>
+  <path d="M740 542C776 542 792 542 828 542" stroke="#C8BCA9" stroke-width="10" stroke-linecap="round"/>
+
+  <rect x="92" y="654" width="1016" height="40" rx="16" fill="#F3EEE6"/>
+  <text x="126" y="680" fill="#6D716B" font-family="Arial, sans-serif" font-size="19">The strongest Human Practices evidence does not stop at interviews; it shows which stakeholder concerns changed project scope, product format, or validation priorities.</text>
+</svg>

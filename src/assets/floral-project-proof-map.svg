@@ -1,0 +1,49 @@
+<svg width="1200" height="780" viewBox="0 0 1200 780" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="780" rx="36" fill="#F7F4EC"/>
+  <rect x="42" y="42" width="1116" height="696" rx="30" fill="#FBFAF5" stroke="#E6DED2" stroke-width="2"/>
+  <text x="92" y="116" fill="#9A4E70" font-family="Arial, sans-serif" font-size="22" font-weight="700">Project proof map</text>
+  <text x="92" y="172" fill="#26372D" font-family="Georgia, serif" font-size="44" font-weight="700">One overview figure can connect pathway design, analytical proof, and flower outcome.</text>
+
+  <rect x="92" y="232" width="300" height="386" rx="28" fill="#FFF9F3" stroke="#E7D9D4" stroke-width="2"/>
+  <circle cx="166" cy="310" r="34" fill="#F3DBE3"/>
+  <path d="M166 286C180 258 214 248 240 260C220 278 206 301 200 332C188 324 176 318 166 310Z" fill="#83A16B"/>
+  <path d="M166 286C148 264 116 256 92 270C108 286 120 304 126 332C138 322 152 314 166 286Z" fill="#C76A8E"/>
+  <text x="130" y="388" fill="#26372D" font-family="Arial, sans-serif" font-size="28" font-weight="700">Problem</text>
+  <text x="130" y="428" fill="#6D716B" font-family="Arial, sans-serif" font-size="21">Cut flowers accumulate post-harvest stress</text>
+  <text x="130" y="460" fill="#6D716B" font-family="Arial, sans-serif" font-size="21">across harvest, transport, retail, and home use.</text>
+  <rect x="130" y="500" width="224" height="78" rx="18" fill="#F3EEE6"/>
+  <text x="154" y="546" fill="#7A6C74" font-family="Arial, sans-serif" font-size="21">ROS, dehydration,</text>
+  <text x="154" y="574" fill="#7A6C74" font-family="Arial, sans-serif" font-size="21">short vase life</text>
+
+  <rect x="450" y="232" width="300" height="386" rx="28" fill="#F6FBF8" stroke="#D7E7DE" stroke-width="2"/>
+  <rect x="506" y="286" width="186" height="20" rx="10" fill="#D2E6D8"/>
+  <rect x="506" y="326" width="126" height="20" rx="10" fill="#BDE0D4"/>
+  <rect x="506" y="366" width="210" height="20" rx="10" fill="#DDEBD7"/>
+  <rect x="506" y="406" width="164" height="20" rx="10" fill="#D4E8F2"/>
+  <path d="M506 450H706" stroke="#5F8E74" stroke-width="10" stroke-linecap="round"/>
+  <circle cx="536" cy="450" r="14" fill="#9E5071"/>
+  <circle cx="606" cy="450" r="14" fill="#3F8E8A"/>
+  <circle cx="676" cy="450" r="14" fill="#C69743"/>
+  <text x="488" y="520" fill="#26372D" font-family="Arial, sans-serif" font-size="28" font-weight="700">Build + verify</text>
+  <text x="488" y="560" fill="#6D716B" font-family="Arial, sans-serif" font-size="21">Engineer a melatonin route in E. coli,</text>
+  <text x="488" y="592" fill="#6D716B" font-family="Arial, sans-serif" font-size="21">then confirm the product analytically.</text>
+
+  <rect x="808" y="232" width="300" height="386" rx="28" fill="#FFF9FB" stroke="#E6D9E2" stroke-width="2"/>
+  <rect x="854" y="282" width="208" height="136" rx="22" fill="#FEF3F7"/>
+  <circle cx="958" cy="352" r="24" fill="#EEC7D7"/>
+  <path d="M958 330C978 298 1026 290 1060 306C1034 330 1018 360 1010 394C992 384 974 374 958 330Z" fill="#85A46F"/>
+  <path d="M958 330C934 304 886 296 852 316C874 338 892 364 900 394C920 378 940 362 958 330Z" fill="#C66A8C"/>
+  <text x="850" y="484" fill="#26372D" font-family="Arial, sans-serif" font-size="28" font-weight="700">Validate + translate</text>
+  <text x="850" y="524" fill="#6D716B" font-family="Arial, sans-serif" font-size="21">Test flower phenotype and vase life,</text>
+  <text x="850" y="556" fill="#6D716B" font-family="Arial, sans-serif" font-size="21">then move only through bounded formats.</text>
+  <rect x="850" y="584" width="208" height="48" rx="16" fill="#F1E6ED"/>
+  <text x="878" y="615" fill="#7A6C74" font-family="Arial, sans-serif" font-size="20">purified product / pilot kit</text>
+
+  <path d="M392 426C410 426 430 426 450 426" stroke="#C8BCA9" stroke-width="10" stroke-linecap="round"/>
+  <path d="M750 426C768 426 788 426 808 426" stroke="#C8BCA9" stroke-width="10" stroke-linecap="round"/>
+  <path d="M438 414L458 426L438 438" stroke="#C8BCA9" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M796 414L816 426L796 438" stroke="#C8BCA9" stroke-width="8" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <rect x="92" y="656" width="1016" height="48" rx="18" fill="#F3EEE6"/>
+  <text x="126" y="687" fill="#6D716B" font-family="Arial, sans-serif" font-size="20">The project becomes persuasive when the same claim stays visible from floral problem to microbial product to measurable flower response.</text>
+</svg>

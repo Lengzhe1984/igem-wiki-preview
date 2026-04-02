@@ -16,6 +16,10 @@ import floralBoundedFormatsArt from './assets/floral-bounded-formats.svg'
 import floralTeamNetworkArt from './assets/floral-team-network.svg'
 import floralModelDecisionBoardArt from './assets/floral-model-decision-board.svg'
 import floralInterviewWallArt from './assets/floral-interview-wall.svg'
+import floralProjectProofMapArt from './assets/floral-project-proof-map.svg'
+import floralConstructPackageArt from './assets/floral-construct-package.svg'
+import floralWetlabEvidencePackArt from './assets/floral-wetlab-evidence-pack.svg'
+import floralFeedbackRevisionMapArt from './assets/floral-feedback-revision-map.svg'
 
 const paragraph = (text) => ({ type: 'paragraph', text })
 const list = (items, style = 'unordered') => ({ type: 'list', items, style })
@@ -297,9 +301,9 @@ const wikiGroups = [
           'The implementation path favors purified or otherwise bounded outputs rather than live release.',
         ],
         nextAdd: [
-          'A one-page overview figure from pathway engineering to flower outcome',
-          'A clear construct map showing the chosen biosynthesis route',
-          'Additional floral post-harvest citations for species-specific senescence behavior',
+          'A route-specific construct diagram with actual gene order and plasmid context',
+          'Analytical figures showing melatonin detection, standards, and representative output',
+          'Species-linked flower results with time-course images and vase-life statistics',
         ],
         modules: [
           {
@@ -357,6 +361,37 @@ const wikiGroups = [
               },
             ],
           },
+          {
+            type: 'art-card-grid',
+            eyebrow: 'Proof package',
+            title: 'Three figure families hold the whole project together',
+            items: [
+              {
+                image: floralProjectProofMapArt,
+                alt: 'Illustrated project proof map connecting floral problem, microbial production, and flower validation.',
+                label: 'Overview',
+                title: 'One map keeps the whole claim legible',
+                detail:
+                  'The introduction works best when readers can see the problem, the build, and the final flower outcome in a single frame.',
+              },
+              {
+                image: floralPathwayBoardArt,
+                alt: 'Illustrated pathway board previewing the melatonin route and optimization logic.',
+                label: 'Build',
+                title: 'Route logic belongs in the introduction too',
+                detail:
+                  'Project Description should preview how melatonin is made before the reader reaches the detailed design chapter.',
+              },
+              {
+                image: floralPhenotypeBoardArt,
+                alt: 'Illustrated phenotype board showing day-by-day flower outcome.',
+                label: 'Outcome',
+                title: 'The flower readout has to stay visible from the start',
+                detail:
+                  'This project is persuasive only if the introduction already makes clear that floral phenotype is the final test.',
+              },
+            ],
+          },
         ],
         sections: [
           {
@@ -406,6 +441,15 @@ const wikiGroups = [
               ),
               paragraph(
                 'This puts metabolic engineering, analytical chemistry, and post-harvest flower validation into the same project. The scope is broad, but the core claim stays the same from page to page.',
+              ),
+              table(
+                ['Proof layer', 'Representative evidence', 'Why it matters'],
+                [
+                  ['Route design', 'pathway and construct diagrams', 'shows that melatonin production is a defined engineering target'],
+                  ['Analytical output', 'standards, chromatograms, titers, or intermediate profiles', 'shows that the chassis produced the molecule rather than a vague signal'],
+                  ['Flower outcome', 'phenotype timelines and vase-life plots', 'shows whether the molecule changes a real post-harvest result'],
+                  ['Translation boundary', 'purified-format or bounded-use framing', 'shows how the project avoids leaping from lab build to open release'],
+                ],
               ),
             ],
           },
@@ -550,9 +594,9 @@ const wikiGroups = [
           'The final design is bench-to-application, not hardware-first.',
         ],
         nextAdd: [
-          'A pathway diagram showing the chosen enzymatic route from tryptophan to melatonin',
-          'Construct architecture and plasmid diagrams for the selected genes',
-          'A clean system schematic linking fermentation output to flower treatment validation',
+          'A route diagram with the exact candidate enzymes and any support modules you keep',
+          'A construct sheet with real plasmid names, promoter logic, and comparison variants',
+          'An assay plan showing how standards, samples, and flower experiments are paired',
         ],
         modules: [
           {
@@ -601,8 +645,8 @@ const wikiGroups = [
           },
           {
             type: 'art-card-grid',
-            eyebrow: 'Key views',
-            title: 'Three views define the design',
+            eyebrow: 'Design package',
+            title: 'Three diagrams make the design reviewable',
             items: [
               {
                 image: floralPathwayBoardArt,
@@ -613,20 +657,20 @@ const wikiGroups = [
                   'Readers should be able to trace the path from tryptophan-derived metabolism to melatonin before they reach the construct details.',
               },
               {
-                image: floralFermentationBoardArt,
-                alt: 'Illustrated fermentation and validation board.',
-                label: 'Evidence',
-                title: 'Analytics shows whether the route is working',
+                image: floralConstructPackageArt,
+                alt: 'Illustrated construct package showing route logic, gene arrangement, and assay planning.',
+                label: 'Construct',
+                title: 'Construct architecture should sit beside the route map',
                 detail:
-                  'Quantification is part of the design, not something added after the constructs are built.',
+                  'Reviewers should be able to see what is cloned, how variants differ, and what comparison each construct is meant to answer.',
               },
               {
-                image: floralBoundedFormatsArt,
-                alt: 'Illustrated bounded product formats and translation boundaries.',
-                label: 'Boundary',
-                title: 'Implementation constraints already shape what counts as a good design',
+                image: floralFermentationBoardArt,
+                alt: 'Illustrated fermentation and validation board.',
+                label: 'Assay',
+                title: 'The assay plan explains how design success will be judged',
                 detail:
-                  'The design already assumes bounded outputs and does not treat live engineered cells as the deployed product.',
+                  'Quantification is part of the design package, not something added only after constructs are built.',
               },
             ],
           },
@@ -667,6 +711,14 @@ const wikiGroups = [
               ),
               paragraph(
                 'The exact enzyme combination can vary with route choice, but the design principle stays the same: make melatonin production explicit, modular, and optimizable.',
+              ),
+              table(
+                ['Design output', 'What it clarifies', 'Representative artifact'],
+                [
+                  ['Route map', 'which intermediates and transformations are included', 'pathway diagram from precursor to melatonin'],
+                  ['Construct sheet', 'how genes, promoters, and variants are organized', 'plasmid schema or operon layout'],
+                  ['Assay plan', 'how success will be measured and compared', 'standard-plus-sample workflow and target readouts'],
+                ],
               ),
             ],
           },
@@ -864,9 +916,9 @@ const wikiGroups = [
           'Aim 3 tests whether melatonin-centered treatments delay senescence in cut flowers.',
         ],
         nextAdd: [
-          'Construct maps, strain tables, and fermentation timelines',
-          'Chromatograms or equivalent analytical evidence for melatonin production',
-          'Flower phenotype boards and replication-aware vase-life plots',
+          'A real strain table with construct names, induction conditions, and culture timeline',
+          'Chromatograms, standard curves, or LC-MS-style evidence tied to the actual build',
+          'Replication-aware flower results with phenotype images, scoring rubric, and vase-life statistics',
         ],
         modules: [
           {
@@ -910,16 +962,24 @@ const wikiGroups = [
           },
           {
             type: 'art-card-grid',
-            eyebrow: 'Key figures',
-            title: 'Three figure types anchor the wet-lab results',
+            eyebrow: 'Evidence package',
+            title: 'Four figure types anchor the wet-lab results',
             items: [
+              {
+                image: floralWetlabEvidencePackArt,
+                alt: 'Illustrated wet-lab evidence pack showing build, chemistry, phenotype, and replication.',
+                label: 'Package',
+                title: 'The result set has to read as one evidence package',
+                detail:
+                  'A convincing wet-lab chapter shows constructs, chemistry, flower outcome, and replication together rather than in isolation.',
+              },
               {
                 image: floralFermentationBoardArt,
                 alt: 'Illustrated fermentation board connecting build decisions to assay outputs.',
-                label: 'Analytics',
+                label: 'Chemistry',
                 title: 'Production data sits beside pathway decisions',
                 detail:
-                  'Readers do not need to jump between pages to understand whether the chassis really made melatonin.',
+                  'Readers should not need to jump between chapters to understand whether the chassis really made melatonin.',
               },
               {
                 image: floralPhenotypeBoardArt,
@@ -932,10 +992,10 @@ const wikiGroups = [
               {
                 image: floralWetLabArt,
                 alt: 'Illustrated bench scene with flowers, dishes, and scoring motifs.',
-                label: 'Protocol',
-                title: 'Sampling and scoring remain visible',
+                label: 'Replication',
+                title: 'Sampling, controls, and scoring remain visible',
                 detail:
-                  'Readers trust the final summary more when they can see the timing, sampling, and scoring behind it.',
+                  'Readers trust the final summary more when they can see timing, replication, and how the controls were organized.',
               },
             ],
           },
@@ -1000,6 +1060,9 @@ const wikiGroups = [
             eyebrow: 'Readouts',
             title: 'How wet-lab measurements connect mechanism to outcome',
             blocks: [
+              paragraph(
+                'The wet-lab chapter is strongest when the reader can move from construct identity to analytical signal to flower phenotype without losing track of which sample or condition produced each result.',
+              ),
               table(
                 ['Readout', 'Why it matters', 'What it explains'],
                 [
@@ -1253,9 +1316,9 @@ const wikiGroups = [
           'The project only has social value if it reduces waste without adding new biosafety burden.',
         ],
         nextAdd: [
-          'Interview dates, methods, and anonymized quotes',
-          'A diagram mapping stakeholder needs to specific design revisions',
-          'Comparisons between academic feasibility and operational practicality',
+          'A real interview log with dates, respondent roles, and how feedback was recorded',
+          'An anonymized quote set linked to the actual questions asked',
+          'A revision map showing which stakeholder concerns changed scope, format, or validation priorities',
         ],
         modules: [
           {
@@ -1318,6 +1381,37 @@ const wikiGroups = [
               },
             ],
           },
+          {
+            type: 'art-card-grid',
+            eyebrow: 'HP evidence package',
+            title: 'The chapter should show who was heard and what changed',
+            items: [
+              {
+                image: floralStakeholderMapArt,
+                alt: 'Illustrated stakeholder map for the floral chain.',
+                label: 'Coverage',
+                title: 'Interview coverage shows whose needs were represented',
+                detail:
+                  'Readers need to know whether the project listened only to one user group or to the wider floral chain.',
+              },
+              {
+                image: floralFeedbackRevisionMapArt,
+                alt: 'Illustrated map showing stakeholder feedback leading to project revisions.',
+                label: 'Revision',
+                title: 'Feedback should map to specific design changes',
+                detail:
+                  'Human Practices becomes more credible when interviews clearly change product format, safety framing, or validation priorities.',
+              },
+              {
+                image: floralBoundedFormatsArt,
+                alt: 'Illustrated bounded-format translation board.',
+                label: 'Outcome',
+                title: 'The main outcome is a safer and simpler deployment boundary',
+                detail:
+                  'The chapter should make clear how field feedback pushed FloraGuard toward bounded outputs rather than open-ended deployment.',
+              },
+            ],
+          },
         ],
         sections: [
           {
@@ -1334,6 +1428,14 @@ const wikiGroups = [
                   ['Distributors', 'reducing losses during transport and storage variability'],
                   ['Florists', 'keeping bouquets attractive during display and sale'],
                   ['Consumers', 'making flowers last longer with simple care'],
+                ],
+              ),
+              table(
+                ['Evidence piece', 'What it contributes', 'Representative material'],
+                [
+                  ['Interview log', 'shows when, with whom, and under what context feedback was gathered', 'date, role, setting, and interview focus'],
+                  ['Quote set', 'shows how stakeholders framed the real problem in their own words', 'anonymized short excerpts grouped by theme'],
+                  ['Revision map', 'shows that feedback changed project scope or format', 'need-to-response diagram tied to specific project decisions'],
                 ],
               ),
             ],
