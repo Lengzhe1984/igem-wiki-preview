@@ -104,10 +104,10 @@ body[data-screen='flowever-home']::before {
 
 .flow-site-header {
   display: grid;
-  grid-template-columns: auto 1fr auto;
+  grid-template-columns: 168px minmax(0, 1fr) auto;
   align-items: center;
-  gap: 22px;
-  padding: 10px 0 14px;
+  gap: 12px;
+  padding: 8px 0 10px;
 }
 
 .flow-brand {
@@ -116,7 +116,7 @@ body[data-screen='flowever-home']::before {
 }
 
 .flow-brand img {
-  width: 176px;
+  width: 152px;
   display: block;
 }
 
@@ -124,21 +124,22 @@ body[data-screen='flowever-home']::before {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 6px;
-  flex-wrap: wrap;
+  gap: 0;
+  flex-wrap: nowrap;
 }
 
 .flow-nav-link {
   display: inline-flex;
   align-items: center;
   gap: 6px;
-  padding: 10px 12px;
+  padding: 9px 8px;
   color: rgba(22, 38, 28, 0.92);
   text-decoration: none;
-  font-size: 0.96rem;
+  font-size: 0.88rem;
   font-weight: 500;
   border-radius: 999px;
   transition: background-color 180ms ease, color 180ms ease;
+  white-space: nowrap;
 }
 
 .flow-nav-link:hover,
@@ -211,32 +212,35 @@ body[data-screen='flowever-home']::before {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  padding: 10px 0;
+  padding: 10px 0 10px 4px;
   border: 0;
   background: transparent;
   color: #1e3328;
-  font-size: 0.96rem;
+  font-size: 0.9rem;
   cursor: pointer;
 }
 
 .flow-home-main {
   display: grid;
-  gap: 34px;
+  gap: 26px;
 }
 
 .flow-hero {
   display: grid;
-  grid-template-columns: 56px minmax(470px, 520px) minmax(0, 1fr);
-  gap: 34px;
+  position: relative;
+  grid-template-columns: minmax(470px, 520px) minmax(0, 1fr);
+  gap: 36px;
   align-items: start;
-  padding: 24px 0 8px;
+  padding: 10px 0 2px 56px;
 }
 
 .flow-hero-rail {
   display: grid;
-  align-self: stretch;
-  padding-top: 54px;
-  gap: 18px;
+  position: absolute;
+  left: 0;
+  top: 68px;
+  width: 40px;
+  gap: 16px;
 }
 
 .flow-hero-rail-block {
@@ -244,7 +248,7 @@ body[data-screen='flowever-home']::before {
   align-items: center;
   justify-content: center;
   position: relative;
-  min-height: 180px;
+  min-height: 136px;
 }
 
 .flow-hero-rail-block::before,
@@ -275,7 +279,7 @@ body[data-screen='flowever-home']::before {
 
 .flow-hero-copy {
   max-width: 520px;
-  padding-top: 78px;
+  padding-top: 36px;
   position: relative;
   z-index: 1;
 }
@@ -291,7 +295,7 @@ body[data-screen='flowever-home']::before {
 }
 
 .flow-hero-copy h1 {
-  font-size: clamp(5.35rem, 5.8vw, 6.85rem);
+  font-size: clamp(5.15rem, 5.45vw, 6.25rem);
   white-space: nowrap;
 }
 
@@ -361,28 +365,28 @@ body[data-screen='flowever-home']::before {
 .flow-hero-visual {
   display: flex;
   justify-content: flex-end;
-  padding-top: 44px;
+  padding-top: 18px;
   min-width: 0;
 }
 
 .flow-hero-visual img {
-  width: min(100%, 760px);
+  width: min(100%, 486px);
   display: block;
 }
 
 .flow-values-strip {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 18px;
-  padding: 18px 0 8px 86px;
+  gap: 14px;
+  padding: 8px 0 2px 72px;
 }
 
 .flow-value-card {
   display: grid;
-  grid-template-columns: 64px 1fr;
-  gap: 14px;
+  grid-template-columns: 56px 1fr;
+  gap: 12px;
   align-items: start;
-  padding-left: 10px;
+  padding-left: 8px;
   border-left: 1px dashed rgba(66, 89, 58, 0.2);
 }
 
@@ -394,8 +398,8 @@ body[data-screen='flowever-home']::before {
 .flow-value-icon {
   display: grid;
   place-items: center;
-  width: 56px;
-  height: 56px;
+  width: 52px;
+  height: 52px;
 }
 
 .flow-value-icon img {
@@ -412,20 +416,20 @@ body[data-screen='flowever-home']::before {
 }
 
 .flow-value-card h3 {
-  font-size: 1rem;
+  font-size: 0.98rem;
   line-height: 1.4;
   color: #1f3728;
 }
 
 .flow-value-card p {
-  margin: 6px 0 0;
-  font-size: 0.94rem;
+  margin: 5px 0 0;
+  font-size: 0.86rem;
   color: rgba(29, 45, 35, 0.84);
 }
 
 .flow-stats-band {
   display: grid;
-  grid-template-columns: 1fr 260px;
+  grid-template-columns: 1fr 246px;
   gap: 0;
   overflow: hidden;
   border: 1px solid rgba(80, 103, 69, 0.12);
@@ -440,8 +444,8 @@ body[data-screen='flowever-home']::before {
 }
 
 .flow-stat-card {
-  min-height: 154px;
-  padding: 22px 28px;
+  min-height: 118px;
+  padding: 16px 18px;
   border-right: 1px solid rgba(90, 112, 75, 0.14);
 }
 
@@ -449,7 +453,7 @@ body[data-screen='flowever-home']::before {
   display: block;
   color: #24462f;
   font-family: "Cormorant Garamond", var(--heading-font);
-  font-size: clamp(2.2rem, 3vw, 4rem);
+  font-size: clamp(2.2rem, 3vw, 3.5rem);
   font-weight: 600;
   line-height: 0.95;
 }
@@ -476,27 +480,25 @@ body[data-screen='flowever-home']::before {
 }
 
 .flow-stat-card p {
-  margin-top: 10px;
-  max-width: 12ch;
+  margin-top: 8px;
+  max-width: 11ch;
   color: rgba(28, 43, 33, 0.92);
-  font-size: 1.02rem;
-  line-height: 1.45;
+  font-size: 0.92rem;
+  line-height: 1.4;
 }
 
 .flow-stat-card span {
   display: inline-block;
-  margin-top: 10px;
+  margin-top: 8px;
   color: rgba(45, 63, 50, 0.68);
-  font-size: 0.88rem;
+  font-size: 0.8rem;
 }
 
 .flow-goal-card {
-  display: grid;
-  grid-template-columns: 1fr auto;
-  gap: 10px;
-  align-items: center;
-  padding: 24px 24px 24px 26px;
+  position: relative;
+  padding: 16px 18px 18px;
   background: linear-gradient(180deg, rgba(246, 243, 233, 0.94) 0%, rgba(255, 251, 243, 0.96) 100%);
+  overflow: hidden;
 }
 
 .flow-section-kicker {
@@ -510,19 +512,24 @@ body[data-screen='flowever-home']::before {
 .flow-goal-card p:last-child,
 .flow-goal-card div p:last-child {
   color: rgba(28, 43, 33, 0.88);
-  line-height: 1.6;
+  line-height: 1.5;
+  max-width: 17ch;
+  font-size: 0.92rem;
 }
 
 .flow-goal-card img {
-  width: 102px;
+  width: 90px;
+  position: absolute;
+  right: 12px;
+  bottom: 12px;
 }
 
 .flow-story-section,
 .flow-solution-section,
 .flow-impact-section {
   display: grid;
-  grid-template-columns: 300px 1fr;
-  gap: 30px;
+  grid-template-columns: 268px 1fr;
+  gap: 20px;
   align-items: start;
 }
 
@@ -531,15 +538,15 @@ body[data-screen='flowever-home']::before {
 }
 
 .flow-story-intro h2 {
-  font-size: clamp(3rem, 4.1vw, 4.5rem);
+  font-size: clamp(2.7rem, 3.45vw, 3.9rem);
 }
 
 .flow-story-intro p {
-  margin-top: 18px;
-  max-width: 23ch;
+  margin-top: 16px;
+  max-width: 24ch;
   color: rgba(30, 45, 35, 0.9);
-  font-size: 1.03rem;
-  line-height: 1.8;
+  font-size: 0.95rem;
+  line-height: 1.72;
 }
 
 .flow-text-link {
@@ -558,16 +565,16 @@ body[data-screen='flowever-home']::before {
 
 .flow-story-track {
   display: grid;
-  grid-template-columns: 1fr 172px;
-  gap: 20px;
-  align-items: center;
+  grid-template-columns: minmax(0, 1fr) 142px;
+  gap: 16px;
+  align-items: start;
 }
 
 .flow-stage-row,
 .flow-solution-track {
   display: grid;
   grid-template-columns: repeat(5, minmax(0, 1fr));
-  gap: 14px;
+  gap: 10px;
   align-items: start;
 }
 
@@ -579,9 +586,9 @@ body[data-screen='flowever-home']::before {
 
 .flow-stage-circle,
 .flow-solution-circle {
-  width: 126px;
-  height: 126px;
-  margin: 0 auto 18px;
+  width: 106px;
+  height: 106px;
+  margin: 0 auto 14px;
   border-radius: 50%;
   overflow: hidden;
   background: linear-gradient(180deg, rgba(255, 255, 255, 0.82) 0%, rgba(244, 239, 228, 0.9) 100%);
@@ -618,32 +625,32 @@ body[data-screen='flowever-home']::before {
 .flow-stage-card h3,
 .flow-solution-card h3 {
   color: #1f3729;
-  font-size: 1.05rem;
+  font-size: 0.98rem;
   line-height: 1.4;
   font-weight: 600;
 }
 
 .flow-stage-card p,
 .flow-solution-card p {
-  margin: 8px auto 0;
+  margin: 6px auto 0;
   max-width: 13ch;
   color: rgba(36, 51, 39, 0.84);
-  font-size: 0.95rem;
-  line-height: 1.6;
+  font-size: 0.84rem;
+  line-height: 1.55;
 }
 
 .flow-stage-arrow {
   position: absolute;
-  right: -12px;
-  top: 54px;
+  right: -9px;
+  top: 40px;
   color: #5a7548;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
 }
 
 .flow-story-note,
 .flow-impact-note {
-  min-height: 196px;
-  padding: 26px 24px;
+  min-height: 176px;
+  padding: 18px 18px;
   border-radius: 24px;
   border: 1px solid rgba(84, 108, 75, 0.14);
   background: rgba(251, 249, 241, 0.85);
@@ -652,28 +659,36 @@ body[data-screen='flowever-home']::before {
 
 .flow-story-note {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
+  background:
+    rgba(251, 249, 241, 0.88)
+    url("./assets/home-2026/goal-floral-line.png")
+    no-repeat
+    right 10px
+    bottom 10px / 62px;
 }
 
 .flow-story-note p {
   color: #223b2a;
-  font-size: 1rem;
-  line-height: 1.85;
+  font-size: 0.95rem;
+  line-height: 1.72;
+  max-width: 10ch;
 }
 
 .flow-solution-track {
-  gap: 18px;
+  gap: 8px;
 }
 
 .flow-impact-section {
-  grid-template-columns: 260px 1fr 240px;
-  padding-top: 8px;
+  grid-template-columns: 206px minmax(0, 1fr) 172px;
+  gap: 18px;
+  padding-top: 0;
 }
 
 .flow-sdg-grid {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 18px;
+  gap: 14px;
 }
 
 .flow-sdg-card img {
@@ -684,56 +699,56 @@ body[data-screen='flowever-home']::before {
 }
 
 .flow-sdg-card p {
-  margin: 12px 8px 0;
+  margin: 10px 4px 0;
   color: rgba(29, 45, 35, 0.86);
-  font-size: 0.92rem;
-  line-height: 1.5;
+  font-size: 0.84rem;
+  line-height: 1.4;
   text-align: center;
 }
 
 .flow-impact-note {
   display: grid;
-  grid-template-columns: 112px 1fr;
-  gap: 14px;
+  grid-template-columns: 84px 1fr;
+  gap: 10px;
   align-items: center;
 }
 
 .flow-impact-note img {
-  width: 108px;
+  width: 78px;
   display: block;
 }
 
 .flow-impact-note p {
   color: #233a2a;
-  font-size: 1.16rem;
-  line-height: 1.9;
+  font-size: 0.98rem;
+  line-height: 1.72;
 }
 
 .flow-footer {
   display: grid;
-  grid-template-columns: 1.2fr repeat(4, minmax(0, 0.8fr)) 0.72fr;
-  gap: 28px;
-  margin-top: 44px;
-  padding: 28px 0 22px;
+  grid-template-columns: 1.18fr 0.72fr 0.72fr 0.72fr 0.96fr 0.62fr;
+  gap: 18px;
+  margin-top: 26px;
+  padding: 24px 0 18px;
   border-top: 1px solid rgba(79, 104, 68, 0.16);
 }
 
 .flow-footer-brand img {
-  width: 174px;
+  width: 154px;
 }
 
 .flow-footer-brand p {
   max-width: 22ch;
-  margin: 14px 0 0;
+  margin: 10px 0 0;
   color: rgba(29, 45, 35, 0.88);
-  font-size: 0.94rem;
-  line-height: 1.7;
+  font-size: 0.82rem;
+  line-height: 1.6;
 }
 
 .flow-socials {
   display: flex;
-  gap: 12px;
-  margin-top: 18px;
+  gap: 10px;
+  margin-top: 14px;
 }
 
 .flow-socials a {
@@ -749,22 +764,22 @@ body[data-screen='flowever-home']::before {
 
 .flow-footer-column h3 {
   color: #31492f;
-  font-size: 0.88rem;
+  font-size: 0.8rem;
   letter-spacing: 0.08em;
 }
 
 .flow-footer-column ul,
 .flow-footer-contact ul {
-  margin: 14px 0 0;
+  margin: 10px 0 0;
   padding: 0;
   list-style: none;
 }
 
 .flow-footer-column li,
 .flow-footer-contact li {
-  margin-bottom: 8px;
+  margin-bottom: 6px;
   color: rgba(31, 47, 37, 0.82);
-  font-size: 0.93rem;
+  font-size: 0.82rem;
 }
 
 .flow-footer-column a,
@@ -786,7 +801,7 @@ body[data-screen='flowever-home']::before {
 }
 
 .flow-footer-igem img {
-  width: 160px;
+  width: 124px;
   display: block;
 }
 
@@ -805,36 +820,13 @@ body[data-screen='flowever-home']::before {
   }
 
   .flow-hero {
-    grid-template-columns: 40px minmax(390px, 470px) minmax(0, 1fr);
-    gap: 22px;
+    grid-template-columns: minmax(408px, 454px) minmax(0, 1fr);
+    gap: 18px;
+    padding-left: 48px;
   }
 
   .flow-values-strip {
-    padding-left: 56px;
-  }
-
-  .flow-story-track {
-    grid-template-columns: 1fr;
-  }
-
-  .flow-story-note {
-    min-height: auto;
-  }
-
-  .flow-impact-section {
-    grid-template-columns: 1fr;
-  }
-
-  .flow-impact-note {
-    grid-template-columns: 112px 1fr;
-  }
-
-  .flow-footer {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
-
-  .flow-footer-igem {
-    justify-content: flex-start;
+    padding-left: 60px;
   }
 }
 
@@ -846,6 +838,7 @@ body[data-screen='flowever-home']::before {
 
   .flow-nav {
     justify-content: flex-start;
+    flex-wrap: wrap;
   }
 
   .flow-hero {
@@ -904,8 +897,23 @@ body[data-screen='flowever-home']::before {
     display: none;
   }
 
+  .flow-story-track,
+  .flow-impact-section,
   .flow-footer {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
+  }
+
+  .flow-story-note,
+  .flow-impact-note {
+    min-height: auto;
+  }
+
+  .flow-impact-note {
+    grid-template-columns: 112px 1fr;
+  }
+
+  .flow-footer-igem {
+    justify-content: flex-start;
   }
 }
 
