@@ -161,13 +161,13 @@ const solutionSteps = [
     detail: 'High-purity melatonin for safe application',
   },
   {
-    type: 'image',
+    type: 'art',
     image: solutionApplication,
     title: 'Application to Cut Flowers',
     detail: 'Simple treatment, significant protection',
   },
   {
-    type: 'image',
+    type: 'art',
     image: solutionVase,
     title: 'Longer Vase Life',
     detail: 'Healthier, fresher flowers for longer',

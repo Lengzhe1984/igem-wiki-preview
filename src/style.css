@@ -528,8 +528,8 @@ body[data-screen='flowever-home']::before {
 .flow-solution-section,
 .flow-impact-section {
   display: grid;
-  grid-template-columns: 268px 1fr;
-  gap: 20px;
+  grid-template-columns: 282px 1fr;
+  gap: 26px;
   align-items: start;
 }
 
@@ -543,10 +543,10 @@ body[data-screen='flowever-home']::before {
 
 .flow-story-intro p {
   margin-top: 16px;
-  max-width: 24ch;
+  max-width: 26ch;
   color: rgba(30, 45, 35, 0.9);
-  font-size: 0.95rem;
-  line-height: 1.72;
+  font-size: 0.98rem;
+  line-height: 1.68;
 }
 
 .flow-text-link {
@@ -565,8 +565,8 @@ body[data-screen='flowever-home']::before {
 
 .flow-story-track {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) 142px;
-  gap: 16px;
+  grid-template-columns: minmax(0, 1fr) 164px;
+  gap: 20px;
   align-items: start;
 }
 
@@ -574,7 +574,7 @@ body[data-screen='flowever-home']::before {
 .flow-solution-track {
   display: grid;
   grid-template-columns: repeat(5, minmax(0, 1fr));
-  gap: 10px;
+  gap: 14px;
   align-items: start;
 }
 
@@ -586,12 +586,12 @@ body[data-screen='flowever-home']::before {
 
 .flow-stage-circle,
 .flow-solution-circle {
-  width: 106px;
-  height: 106px;
-  margin: 0 auto 14px;
+  width: 112px;
+  height: 112px;
+  margin: 0 auto 16px;
   border-radius: 50%;
   overflow: hidden;
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.82) 0%, rgba(244, 239, 228, 0.9) 100%);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.86) 0%, rgba(244, 239, 228, 0.92) 100%);
   box-shadow: inset 0 0 0 1px rgba(99, 118, 81, 0.12);
 }
 
@@ -609,48 +609,46 @@ body[data-screen='flowever-home']::before {
 }
 
 .flow-solution-circle-art {
-  background: transparent;
-  box-shadow: none;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.86) 0%, rgba(244, 239, 228, 0.92) 100%);
+  box-shadow: inset 0 0 0 1px rgba(99, 118, 81, 0.12);
 }
 
 .flow-solution-circle-art img {
-  object-fit: contain;
-}
-
-.flow-solution-circle .ti {
-  color: #557548;
-  font-size: 3.5rem;
+  object-fit: cover;
 }
 
 .flow-stage-card h3,
 .flow-solution-card h3 {
   color: #1f3729;
-  font-size: 0.98rem;
-  line-height: 1.4;
+  font-family: "Cormorant Garamond", var(--heading-font);
+  font-size: 1.02rem;
+  line-height: 1.08;
   font-weight: 600;
+  letter-spacing: -0.015em;
 }
 
 .flow-stage-card p,
 .flow-solution-card p {
-  margin: 6px auto 0;
-  max-width: 13ch;
+  margin: 8px auto 0;
+  max-width: 13.5ch;
   color: rgba(36, 51, 39, 0.84);
-  font-size: 0.84rem;
-  line-height: 1.55;
+  font-size: 0.88rem;
+  line-height: 1.5;
 }
 
 .flow-stage-arrow {
   position: absolute;
-  right: -9px;
-  top: 40px;
+  right: -12px;
+  top: 44px;
   color: #5a7548;
-  font-size: 1.3rem;
+  font-size: 1.48rem;
+  line-height: 1;
 }
 
 .flow-story-note,
 .flow-impact-note {
-  min-height: 176px;
-  padding: 18px 18px;
+  min-height: 184px;
+  padding: 22px 20px;
   border-radius: 24px;
   border: 1px solid rgba(84, 108, 75, 0.14);
   background: rgba(251, 249, 241, 0.85);
@@ -660,67 +658,66 @@ body[data-screen='flowever-home']::before {
 .flow-story-note {
   display: flex;
   align-items: flex-start;
-  background:
-    rgba(251, 249, 241, 0.88)
-    url("./assets/home-2026/goal-floral-line.png")
-    no-repeat
-    right 10px
-    bottom 10px / 62px;
+  background: rgba(251, 249, 241, 0.88);
 }
 
 .flow-story-note p {
   color: #223b2a;
-  font-size: 0.95rem;
+  font-size: 0.98rem;
   line-height: 1.72;
-  max-width: 10ch;
-}
-
-.flow-solution-track {
-  gap: 8px;
+  max-width: 10.5ch;
 }
 
 .flow-impact-section {
-  grid-template-columns: 206px minmax(0, 1fr) 172px;
-  gap: 18px;
+  grid-template-columns: 220px minmax(0, 1fr) 214px;
+  gap: 22px;
   padding-top: 0;
 }
 
 .flow-sdg-grid {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 14px;
+  gap: 18px;
+  align-items: start;
+}
+
+.flow-sdg-card {
+  overflow: hidden;
+  padding: 0 0 14px;
+  border-radius: 24px;
+  background: rgba(255, 252, 246, 0.92);
+  box-shadow: 0 18px 36px rgba(46, 56, 37, 0.08);
 }
 
 .flow-sdg-card img {
   width: 100%;
   display: block;
-  border-radius: 18px;
-  box-shadow: 0 18px 36px rgba(46, 56, 37, 0.08);
+  border-radius: 24px 24px 0 0;
 }
 
 .flow-sdg-card p {
-  margin: 10px 4px 0;
-  color: rgba(29, 45, 35, 0.86);
+  margin: 12px 18px 0;
+  color: rgba(29, 45, 35, 0.88);
   font-size: 0.84rem;
-  line-height: 1.4;
+  line-height: 1.42;
   text-align: center;
 }
 
 .flow-impact-note {
   display: grid;
-  grid-template-columns: 84px 1fr;
-  gap: 10px;
+  grid-template-columns: 102px 1fr;
+  gap: 14px;
   align-items: center;
 }
 
 .flow-impact-note img {
-  width: 78px;
+  width: 100px;
   display: block;
 }
 
 .flow-impact-note p {
   color: #233a2a;
-  font-size: 0.98rem;
+  font-size: 1.02rem;
   line-height: 1.72;
 }
 
