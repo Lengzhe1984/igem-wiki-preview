@@ -226,10 +226,10 @@ body[data-screen='flowever-home']::before {
 
 .flow-hero {
   display: grid;
-  grid-template-columns: 56px minmax(0, 0.95fr) minmax(360px, 1.08fr);
-  gap: 28px;
-  align-items: center;
-  padding: 18px 0 8px;
+  grid-template-columns: 56px minmax(470px, 520px) minmax(0, 1fr);
+  gap: 34px;
+  align-items: start;
+  padding: 24px 0 8px;
 }
 
 .flow-hero-rail {
@@ -274,7 +274,10 @@ body[data-screen='flowever-home']::before {
 }
 
 .flow-hero-copy {
-  padding-top: 62px;
+  max-width: 520px;
+  padding-top: 78px;
+  position: relative;
+  z-index: 1;
 }
 
 .flow-hero-copy h1,
@@ -288,15 +291,16 @@ body[data-screen='flowever-home']::before {
 }
 
 .flow-hero-copy h1 {
-  font-size: clamp(4rem, 6vw, 7rem);
+  font-size: clamp(5.35rem, 5.8vw, 6.85rem);
+  white-space: nowrap;
 }
 
 .flow-hero-copy p {
-  max-width: 13ch;
+  max-width: 26ch;
   margin: 28px 0 0;
   color: rgba(27, 42, 32, 0.94);
-  font-size: clamp(1.2rem, 1.7vw, 1.75rem);
-  line-height: 1.45;
+  font-size: clamp(1.06rem, 1.18vw, 1.3rem);
+  line-height: 1.55;
 }
 
 .flow-hero-divider {
@@ -357,10 +361,12 @@ body[data-screen='flowever-home']::before {
 .flow-hero-visual {
   display: flex;
   justify-content: flex-end;
+  padding-top: 44px;
+  min-width: 0;
 }
 
 .flow-hero-visual img {
-  width: min(100%, 738px);
+  width: min(100%, 760px);
   display: block;
 }
 
@@ -799,8 +805,8 @@ body[data-screen='flowever-home']::before {
   }
 
   .flow-hero {
-    grid-template-columns: 40px minmax(0, 1fr) minmax(320px, 0.95fr);
-    gap: 18px;
+    grid-template-columns: 40px minmax(390px, 470px) minmax(0, 1fr);
+    gap: 22px;
   }
 
   .flow-values-strip {
@@ -853,10 +859,11 @@ body[data-screen='flowever-home']::before {
 
   .flow-hero-copy {
     padding-top: 0;
+    max-width: none;
   }
 
   .flow-hero-copy p {
-    max-width: 18ch;
+    max-width: 28ch;
   }
 
   .flow-values-strip,
