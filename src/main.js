@@ -19,8 +19,6 @@ import footerIgem from './assets/home-2026/footer-igem.png'
 import goalFloralLine from './assets/home-2026/goal-floral-line.png'
 import impactFlower from './assets/home-2026/impact-flower.png'
 import leafLeftMid from './assets/home-2026/leaf-left-mid.png'
-import leafLeftLow from './assets/home-2026/leaf-left-low.png'
-import leafRightBottom from './assets/home-2026/leaf-right-bottom.png'
 import solutionMelatoninIcon from './assets/home-2026/solution-melatonin.png'
 import solutionMicroorganismIcon from './assets/home-2026/solution-microorganism.png'
 import solutionPurificationIcon from './assets/home-2026/solution-purification.png'
@@ -81,7 +79,6 @@ const navGroups = [
     label: 'More',
     items: [
       { label: 'Contribution', href: pageHref('contribution') },
-      { label: 'References', href: pageHref('references') },
       { label: 'Application Support', href: pageHref('hardware') },
     ],
   },
@@ -352,8 +349,7 @@ const footerDownloadMarkup = footerDownloads
 document.querySelector('#app').innerHTML = `
   <div class="flow-home-shell">
     <img class="flow-deco flow-deco-left-mid" src="${leafLeftMid}" alt="" aria-hidden="true" />
-    <img class="flow-deco flow-deco-left-low" src="${leafLeftLow}" alt="" aria-hidden="true" />
-    <img class="flow-deco flow-deco-right-bottom" src="${leafRightBottom}" alt="" aria-hidden="true" />
+    <img class="flow-deco flow-deco-left-low" src="${leafLeftMid}" alt="" aria-hidden="true" />
 
     <header class="flow-site-header">
       <a class="flow-brand" href="${pageHref()}">
@@ -383,7 +379,10 @@ document.querySelector('#app').innerHTML = `
         </aside>
 
         <div class="flow-hero-copy">
-          <h1>Extending Life<br />Beyond Harvest</h1>
+          <h1>
+            <span class="flow-fixed-line">Extending Life</span>
+            <span class="flow-fixed-line">Beyond Harvest</span>
+          </h1>
           <p>
             Engineering microbial melatonin for
             sustainable postharvest agriculture.
@@ -401,9 +400,12 @@ document.querySelector('#app').innerHTML = `
           </div>
         </div>
 
-        <div class="flow-hero-visual">
-          <img src="${heroBouquet}" alt="Bouquet hero visual for Flowever" />
-        </div>
+        <div
+          class="flow-hero-visual"
+          role="img"
+          aria-label="Bouquet hero visual for Flowever"
+          style="background-image: url('${heroBouquet}')"
+        ></div>
       </section>
 
       <section class="flow-values-strip">
@@ -430,7 +432,10 @@ document.querySelector('#app').innerHTML = `
       <section class="flow-story-section">
         <div class="flow-story-intro">
           <p class="flow-section-kicker">THE CHALLENGE</p>
-          <h2>A long journey,<br />with too much loss.</h2>
+          <h2>
+            <span class="flow-fixed-line">A long journey,</span>
+            <span class="flow-fixed-line">with too much loss.</span>
+          </h2>
           <p>
             From farm to vase, flowers face many stresses. Postharvest losses not only
             waste natural resources, but also affect livelihoods and the environment.
@@ -457,7 +462,10 @@ document.querySelector('#app').innerHTML = `
       <section class="flow-solution-section">
         <div class="flow-story-intro">
           <p class="flow-section-kicker">OUR SOLUTION</p>
-          <h2>Synthetic biology<br />for longer blooms.</h2>
+          <h2>
+            <span class="flow-fixed-line">Synthetic biology</span>
+            <span class="flow-fixed-line">for longer blooms.</span>
+          </h2>
           <p>
             We engineer microbes to produce melatonin, a natural molecule that helps flowers
             resist stress and delay senescence.
